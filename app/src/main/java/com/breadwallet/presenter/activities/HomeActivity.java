@@ -41,6 +41,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
+import android.widget.ProgressBar;
 import android.widget.ViewFlipper;
 
 import com.breadwallet.R;
@@ -111,6 +112,7 @@ public class HomeActivity extends BRActivity implements InternetManager.Connecti
     private LinearLayout mProgressLayout;
     private BaseTextView mSyncStatusLabel;
     private BaseTextView mProgressLabel;
+    private ProgressBar mSyncProgress;
 
     private SyncNotificationBroadcastReceiver mSyncNotificationBroadcastReceiver;
     private String mCurrentWalletIso;
@@ -131,6 +133,7 @@ public class HomeActivity extends BRActivity implements InternetManager.Connecti
         mProgressLayout = findViewById(R.id.progress_layout);
         mSyncStatusLabel = findViewById(R.id.sync_status_label);
         mProgressLabel = findViewById(R.id.syncing_label);
+        mSyncProgress = findViewById(R.id.sync_progress);
         mNotificationBar = findViewById(R.id.notification_bar);
         mSearchBar = findViewById(R.id.search_bar);
         ImageButton searchIcon = findViewById(R.id.search_icon);
@@ -229,6 +232,16 @@ public class HomeActivity extends BRActivity implements InternetManager.Connecti
                 TxManager.getInstance().updateTxList(HomeActivity.this);
             }
         });
+
+        if (mWallet instanceof BaseBitcoinWalletManager) {
+            BaseBitcoinWalletManager baseBitcoinWalletManager = (BaseBitcoinWalletManager) mWallet;
+            long syncThroughDateInMillis = baseBitcoinWalletManager.getPeerManager()
+                    .getLastBlockTimestamp() * DateUtils.SECOND_IN_MILLIS;
+            String syncedThroughDate = new SimpleDateFormat(SYNCED_THROUGH_DATE_FORMAT,
+                    Locale.getDefault()).format(syncThroughDateInMillis);
+            mSyncStatusLabel.setText(String.format(getString(R.string.SyncingView_syncedThrough),
+                    syncedThroughDate));
+        }
     }
 
     @Override
@@ -358,29 +371,11 @@ public class HomeActivity extends BRActivity implements InternetManager.Connecti
             labelText.append(' ')
                     .append(NumberFormat.getPercentInstance().format(progress));
             mProgressLabel.setText(labelText);
-            mProgressLayout.setVisibility(View.VISIBLE);
-
-            if (mWallet instanceof BaseBitcoinWalletManager) {
-                BaseBitcoinWalletManager baseBitcoinWalletManager = (BaseBitcoinWalletManager) mWallet;
-                long syncThroughDateInMillis = baseBitcoinWalletManager.getPeerManager()
-                        .getLastBlockTimestamp() * DateUtils.SECOND_IN_MILLIS;
-                String syncedThroughDate = new SimpleDateFormat(SYNCED_THROUGH_DATE_FORMAT,
-                        Locale.getDefault()).format(syncThroughDateInMillis);
-                mSyncStatusLabel.setText(String.format(getString(R.string.SyncingView_syncedThrough),
-                        syncedThroughDate));
-            }
+            mProgressLabel.setVisibility(View.VISIBLE);
+            mSyncProgress.setVisibility(View.VISIBLE);
         } else {
-            mProgressLayout.animate()
-                    .translationY(-mProgressLayout.getHeight())
-                    .alpha(SYNC_PROGRESS_LAYOUT_ANIMATION_ALPHA)
-                    .setDuration(DateUtils.SECOND_IN_MILLIS)
-                    .setListener(new AnimatorListenerAdapter() {
-                        @Override
-                        public void onAnimationEnd(Animator animation) {
-                            super.onAnimationEnd(animation);
-                            mProgressLayout.setVisibility(View.GONE);
-                        }
-                    });
+            mProgressLabel.setVisibility(View.GONE);
+            mSyncProgress.setVisibility(View.GONE);
         }
     }
 

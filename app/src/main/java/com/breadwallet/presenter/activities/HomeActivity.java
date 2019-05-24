@@ -28,7 +28,6 @@ package com.breadwallet.presenter.activities;
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.app.Activity;
-import android.arch.lifecycle.MutableLiveData;
 import android.arch.lifecycle.Observer;
 import android.arch.lifecycle.ViewModelProviders;
 import android.content.BroadcastReceiver;
@@ -39,11 +38,9 @@ import android.os.Handler;
 import android.support.annotation.Nullable;
 import android.text.format.DateUtils;
 import android.util.Log;
-import android.util.TypedValue;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
-import android.widget.ProgressBar;
 import android.widget.ViewFlipper;
 
 import com.breadwallet.R;
@@ -63,14 +60,11 @@ import com.breadwallet.tools.animation.UiUtils;
 import com.breadwallet.tools.manager.AppEntryPointHandler;
 import com.breadwallet.tools.manager.BRSharedPrefs;
 import com.breadwallet.tools.manager.InternetManager;
-import com.breadwallet.tools.manager.PromptManager;
 import com.breadwallet.tools.manager.TxManager;
 import com.breadwallet.tools.services.SyncService;
 import com.breadwallet.tools.sqlite.RatesDataSource;
 import com.breadwallet.tools.threads.executor.BRExecutor;
 import com.breadwallet.tools.util.CurrencyUtils;
-import com.breadwallet.tools.util.EventUtils;
-import com.breadwallet.tools.util.TokenUtil;
 import com.breadwallet.tools.util.Utils;
 import com.breadwallet.wallet.WalletsMaster;
 import com.breadwallet.wallet.abstracts.BalanceUpdateListener;
@@ -78,13 +72,11 @@ import com.breadwallet.wallet.abstracts.BaseWalletManager;
 import com.breadwallet.wallet.abstracts.OnTxListModified;
 import com.breadwallet.wallet.abstracts.SyncListener;
 import com.breadwallet.wallet.wallets.bitcoin.BaseBitcoinWalletManager;
-import com.breadwallet.wallet.wallets.ethereum.WalletEthManager;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.text.NumberFormat;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 
@@ -103,13 +95,14 @@ public class HomeActivity extends BRActivity implements InternetManager.Connecti
     private static final String SYNCED_THROUGH_DATE_FORMAT = "MM/dd/yy HH:mm";
     private static final float SYNC_PROGRESS_LAYOUT_ANIMATION_ALPHA = 0.0f;
 
+    public static final String EXTRA_CRYPTO_REQUEST = "com.breadwallet.presenter.activities.HomeActivity.EXTRA_CRYPTO_REQUEST";
+    private static final int SEND_SHOW_DELAY = 300;
+
     private BRNotificationBar mNotificationBar;
     private LinearLayout mMenuLayout;
     private MainViewModel mViewModel;
     private BRButton mSendButton;
     private BRButton mReceiveButton;
-    public static final String EXTRA_CRYPTO_REQUEST = "com.breadwallet.presenter.activities.HomeActivity.EXTRA_CRYPTO_REQUEST";
-    private static final int SEND_SHOW_DELAY = 300;
     private BaseTextView mCurrencyPriceUsd;
     private BaseTextView mBalancePrimary;
     private BaseTextView mBalanceSecondary;
@@ -118,9 +111,10 @@ public class HomeActivity extends BRActivity implements InternetManager.Connecti
     private LinearLayout mProgressLayout;
     private BaseTextView mSyncStatusLabel;
     private BaseTextView mProgressLabel;
-    private ProgressBar mSyncingProgressBar;
+
     private SyncNotificationBroadcastReceiver mSyncNotificationBroadcastReceiver;
     private String mCurrentWalletIso;
+
     private BaseWalletManager mWallet;
 
     @Override
@@ -141,8 +135,6 @@ public class HomeActivity extends BRActivity implements InternetManager.Connecti
         mSearchBar = findViewById(R.id.search_bar);
         ImageButton searchIcon = findViewById(R.id.search_icon);
         mBarFlipper = findViewById(R.id.tool_bar_flipper);
-
-        processIntentData(getIntent());
 
         // Get ViewModel, observe updates to Wallet and aggregated balance data
         mViewModel = ViewModelProviders.of(this).get(MainViewModel.class);
@@ -254,16 +246,6 @@ public class HomeActivity extends BRActivity implements InternetManager.Connecti
         showSendIfNeeded(intent);
     }
 
-    private synchronized void processIntentData(Intent intent) {
-        String data = intent.getStringExtra(EXTRA_DATA);
-        if (Utils.isNullOrEmpty(data)) {
-            data = intent.getDataString();
-        }
-        if (data != null) {
-            AppEntryPointHandler.processDeepLink(this, data);
-        }
-    }
-
     @Override
     protected void onResume() {
         super.onResume();
@@ -276,7 +258,6 @@ public class HomeActivity extends BRActivity implements InternetManager.Connecti
             BRExecutor.getInstance().forLightWeightBackgroundTasks().execute(new Runnable() {
                 @Override
                 public void run() {
-                    WalletEthManager.getInstance(HomeActivity.this).estimateGasPrice();
                     wallet.refreshCachedBalance(HomeActivity.this);
                     BRExecutor.getInstance().forMainThreadTasks().execute(new Runnable() {
                         @Override
@@ -298,7 +279,7 @@ public class HomeActivity extends BRActivity implements InternetManager.Connecti
             wallet.addSyncListener(this);
         }
 
-        mSyncNotificationBroadcastReceiver = new HomeActivity.SyncNotificationBroadcastReceiver();
+        mSyncNotificationBroadcastReceiver = new SyncNotificationBroadcastReceiver();
         SyncService.registerSyncNotificationBroadcastReceiver(getApplicationContext(),
                 mSyncNotificationBroadcastReceiver);
         SyncService.startService(getApplicationContext(), mCurrentWalletIso);

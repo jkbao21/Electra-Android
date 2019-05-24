@@ -48,7 +48,7 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="8dp"
                 android:text="-0.10965 ECA"
-                android:textColor="@color/total_assets_usd_color"
+                android:textColor="@color/primary_background"
                 android:textSize="26sp" />
 
             <com.breadwallet.presenter.customviews.BaseTextView

@@ -17,8 +17,8 @@
         android:layout_marginLeft="12dp"
         android:layout_marginTop="12dp"
         android:text="Dec 2"
-        android:textColor="@color/total_assets_usd_color"
-        android:textSize="16sp"
+        android:textColor="@color/primary_background"
+        android:textSize="12sp"
         app:brdFont="@string/Font.CircularPro_Bold" />
 
 
@@ -33,7 +33,7 @@
         android:maxLines="1"
         android:paddingBottom="4dp"
         android:text="sent to f94c57..."
-        android:textColor="@color/settings_chevron_right"
+        android:textColor="@color/primary_background"
         android:textSize="12sp"/>
 
     <com.breadwallet.presenter.customviews.BaseTextView
@@ -44,6 +44,7 @@
         android:layout_centerVertical="true"
         android:layout_marginRight="12dp"
         android:text="-$839.30"
+        android:textColor="@color/primary_background"
         android:textSize="18sp"
         app:brdFont="@string/Font.CircularPro_Bold"/>
 
@@ -79,7 +80,7 @@
 
     <View
         android:layout_width="match_parent"
-        android:layout_height="1px"
+        android:layout_height="0px"
         android:layout_alignParentBottom="true"
         android:background="@color/light_gray" />
 

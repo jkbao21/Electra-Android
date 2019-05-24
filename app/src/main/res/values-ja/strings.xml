@@ -27,27 +27,27 @@
     <!-- Delisted token alert banner message -->
     <string name="Account.delistedToken">発行者がERC20のサポートを終了することを決定した為、このトークンはリストから外れています。 \n\nそれらのトークンを他のプラットフォームに転送することは依然可能かもしれません。詳しくは、サポートページをご覧ください。</string>
     <!-- $10000 per BTC -->
-    <string name="Account.exchangeRate">%2$sあたり%1$s BTC</string>
+    <string name="Account.exchangeRate">%2$sあたり%1$s</string>
     <!-- Loading Wallet Message -->
     <string name="Account.loadingMessage">ウォレット読み込み中</string>
     <!-- Default wallet name -->
-    <string name="AccountHeader.defaultWalletName">Electra</string>
+    <string name="AccountHeader.defaultWalletName">My Electra</string>
     <!-- Third party keyboard warning -->
-    <string name="Alert.customKeyboard.android">現在、サードパーティーのキーボードを使用しているようです。これを使うと入力した内容が記録され、ペーパー・キーが盗まれる可能性があります。追加の保護措置としてAndroidのデフォルトキーボードに切り替えてください。</string>
+    <string name="Alert.customKeyboard.android">現在、サードパーティーのキーボードを使用しているようです。これを使うと入力した内容が記録され、復元フレーズが盗まれる可能性があります。追加の保護措置としてAndroidのデフォルトキーボードに切り替えてください。</string>
     <!-- Error alert title -->
     <string name="Alert.error">エラー</string>
     <!-- Keystore error -->
     <string name="Alert.keystore.generic.android">Android OSのKeystoreに問題があります。support@electraproject.org にお問い合わせください。</string>
     <!-- KeyStore error, keys are invalidated -->
-    <string name="Alert.keystore.invalidated.android">お使いのAndroidロック画面が無効にされたため、暗号化されたブレッドのデータはつい最近無効になりました。</string>
+    <string name="Alert.keystore.invalidated.android">お使いのAndroid端末のロック画面が無効にされたため、暗号化されたデータは最近無効になりました。</string>
     <!-- Keystore error title -->
     <string name="Alert.keystore.title.android">Android KeyStoreエラー</string>
     <!-- No internet alert message -->
-    <string name="Alert.noInternet">インターネット接続が見つかりません。接続を確認してから、もう一度お試しください。</string>
+    <string name="Alert.noInternet">インターネットに接続できません。接続を確認してから、もう一度お試しください。</string>
     <!-- General error message -->
-    <string name="Alert.somethingWentWrong">何か問題が生じました。再度お試しください。</string>
+    <string name="Alert.somethingWentWrong">何らかの問題が発生しました。再度お試しください。</string>
     <!-- Request timed out error message -->
-    <string name="Alert.timedOut">リクエストはタイムアウトしました。接続を確認して、もう一度お試しください。</string>
+    <string name="Alert.timedOut">リクエストがタイムアウトしました。接続を確認して、もう一度お試しください。</string>
     <!-- Warning alert title -->
     <string name="Alert.warning">警告</string>
     <!-- 'the addresses were copied'' Alert title -->
@@ -65,15 +65,15 @@
     <!-- Send success alert header label (confirmation that the send happened) -->
     <string name="Alerts.sendSuccess">送金のご確認</string>
     <!-- Send success alert subheader label (e.g. the money was sent) -->
-    <string name="Alerts.sendSuccessSubheader">送金しました!</string>
+    <string name="Alerts.sendSuccessSubheader">送金しました！</string>
     <!-- Fingerprint was recognized by the scanner -->
     <string name="Alerts.touchIdSucceeded.android">指紋が認識されました</string>
     <!-- Tell the user where they can enable permissions to access device storage. -->
-    <string name="Android.allowFileSystemAccess">お使いのデバイスの設定でストレージの使用を許可して下さい: 「設定」&gt;「アプリ」&gt;「Electra」&gt;「許可」。</string>
+    <string name="Android.allowFileSystemAccess">お使いのデバイスの設定でストレージの使用を許可して下さい：「設定」&gt;「アプリ」&gt;「Electra」&gt;「許可」。</string>
     <!-- The "home" screen is the name of the top level menu for the app. -->
     <string name="Android.BCH.welcome.message">お使いのウォレットのBCHには、ホーム画面からアクセスすることができます。</string>
     <!-- Warning about using apps that can alter the screen -->
-    <string name="Android.screenAlteringMessage">画面変更アプリ(例: Twilight) が無効になっていなければ、Electraは正常に動作しません。</string>
+    <string name="Android.screenAlteringMessage">画面変更アプリ（例：Twilight）が無効になっていなければ、Electraは正常に動作しません。</string>
     <!-- An app that alters the screen ("screen-altering app") has been detected. -->
     <string name="Android.screenAlteringTitle">画面変更アプリが検出されました</string>
     <!-- JSON Serialization error message -->
@@ -87,7 +87,7 @@
     <!-- Confirm sending <$5.00> to <address>? -->
     <string name="BCH.confirmationMessage">%1$sを%2$sに送金することを確認する</string>
     <!-- Confirmation alert title -->
-    <string name="BCH.confirmationTitle">承認</string>
+    <string name="BCH.confirmationTitle">確認</string>
     <!-- Generic bch erorr message -->
     <string name="BCH.genericError">アカウントにBCHがない、またはフォークの後にBCHを受け取っています。</string>
     <!-- Transaction ID copied message -->
@@ -105,7 +105,7 @@
     <!-- Approve button label -->
     <string name="BitID.approve">承認する</string>
     <!-- <sitename> is requesting authentication using your Electra wallet -->
-    <string name="BitID.authenticationRequest">%1$sがビットコインウォレットを使っての認証を求めています</string>
+    <string name="BitID.authenticationRequest">%1$sがElectraウォレットを使っての認証を求めています</string>
     <!-- Deny button label -->
     <string name="BitID.deny">拒否する</string>
     <!-- BitID error alert title -->
@@ -145,7 +145,7 @@
     <!-- Settings button label -->
     <string name="Button.settings">設定</string>
     <!-- Settings button label -->
-    <string name="Button.submit">確認</string>
+    <string name="Button.submit">送信</string>
     <!-- Yes button -->
     <string name="Button.yes">はい</string>
     <!-- Camera plugin instruction -->
@@ -154,22 +154,24 @@
     <string name="Confirmation.amountLabel">送る金額：</string>
     <!-- Network Fee: ($1.00) -->
     <string name="Confirmation.feeLabel">ネットワーク手数料：</string>
+    <!-- Network Fee for ETH/ERC20 transactions -->
+    <string name="Confirmation.feeLabelETH">ネットワーク手数料（ETH）：</string>
     <!-- eg. Processing time: This transaction is predicted to complete in [10-60 minutes]. -->
-    <string name="Confirmation.processingTime">処理時間: この取引は%1$sで完了する見込みです。</string>
+    <string name="Confirmation.processingTime">処理時間：この取引は%1$sで完了する見込みです。</string>
     <!-- Label for "send" button on final confirmation screen -->
     <string name="Confirmation.send">送金する</string>
     <!-- Confirmation Screen title -->
-    <string name="Confirmation.title">承認</string>
+    <string name="Confirmation.title">確認</string>
     <!-- To: (address) -->
     <string name="Confirmation.to">送金先</string>
     <!-- Total Cost: ($5.00) -->
     <string name="Confirmation.totalLabel">費用合計：</string>
     <!-- Confirm paper phrase error message -->
-    <string name="ConfirmPaperPhrase.error">入力された言葉がお客様のペーパーキーと一致しません。もう一度お試し下さい。</string>
+    <string name="ConfirmPaperPhrase.error">入力された単語がお客様の復元フレーズと一致しません。もう一度お試し下さい。</string>
     <!-- Confirm paper phrase view label. -->
     <string name="ConfirmPaperPhrase.label">全て正しく書き留められていることを確認するため、復元フレーズの中から下記の単語を入力してください。</string>
     <!-- Word label eg. Word #1, Word #2 -->
-    <string name="ConfirmPaperPhrase.word">フレーズ #%1$s</string>
+    <string name="ConfirmPaperPhrase.word">単語 #%1$s</string>
     <!-- Agree to legal terms button -->
     <string name="Crowdsale.agree">同意する</string>
     <!-- As in "(tap here to) buy (some) tokens" -->
@@ -181,7 +183,7 @@
     <!-- Retry Identity verification button -->
     <string name="Crowdsale.retry">再試行する</string>
     <!-- Electra denomination picker label -->
-    <string name="DefaultCurrency.bitcoinLabel">ビットコインの表示単位</string>
+    <string name="DefaultCurrency.bitcoinLabel">Electraの表示単位</string>
     <!-- Exchange rate label -->
     <string name="DefaultCurrency.rateLabel">為替レート</string>
     <!-- The wallet is disabled. -->
@@ -207,11 +209,11 @@
     <!-- You can customize your Face ID Spending Limit from the [menu] -->
     <string name="FaceIDSettings.customizeText">%1$sからFace ID使用限度額をカスタマイズすることができます。</string>
     <!-- Face Id screen label -->
-    <string name="FaceIDSettings.label">自分の顔を使って、ブレッドのロックを解除して、設定された使用限度額までお金を送金しましょう。</string>
+    <string name="FaceIDSettings.label">自分の顔を使って、Electraのロックを解除して、設定された使用限度額までお金を送金しましょう。</string>
     <!-- Title of the screen for setting the Face ID Spending Limit -->
     <string name="FaceIDSettings.linkText">Face ID使用限度額画面</string>
     <!-- Setting to turn on Face ID for Electra -->
-    <string name="FaceIDSettings.switchLabel">ブレッド利用時にFace IDを有効にする</string>
+    <string name="FaceIDSettings.switchLabel">Electra利用時にFace IDを有効にする</string>
     <!-- Face ID settings view title -->
     <string name="FaceIDSettings.title">Face ID</string>
     <!-- Instructions on how to turn on face id on the iPhone. Please ensure the name of the menu in this string matches the wording Apple uses in the iPhone menu. -->
@@ -227,11 +229,11 @@
     <!-- Warning message for economy fee -->
     <string name="FeeSelector.economyWarning">このオプションは早く送金を済ませたい方にはお勧めしません。</string>
     <!-- E.g. Estimated delivery: 10-60 minutes -->
-    <string name="FeeSelector.estimatedDeliver">推定送金時間: %1$s</string>
+    <string name="FeeSelector.estimatedDeliver">推定送金時間：%1$s</string>
     <!-- [This transaction will complete in] 2-5 minutes -->
     <string name="FeeSelector.ethTime">2〜5分</string>
     <!-- Regular fee -->
-    <string name="FeeSelector.regular">レギュラー</string>
+    <string name="FeeSelector.regular">通常</string>
     <!-- E.g. [This transaction is predicted to complete in] 10-60 minutes -->
     <string name="FeeSelector.regularTime">10～60分</string>
     <!-- Fee Selector title -->
@@ -251,13 +253,13 @@
     <!-- Checking private key balance progress view text -->
     <string name="Import.checking">秘密鍵の残高確認中...</string>
     <!-- Sweep private key confirmation message -->
-    <string name="Import.confirm">この秘密鍵からウォレットに%1$sを送信しますか? ビットコインネットワークは手数料%2$sを頂戴します。</string>
+    <string name="Import.confirm">この秘密鍵からウォレットに%1$sを送信しますか？Electraネットワークは手数料%2$sを頂戴します。</string>
     <!-- Duplicate key error message -->
     <string name="Import.Error.duplicate">この秘密鍵はすでにあなたのウォレットに存在しています。</string>
     <!-- empty private key error message -->
     <string name="Import.Error.empty">この秘密鍵には何も入っていません。</string>
     <!-- High fees error message -->
-    <string name="Import.Error.highFees">トランザクション手数料がこのプライベートキーのアカウントにある残高を上回っています。</string>
+    <string name="Import.Error.highFees">トランザクション手数料がこの秘密鍵のアカウントにある残高を上回っています。</string>
     <!-- Not a valid private key error message -->
     <string name="Import.Error.notValid">有効な秘密鍵ではありません</string>
     <!-- Import signing error message -->
@@ -265,29 +267,29 @@
     <!-- [Redeem] the funds stored on this private key. -->
     <string name="Import.importButton">取り出す</string>
     <!-- Importing wallet progress view label -->
-    <string name="Import.importing">秘密鍵から取り出し中</string>
+    <string name="Import.importing">ウォレットをインポート中</string>
     <!-- Caption for graphics -->
-    <string name="Import.leftCaption">秘密鍵</string>
+    <string name="Import.leftCaption">ウォレットをインポートしました</string>
     <!-- Import wallet intro screen message -->
-    <string name="Import.message">秘密鍵は通常QRコードとして紙に印刷され、オフラインでの資金保管に使用されています。秘密鍵からの引き出しをすると秘密鍵が管理する資金全額を1回の取引でお使いのElectraに送金します。</string>
+    <string name="Import.message">ウォレットをインポートすると、1回のトランザクションで、他のウォレットからすべての資金がElectraウォレットに転送されます。</string>
     <!-- Enter password alert view title -->
     <string name="Import.password">この秘密鍵はパスワードで保護されています。</string>
     <!-- password textfield placeholder -->
     <string name="Import.passwordPlaceholder">パスワード</string>
     <!-- Caption for graphics -->
-    <string name="Import.rightCaption">あなたの\nブレッドの\nウォレット</string>
+    <string name="Import.rightCaption">あなたの\nElectraの\nウォレット</string>
     <!-- Scan Private key button label -->
     <string name="Import.scan">秘密鍵をスキャン</string>
     <!-- Import wallet success alert title -->
     <string name="Import.success">成功</string>
     <!-- Successfully imported wallet message body -->
-    <string name="Import.SuccessBody">正常に秘密鍵からの資金引き出しが行われました。</string>
+    <string name="Import.SuccessBody">正常にウォレットがインポートされました。</string>
     <!-- Import Wallet screen title -->
-    <string name="Import.title">秘密鍵からの引き出し</string>
+    <string name="Import.title">ウォレットをインポート</string>
     <!-- Unlocking Private key activity view message. -->
     <string name="Import.unlockingActivity">鍵のロックを解除中です</string>
     <!-- Import wallet intro warning message -->
-    <string name="Import.warning">秘密鍵から資金を引き出しても、取引履歴やその他の詳細はインポートされません。</string>
+    <string name="Import.warning">ウォレットのインポートには、取引履歴やその他の詳細は含まれません。</string>
     <!-- Wrong password alert message -->
     <string name="Import.wrongPassword">パスワードが違います。もう一度お試しください。</string>
     <!-- Close app button -->
@@ -295,9 +297,9 @@
     <!-- Ignore jailbreak warning button -->
     <string name="JailbreakWarnings.ignore">無視する</string>
     <!-- Jailbreak warning message -->
-    <string name="JailbreakWarnings.messageWithBalance">端末がセキュリティの危険にさらされている可能性があります\n 「脱獄」アプリはブレッドのキーチェーンデータにアクセスし、あなたのビットコインを盗む恐れがあります!  直ちにこのウォレットを完全削除して、安全な端末で復元して下さい。</string>
+    <string name="JailbreakWarnings.messageWithBalance">端末がセキュリティの危険にさらされている可能性があります\n 「脱獄」アプリはElectraのキーチェーンデータにアクセスし、あなたのElectraを盗む恐れがあります!  直ちにこのウォレットを完全削除して、安全な端末で復元して下さい。</string>
     <!-- Jailbreak warning message -->
-    <string name="JailbreakWarnings.messageWithoutBalance">端末がセキュリティの危険にさらされている可能性があります\n「脱獄」アプリはブレッドのキーチェーンデータにアクセスし、あなたのビットコインを盗む恐れがあります!  ブレッドは必ず脱獄端末以外で利用してください。</string>
+    <string name="JailbreakWarnings.messageWithoutBalance">端末がセキュリティの危険にさらされている可能性があります\n「脱獄」アプリはElectraのキーチェーンデータにアクセスし、あなたのElectraを盗む恐れがあります!  Electraは必ず脱獄端末以外で利用してください。</string>
     <!-- Jailbreak warning title -->
     <string name="JailbreakWarnings.title">警告</string>
     <!-- Wipe wallet button -->
@@ -307,19 +309,19 @@
     <!-- Decline link wallet button label -->
     <string name="LinkWallet.decline">拒否する</string>
     <!-- Link Wallet view dislaimer footer -->
-    <string name="LinkWallet.disclaimer">外部のアプリは,このデバイスの承認がないと送金できません</string>
+    <string name="LinkWallet.disclaimer">外部のアプリは、このデバイスの承認がないと送金できません</string>
     <!-- Link Wallet view title above domain list -->
-    <string name="LinkWallet.domainTitle">ご注意:以下のいずれかのドメインに属している場合は,このアプリとのみ情報をやり取りしてください</string>
+    <string name="LinkWallet.domainTitle">ご注意：以下のいずれかのドメインに属している場合は、このアプリのみで情報をやり取りしてください</string>
     <!-- Link wallet logo footer text -->
     <string name="LinkWallet.logoFooter">安全なチェックアウト</string>
     <!-- Link Wallet view title above permissions list -->
-    <string name="LinkWallet.permissionsTitle">このアプリでできること:</string>
+    <string name="LinkWallet.permissionsTitle">このアプリでできること：</string>
     <!-- Link Wallet view title -->
     <string name="LinkWallet.title">リンクウォレット</string>
     <!-- Location services disabled error -->
     <string name="LocationPlugin.disabled">位置情報サービスが無効化されています。</string>
     <!-- No permissions for location services -->
-    <string name="LocationPlugin.notAuthorized">ブレッドは位置情報サービスへのアクセスが許可されていません。</string>
+    <string name="LocationPlugin.notAuthorized">Electraは位置情報サービスへのアクセスが許可されていません。</string>
     <!-- Wallet creation date prefix -->
     <string name="ManageWallet.creationDatePrefix">あなたは%1$sにご自身のウォレットを作成しました</string>
     <!-- Manage wallet description text -->
@@ -351,7 +353,7 @@
     <!-- Switch to automatic mode button label -->
     <string name="NodeSelector.automaticButton">自動モードに切り替える</string>
     <!-- Node is connected label -->
-    <string name="NodeSelector.connected">接続中</string>
+    <string name="NodeSelector.connected">接続済み</string>
     <!-- Node is connecting label -->
     <string name="NodeSelector.connecting">接続中</string>
     <!-- Enter node ip address view body -->
@@ -367,7 +369,7 @@
     <!-- Node status label -->
     <string name="NodeSelector.statusLabel">ノードの接続状況</string>
     <!-- Node Selector view title -->
-    <string name="NodeSelector.title">ビットコインノード</string>
+    <string name="NodeSelector.title">Electraノード</string>
     <!-- Onboarding screen 'I'll browse first' button -->
     <string name="Onboarding.browseFirst">まずは閲覧</string>
     <!-- Onboarding screen 'Buy some coin' button -->
@@ -381,15 +383,15 @@
     <!-- Onboarding screen Skip button title that allows the user to exit the onboarding process. -->
     <string name="Onboarding.skip">スキップ</string>
     <!-- Onboarding screen Page 4 title -->
-    <string name="OnboardingPageFour.title">最低50ドルから,今すぐ投資を始めましょう！</string>
+    <string name="OnboardingPageFour.title">最低50ドルから、今すぐ投資を始めましょう！</string>
     <!-- Onboarding screen Page 1 title -->
-    <string name="OnboardingPageOne.title">新しいグローバルウォレットにようこそ！</string>
+    <string name="OnboardingPageOne.title">新しいElectraウォレットにようこそ！</string>
     <!-- Onboarding screen Page 3 subtitle -->
     <string name="OnboardingPageThree.subtitle">Electraで容易に安全に投資して多様化しましょう。</string>
     <!-- Onboarding screen Page 3 title -->
-    <string name="OnboardingPageThree.title">ビットコイン,トークン,その他のデジタル通貨を購入・取引しましょう。</string>
+    <string name="OnboardingPageThree.title">Electra、トークン、その他の暗号通貨を購入・取引しましょう。</string>
     <!-- Onboarding screen Page 2 subtitle -->
-    <string name="OnboardingPageTwo.subtitle">当社の保護下には,60億USドル超相当の資産があります。</string>
+    <string name="OnboardingPageTwo.subtitle">当社の保護下には、60億USドル超相当の資産があります。</string>
     <!-- Onboarding screen Page 2 title -->
     <string name="OnboardingPageTwo.title">世界中にいるElectraを信頼する150万人の仲間になりましょう。</string>
     <!-- Eg. Send 1.0Eth to purchase CCC -->
@@ -407,19 +409,19 @@
     <!-- Payment too small alert title -->
     <string name="PaymentProtocol.Errors.smallOutputError">支払いが行えませんでした</string>
     <!-- Amount too small error message -->
-    <string name="PaymentProtocol.Errors.smallPayment">%1$s未満のビットコインの支払いは行えません。</string>
+    <string name="PaymentProtocol.Errors.smallPayment">Electraの送金額は%1$s以上である必要があります。Electraの取引手数料はこの取引の金額を超えています。金額を増やしてもう一度やり直してください。</string>
     <!-- Output too small error message. -->
-    <string name="PaymentProtocol.Errors.smallTransaction">ビットコインの送金額は%1$s以上である必要があります。</string>
+    <string name="PaymentProtocol.Errors.smallTransaction">Electraの送金額は%1$s以上である必要があります。</string>
     <!-- Unsupported signature type payment protocol error message -->
     <string name="PaymentProtocol.Errors.unsupportedSignatureType">サポートされていないタイプの署名です</string>
     <!-- Untrusted certificate payment protocol error message -->
     <string name="PaymentProtocol.Errors.untrustedCertificate">信頼できない証明書</string>
     <!-- Body text for a prompt that asks the user to subscribe to email updates to find out product updates. -->
-    <string name="Prompts.Email.body">誰よりも早く重要なサポートを受け,製品をアップデートしましょう</string>
+    <string name="Prompts.Email.body">誰よりも早く重要なサポートを受け、製品をアップデートしましょう</string>
     <!-- Placeholder text for an email address text field. -->
     <string name="Prompts.Email.placeholder">メールアドレスを入力してください</string>
     <!-- Body text that is shown when the user successfully subscribes to email updates. -->
-    <string name="Prompts.Email.successBody">アップデートを受け取るための申し込みが完了しました</string>
+    <string name="Prompts.Email.successBody">更新情報を受け取るための申し込みが完了しました</string>
     <!-- Text that is displayed as a footnote when the user successfully subscribes to email updates. -->
     <string name="Prompts.Email.successFootnote">継続的なサポートに感謝いたします</string>
     <!-- Title that is shown when the user successfully subscribes to email updates. -->
@@ -435,11 +437,11 @@
     <!-- No Passcode set warning title -->
     <string name="Prompts.NoPasscode.title">端末のパスコードをオンにする</string>
     <!-- Instruction how to enable device encryption -->
-    <string name="Prompts.NoScreenLock.body.android">ウォレットを守るため機器の画面をロックする必要があります。「設定」 &gt; 「セキュリティ」 &gt; 「画面ロック」で有効にしてから続行してください。</string>
+    <string name="Prompts.NoScreenLock.body.android">ウォレットを守るため端末の画面をロックする必要があります。「設定」 &gt; 「セキュリティ」 &gt; 「画面ロック」で有効にしてから続行してください。</string>
     <!-- Device encryption prompt title -->
     <string name="Prompts.NoScreenLock.title.android">画面ロックが無効になっています</string>
     <!-- Warning about paper key. -->
-    <string name="Prompts.PaperKey.body">携帯電話の紛失時や変更時に備えて、お客様の復元フレーズは必ず保管しておいてください。続けるにはここをタップしてください。</string>
+    <string name="Prompts.PaperKey.body">携帯電話の紛失時や変更時に備えて、復元フレーズは必ず保管しておいてください。続けるにはここをタップしてください。</string>
     <!-- An action is required (You must do this action). -->
     <string name="Prompts.PaperKey.title">アクションが要求されました</string>
     <!-- Transaction rejected prompt body -->
@@ -461,7 +463,7 @@
     <!-- Button on fingerprint prompt so the user can enter their PIN instead -->
     <string name="Prompts.TouchId.usePin.android">PIN</string>
     <!-- Upgrade PIN prompt body. -->
-    <string name="Prompts.UpgradePin.body">ブレッドのPINコードは6桁にアップグレードされました。こちらをタップして更新してください。</string>
+    <string name="Prompts.UpgradePin.body">ElectraのPINコードは6桁にアップグレードされました。こちらをタップして更新してください。</string>
     <!-- Upgrade PIN prompt title. -->
     <string name="Prompts.UpgradePin.title">PINコードを更新する</string>
     <!-- Notifications will be added later but users can set their preferences now, which is why we specify "in the future". -->
@@ -469,7 +471,7 @@
     <!-- Push notifications are disabled alert title" -->
     <string name="PushNotifications.disabled">通知が無効になっています</string>
     <!-- Push notifications settings instructions -->
-    <string name="PushNotifications.enableInstructions">アラートを受け取るには,設定で通知をオンにしてください</string>
+    <string name="PushNotifications.enableInstructions">アラートを受け取るには、設定で通知をオンにしてください</string>
     <!-- Push notifications toggle switch label -->
     <string name="PushNotifications.label">プッシュ通知</string>
     <!-- Push notifications are off label -->
@@ -499,7 +501,7 @@
     <!-- Enter paper key instruction -->
     <string name="RecoverWallet.instruction">復元フレーズを入力してください</string>
     <!-- Recover wallet intro -->
-    <string name="RecoverWallet.intro">復元フレーズを使用し、あなたのブレッドを復元する。</string>
+    <string name="RecoverWallet.intro">復元フレーズを使用し、あなたのElectraウォレットを復元する。</string>
     <!-- Invalid paper key message -->
     <string name="RecoverWallet.invalid">あなたが入力した復元フレーズは無効です。それぞれの単語を再確認の上、もう一度お試しください。</string>
     <!-- Previous button accessibility label -->
@@ -523,11 +525,11 @@
     <!-- Alert message body -->
     <string name="ReScan.alertMessage">同期中は送金することができません。</string>
     <!-- Alert message title -->
-    <string name="ReScan.alertTitle">ブロックチェーンの同期をしますか?</string>
+    <string name="ReScan.alertTitle">ブロックチェーンの同期をしますか？</string>
     <!-- extimated time -->
     <string name="ReScan.body1">20〜45分</string>
     <!-- Syncing explanation -->
-    <string name="ReScan.body2">ビットコインネットワークでトランザクションが完了したと表示されているが、Electra上では完了と表示されない場合。</string>
+    <string name="ReScan.body2">ネットワークでトランザクションが完了したと表示されているが、Electra上では完了と表示されない場合。</string>
     <!-- Syncing explanation -->
     <string name="ReScan.body3">送金しているが、拒否され続けている場合。</string>
     <!-- Start Sync button label -->
@@ -539,7 +541,7 @@
     <!-- Subheader label -->
     <string name="ReScan.subheader1">推定時間</string>
     <!-- Subheader label -->
-    <string name="ReScan.subheader2">いつ同期しますか?</string>
+    <string name="ReScan.subheader2">いつ同期しますか？</string>
     <!-- Scan Electra address camera flash toggle -->
     <string name="Scanner.flashButtonLabel">カメラのフラッシュ</string>
     <!-- Complete filter label -->
@@ -555,15 +557,15 @@
     <!-- Face ID button title -->
     <string name="SecurityCenter.faceIdTitle">Face ID</string>
     <!-- Paper Key button description -->
-    <string name="SecurityCenter.paperKeyDescription">あなたが携帯電話を紛失したり、アップグレードした場合にご自身のビットコインへアクセスできる唯一の方法です。</string>
+    <string name="SecurityCenter.paperKeyDescription">あなたが携帯電話を紛失したり、機種変更した場合にご自身の資産にアクセスできる唯一の方法です。</string>
     <!-- Paper Key button title -->
     <string name="SecurityCenter.paperKeyTitle">復元フレーズ</string>
     <!-- PIN button description -->
-    <string name="SecurityCenter.pinDescription">アクセス権限のないユーザーからあなたのブレッドを守ります。</string>
+    <string name="SecurityCenter.pinDescription">アクセス権限のないユーザーからあなたのElectraウォレットを守ります。</string>
     <!-- PIN button title -->
     <string name="SecurityCenter.pinTitle">6桁のPINコード</string>
     <!-- Touch ID button description -->
-    <string name="SecurityCenter.touchIdDescription">Electraロック解除の他、設定した限度額までの送金も指紋認証で出来ます。</string>
+    <string name="SecurityCenter.touchIdDescription">Electraウォレットのロック解除の他、設定した限度額までの送金も指紋認証で出来ます。</string>
     <!-- Touch ID button title -->
     <string name="SecurityCenter.touchIdTitle">Touch ID</string>
     <!-- Security center fingerprint authentication button -->
@@ -573,7 +575,7 @@
     <!-- Segwit enabled confirmation description -->
     <string name="Segwit.ConfirmationInstructionsDescription">Electraの前進にご協力いただきありがとうございます。</string>
     <!-- Segwit instructions -->
-    <string name="Segwit.ConfirmationInstructionsInstructions">SegWit対応はまだベータ版の機能です。\n一度SegWitが有効化されると取り消しはできません。設定画面の下でレガシーアドレスをご確認いただけます。\nSegWitを有効化したユーザーは,第三者のサービス（仮想通貨取引を含む）を利用できない場合があります。緊急の場合は,プリファレンス &gt; Electra設定から,レガシーアドレスを作成することができます。\n将来のアップデートでは,全ユーザーに対して自動的にSegWitが有効化されます。</string>
+    <string name="Segwit.ConfirmationInstructionsInstructions">SegWit対応はまだベータ版の機能です。\n一度SegWitが有効化されると取り消しはできません。設定画面の下でレガシーアドレスをご確認いただけます。\nSegWitを有効化したユーザーは、第三者のサービス（仮想通貨取引を含む）を利用できない場合があります。緊急の場合は、プリファレンス &gt; Electra設定から、レガシーアドレスを作成することができます。\n将来のアップデートでは、全ユーザーに対して自動的にSegWitが有効化されます。</string>
     <!-- Segwit extra confirmation title. -->
     <string name="Segwit.ConfirmChoiceLayout">「SegWitの有効化」は取り消しできない機能です。継続してよろしいですか？</string>
     <!-- Segwit enableButton -->
@@ -581,15 +583,15 @@
     <!-- Send money amount label -->
     <string name="Send.amountLabel">金額</string>
     <!-- Balance: $4.00 -->
-    <string name="Send.balance">残高: %1$s</string>
+    <string name="Send.balance">残高：%1$s</string>
     <!-- Instructions how to allow the camera access for the app -->
-    <string name="Send.cameraUnavailabeMessage.android">「設定」 &gt; 「アプリ」 &gt; 「ブレッド」 &gt; 「許可」でカメラへのアクセスを許可してください</string>
+    <string name="Send.cameraUnavailabeMessage.android">「設定」 &gt; 「アプリ」 &gt; 「Electra」 &gt; 「許可」でカメラへのアクセスを許可してください</string>
     <!-- Permission required to access camera -->
-    <string name="Send.cameraUnavailabeTitle.android">ブレッドはカメラへのアクセスを許可されていません</string>
+    <string name="Send.cameraUnavailabeTitle.android">Electraはカメラへのアクセスを許可されていません</string>
     <!-- Camera not allowed message -->
     <string name="Send.cameraunavailableMessage">設定画面へ移動し、カメラへのアクセス許可をしてください。</string>
     <!-- Camera not allowed alert title -->
-    <string name="Send.cameraUnavailableTitle">ブレッドはカメラへのアクセスが許可されていません</string>
+    <string name="Send.cameraUnavailableTitle">Electraはカメラへのアクセスが許可されていません</string>
     <!-- Warning when sending to self. -->
     <string name="Send.containsAddress">送金先がご自身のアドレスになっています。自分宛てには送金できません。</string>
     <!-- Could not create transaction alert title -->
@@ -601,13 +603,13 @@
     <!-- "(you) can't send (to your)self" -->
     <string name="Send.ethSendSelf">自分に送金することはできません。</string>
     <!-- Network Fee: $0.01 -->
-    <string name="Send.fee">ネットワーク手数料: %1$s</string>
+    <string name="Send.fee">ネットワーク手数料：%1$s</string>
     <!-- Payee identity not certified alert title. -->
     <string name="Send.identityNotCertified">受取人の本人確認が行われていません。</string>
     <!-- Insufficient funds error -->
     <string name="Send.insufficientFunds">残高不足</string>
     <!-- e,g, "You must have at least $2 in your wallet in order to transfer this type of token." In this case, "token" is an ethereum ERC20 token. -->
-    <string name="Send.insufficientGasMessage">このタイプのトークンを送金するには、ウォレットに%1$s以上保有していなければなりません。今すぐイーサリアムのウォレットに移動しますか?</string>
+    <string name="Send.insufficientGasMessage">このタイプのトークンを送金するには、ウォレットに%1$s以上保有していなければなりません。今すぐイーサリアムのウォレットに移動しますか？</string>
     <!-- Your ethereum balance is insufficient to complete this action. -->
     <string name="Send.insufficientGasTitle">イーサリアムの残高不足</string>
     <!-- e.g. The destination is not a valid (Electra) address. -->
@@ -619,7 +621,7 @@
     <!-- Is rescanning error message -->
     <string name="Send.isRescanning">再スキャンを行っている間は送金できません。</string>
     <!-- Warning when the user is trying to send bitcoin cash to a legacy bitcoin address (possible, but probably not what the user wants to do) -->
-    <string name="Send.legacyAddressWarning">警告: これはレガシービットコインアドレスです。本当にビットコインキャッシュを送金しますか?</string>
+    <string name="Send.legacyAddressWarning">警告：これはレガシービットコインアドレスです。本当にビットコインキャッシュを送金しますか？</string>
     <!-- We are loading the request (now) -->
     <string name="Send.loadingRequest">リクエストをロード中</string>
     <!-- Transaction fee could not be be caluculated error. -->
@@ -647,7 +649,7 @@
     <!-- Send money to label -->
     <string name="Send.toLabel">宛先</string>
     <!-- Adress already used alert message - first part -->
-    <string name="Send.UsedAddress.firstLine">ビットコインアドレスは、個人利用のみを想定しています。</string>
+    <string name="Send.UsedAddress.firstLine">Electraアドレスは、個人利用のみを想定しています。</string>
     <!-- Adress already used alert message - second part -->
     <string name="Send.UsedAddress.secondLIne">再利用は、送金側と受取側の両方のプライバシーの侵害につながるおそれがあり、受取人がアドレスを直接管理しない場合、損害につながるおそれもあります。</string>
     <!-- Adress already used alert title -->
@@ -669,7 +671,7 @@
     <!-- Enable segwit. -->
     <string name="Settings.EnableSegwit">Segwitを有効にする</string>
     <!-- Are you enjoying Electra alert message body -->
-    <string name="Settings.enjoying">ブレッドをお楽しみいただいていますか?</string>
+    <string name="Settings.enjoying">Electraをお楽しみいただいていますか？</string>
     <!-- Face ID spending limit label -->
     <string name="Settings.faceIdLimit">Face ID使用限度額</string>
     <!-- Redeem the funds stored on this private key. -->
@@ -699,7 +701,7 @@
     <!-- View legacy address (old format). -->
     <string name="Settings.ViewLegacyAddress">受取用レガシーアドレスを表示</string>
     <!-- Receive Electra instructions -->
-    <string name="Settings.ViewLegacyAddressReceiveDescription">このアドレスにはElectra（BTC）だけを送信してください。このアドレスに送信された他の資産は,いかなるものも永久に失われます。</string>
+    <string name="Settings.ViewLegacyAddressReceiveDescription">このアドレスにはElectra（ECA）だけを送信してください。このアドレスに送信された他の資産は、いかなるものも永久に失われます。</string>
     <!-- Receive Electra -->
     <string name="Settings.ViewLegacyAddressReceiveTitle">Electraを受け取りましょう</string>
     <!-- Wallet Settings section header -->
@@ -707,15 +709,15 @@
     <!-- Unlink/delete your wallet from the current device. -->
     <string name="Settings.wipe">この端末から削除する</string>
     <!-- Share data view body -->
-    <string name="ShareData.body">匿名データをシェアして、ブレッドの改善にご協力ください。これにはいかなる財務情報も含まれません。私たちはあなたの財務プライバシーを尊重しています。</string>
+    <string name="ShareData.body">匿名データをシェアして、Eldctraの改善にご協力ください。これにはいかなる財務情報も含まれません。私たちはあなたの財務プライバシーを尊重しています。</string>
     <!-- Share data header -->
-    <string name="ShareData.header">データを共有しますか?</string>
+    <string name="ShareData.header">データを共有しますか？</string>
     <!-- Share data switch label. -->
-    <string name="ShareData.toggleLabel">匿名データをシェアしますか?</string>
+    <string name="ShareData.toggleLabel">匿名データをシェアしますか？</string>
     <!-- button label -->
     <string name="StartPaperPhrase.againButtonTitle">復元フレーズをもう一度書き留めてください</string>
     <!-- Paper key explanation text. -->
-    <string name="StartPaperPhrase.body">復元フレーズは、スマートフォンを紛失したり、盗まれたり、壊れたり、アップグレードした場合に、ご自身のブレッドを元に戻せる唯一の方法です。\n\n単語の一覧を表示しますので、紙に書き留めて安全に保管してください。</string>
+    <string name="StartPaperPhrase.body">復元フレーズは、スマートフォンを紛失したり、盗まれたり、壊れたり、アップグレードした場合に、ご自身のElectraウォレットを元に戻せる唯一の方法です。\n\n単語の一覧を表示しますので、紙に書き留めて安全に保管してください。</string>
     <!-- button label -->
     <string name="StartPaperPhrase.buttonTitle">復元フレーズを書き留めてください</string>
     <!-- Argument is date -->
@@ -723,7 +725,7 @@
     <!-- button label -->
     <string name="StartViewController.createButton">新しいウォレットを作成する</string>
     <!-- Start view message -->
-    <string name="StartViewController.message">最も安全にビットコインを使う手段。</string>
+    <string name="StartViewController.message">最も安全に使う手段。</string>
     <!-- Recover your wallet from a backup -->
     <string name="StartViewController.recoverButton">ウォレットを復元する</string>
     <!-- Syncing view connectiong state header text -->
@@ -767,13 +769,13 @@
     <!-- Fingerprint Is Not Setup -->
     <string name="TouchIdSettings.disabledWarning.title.android">指紋認証が有効ではありません</string>
     <!-- Touch Id screen label -->
-    <string name="TouchIdSettings.label">設定された限度額以下の送金を行う場合には、指紋認証でご自身のブレッドのロックを解除できます。</string>
+    <string name="TouchIdSettings.label">設定された限度額以下の送金を行う場合には、指紋認証でご自身のElectraウォレットのロックを解除できます。</string>
     <!-- Link Text (see TouchIdSettings.customizeText) -->
     <string name="TouchIdSettings.linkText">Touch ID利用限度額画面</string>
     <!-- Spending Limit: b100,000 ($100) -->
-    <string name="TouchIdSettings.spendingLimit">利用限度: %1$s (%2$s)</string>
+    <string name="TouchIdSettings.spendingLimit">利用限度：%1$s (%2$s)</string>
     <!-- Touch id switch label. -->
-    <string name="TouchIdSettings.switchLabel">ブレッドでTouch IDの有効化</string>
+    <string name="TouchIdSettings.switchLabel">ElectraでTouch IDの有効化</string>
     <!-- Enable fingerprint for this wallet called Electra -->
     <string name="TouchIdSettings.switchLabel.android">指紋認証を有効にする</string>
     <!-- Touch ID settings view title -->
@@ -799,7 +801,7 @@
     <!-- Transaction is confirming status text -->
     <string name="Transaction.confirming">進行中</string>
     <!-- eg. Ending balance: $50.00 -->
-    <string name="Transaction.ending">期末残高: %1$s</string>
+    <string name="Transaction.ending">期末残高：%1$s</string>
     <!-- Exchange rate on date header -->
     <string name="Transaction.exchangeOnDayReceived">受け取り時の為替レート：</string>
     <!-- Exchange rate on date header -->
@@ -807,7 +809,7 @@
     <!-- Transaction failed status text -->
     <string name="Transaction.failed">失敗</string>
     <!-- (b600 fee) -->
-    <string name="Transaction.fee">(%1$s 手数料)</string>
+    <string name="Transaction.fee">（%1$s 手数料）</string>
     <!-- Invalid transaction -->
     <string name="Transaction.invalid">無効</string>
     <!-- Timestamp label for event that just happened -->
@@ -815,19 +817,19 @@
     <!-- Transaction is pending status text -->
     <string name="Transaction.pending">保留中</string>
     <!-- Receive status text: 'In progress: 20%' -->
-    <string name="Transaction.receivedStatus">進行中: %1$s</string>
+    <string name="Transaction.receivedStatus">進行中：%1$s</string>
     <!-- Send status text: 'In progress: 20%' -->
-    <string name="Transaction.sendingStatus">進行中: %1$s</string>
+    <string name="Transaction.sendingStatus">進行中：%1$s</string>
     <!-- sending to <address> -->
     <string name="Transaction.sendingTo">%1$sに送金中</string>
     <!-- sent to <address> -->
     <string name="Transaction.sentTo">%1$sに送金済み</string>
     <!-- eg. Starting balance: $50.00 -->
-    <string name="Transaction.starting">期首残高: %1$s</string>
+    <string name="Transaction.starting">期首残高：%1$s</string>
     <!-- e.g. "[The money you paid was a] Fee for token transfer: Electra" (Electra is the token that was transfered) -->
-    <string name="Transaction.tokenTransfer">トークン送金の手数料: %1$s</string>
+    <string name="Transaction.tokenTransfer">トークン送金の手数料：%1$s</string>
     <!-- Waiting to be confirmed string -->
-    <string name="Transaction.waiting">承認を待っています。トランザクションの完了には承認が必要となる場合があります。推定時間: 1-2時間。</string>
+    <string name="Transaction.waiting">承認を待っています。トランザクションの完了には承認が必要となる場合があります。推定時間：1〜2時間。</string>
     <!-- e.g. I received money from an account. -->
     <string name="TransactionDetails.account">アカウント</string>
     <!-- Address received from header -->
@@ -861,9 +863,9 @@
     <!-- "Received [$5] at [which of my addresses]" => This is the "at [which of my addresses]" part. -->
     <string name="TransactionDetails.from">%1$sで</string>
     <!-- Tx detail field header -->
-    <string name="TransactionDetails.gasLimitHeader">ガソリン上限</string>
+    <string name="TransactionDetails.gasLimitHeader">Gas上限</string>
     <!-- Tx detail field header -->
-    <string name="TransactionDetails.gasPriceHeader">ガソリン価格</string>
+    <string name="TransactionDetails.gasPriceHeader">Gas価格</string>
     <!-- Label showing the transaction was started (initialized) -->
     <string name="TransactionDetails.initializedTimestampHeader">初期化済み</string>
     <!-- More button title -->
@@ -915,13 +917,13 @@
     <!-- Tx detail field header -->
     <string name="TransactionDetails.totalHeader">トータル</string>
     <!-- Transaction ID header -->
-    <string name="TransactionDetails.txHashHeader">ビットコイン トランザクションID</string>
+    <string name="TransactionDetails.txHashHeader">トランザクションID</string>
     <!-- (this transaction was) Received at this address: -->
     <string name="TransactionDirection.address">このアドレスで受け取りました</string>
     <!-- (this transaction was) Sent to this address: -->
     <string name="TransactionDirection.to">このアドレスに送金しました</string>
     <!-- Disabled until date -->
-    <string name="UnlockScreen.disabled">以下まで無効: %1$s</string>
+    <string name="UnlockScreen.disabled">以下まで無効：%1$s</string>
     <!-- Unlock with FaceID accessibility label -->
     <string name="UnlockScreen.faceIdText">FaceIDでロックを解除する</string>
     <!-- My Address button title -->
@@ -933,17 +935,17 @@
     <!-- Instruction to touch the sensor for fingerprint authentication -->
     <string name="UnlockScreen.touchIdInstructions.android">タッチセンサー</string>
     <!-- TouchID prompt text -->
-    <string name="UnlockScreen.touchIdPrompt">ブレッドのロックを解除してください。</string>
+    <string name="UnlockScreen.touchIdPrompt">Electraウォレットのロックを解除してください。</string>
     <!-- Device authentication body -->
-    <string name="UnlockScreen.touchIdPrompt.android">続行するためAndroid機器のロックを解除 してください</string>
+    <string name="UnlockScreen.touchIdPrompt.android">続行するためAndroid端末のロックを解除 してください</string>
     <!-- Unlock with TouchID accessibility label -->
     <string name="UnlockScreen.touchIdText">Touch IDでロックを解除する</string>
     <!-- Device authentication title -->
     <string name="UnlockScreen.touchIdTitle.android">認証が必要です</string>
     <!-- Update PIN caption text -->
-    <string name="UpdatePin.caption">このPINコードは覚えておいてください。忘れた場合、ご自身のビットコインへアクセスできなくなります。</string>
+    <string name="UpdatePin.caption">このPINコードは覚えておいてください。忘れた場合、ご自身の資産にアクセスできなくなります。</string>
     <!-- PIN creation info. -->
-    <string name="UpdatePin.createInstruction">あなたのPINコードはご自身のブレッドのロックを解除したり、送金する時に利用します。</string>
+    <string name="UpdatePin.createInstruction">あなたのPINコードはご自身のElectraウォレットのロックを解除したり、送金する時に利用します。</string>
     <!-- Update PIN title -->
     <string name="UpdatePin.createTitle">PINコードの設定</string>
     <!-- Update PIN title -->
@@ -961,7 +963,7 @@
     <!-- Update PIN title -->
     <string name="UpdatePin.updateTitle">PINコードを更新する</string>
     <!-- Authorize to copy wallet addresses alert message -->
-    <string name="URLHandling.addressaddressListAlertMessage">ウォレットアドレスをクリップボードにコピーしますか?</string>
+    <string name="URLHandling.addressaddressListAlertMessage">ウォレットアドレスをクリップボードにコピーしますか？</string>
     <!-- Authorize to copy wallet address PIN view prompt. -->
     <string name="URLHandling.addressList">ウォレットアドレスのクリップボードへのコピーを認証</string>
     <!-- Authorize to copy wallet address alert title -->
@@ -985,7 +987,7 @@
     <!-- Updating webview message -->
     <string name="Webview.updating">更新中...</string>
     <!-- Welcome screen text. (?) will be replaced with the help icon users should look for. -->
-    <string name="Welcome.body">Electrawalletは新しい機能や見た目を備えて、Electraという名前に生まれ変わりました。\n\nヘルプをご覧になるには、画面右上にある(?)からお探しください。</string>
+    <string name="Welcome.body">あなたのElectraライト財布へようこそ。</string>
     <!-- Top title of welcome screen -->
     <string name="Welcome.title">Electraへようこそ！</string>
     <!-- Wipe wallet alert message -->
@@ -999,7 +1001,7 @@
     <!-- Enter phrase to wipe wallet instruction. (Important to explain it is the CURRENT [this wallet's] paper key that needs to be entered). -->
     <string name="WipeWallet.instruction">新しいウォレットを起動したり既存のウォレットを復元するには、まず現在インストールされているウォレットのリンクを解除する必要があります。現在使用しているウォレットの復元フレーズを入力して続行してください。</string>
     <!-- Instructions for unlinking the wallet -->
-    <string name="WipeWallet.startMessage">ご利用ウォレットのリンクを解除してこの機器から解除してください。このウォレットのリンクが解除されると、この機器で新しいウォレットを起動したり、別のウォレット再び利用できるようになります。</string>
+    <string name="WipeWallet.startMessage">ご利用ウォレットのリンクを解除してこの端末から解除してください。このウォレットのリンクが解除されると、この端末で新しいウォレットを起動したり、別のウォレット再び利用できるようになります。</string>
     <!-- Start wipe wallet view warning -->
     <string name="WipeWallet.startWarning">この端末から現在使用中のElectraウォレットへのアクセスはできなくなります。復元する際は復元フレーズが必要になります。</string>
     <!-- Unlink this wallet from this device. -->
@@ -1016,4 +1018,31 @@
     <string name="WritePaperPhrase.previous">前へ</string>
     <!-- 1 of 3 -->
     <string name="WritePaperPhrase.step">%2$dの%1$d</string>
+    <!--Added to native.strings-->
+    <string name="Segwit.HomeButton">To the Moon</string>
+    <!--Missing from native.strings-->
+    <string name="ErrorMessages.ContactSupportBug.android">アプリのバージョンに問題があるため、Electraを続行できません。問題を#%1$dでサポートに連絡してください。</string>
+    <!-- Label for the Android file chooser when we need to prompt the user to select an image file.-->
+    <string name="FileChooser.selectImageSource.android">画像を選択する</string>
+    <!--Rewards menu item-->
+    <string name="Settings.rewards">報酬</string>
+
+    <!--Rewards view expanded title.-->
+    <string name="RewardsView.expandedTitle">Electraを紹介する\n報酬</string>
+    <!--Rewards view expanded body.-->
+    <string name="RewardsView.expandedBody">取引手数料を節約し、将来の報酬を引き出す方法を学ぶ</string>
+    <!--Rewards view title-->
+    <string name="RewardsView.normalTitle">報酬</string>
+    <!--Screen Altering App Detected-->
+    <string name="Alert.ScreenAlteringAppDetected">画面変更アプリが検出されました。</string>
+    <!-- Share e-mail subject -->
+    <string name="Email.address_subject">%1$s アドレス</string>
+    <!-- Message shown when failing to recover key from key store -->
+    <string name="ErrorMessages.BadKeyStore.android">お使いの端末でエラーが発生したため、Electraを続行できません。あなたの資金は安全なので、安心してください！正常に復旧させるために、次の手順を実行してください。\n\n1. 復元フレーズを書き留めておいてください。\n2. Electraアプリをアンインストールします。\n3. Android端末のロック画面と指紋を無効にします（該当する場合）。 \n4. Android端末のロック画面と指紋を有効にします（該当する場合）。\n5. Electraアプリをインストールしてください。\n6. 復元フレーズを使ってウォレットを復旧する。\n\nご質問がある場合は、support@electraproject.com にご連絡ください。</string>
+
+    <!--Font file names-->
+    <string name="Font.CircularPro_Bold">CircularPro-Bold.otf</string>
+    <string name="Font.CircularPro_Book">CircularPro-Book.otf</string>
+    <string name="Font.CircularPro_Medium">CircularPro-Medium.otf</string>
+    <string name="Font.Celevenia">Celevenia.otf</string>
 </resources>

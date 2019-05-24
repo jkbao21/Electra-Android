@@ -82,9 +82,7 @@ public class BRNotificationBar extends android.support.v7.widget.Toolbar {
         close.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (activity instanceof WalletActivity) {
-                    ((WalletActivity) activity).resetFlipper();
-                } else if (activity instanceof HomeActivity) {
+                if (activity instanceof HomeActivity) {
                     ((HomeActivity) activity).closeNotificationBar();
                 }
             }

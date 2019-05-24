@@ -157,7 +157,7 @@ public class LoginActivity extends BRActivity implements PinLayout.OnPinInserted
                         boolean showHomeActivity = (BRSharedPrefs.wasAppBackgroundedFromHome(LoginActivity.this))
                                 || BRSharedPrefs.isNewWallet(LoginActivity.this);
 
-                        Class toGo = showHomeActivity ? HomeActivity.class : WalletActivity.class;
+                        Class toGo = HomeActivity.class;
                         Intent intent = new Intent(LoginActivity.this, toGo);
                         startActivity(intent);
                         overridePendingTransition(R.anim.fade_up, R.anim.fade_down);

@@ -143,20 +143,6 @@ public class Wallet {
     }
 
     /**
-     * Helper function to convert Sats to whole COIN
-     *
-     * @return BigDecimal
-     */
-    public BigDecimal convertSats(BigDecimal amount) {
-        if (amount.compareTo(BigDecimal.ZERO) > 0) {
-            return amount.divide(new BigDecimal(100000000), 8, RoundingMode.DOWN);
-        } else {
-            // This prevents 0 E-8 notation for 0.00000000
-            return BigDecimal.ZERO;
-        }
-    }
-
-    /**
      * Returns whether the wallet is currently sync'ing.
      *
      * @return The value indicating whether the wallet is sync'ing.

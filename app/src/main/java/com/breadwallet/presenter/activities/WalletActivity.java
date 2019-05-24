@@ -191,7 +191,7 @@ public class WalletActivity extends BRActivity implements InternetManager.Connec
             }
         });
 
-        TxManager.getInstance().init(this);
+        // TxManager.getInstance().init(this);
 
         onConnectionChanged(InternetManager.getInstance().isConnected(this));
 

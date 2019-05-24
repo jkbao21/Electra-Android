@@ -10,7 +10,7 @@ import android.util.Log;
 import android.view.View;
 
 import com.breadwallet.R;
-import com.breadwallet.presenter.activities.WalletActivity;
+import com.breadwallet.presenter.activities.HomeActivity;
 import com.breadwallet.presenter.entities.TxUiHolder;
 import com.breadwallet.tools.adapter.TransactionListAdapter;
 import com.breadwallet.tools.animation.UiUtils;
@@ -65,7 +65,7 @@ public class TxManager {
         return mInstance;
     }
 
-    public void init(final WalletActivity app) {
+    public void init(final HomeActivity app) {
         mItemListener = new RecyclerItemClickListener(app,
                 mTxList, new RecyclerItemClickListener.OnItemClickListener() {
             @Override

@@ -41,6 +41,7 @@ import com.platform.entities.TxMetaData;
 import com.platform.tools.KVStoreManager;
 
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 
 /**
  * Created by byfieldj on 2/26/18.
@@ -344,8 +345,8 @@ public class FragmentTxDetails extends DialogFragment {
                 }
                 String metaIso = Utils.isNullOrEmpty(mTxMetaData.exchangeCurrency) ? "USD" : mTxMetaData.exchangeCurrency;
 
-                exchangeRateFormatted = CurrencyUtils.getFormattedAmount(app, metaIso, new BigDecimal(mTxMetaData.exchangeRate));
-                mExchangeRate.setText(exchangeRateFormatted);
+                BigDecimal fiatChangeRate = WalletsMaster.getInstance(app).getCurrentWallet(app).getFiatExchangeRate(app).multiply(new BigDecimal(mTxMetaData.exchangeRate)).setScale(5, RoundingMode.HALF_EVEN);
+                mExchangeRate.setText(String.format("%s %s", fiatChangeRate.toString(), metaIso));
             }
             if (tkn != null) { // it's a token transfer ETH tx
                 mMemoText.setText(String.format(app.getString(R.string.Transaction_tokenTransfer), tkn.getSymbol()));

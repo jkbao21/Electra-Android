@@ -100,21 +100,20 @@
                             android:textSize="@dimen/sub_header"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@id/currency_label" />
+                            app:layout_constraintTop_toTopOf="@id/currency_label" />
 
 
                         <com.breadwallet.presenter.customviews.BaseTextView
                             android:id="@+id/balance_label"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginEnd="16dp"
                             android:layout_marginBottom="60dp"
+                            android:layout_marginEnd="16dp"
                             android:text="@string/Account.balance"
                             android:textColor="@color/white"
                             android:textSize="18sp"
                             android:visibility="visible"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/search_icon"
                             app:layout_constraintRight_toRightOf="parent" />
 
 
@@ -129,7 +128,7 @@
                             android:textColor="@color/white"
                             android:textSize="22sp"
                             app:brdFont="@string/Font.CircularPro_Bold"
-                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/balance_label"
                             app:layout_constraintRight_toRightOf="parent"
                             app:layout_constraintVertical_bias="0.492" />
 
@@ -142,7 +141,7 @@
                             android:layout_marginEnd="8dp"
                             android:layout_marginBottom="30dp"
                             android:background="@drawable/ic_swap_horizontal"
-                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintBottom_toBottomOf="@id/balance_primary"
                             app:layout_constraintRight_toLeftOf="@id/balance_primary"
                             app:layout_constraintVertical_bias="0.492" />
 
@@ -158,7 +157,7 @@
                             android:text="1.56739 BTC"
                             android:textColor="@color/trans_white"
                             android:textSize="16sp"
-                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintTop_toTopOf="@id/balance_primary"
                             app:layout_constraintEnd_toEndOf="@id/balance_label"
                             app:layout_constraintEnd_toStartOf="@id/swap"
                             app:layout_constraintRight_toLeftOf="@id/swap"
@@ -172,7 +171,7 @@
                             android:layout_marginLeft="10dp"
                             android:layout_marginBottom="98dp"
                             android:background="@drawable/ic_search_white_24dp"
-                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintTop_toTopOf="@id/currency_usd_price"
                             app:layout_constraintEnd_toEndOf="parent" />
 
 
@@ -223,18 +222,19 @@
             android:id="@+id/progress_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/toolbar_layout"
+            android:layout_above="@+id/transaction_list_coordinator_layout"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
             android:animateLayoutChanges="true"
-            android:background="@color/sync_toolbar"
             android:orientation="vertical"
-            android:visibility="gone">
+            android:visibility="visible">
 
             <RelativeLayout
                 android:id="@+id/progress_layout_margins"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
-                android:layout_marginTop="12dp"
+                android:layout_marginTop="6dp"
                 android:layout_marginEnd="10dp"
                 android:layout_marginBottom="10dp"
                 android:orientation="vertical">
@@ -243,9 +243,8 @@
                     android:id="@+id/sync_status_label"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
                     android:text="Synced Through 01/01/70 00:00"
-                    android:textColor="@color/sync_toolbar_text"
+                    android:textColor="@color/white"
                     android:textSize="14sp" />
 
                 <com.breadwallet.presenter.customviews.BaseTextView
@@ -278,6 +277,7 @@
             android:id="@+id/transaction_list_coordinator_layout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
             android:layout_above="@+id/bottom_toolbar_layout1"
             android:layout_below="@id/toolbar_layout">
 

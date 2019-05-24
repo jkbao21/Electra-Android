@@ -227,17 +227,17 @@
     <!-- Economy fee -->
     <string name="FeeSelector.economy">Economy</string>
     <!-- E.g. [This transaction is predicted to complete in] 1-24 hours -->
-    <string name="FeeSelector.economyTime">1-24 hours</string>
+    <string name="FeeSelector.economyTime"> </string>
     <!-- Warning message for economy fee -->
     <string name="FeeSelector.economyWarning">This option is not recommended for time-sensitive transactions.</string>
     <!-- E.g. Estimated delivery: 10-60 minutes -->
     <string name="FeeSelector.estimatedDeliver">Estimated Delivery: %1$s</string>
     <!-- [This transaction will complete in] 2-5 minutes -->
-    <string name="FeeSelector.ethTime">2-5 minutes</string>
+    <string name="FeeSelector.ethTime">64 seconds</string>
     <!-- Regular fee -->
     <string name="FeeSelector.regular">Regular</string>
     <!-- E.g. [This transaction is predicted to complete in] 10-60 minutes -->
-    <string name="FeeSelector.regularTime">10-60 minutes</string>
+    <string name="FeeSelector.regularTime">64 seconds</string>
     <!-- Fee Selector title -->
     <string name="FeeSelector.title">Processing Speed</string>
     <!-- This is the section that allows administration of the user's wallet -->

@@ -229,11 +229,11 @@
     <!-- E.g. Estimated delivery: 10-60 minutes -->
     <string name="FeeSelector.estimatedDeliver">Délai de réception estimé : %1$s</string>
     <!-- [This transaction will complete in] 2-5 minutes -->
-    <string name="FeeSelector.ethTime">2 à 5 minutes</string>
+    <string name="FeeSelector.ethTime">64 seconds</string>
     <!-- Regular fee -->
     <string name="FeeSelector.regular">Régulier</string>
     <!-- E.g. [This transaction is predicted to complete in] 10-60 minutes -->
-    <string name="FeeSelector.regularTime">10 à 60 minutes</string>
+    <string name="FeeSelector.regularTime">64 seconds</string>
     <!-- Fee Selector title -->
     <string name="FeeSelector.title">Vitesse de traitement</string>
     <!-- This is the section that allows administration of the user's wallet -->
@@ -533,7 +533,7 @@
     <!-- Start Sync button label -->
     <string name="ReScan.buttonTitle">Démarrer la synchronisation</string>
     <!-- Sync blockchain view footer -->
-    <string name="ReScan.footer">Vous ne pourrez pas envoyer d\'argent lors de la synchronisation avec la blockchain.</string>
+    <string name="ReScan.footer">Vous ne pourrez pas envoyer d\'argent lors de la synchronisation.</string>
     <!-- Sync Blockchain view header -->
     <string name="ReScan.header">Synchroniser avec la blockchain</string>
     <!-- Subheader label -->

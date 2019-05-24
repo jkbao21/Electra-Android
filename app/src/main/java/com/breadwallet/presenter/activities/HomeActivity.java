@@ -373,6 +373,15 @@ public class HomeActivity extends BRActivity implements InternetManager.Connecti
             mProgressLabel.setText(labelText);
             mProgressLabel.setVisibility(View.VISIBLE);
             mSyncProgress.setVisibility(View.VISIBLE);
+            if (mWallet instanceof BaseBitcoinWalletManager) {
+                BaseBitcoinWalletManager baseBitcoinWalletManager = (BaseBitcoinWalletManager) mWallet;
+                long syncThroughDateInMillis = baseBitcoinWalletManager.getPeerManager()
+                        .getLastBlockTimestamp() * DateUtils.SECOND_IN_MILLIS;
+                String syncedThroughDate = new SimpleDateFormat(SYNCED_THROUGH_DATE_FORMAT,
+                        Locale.getDefault()).format(syncThroughDateInMillis);
+                mSyncStatusLabel.setText(String.format(getString(R.string.SyncingView_syncedThrough),
+                        syncedThroughDate));
+            }
         } else {
             mProgressLabel.setVisibility(View.GONE);
             mSyncProgress.setVisibility(View.GONE);

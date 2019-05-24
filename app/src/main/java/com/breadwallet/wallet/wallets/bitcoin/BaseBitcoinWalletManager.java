@@ -985,7 +985,7 @@ public abstract class BaseBitcoinWalletManager extends BRCoreWalletManager imple
             BRExecutor.getInstance().forMainThreadTasks().execute(new Runnable() {
                 @Override
                 public void run() {
-                    String am = CurrencyUtils.getFormattedAmount(ctx, getCurrencyCode(), getCryptoForSmallestCrypto(ctx, new BigDecimal(amount)));
+                    String am = CurrencyUtils.getFormattedAmount(ctx, getCurrencyCode(), getCryptoForSmallestCrypto(ctx, new BigDecimal(amount).multiply(new BigDecimal(100000000))));
                     BigDecimal bigAmount = master.getCurrentWallet(ctx).getFiatForSmallestCrypto(ctx, new BigDecimal(amount), null);
                     String amCur = CurrencyUtils.getFormattedAmount(ctx, BRSharedPrefs.getPreferredFiatIso(ctx), bigAmount == null ? BigDecimal.ZERO : bigAmount);
                     String formatted = String.format("%s (%s)", am, amCur);

@@ -75,7 +75,7 @@ import java.math.BigDecimal;
 public class ImportPrivKeyTask extends AsyncTask<String, String, String> {
     public static final String TAG = ImportPrivKeyTask.class.getName();
 
-    private static final String UTXO_URL_FORMAT = "%s/q/addr/%s/utxo?currency=%s";
+    private static final String UTXO_URL_FORMAT = "https://tec.electraproject.org/ext/getutxos/%s";
     private static final int TOAST_DELAY = 340;
     private Context mContext;
     private BRCoreKey mKey;
@@ -158,7 +158,7 @@ public class ImportPrivKeyTask extends AsyncTask<String, String, String> {
         String decoratedAddress = walletManager.decorateAddress(theAddress);
 
         //automatically uses testnet if x-testnet is true
-        String utxoUrl = String.format(UTXO_URL_FORMAT, APIClient.getBaseURL(), decoratedAddress, currencyCode);
+        String utxoUrl = String.format(UTXO_URL_FORMAT, decoratedAddress);
 
         String responseBody = BRApiManager.urlGET(mContext, utxoUrl);
         String errorMessage = null;
@@ -233,7 +233,7 @@ public class ImportPrivKeyTask extends AsyncTask<String, String, String> {
                         }
 
                         mTransaction.getCoreTx().sign(mKey, walletManager.getForkId());
-                        BRCorePeerManager peerManager = mCurrencyCode.equalsIgnoreCase("BTC") ? ((WalletBitcoinManager) walletManager).getPeerManager() : ((WalletBchManager) walletManager).getPeerManager();
+                        BRCorePeerManager peerManager = ((WalletBitcoinManager) walletManager).getPeerManager();
 
                         if (!mTransaction.getCoreTx().isSigned()) {
                             String err = "transaction is not signed";

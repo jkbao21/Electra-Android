@@ -96,7 +96,7 @@ public class WalletsMaster {
 //        }
 
         mWallets.clear();
-        mTokenListMetaData =  null;//KVStoreManager.getTokenListMetaData(app);
+        mTokenListMetaData = KVStoreManager.getTokenListMetaData(app);
         if (mTokenListMetaData == null) {
             List<TokenListMetaData.TokenInfo> enabled = new ArrayList<>();
             enabled.add(new TokenListMetaData.TokenInfo(WalletBitcoinManager.BITCOIN_CURRENCY_CODE, false, null));
@@ -107,6 +107,9 @@ public class WalletsMaster {
             KVStoreManager.putTokenListMetaData(app, mTokenListMetaData); //put default currencies if null
         }
 
+        mWallets.add(WalletBitcoinManager.getInstance(app));
+
+        /*
         for (TokenListMetaData.TokenInfo enabled : mTokenListMetaData.enabledCurrencies) {
 
             boolean isHidden = mTokenListMetaData.isCurrencyHidden(enabled.symbol);
@@ -129,6 +132,7 @@ public class WalletsMaster {
             }
 
         }
+        */
     }
 
     public synchronized List<BaseWalletManager> getAllWallets(Context context) {

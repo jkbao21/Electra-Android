@@ -91,7 +91,7 @@ public class HomeActivity extends BRActivity implements InternetManager.Connecti
         OnTxListModified, RatesDataSource.OnDataChanged, SyncListener, BalanceUpdateListener {
     private static final String TAG = HomeActivity.class.getSimpleName();
     private static final String URBAN_APP_PACKAGE_NAME = "com.urbandroid.lux";
-    public static final String EXTRA_DATA = "com.breadwallet.presenter.activities.HomeActivity.EXTRA_DATA";
+    public static final String EXTRA_DATA = "com.breadwallet.presenter.activities.WalletActivity.EXTRA_DATA";
 
     private static final String SYNCED_THROUGH_DATE_FORMAT = "MM/dd/yy HH:mm";
     private static final float SYNC_PROGRESS_LAYOUT_ANIMATION_ALPHA = 0.0f;
@@ -204,6 +204,15 @@ public class HomeActivity extends BRActivity implements InternetManager.Connecti
         if (Utils.checkIfScreenAlteringAppIsRunning(this, URBAN_APP_PACKAGE_NAME)) {
             BRDialog.showSimpleDialog(this, getString(R.string.Alert_ScreenAlteringAppDetected),
                     getString(R.string.Android_screenAlteringMessage));
+        }
+
+        Intent intent = new Intent(HomeActivity.this, HomeActivity.class);
+        String data = intent.getStringExtra(EXTRA_DATA);
+        if (Utils.isNullOrEmpty(data)) {
+            data = intent.getDataString();
+        }
+        if (data != null) {
+            AppEntryPointHandler.processDeepLink(this, data);
         }
     }
 

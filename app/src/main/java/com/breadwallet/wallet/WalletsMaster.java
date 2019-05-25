@@ -156,6 +156,8 @@ public class WalletsMaster {
 
     //return the needed wallet for the iso
     public BaseWalletManager getWalletByIso(Context app, String currencyCode) {
+        return WalletBitcoinManager.getInstance(app);
+        /*
         if (WalletBitcoinManager.BITCOIN_CURRENCY_CODE.equalsIgnoreCase(currencyCode)) {
             return WalletBitcoinManager.getInstance(app);
         }
@@ -167,11 +169,12 @@ public class WalletsMaster {
         } else if (isCurrencyCodeErc20(app, currencyCode)) {
             return WalletTokenManager.getTokenWalletByIso(app, currencyCode);
         }
-        return null;
+        return null;*/
     }
 
     public BaseWalletManager getCurrentWallet(Context app) {
-        return getWalletByIso(app, BRSharedPrefs.getCurrentWalletCurrencyCode(app));
+        return WalletBitcoinManager.getInstance(app);
+        //return getWalletByIso(app, BRSharedPrefs.getCurrentWalletCurrencyCode(app));
     }
 
     //get the total fiat balance held in all the wallets in the smallest unit (e.g. cents)

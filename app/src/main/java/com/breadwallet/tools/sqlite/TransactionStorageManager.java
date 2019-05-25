@@ -27,7 +27,7 @@ public class TransactionStorageManager {
 
         }
 
-        if (iso.equalsIgnoreCase("ECA") || iso.equalsIgnoreCase("bch")) {
+        if (iso.equalsIgnoreCase("ECA")) {
             BRTransactionEntity result = BtcBchTransactionDataStore.getInstance(app).putTransaction(app, iso, tx);
             return result != null;
         }
@@ -44,7 +44,7 @@ public class TransactionStorageManager {
 
         }
 
-        if (iso.equalsIgnoreCase("ECA") || iso.equalsIgnoreCase("bch")) {
+        if (iso.equalsIgnoreCase("ECA")) {
             return BtcBchTransactionDataStore.getInstance(app).getAllTransactions(app, iso);
         }
 
@@ -60,7 +60,7 @@ public class TransactionStorageManager {
 
         }
 
-        if (iso.equalsIgnoreCase("ECA") || iso.equalsIgnoreCase("bch")) {
+        if (iso.equalsIgnoreCase("ECA")) {
             return BtcBchTransactionDataStore.getInstance(app).updateTransaction(app, iso, tx);
 
         }
@@ -77,7 +77,7 @@ public class TransactionStorageManager {
 
         }
 
-        if (iso.equalsIgnoreCase("ECA") || iso.equalsIgnoreCase("bch")) {
+        if (iso.equalsIgnoreCase("ECA")) {
             BtcBchTransactionDataStore.getInstance(app).deleteTxByHash(app, iso, hash);
             return true;
         }

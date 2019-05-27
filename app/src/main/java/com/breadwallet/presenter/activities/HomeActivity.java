@@ -101,7 +101,6 @@ public class HomeActivity extends BRActivity implements InternetManager.Connecti
 
     private BRNotificationBar mNotificationBar;
     private LinearLayout mMenuLayout;
-    private MainViewModel mViewModel;
     private BRButton mSendButton;
     private BRButton mReceiveButton;
     private BaseTextView mCurrencyPriceUsd;
@@ -138,9 +137,6 @@ public class HomeActivity extends BRActivity implements InternetManager.Connecti
         mSearchBar = findViewById(R.id.search_bar);
         ImageButton searchIcon = findViewById(R.id.search_icon);
         mBarFlipper = findViewById(R.id.tool_bar_flipper);
-
-        // Get ViewModel, observe updates to Wallet and aggregated balance data
-        mViewModel = ViewModelProviders.of(this).get(MainViewModel.class);
 
         mMenuLayout = findViewById(R.id.menu_layout);
         mMenuLayout.setOnClickListener(new View.OnClickListener() {
@@ -189,7 +185,7 @@ public class HomeActivity extends BRActivity implements InternetManager.Connecti
 
         mWallet = WalletsMaster.getInstance(this).getCurrentWallet(this);
 
-        BRExecutor.getInstance().forLightWeightBackgroundTasks().execute(new Runnable() {
+        BRExecutor.getInstance().forBackgroundTasks().execute(new Runnable() {
             @Override
             public void run() {
                 Activity app = HomeActivity.this;
@@ -204,17 +200,6 @@ public class HomeActivity extends BRActivity implements InternetManager.Connecti
         if (Utils.checkIfScreenAlteringAppIsRunning(this, URBAN_APP_PACKAGE_NAME)) {
             BRDialog.showSimpleDialog(this, getString(R.string.Alert_ScreenAlteringAppDetected),
                     getString(R.string.Android_screenAlteringMessage));
-        }
-
-        processIntentData(getIntent());
-
-        Intent intent = new Intent(HomeActivity.this, HomeActivity.class);
-        String data = intent.getStringExtra(EXTRA_DATA);
-        if (Utils.isNullOrEmpty(data)) {
-            data = intent.getDataString();
-        }
-        if (data != null) {
-            AppEntryPointHandler.processDeepLink(this, data);
         }
     }
 
@@ -303,14 +288,11 @@ public class HomeActivity extends BRActivity implements InternetManager.Connecti
                     if (wallet.getConnectStatus() != 2) {
                         wallet.connect(HomeActivity.this);
                     }
-
                 }
             });
 
             wallet.addBalanceChangedListener(this);
-
             mCurrentWalletIso = wallet.getCurrencyCode();
-
             wallet.addSyncListener(this);
         }
 
@@ -320,8 +302,6 @@ public class HomeActivity extends BRActivity implements InternetManager.Connecti
         SyncService.startService(getApplicationContext(), mCurrentWalletIso);
 
         showSendIfNeeded(getIntent());
-
-        mViewModel.refreshWallets();
     }
 
     private synchronized void showSendIfNeeded(final Intent intent) {
@@ -442,7 +422,7 @@ public class HomeActivity extends BRActivity implements InternetManager.Connecti
                 double progress = intent.getDoubleExtra(SyncService.EXTRA_PROGRESS, SyncService.PROGRESS_NOT_DEFINED);
                 if (mCurrentWalletIso.equals(intentWalletIso)) {
                     if (progress >= SyncService.PROGRESS_START) {
-                        HomeActivity.this.updateSyncProgress(progress);
+                        updateSyncProgress(progress);
                     } else {
                         Log.e(TAG, "SyncNotificationBroadcastReceiver.onReceive: Progress not set:" + progress);
                     }

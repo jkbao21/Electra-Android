@@ -39,8 +39,6 @@ public class DisplayCurrencyActivity extends BaseSettingsActivity {
     private TextView mExchangeText;
     private ListView mListView;
     private CurrencyListAdapter mAdapter;
-    private Button mLeftButton;
-    private Button mRightButton;
 
     @Override
     public int getLayoutId() {
@@ -62,21 +60,6 @@ public class DisplayCurrencyActivity extends BaseSettingsActivity {
         List<CurrencyEntity> currencies = RatesDataSource.getInstance(this).getAllCurrencies(this, "ECA");
         List<CurrencyEntity> cleanList = cleanList(currencies);
         mAdapter.addAll(cleanList);
-        mLeftButton = findViewById(R.id.left_button);
-        mRightButton = findViewById(R.id.right_button);
-        mLeftButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                setButton(true);
-            }
-        });
-
-        mRightButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                setButton(false);
-            }
-        });
 
         int unit = BRSharedPrefs.getCryptoDenomination(this, "BTC"); // any iso, using one for all for now
         if (unit == BRConstants.CURRENT_UNIT_BITS) {
@@ -133,16 +116,8 @@ public class DisplayCurrencyActivity extends BaseSettingsActivity {
     private void setButton(boolean left) {
         if (left) {
             BRSharedPrefs.putCryptoDenomination(this, "BTC", BRConstants.CURRENT_UNIT_BITS);
-            mLeftButton.setTextColor(getColor(R.color.white));
-            mLeftButton.setBackground(getDrawable(R.drawable.b_half_left_blue));
-            mRightButton.setTextColor(getColor(R.color.dark_blue));
-            mRightButton.setBackground(getDrawable(R.drawable.b_half_right_blue_stroke));
         } else {
             BRSharedPrefs.putCryptoDenomination(this, "BTC", BRConstants.CURRENT_UNIT_BITCOINS);
-            mLeftButton.setTextColor(getColor(R.color.dark_blue));
-            mLeftButton.setBackground(getDrawable(R.drawable.b_half_left_blue_stroke));
-            mRightButton.setTextColor(getColor(R.color.white));
-            mRightButton.setBackground(getDrawable(R.drawable.b_half_right_blue));
         }
         updateExchangeRate();
 

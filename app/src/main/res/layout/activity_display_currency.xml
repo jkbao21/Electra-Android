@@ -48,62 +48,6 @@
         app:layout_constraintTop_toBottomOf="@+id/title"/>
 
     <com.breadwallet.presenter.customviews.BaseTextView
-        android:id="@+id/BRText2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="32dp"
-        android:layout_marginTop="16dp"
-        android:text="@string/DefaultCurrency.bitcoinLabel"
-        android:textSize="@dimen/sub_header"
-        app:brdFont="@string/Font.CircularPro_Bold"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintLeft_toLeftOf="@+id/title"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/exchange_text"/>
-
-    <LinearLayout
-        android:id="@+id/buttons_layout"
-        android:layout_width="0dp"
-        android:layout_height="30dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:orientation="horizontal"
-        android:weightSum="2.0"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/BRText2">
-
-        <com.breadwallet.presenter.customviews.BRButton
-            android:id="@+id/left_button"
-            android:layout_width="0dp"
-            android:layout_height="30dp"
-            android:layout_weight="1.0"
-            android:background="@color/primary_background"
-            android:text="Bits (&#384;)"
-            android:textSize="14sp"
-            android:padding="0dp"
-            app:customBFont="CircularPro-Medium.otf"
-            app:isBreadButton="false"
-            />
-
-        <com.breadwallet.presenter.customviews.BRButton
-            android:id="@+id/right_button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1.0"
-            android:background="@color/primary_background"
-            android:text="ECA (ECA)"
-            android:textColor="@color/white"
-            android:padding="0dp"
-            android:textSize="14sp"
-            app:isBreadButton="false"
-            app:customBFont="CircularPro-Medium.otf"
-            />
-    </LinearLayout>
-
-    <com.breadwallet.presenter.customviews.BaseTextView
         android:id="@+id/exchange_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -127,7 +71,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttons_layout"
+        app:layout_constraintTop_toBottomOf="@+id/exchange_text"
         app:layout_constraintVertical_bias="0.0"/>
 
 </android.support.constraint.ConstraintLayout>

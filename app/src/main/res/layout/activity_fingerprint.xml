@@ -114,6 +114,7 @@
         android:layout_below="@+id/limit_exchange"
         android:layout_alignStart="@+id/limit_exchange"
         android:layout_marginTop="14dp"
+        android:layout_marginRight="16dp"
         android:lineSpacingMultiplier="1.2"
         android:text="@string/TouchIdSettings.customizeText.android"
         android:textSize="@dimen/sub_header" />

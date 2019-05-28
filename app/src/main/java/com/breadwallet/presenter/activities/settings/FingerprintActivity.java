@@ -36,6 +36,7 @@ import com.breadwallet.wallet.abstracts.BaseWalletManager;
 import com.breadwallet.wallet.wallets.bitcoin.WalletBitcoinManager;
 
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 
 
 public class FingerprintActivity extends BaseSettingsActivity {
@@ -138,7 +139,8 @@ public class FingerprintActivity extends BaseSettingsActivity {
         CurrencyEntity btcFiatRate = RatesDataSource.getInstance(this).getCurrencyByCode(app, "ECA", BRSharedPrefs.getPreferredFiatIso(this));
 
         BigDecimal total = wm.getFiatExchangeRate(this).multiply(new BigDecimal(btcFiatRate.rate)).multiply(cryptoLimit);
-        return String.format(getString(R.string.TouchIdSettings_spendingLimit), cryptoLimit+"ECA", CurrencyUtils.getFormattedAmount(this, iso, total));
+        total = total.setScale(2, RoundingMode.CEILING);
+        return String.format(getString(R.string.TouchIdSettings_spendingLimit), cryptoLimit+"ECA", total+iso.toUpperCase());
     }
 
     @Override

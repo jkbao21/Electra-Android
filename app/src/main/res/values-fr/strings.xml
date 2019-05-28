@@ -223,7 +223,7 @@
     <!-- Economy fee -->
     <string name="FeeSelector.economy">Économie</string>
     <!-- E.g. [This transaction is predicted to complete in] 1-24 hours -->
-    <string name="FeeSelector.economyTime">1 à 24 heures</string>
+    <string name="FeeSelector.economyTime"> </string>
     <!-- Warning message for economy fee -->
     <string name="FeeSelector.economyWarning">Cette option n\'est pas recommandée pour les transactions dont les délais sont cruciaux.</string>
     <!-- E.g. Estimated delivery: 10-60 minutes -->

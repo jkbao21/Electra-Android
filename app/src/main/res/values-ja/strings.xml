@@ -225,7 +225,7 @@
     <!-- Economy fee -->
     <string name="FeeSelector.economy">エコノミー</string>
     <!-- E.g. [This transaction is predicted to complete in] 1-24 hours -->
-    <string name="FeeSelector.economyTime">1～24時間</string>
+    <string name="FeeSelector.economyTime"> </string>
     <!-- Warning message for economy fee -->
     <string name="FeeSelector.economyWarning">このオプションは早く送金を済ませたい方にはお勧めしません。</string>
     <!-- E.g. Estimated delivery: 10-60 minutes -->
@@ -235,7 +235,7 @@
     <!-- Regular fee -->
     <string name="FeeSelector.regular">通常</string>
     <!-- E.g. [This transaction is predicted to complete in] 10-60 minutes -->
-    <string name="FeeSelector.regularTime">10～60分</string>
+    <string name="FeeSelector.regularTime">64秒</string>
     <!-- Fee Selector title -->
     <string name="FeeSelector.title">処理速度</string>
     <!-- This is the section that allows administration of the user's wallet -->

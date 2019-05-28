@@ -223,7 +223,7 @@
     <!-- Economy fee -->
     <string name="FeeSelector.economy">经济</string>
     <!-- E.g. [This transaction is predicted to complete in] 1-24 hours -->
-    <string name="FeeSelector.economyTime">1-24 小时</string>
+    <string name="FeeSelector.economyTime"> </string>
     <!-- Warning message for economy fee -->
     <string name="FeeSelector.economyWarning">对于有时效性的交易，不推荐使用此选项。</string>
     <!-- E.g. Estimated delivery: 10-60 minutes -->
@@ -233,7 +233,7 @@
     <!-- Regular fee -->
     <string name="FeeSelector.regular">常规</string>
     <!-- E.g. [This transaction is predicted to complete in] 10-60 minutes -->
-    <string name="FeeSelector.regularTime">10-60 分钟</string>
+    <string name="FeeSelector.regularTime">64秒</string>
     <!-- Fee Selector title -->
     <string name="FeeSelector.title">处理速度</string>
     <!-- This is the section that allows administration of the user's wallet -->

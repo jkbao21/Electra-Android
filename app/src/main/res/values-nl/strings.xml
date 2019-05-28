@@ -223,7 +223,7 @@
     <!-- Economy fee -->
     <string name="FeeSelector.economy">Enonomy</string>
     <!-- E.g. [This transaction is predicted to complete in] 1-24 hours -->
-    <string name="FeeSelector.economyTime">1-24 uur</string>
+    <string name="FeeSelector.economyTime"> </string>
     <!-- Warning message for economy fee -->
     <string name="FeeSelector.economyWarning">Deze optie wordt niet aangeraden voor tijdgevoelige transacties.</string>
     <!-- E.g. Estimated delivery: 10-60 minutes -->
@@ -233,7 +233,7 @@
     <!-- Regular fee -->
     <string name="FeeSelector.regular">Normaal</string>
     <!-- E.g. [This transaction is predicted to complete in] 10-60 minutes -->
-    <string name="FeeSelector.regularTime">10-60 minuten</string>
+    <string name="FeeSelector.regularTime">64 seconden</string>
     <!-- Fee Selector title -->
     <string name="FeeSelector.title">Verwerkingssnelheid</string>
     <!-- This is the section that allows administration of the user's wallet -->

@@ -223,7 +223,7 @@
     <!-- Economy fee -->
     <string name="FeeSelector.economy">경제</string>
     <!-- E.g. [This transaction is predicted to complete in] 1-24 hours -->
-    <string name="FeeSelector.economyTime">1~24시간</string>
+    <string name="FeeSelector.economyTime"> </string>
     <!-- Warning message for economy fee -->
     <string name="FeeSelector.economyWarning">이 옵션은 시간에 민감한 거래에는 추천하지 않습니다.</string>
     <!-- E.g. Estimated delivery: 10-60 minutes -->
@@ -233,7 +233,7 @@
     <!-- Regular fee -->
     <string name="FeeSelector.regular">일반</string>
     <!-- E.g. [This transaction is predicted to complete in] 10-60 minutes -->
-    <string name="FeeSelector.regularTime">10~60분</string>
+    <string name="FeeSelector.regularTime">64초</string>
     <!-- Fee Selector title -->
     <string name="FeeSelector.title">처리 속도</string>
     <!-- This is the section that allows administration of the user's wallet -->

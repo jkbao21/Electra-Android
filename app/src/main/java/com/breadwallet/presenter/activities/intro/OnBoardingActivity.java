@@ -82,7 +82,7 @@ public class OnBoardingActivity extends BRActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //setContentView(R.layout.activity_on_boarding);
+//        setContentView(R.layout.activity_intro_tos);
 //        final ViewPager viewPager = findViewById(R.id.view_pager);
 //        mIndicators.add(findViewById(R.id.indicator1));
 //        mIndicators.add(findViewById(R.id.indicator2));

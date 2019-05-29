@@ -3,23 +3,23 @@ package com.breadwallet.presenter.activities.intro;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.method.ScrollingMovementMethod;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
 import com.breadwallet.BuildConfig;
 import com.breadwallet.R;
 import com.breadwallet.presenter.activities.util.BRActivity;
 import com.breadwallet.presenter.customviews.BRButton;
+import com.breadwallet.presenter.customviews.BaseTextView;
 import com.breadwallet.tools.animation.UiUtils;
 import com.breadwallet.tools.util.ServerBundlesHelper;
 import com.breadwallet.tools.util.EventUtils;
 import com.breadwallet.tools.security.PostAuth;
 import com.breadwallet.tools.threads.executor.BRExecutor;
-import com.breadwallet.tools.util.BRConstants;
 import com.breadwallet.tools.util.Utils;
-import com.breadwallet.wallet.WalletsMaster;
-import com.breadwallet.wallet.abstracts.BaseWalletManager;
 import com.platform.APIClient;
 
 /**
@@ -47,21 +47,23 @@ import com.platform.APIClient;
  * THE SOFTWARE.
  */
 
-public class IntroActivity extends BRActivity {
+public class IntroTos extends BRActivity {
     private static final String TAG = IntroActivity.class.getSimpleName();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_intro);
+        setContentView(R.layout.activity_intro_tos);
         setOnClickListeners();
+        BaseTextView baseTextView = (BaseTextView) findViewById(R.id.texttos);
+        baseTextView.setMovementMethod(new ScrollingMovementMethod());
         updateBundles();
 
         if (BuildConfig.DEBUG) {
             Utils.printPhoneSpecs(this);
         }
 
-        PostAuth.getInstance().onCanaryCheck(IntroActivity.this, false);
+        PostAuth.getInstance().onCanaryCheck(IntroTos.this, false);
     }
 
     @Override
@@ -85,16 +87,16 @@ public class IntroActivity extends BRActivity {
     }
 
     private void setOnClickListeners() {
-        BRButton buttonNewWallet = findViewById(R.id.button_new_wallet);
-        BRButton buttonRecoverWallet = findViewById(R.id.button_recover_wallet);
+        BRButton buttonNewWallet = findViewById(R.id.introagree);
+        BRButton buttonRecoverWallet = findViewById(R.id.introdecline);
         buttonNewWallet.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (!UiUtils.isClickAllowed()) {
                     return;
                 }
-                //EventUtils.pushEvent(EventUtils.EVENT_LANDING_PAGE_GET_STARTED);
-                Intent intent = new Intent(IntroActivity.this, IntroTos.class);
+                EventUtils.pushEvent(EventUtils.EVENT_LANDING_PAGE_GET_STARTED);
+                Intent intent = new Intent(IntroTos.this, OnBoardingActivity.class);
                 overridePendingTransition(R.anim.enter_from_right, R.anim.exit_to_left);
                 startActivity(intent);
             }
@@ -106,8 +108,8 @@ public class IntroActivity extends BRActivity {
                 if (!UiUtils.isClickAllowed()) {
                     return;
                 }
-               // EventUtils.pushEvent(EventUtils.EVENT_LANDING_PAGE_RESTORE_WALLET);
-                Intent intent = new Intent(IntroActivity.this, RecoverActivity.class);
+                EventUtils.pushEvent(EventUtils.EVENT_LANDING_PAGE_RESTORE_WALLET);
+                Intent intent = new Intent(IntroTos.this, IntroActivity.class);
                 startActivity(intent);
                 overridePendingTransition(R.anim.enter_from_right, R.anim.exit_to_left);
             }

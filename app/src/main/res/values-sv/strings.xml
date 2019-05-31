@@ -699,7 +699,7 @@
     <!-- View legacy address (old format). -->
     <string name="Settings.ViewLegacyAddress">Visa mottagaradress i gamla formatet</string>
     <!-- Receive Electra instructions -->
-    <string name="Settings.ViewLegacyAddressReceiveDescription">Skicka endast Electra (BTC) till denna adress. Alla andra tillgångar som skickas till denna adress går förlorade permanent.</string>
+    <string name="Settings.ViewLegacyAddressReceiveDescription">Skicka endast Electra (ECA) till denna adress. Alla andra tillgångar som skickas till denna adress går förlorade permanent.</string>
     <!-- Receive Electra -->
     <string name="Settings.ViewLegacyAddressReceiveTitle">Erhåll Electra</string>
     <!-- Wallet Settings section header -->

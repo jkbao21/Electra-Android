@@ -407,7 +407,7 @@
     <!-- Payment too small alert title -->
     <string name="PaymentProtocol.Errors.smallOutputError">Не удалось выполнить платеж</string>
     <!-- Amount too small error message -->
-    <string name="PaymentProtocol.Errors.smallPayment">Размер биткоин-платежей должен превышать %1$s.</string>
+    <string name="PaymentProtocol.Errors.smallPayment">Размер Electra-платежей должен превышать %1$s.</string>
     <!-- Output too small error message. -->
     <string name="PaymentProtocol.Errors.smallTransaction">Результаты биткойн-транзакции должны превышать %1$s.</string>
     <!-- Unsupported signature type payment protocol error message -->
@@ -571,9 +571,9 @@
     <!-- Segwit enabled confirmation title -->
     <string name="Segwit.ConfirmationConfirmationTitle">Вы активировали SegWit!</string>
     <!-- Segwit enabled confirmation description -->
-    <string name="Segwit.ConfirmationInstructionsDescription">Благодарим вас за продвижение биткоина.</string>
+    <string name="Segwit.ConfirmationInstructionsDescription">Благодарим вас за продвижение Electra.</string>
     <!-- Segwit instructions -->
-    <string name="Segwit.ConfirmationInstructionsInstructions">Поддержка SegWit еще является бета-функцией.\nС момента активации функции SegWit ее нельзя будет отключить. Вы сможете найти унаследованный адрес в Настройках. \nНекоторые услуги третьей стороны, включая крипто-трейдинг, могут быть недоступными для пользователей, которые активировали SegWit. В случае крайней необходимости, вы сможете генерировать унаследованный адрес, зайдя в Preferences (Параметры) &gt; Electra Settings (Настройки биткоина). \nВ будущем обновлении SegWit будет автоматически активирована для всех пользователей.</string>
+    <string name="Segwit.ConfirmationInstructionsInstructions">Поддержка SegWit еще является бета-функцией.\nС момента активации функции SegWit ее нельзя будет отключить. Вы сможете найти унаследованный адрес в Настройках. \nНекоторые услуги третьей стороны, включая крипто-трейдинг, могут быть недоступными для пользователей, которые активировали SegWit. В случае крайней необходимости, вы сможете генерировать унаследованный адрес, зайдя в Preferences (Параметры) &gt; Electra Settings (Настройки Electra). \nВ будущем обновлении SegWit будет автоматически активирована для всех пользователей.</string>
     <!-- Segwit extra confirmation title. -->
     <string name="Segwit.ConfirmChoiceLayout">Активация SegWit является необратимой функцией. Вы уверены, что хотите продолжить?</string>
     <!-- Segwit enableButton -->
@@ -699,9 +699,9 @@
     <!-- View legacy address (old format). -->
     <string name="Settings.ViewLegacyAddress">Просмотреть унаследованный адрес</string>
     <!-- Receive Electra instructions -->
-    <string name="Settings.ViewLegacyAddressReceiveDescription">Отправляйте на этот адрес только биткоин (BTC). Любые другие активы, отправленные на этот адрес, будут безвозвратно потеряны.</string>
+    <string name="Settings.ViewLegacyAddressReceiveDescription">Отправляйте на этот адрес только Electra (ECA). Любые другие активы, отправленные на этот адрес, будут безвозвратно потеряны.</string>
     <!-- Receive Electra -->
-    <string name="Settings.ViewLegacyAddressReceiveTitle">Получить биткоин</string>
+    <string name="Settings.ViewLegacyAddressReceiveTitle">Получить Electra</string>
     <!-- Wallet Settings section header -->
     <string name="Settings.wallet">Кошелек</string>
     <!-- Unlink/delete your wallet from the current device. -->
@@ -915,7 +915,7 @@
     <!-- Tx detail field header -->
     <string name="TransactionDetails.totalHeader">Всего</string>
     <!-- Transaction ID header -->
-    <string name="TransactionDetails.txHashHeader">ID биткоин-транзакции</string>
+    <string name="TransactionDetails.txHashHeader">ID Electra-транзакции</string>
     <!-- (this transaction was) Received at this address: -->
     <string name="TransactionDirection.address">Получено на адрес:</string>
     <!-- (this transaction was) Sent to this address: -->

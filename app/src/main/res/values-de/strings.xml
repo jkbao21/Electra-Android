@@ -43,7 +43,7 @@
     <!-- Keystore error title -->
     <string name="Alert.keystore.title.android">Android-KeyStore-Fehler</string>
     <!-- No internet alert message -->
-    <string name="Alert.noInternet">Es konnte keine Verbindung zum Internet hergestellt werden. Bitte überprüfen Sie Ihre Verbindung und versuche Sie es erneut.</string>
+    <string name="Alert.noInternet">Es konnte keine Verbindung zum Internet hergestellt werden. Bitte überprüfen Sie Ihre Verbindung und versuchen Sie es erneut.</string>
     <!-- General error message -->
     <string name="Alert.somethingWentWrong">Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut.</string>
     <!-- Request timed out error message -->

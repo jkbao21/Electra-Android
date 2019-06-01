@@ -15,9 +15,9 @@
     <!-- About screen title -->
     <string name="About.title">关于</string>
     <!-- About screen twitter label -->
-    <string name="About.twitter">Twitter</string>
+    <string name="About.twitter">推特</string>
     <!-- About screen wallet ID label -->
-    <string name="About.walletID">Website</string>
+    <string name="About.walletID">网站</string>
     <!-- Close modal button accessibility label -->
     <string name="AccessibilityLabels.close">关闭</string>
     <!-- Support center accessibiliy label -->
@@ -25,7 +25,7 @@
     <!-- Account balance -->
     <string name="Account.balance">余额</string>
     <!-- Delisted token alert banner message -->
-    <string name="Account.delistedToken">这种代币已被摘牌，因为发行者决定停止支持 ERC20。\n\n您仍然可以将这些代币汇到别的平台。请访问我们的支持页面获取更多细节。</string>
+    <string name="Account.delistedToken">由于开发者已经决定停止支持ERC20，该代币已被下架。\n\n您仍然可以将这些代币发送到别的平台。请访问我们的支持页面获取更多细节。</string>
     <!-- $10000 per BTC -->
     <string name="Account.exchangeRate">%1$s BTC / %2$s</string>
     <!-- Loading Wallet Message -->
@@ -33,7 +33,7 @@
     <!-- Default wallet name -->
     <string name="AccountHeader.defaultWalletName">我的 Electra</string>
     <!-- Third party keyboard warning -->
-    <string name="Alert.customKeyboard.android">看起来您正在使用第三方键盘，它可以记录您键入的内容并窃取您的密钥（Paper Key）。请切换到默认的安卓键盘以便获得额外保护。</string>
+    <string name="Alert.customKeyboard.android">您可能正在使用第三方键盘，它可以记录您键入的内容并窃取您的密钥（Paper Key）。请切换到默认的安卓键盘以获得额外保护。</string>
     <!-- Error alert title -->
     <string name="Alert.error">错误</string>
     <!-- Keystore error -->
@@ -43,17 +43,17 @@
     <!-- Keystore error title -->
     <string name="Alert.keystore.title.android">安卓系统密钥库错误</string>
     <!-- No internet alert message -->
-    <string name="Alert.noInternet">未发现互联网连接。检查您的连接并重试。</string>
+    <string name="Alert.noInternet">不能连接到互联网。检查您的网络连接并重试。</string>
     <!-- General error message -->
     <string name="Alert.somethingWentWrong">出错了。请重试。</string>
     <!-- Request timed out error message -->
-    <string name="Alert.timedOut">请求超时。请检查您的连接，然后重试。</string>
+    <string name="Alert.timedOut">请求超时。请检查您的网络连接，然后重试。</string>
     <!-- Warning alert title -->
     <string name="Alert.warning">警告</string>
     <!-- 'the addresses were copied'' Alert title -->
     <string name="Alerts.copiedAddressesHeader">地址已复制</string>
     <!-- Addresses Copied Alert sub header -->
-    <string name="Alerts.copiedAddressesSubheader">所有的钱包地址已被成功复制。</string>
+    <string name="Alerts.copiedAddressesSubheader">所有钱包的地址已被成功复制。</string>
     <!-- Alert Header Label (the paper key was set) -->
     <string name="Alerts.paperKeySet">纸上密钥已设置</string>
     <!-- Alert Subheader label (playfully positive) -->
@@ -61,27 +61,27 @@
     <!-- Alert Header label (the PIN was set) -->
     <string name="Alerts.pinSet">PIN 已设置</string>
     <!-- Send failure alert header label (the send failed to happen) -->
-    <string name="Alerts.sendFailure">发送失败</string>
+    <string name="Alerts.sendFailure">交易失败</string>
     <!-- Send success alert header label (confirmation that the send happened) -->
-    <string name="Alerts.sendSuccess">发送确认</string>
+    <string name="Alerts.sendSuccess">交易成功</string>
     <!-- Send success alert subheader label (e.g. the money was sent) -->
-    <string name="Alerts.sendSuccessSubheader">钱已发送！</string>
+    <string name="Alerts.sendSuccessSubheader">代币已发送！</string>
     <!-- Fingerprint was recognized by the scanner -->
-    <string name="Alerts.touchIdSucceeded.android">已识别指纹</string>
+    <string name="Alerts.touchIdSucceeded.android">指纹识别成功！</string>
     <!-- Tell the user where they can enable permissions to access device storage. -->
-    <string name="Android.allowFileSystemAccess">请在您的设备设置中启用存储空间使用权限：“设置” &gt; “应用” &gt; “Electra” &gt; “权限”。</string>
+    <string name="Android.allowFileSystemAccess">请在您设备的设置中启用Electra钱包的存储空间使用权限：“设置” &gt; “应用程序” &gt; “Electra” &gt; “权限”。</string>
     <!-- The "home" screen is the name of the top level menu for the app. -->
-    <string name="Android.BCH.welcome.message">您钱包中的任何比特币现金 (BCH) 均可通过主屏幕访问。</string>
+    <string name="Android.BCH.welcome.message">您钱包中的任何Electra现金 (BCH) 均可通过主屏幕访问。</string>
     <!-- Warning about using apps that can alter the screen -->
-    <string name="Android.screenAlteringMessage">您应禁用屏幕更改应用（如 Twilight），否则 Electra 将无法正常工作。</string>
+    <string name="Android.screenAlteringMessage">您应禁用屏幕更改的应用（如 Twilight），否则 Electra 将无法正常工作。</string>
     <!-- An app that alters the screen ("screen-altering app") has been detected. -->
     <string name="Android.screenAlteringTitle">检测到屏幕更改应用</string>
     <!-- JSON Serialization error message -->
     <string name="ApiClient.jsonError">JSON 串行化错误</string>
     <!-- Wallet not ready error message -->
-    <string name="ApiClient.notReady">钱包尚未备好</string>
+    <string name="ApiClient.notReady">钱包还没有准备好</string>
     <!-- API Token error message -->
-    <string name="ApiClient.tokenError">无法检索 API 令牌</string>
+    <string name="ApiClient.tokenError">无法检索到 API 令牌</string>
     <!-- Send BCH view body. -->
     <string name="BCH.body">在下方输入目标 BCH 地址。您钱包中此分叉 (%1$s) 时的所有 BCH 都将被发送。</string>
     <!-- Confirm sending <$5.00> to <address>? -->
@@ -89,13 +89,13 @@
     <!-- Confirmation alert title -->
     <string name="BCH.confirmationTitle">确认</string>
     <!-- Generic bch erorr message -->
-    <string name="BCH.genericError">您的账户不包含任何 BCH，或您在分叉后才接收到 BCH。</string>
+    <string name="BCH.genericError">您的账户不包含任何 BCH，或您在分叉后才能接收到 BCH。</string>
     <!-- Transaction ID copied message -->
-    <string name="BCH.hashCopiedMessage">已拷贝交易 ID</string>
+    <string name="BCH.hashCopiedMessage">已复制交易 ID</string>
     <!-- No address error message -->
     <string name="BCH.noAddressError">请输入地址</string>
     <!-- Attempted to scan unsupported qr code error message. -->
-    <string name="BCH.paymentProtocolError">支付协议请求不支持 BCH 交易</string>
+    <string name="BCH.paymentProtocolError">支付协议不支持 BCH 交易</string>
     <!-- BCH successfully sent alert message -->
     <string name="BCH.successMessage">BCH 已成功发送。</string>
     <!-- Widthdraw BCH view title -->
@@ -105,7 +105,7 @@
     <!-- Approve button label -->
     <string name="BitID.approve">批准</string>
     <!-- <sitename> is requesting authentication using your Electra wallet -->
-    <string name="BitID.authenticationRequest">%1$s 正使用您的比特币钱包请求验证</string>
+    <string name="BitID.authenticationRequest">%1$s 正使用您的Electra钱包请求验证</string>
     <!-- Deny button label -->
     <string name="BitID.deny">拒绝</string>
     <!-- BitID error alert title -->
@@ -133,9 +133,9 @@
     <!-- More information button -->
     <string name="Button.moreInfo">更多信息</string>
     <!-- No button -->
-    <string name="Button.no">不</string>
+    <string name="Button.no">否</string>
     <!-- OK button label -->
-    <string name="Button.ok">好</string>
+    <string name="Button.ok">好的</string>
     <!-- receive button -->
     <string name="Button.receive">收到</string>
     <!-- Click this button to sell an asset -->
@@ -149,11 +149,11 @@
     <!-- Yes button -->
     <string name="Button.yes">是</string>
     <!-- Camera plugin instruction -->
-    <string name="CameraPlugin.centerInstruction">将您的身份证号集中在方框中</string>
+    <string name="CameraPlugin.centerInstruction">请确认您的身份证全部在方框中</string>
     <!-- Amount to Send: ($1.00) -->
     <string name="Confirmation.amountLabel">发送金额：</string>
     <!-- Network Fee: ($1.00) -->
-    <string name="Confirmation.feeLabel">网络费：</string>
+    <string name="Confirmation.feeLabel">网络费用：</string>
     <!-- eg. Processing time: This transaction is predicted to complete in [10-60 minutes]. -->
     <string name="Confirmation.processingTime">处理时间：预计此交易将在 %1$s 后完成。</string>
     <!-- Label for "send" button on final confirmation screen -->
@@ -167,7 +167,7 @@
     <!-- Confirm paper phrase error message -->
     <string name="ConfirmPaperPhrase.error">您输入的单词与纸密钥 (Paper Key) 不匹配。请重试。</string>
     <!-- Confirm paper phrase view label. -->
-    <string name="ConfirmPaperPhrase.label">为确保一切均被正确地书写，请在您的纸键输入以下文字。</string>
+    <string name="ConfirmPaperPhrase.label">为确保一切均已被正确地记录，请您依照纸密钥完成以下输入。</string>
     <!-- Word label eg. Word #1, Word #2 -->
     <string name="ConfirmPaperPhrase.word">单词#%1$s</string>
     <!-- Agree to legal terms button -->
@@ -177,11 +177,11 @@
     <!-- Decline to legal terms button -->
     <string name="Crowdsale.decline">拒绝</string>
     <!-- Resume Idnetify verification button -->
-    <string name="Crowdsale.resume">重新验证</string>
+    <string name="Crowdsale.resume">验证</string>
     <!-- Retry Identity verification button -->
     <string name="Crowdsale.retry">重试</string>
     <!-- Electra denomination picker label -->
-    <string name="DefaultCurrency.bitcoinLabel">比特币显示单位</string>
+    <string name="DefaultCurrency.bitcoinLabel">Electra显示单位</string>
     <!-- Exchange rate label -->
     <string name="DefaultCurrency.rateLabel">汇率</string>
     <!-- The wallet is disabled. -->
@@ -197,13 +197,13 @@
     <!-- Email unavailable alert title -->
     <string name="ErrorMessages.emailUnavailableTitle">电子邮箱不可用</string>
     <!-- Message that gets shown when we've detected the user has encountered the looping lock-screen bug. (preserve [ ] characters) -->
-    <string name="ErrorMessages.loopingLockScreen.android">由于您的 Android 版本错误，Electra 无法验证。[Please tap here for more information.]</string>
+    <string name="ErrorMessages.loopingLockScreen.android">由于您的 Android 版本中的错误，Electra 无法验证。[Please tap here for more information.]</string>
     <!-- Messaging unavailable alert title -->
-    <string name="ErrorMessages.messagingUnavailableMessage">本设备未被配置来发送消息。</string>
+    <string name="ErrorMessages.messagingUnavailableMessage">本设备尚未执行相关配置，不能发送消息。</string>
     <!-- Messaging unavailable alert title -->
     <string name="ErrorMessages.messagingUnavailableTitle">消息发送不可用</string>
     <!-- Fingerprint was not recognized by the scanner, please try scanning again -->
-    <string name="ErrorMessages.touchIdFailed.android">未识别出指纹。请再试一次。</string>
+    <string name="ErrorMessages.touchIdFailed.android">未能识别指纹。请再试一次。</string>
     <!-- You can customize your Face ID Spending Limit from the [menu] -->
     <string name="FaceIDSettings.customizeText">您可以在 %1$s 自定义面部识别支出限额。</string>
     <!-- Face Id screen label -->
@@ -237,7 +237,7 @@
     <!-- Fee Selector title -->
     <string name="FeeSelector.title">处理速度</string>
     <!-- This is the section that allows administration of the user's wallet -->
-    <string name="HomeScreen.admin">管理</string>
+    <string name="HomeScreen.admin">管理员</string>
     <!-- Home screen menu button to buy some Electra -->
     <string name="HomeScreen.buy">购买</string>
     <!-- Menu button on the home screen toolbar -->
@@ -247,29 +247,29 @@
     <!-- Label for the total balance of all the user's assets (style is all lower case if your language permits) -->
     <string name="HomeScreen.totalAssets">总资产</string>
     <!-- (Tap here to) trade (your assets for other assets) -->
-    <string name="HomeScreen.trade">换</string>
+    <string name="HomeScreen.trade">交易</string>
     <!-- Checking private key balance progress view text -->
     <string name="Import.checking">正在查看私人密钥余额...</string>
     <!-- Sweep private key confirmation message -->
-    <string name="Import.confirm">从这个私人密钥中发送 %1$s 到您的钱包吗？比特币网络将收到 %2$s 费用。</string>
+    <string name="Import.confirm">从这个私人密钥中发送 %1$s 到您的钱包吗？Electra网络将收到 %2$s 费用。</string>
     <!-- Duplicate key error message -->
-    <string name="Import.Error.duplicate">本私钥已在您的钱包里。</string>
+    <string name="Import.Error.duplicate">您的钱包里已存在该私钥。</string>
     <!-- empty private key error message -->
-    <string name="Import.Error.empty">本私钥为空。</string>
+    <string name="Import.Error.empty">这是一个空的私钥。</string>
     <!-- High fees error message -->
     <string name="Import.Error.highFees">交易费将超过本私钥的可用资金。</string>
     <!-- Not a valid private key error message -->
-    <string name="Import.Error.notValid">并非有效私钥</string>
+    <string name="Import.Error.notValid">该私钥无效</string>
     <!-- Import signing error message -->
-    <string name="Import.Error.signing">错误签名交易</string>
+    <string name="Import.Error.signing">交易签名错误</string>
     <!-- [Redeem] the funds stored on this private key. -->
-    <string name="Import.importButton">兑换</string>
+    <string name="Import.importButton">导入</string>
     <!-- Importing wallet progress view label -->
-    <string name="Import.importing">正在兑换私钥</string>
+    <string name="Import.importing">正在导入私钥</string>
     <!-- Caption for graphics -->
-    <string name="Import.leftCaption">私钥</string>
+    <string name="Import.leftCaption">待导入的钱包</string>
     <!-- Import wallet intro screen message -->
-    <string name="Import.message">私钥通常以 QR 码形式打印在纸上，用于离线存储资金。 兑换私钥，用一笔交易将其控制的全部资金转入 Electra。</string>
+    <string name="Import.message">私钥通常以二维码的形式打印在纸上，用于离线存储资金。 兑换私钥，用一笔交易将其控制的全部资金转入 Electra。</string>
     <!-- Enter password alert view title -->
     <string name="Import.password">本私钥受到密码保护。</string>
     <!-- password textfield placeholder -->
@@ -281,13 +281,13 @@
     <!-- Import wallet success alert title -->
     <string name="Import.success">成功</string>
     <!-- Successfully imported wallet message body -->
-    <string name="Import.SuccessBody">成功兑换私钥。</string>
+    <string name="Import.SuccessBody">成功导入私钥。</string>
     <!-- Import Wallet screen title -->
-    <string name="Import.title">兑换私钥</string>
+    <string name="Import.title">导入钱包</string>
     <!-- Unlocking Private key activity view message. -->
     <string name="Import.unlockingActivity">解锁键</string>
     <!-- Import wallet intro warning message -->
-    <string name="Import.warning">兑换私钥不需要输入交易历史或其他细节。</string>
+    <string name="Import.warning">导入钱包不包含交易历史或其他细节。</string>
     <!-- Wrong password alert message -->
     <string name="Import.wrongPassword">密码错误，请重试。</string>
     <!-- Close app button -->
@@ -295,9 +295,9 @@
     <!-- Ignore jailbreak warning button -->
     <string name="JailbreakWarnings.ignore">忽略</string>
     <!-- Jailbreak warning message -->
-    <string name="JailbreakWarnings.messageWithBalance">设备安全性受损\n任何\'越狱\'应用都可能访问 Electra 的密钥链数据并盗取您的比特币！立即擦除这个钱包并在一台安全设备上进行恢复。</string>
+    <string name="JailbreakWarnings.messageWithBalance">设备安全性受损\n任何\'越狱\'应用都可能访问 Electra 的密钥链数据并盗取您的数字货币！立即擦除这个钱包并在一台安全设备上进行恢复。</string>
     <!-- Jailbreak warning message -->
-    <string name="JailbreakWarnings.messageWithoutBalance">设备安全性受损\n任何\'越狱\'应用都可能访问 Electra 的密钥链数据并盗取您的比特币！请您仅在未越狱设备上使用 Electra 。</string>
+    <string name="JailbreakWarnings.messageWithoutBalance">设备安全性受损\n任何\'越狱\'应用都可能访问 Electra 的密钥链数据并盗取您的数字货币！请您仅在未越狱设备上使用 Electra 。</string>
     <!-- Jailbreak warning title -->
     <string name="JailbreakWarnings.title">警告</string>
     <!-- Wipe wallet button -->
@@ -307,7 +307,7 @@
     <!-- Decline link wallet button label -->
     <string name="LinkWallet.decline">拒绝</string>
     <!-- Link Wallet view dislaimer footer -->
-    <string name="LinkWallet.disclaimer">外部应用没有本设备的许可将不能汇钱</string>
+    <string name="LinkWallet.disclaimer">外部应用在没有本设备的许可下将不能汇钱</string>
     <!-- Link Wallet view title above domain list -->
     <string name="LinkWallet.domainTitle">注意:仅在如下域名时才使用本应用</string>
     <!-- Link wallet logo footer text -->
@@ -323,7 +323,7 @@
     <!-- Wallet creation date prefix -->
     <string name="ManageWallet.creationDatePrefix">您在%1$s上创建了您的钱包</string>
     <!-- Manage wallet description text -->
-    <string name="ManageWallet.description">您的钱包名称仅出现在您的帐户交易记录中，其他任何人无法看到。</string>
+    <string name="ManageWallet.description">您的钱包名称仅出现在您帐户的交易记录中，其他任何人都无法看到。</string>
     <!-- Change Wallet name textfield label -->
     <string name="ManageWallet.textFeildLabel">钱包名称</string>
     <!-- Manage wallet modal title -->
@@ -331,13 +331,13 @@
     <!-- "Add [a] Wallet [to the home screen]" -->
     <string name="MenuButton.addWallet">添加钱包</string>
     <!-- Menu button title -->
-    <string name="MenuButton.lock">锁住钱包</string>
+    <string name="MenuButton.lock">锁定钱包</string>
     <!-- (Click here to) manage (your list of) wallets -->
     <string name="MenuButton.manageWallets">管理钱包</string>
     <!-- (press here to) scan (a) QR code -->
-    <string name="MenuButton.scan">扫描QR</string>
+    <string name="MenuButton.scan">扫描二维码</string>
     <!-- Menu button title -->
-    <string name="MenuButton.security">安全中心</string>
+    <string name="MenuButton.security">安全设置</string>
     <!-- Menu button title -->
     <string name="MenuButton.settings">设置</string>
     <!-- Menu button title -->
@@ -367,11 +367,11 @@
     <!-- Node status label -->
     <string name="NodeSelector.statusLabel">节点连接状态</string>
     <!-- Node Selector view title -->
-    <string name="NodeSelector.title">比特币节点</string>
+    <string name="NodeSelector.title">Electra节点</string>
     <!-- Onboarding screen 'I'll browse first' button -->
     <string name="Onboarding.browseFirst">我要先浏览一下</string>
     <!-- Onboarding screen 'Buy some coin' button -->
-    <string name="Onboarding.buyCoin">购买一些钱币</string>
+    <string name="Onboarding.buyCoin">购买一些数字代币</string>
     <!-- Onboarding screen 'Get started' (create new wallet) button -->
     <string name="Onboarding.getStarted">开始</string>
     <!-- Onboarding screen 'Next' button -->
@@ -383,45 +383,45 @@
     <!-- Onboarding screen Page 4 title -->
     <string name="OnboardingPageFour.title">今天就开始投资吧,只需 50 美元！</string>
     <!-- Onboarding screen Page 1 title -->
-    <string name="OnboardingPageOne.title">欢迎来到你新的世界钱包！</string>
+    <string name="OnboardingPageOne.title">欢迎来到新的Electra钱包！</string>
     <!-- Onboarding screen Page 3 subtitle -->
-    <string name="OnboardingPageThree.subtitle">轻松又安全地与 Electra 进行投资和多样化</string>
+    <string name="OnboardingPageThree.subtitle">使用Electra 进行交易、投资，轻松、安全。</string>
     <!-- Onboarding screen Page 3 title -->
-    <string name="OnboardingPageThree.title">购买并交易比特币,代币和其他数字货币。</string>
+    <string name="OnboardingPageThree.title">购买并交易Electra,代币和其他数字货币。</string>
     <!-- Onboarding screen Page 2 subtitle -->
     <string name="OnboardingPageTwo.subtitle">我们有价值超过 600 亿美元的资产受到保护。</string>
     <!-- Onboarding screen Page 2 title -->
-    <string name="OnboardingPageTwo.title">成为全世界信任 Electra 的 150 万人中的一员。</string>
+    <string name="OnboardingPageTwo.title">成为全世界中信任 Electra 的 150 万人中的一员。</string>
     <!-- Eg. Send 1.0Eth to purchase CCC -->
     <string name="PaymentConfirmation.amountText">发送%1$s以购买%2$s</string>
     <!-- Payment confirmation view title -->
     <string name="PaymentConfirmation.title">确认</string>
     <!-- Bad Payment request alert title -->
-    <string name="PaymentProtocol.Errors.badPaymentRequest">假的付款请求</string>
+    <string name="PaymentProtocol.Errors.badPaymentRequest">错误的付款请求</string>
     <!-- Error opening payment protocol file message -->
     <string name="PaymentProtocol.Errors.corruptedDocument">不受支持或受损的文档</string>
     <!-- Missing certificate payment protocol error message -->
-    <string name="PaymentProtocol.Errors.missingCertificate">缺失的证书</string>
+    <string name="PaymentProtocol.Errors.missingCertificate">证书缺失</string>
     <!-- Request expired payment protocol error message -->
     <string name="PaymentProtocol.Errors.requestExpired">请求已过期</string>
     <!-- Payment too small alert title -->
     <string name="PaymentProtocol.Errors.smallOutputError">无法付款</string>
     <!-- Amount too small error message -->
-    <string name="PaymentProtocol.Errors.smallPayment">比特币支付不能小于%1$s。</string>
+    <string name="PaymentProtocol.Errors.smallPayment">Electra支付最小额度不能小于%1$s。</string>
     <!-- Output too small error message. -->
-    <string name="PaymentProtocol.Errors.smallTransaction">比特币交易输出不能小于 %1$s。</string>
+    <string name="PaymentProtocol.Errors.smallTransaction">Electra交易额度不能小于 %1$s。</string>
     <!-- Unsupported signature type payment protocol error message -->
     <string name="PaymentProtocol.Errors.unsupportedSignatureType">不受支持的签名类型</string>
     <!-- Untrusted certificate payment protocol error message -->
     <string name="PaymentProtocol.Errors.untrustedCertificate">不可信证书</string>
     <!-- Body text for a prompt that asks the user to subscribe to email updates to find out product updates. -->
-    <string name="Prompts.Email.body">率先接收重要支持和产品更新</string>
+    <string name="Prompts.Email.body">率先接收重要支持信息和产品更新</string>
     <!-- Placeholder text for an email address text field. -->
     <string name="Prompts.Email.placeholder">输入您的电子邮箱</string>
     <!-- Body text that is shown when the user successfully subscribes to email updates. -->
     <string name="Prompts.Email.successBody">您已成功订阅接收更新</string>
     <!-- Text that is displayed as a footnote when the user successfully subscribes to email updates. -->
-    <string name="Prompts.Email.successFootnote">我们感谢您的持续支持</string>
+    <string name="Prompts.Email.successFootnote">我们感谢您持续的支持！</string>
     <!-- Title that is shown when the user successfully subscribes to email updates. -->
     <string name="Prompts.Email.successTitle">谢谢！</string>
     <!-- Title for a prompt that asks the user to subscribe to email updates to find out product updates. -->
@@ -435,41 +435,41 @@
     <!-- No Passcode set warning title -->
     <string name="Prompts.NoPasscode.title">开启设备密码</string>
     <!-- Instruction how to enable device encryption -->
-    <string name="Prompts.NoScreenLock.body.android">需要设备屏幕锁定才能保护您的钱包。在“设置”&gt;“安全”&gt;“屏幕锁定”中启用它以便继续。</string>
+    <string name="Prompts.NoScreenLock.body.android">需要设备屏幕锁定功能才能保护您的钱包。在“设置”&gt;“安全”&gt;“屏幕锁定”中启用它以便继续。</string>
     <!-- Device encryption prompt title -->
     <string name="Prompts.NoScreenLock.title.android">屏幕锁定已禁用</string>
     <!-- Warning about paper key. -->
-    <string name="Prompts.PaperKey.body">为了应对手机丢失或者更换， 请您务必写下你的纸键。点击此处继续。</string>
+    <string name="Prompts.PaperKey.body">为了应对手机丢失或者更换， 请您务必写下你的纸密钥。点击此处继续。</string>
     <!-- An action is required (You must do this action). -->
-    <string name="Prompts.PaperKey.title">需要采取的行动</string>
+    <string name="Prompts.PaperKey.title">需要更多操作</string>
     <!-- Transaction rejected prompt body -->
-    <string name="Prompts.RecommendRescan.body">您的钱包可能不同步。通常可通过重新扫描区块链来修复。</string>
+    <string name="Prompts.RecommendRescan.body">您的钱包可能没有与区块链同步。通常可通过重新扫描区块链来修复。</string>
     <!-- Transaction rejected prompt title -->
-    <string name="Prompts.RecommendRescan.title">交易被拒</string>
+    <string name="Prompts.RecommendRescan.title">交易被拒绝</string>
     <!-- Share data prompt body -->
     <string name="Prompts.ShareData.body">与我们分享您的匿名数据来帮助改善 Electra。</string>
     <!-- Share data prompt title -->
     <string name="Prompts.ShareData.title">分享匿名数据</string>
     <!-- Enable touch ID prompt body -->
-    <string name="Prompts.TouchId.body">点击此处以启用触摸 ID</string>
+    <string name="Prompts.TouchId.body">点击此处以启用触控 ID</string>
     <!-- Enable Fingerprint prompt body -->
-    <string name="Prompts.TouchId.body.android">点击此处启用指纹认证</string>
+    <string name="Prompts.TouchId.body.android">点击此处启用指纹识别</string>
     <!-- Enable touch ID prompt title -->
-    <string name="Prompts.TouchId.title">启用触摸 ID</string>
+    <string name="Prompts.TouchId.title">启用触控 ID</string>
     <!-- Enable Fingerprint prompt title -->
-    <string name="Prompts.TouchId.title.android">启用指纹认证</string>
+    <string name="Prompts.TouchId.title.android">启用指纹识别</string>
     <!-- Button on fingerprint prompt so the user can enter their PIN instead -->
-    <string name="Prompts.TouchId.usePin.android">密码</string>
+    <string name="Prompts.TouchId.usePin.android">PIN</string>
     <!-- Upgrade PIN prompt body. -->
-    <string name="Prompts.UpgradePin.body">Electra 已升级到使用 6 位 PIN。点击此处升级。</string>
+    <string name="Prompts.UpgradePin.body">Electra 已升级到使用 6 位 PIN。点击此处进行升级。</string>
     <!-- Upgrade PIN prompt title. -->
     <string name="Prompts.UpgradePin.title">升级 PIN</string>
     <!-- Notifications will be added later but users can set their preferences now, which is why we specify "in the future". -->
-    <string name="PushNotifications.body">打开推送通知，以便将来从 Electra 接收特殊消息。</string>
+    <string name="PushNotifications.body">打开推送通知，以便接收Electra的消息。</string>
     <!-- Push notifications are disabled alert title" -->
-    <string name="PushNotifications.disabled">提示已禁用</string>
+    <string name="PushNotifications.disabled">推送通知已禁用</string>
     <!-- Push notifications settings instructions -->
-    <string name="PushNotifications.enableInstructions">在设置里开启提示以接收提醒</string>
+    <string name="PushNotifications.enableInstructions">在设置里开启推送通知以接收提醒</string>
     <!-- Push notifications toggle switch label -->
     <string name="PushNotifications.label">推送通知</string>
     <!-- Push notifications are off label -->
@@ -495,13 +495,13 @@
     <!-- Recover wallet header -->
     <string name="RecoverWallet.header">恢复钱包</string>
     <!-- Reset PIN with paper key: header -->
-    <string name="RecoverWallet.header_reset_pin">复位 PIN</string>
+    <string name="RecoverWallet.header_reset_pin">重置 PIN</string>
     <!-- Enter paper key instruction -->
-    <string name="RecoverWallet.instruction">输入纸键</string>
+    <string name="RecoverWallet.instruction">输入纸密钥</string>
     <!-- Recover wallet intro -->
-    <string name="RecoverWallet.intro">用您的纸键恢复您的 Electra。</string>
+    <string name="RecoverWallet.intro">用您的纸密钥恢复您的 Electra。</string>
     <!-- Invalid paper key message -->
-    <string name="RecoverWallet.invalid">您输入的纸键无效。请仔细检查每个单词并重试。</string>
+    <string name="RecoverWallet.invalid">您输入的纸密钥无效。请仔细检查每个单词并重试。</string>
     <!-- Previous button accessibility label -->
     <string name="RecoverWallet.leftArrow">左箭头键</string>
     <!-- Next button label -->
@@ -511,9 +511,9 @@
     <!-- Next button accessibility label -->
     <string name="RecoverWallet.rightArrow">右箭头键</string>
     <!-- Recover wallet sub-header -->
-    <string name="RecoverWallet.subheader">输入您想恢复的钱包的纸键。</string>
+    <string name="RecoverWallet.subheader">输入您想恢复钱包的纸密钥。</string>
     <!-- Reset PIN with paper key: sub-header -->
-    <string name="RecoverWallet.subheader_reset_pin">要重置 PIN 码，请在下面的框中输入纸上密钥中的单词。</string>
+    <string name="RecoverWallet.subheader_reset_pin">要重置 PIN 码，请在下面的框中输入纸密钥中的单词。</string>
     <!-- No amount entered error message. -->
     <string name="RequestAnAmount.noAmount">请先输入金额。</string>
     <!-- Request a specific amount of Electra -->
@@ -521,19 +521,19 @@
     <!-- Alert action button label -->
     <string name="ReScan.alertAction">同步</string>
     <!-- Alert message body -->
-    <string name="ReScan.alertMessage">您不能在同步的同时寄钱。</string>
+    <string name="ReScan.alertMessage">您不能在同步时发送交易。</string>
     <!-- Alert message title -->
     <string name="ReScan.alertTitle">与区块链同步？</string>
     <!-- extimated time -->
     <string name="ReScan.body1">20-45 分钟</string>
     <!-- Syncing explanation -->
-    <string name="ReScan.body2">如果某次交易在比特币网络上显示为已完成，却不在您的 Electra 里。</string>
+    <string name="ReScan.body2">如果某次交易在Electra网络上显示为已完成，却不在您的 Electra 钱包里。</string>
     <!-- Syncing explanation -->
     <string name="ReScan.body3">你反复得到交易被拒绝的出错信息。</string>
     <!-- Start Sync button label -->
     <string name="ReScan.buttonTitle">开始同步</string>
     <!-- Sync blockchain view footer -->
-    <string name="ReScan.footer">您不能在与区块链同步的同时寄钱。</string>
+    <string name="ReScan.footer">您不能在同步时发送交易。</string>
     <!-- Sync Blockchain view header -->
     <string name="ReScan.header">同步区块链</string>
     <!-- Subheader label -->
@@ -545,7 +545,7 @@
     <!-- Complete filter label -->
     <string name="Search.complete">完成</string>
     <!-- Pending filter label -->
-    <string name="Search.pending">待定</string>
+    <string name="Search.pending">待确认交易</string>
     <!-- Received filter label -->
     <string name="Search.received">已收到</string>
     <!-- [Click here to] search -->
@@ -555,27 +555,27 @@
     <!-- Face ID button title -->
     <string name="SecurityCenter.faceIdTitle">面部识别</string>
     <!-- Paper Key button description -->
-    <string name="SecurityCenter.paperKeyDescription">若您丢失或升级您的手机，访问您的比特币的唯一方法。</string>
+    <string name="SecurityCenter.paperKeyDescription">若您丢失或升级您的手机，这是访问您Electra钱包的唯一方法。</string>
     <!-- Paper Key button title -->
-    <string name="SecurityCenter.paperKeyTitle">纸键</string>
+    <string name="SecurityCenter.paperKeyTitle">纸密钥</string>
     <!-- PIN button description -->
     <string name="SecurityCenter.pinDescription">保护您的 Electra 免遭未授权用户盗用。</string>
     <!-- PIN button title -->
     <string name="SecurityCenter.pinTitle">6 位 PIN</string>
     <!-- Touch ID button description -->
-    <string name="SecurityCenter.touchIdDescription">方便地解锁 Electra，在设定限额下汇钱。</string>
+    <string name="SecurityCenter.touchIdDescription">方便地解锁 Electra，在设定的限额下进行交易。</string>
     <!-- Touch ID button title -->
-    <string name="SecurityCenter.touchIdTitle">触摸 ID</string>
+    <string name="SecurityCenter.touchIdTitle">触控 ID</string>
     <!-- Security center fingerprint authentication button -->
-    <string name="SecurityCenter.touchIdTitle.android">指纹认证</string>
+    <string name="SecurityCenter.touchIdTitle.android">指纹识别</string>
     <!-- Segwit enabled confirmation title -->
     <string name="Segwit.ConfirmationConfirmationTitle">您已启用 SegWit！</string>
     <!-- Segwit enabled confirmation description -->
-    <string name="Segwit.ConfirmationInstructionsDescription">感谢您帮助比特币发展。</string>
+    <string name="Segwit.ConfirmationInstructionsDescription">感谢您帮助Electra发展。</string>
     <!-- Segwit instructions -->
-    <string name="Segwit.ConfirmationInstructionsInstructions">SegWit 支持还是一项不成熟的测试功能。\n启用 SegWit 后,将无法将其禁用。\n您可以在\"设置\"下找到传统地址。\n启用了 SegWit 的用户可能无法使用包括加密货币交易在内的部分第三方服务。如果出现紧急情况,您可以通过\"首选项\"(Preferences) &gt;\"比特币设置\"(Electra Settings) 生成一个传统地址。\n在将来的更新中,将自动为所有用户\n启用 SegWit。</string>
+    <string name="Segwit.ConfirmationInstructionsInstructions">SegWit 支持还是一项不成熟的测试功能。在\n启用 SegWit 后,将无法将其禁用。\n您可以在\"设置\"下找到传统钱包地址。\n启用了 SegWit 的用户可能无法使用包括加密货币交易在内的部分第三方服务。如果出现紧急情况,您可以通过\"首选项\"(Preferences) &gt;\"Electra设置\"(Electra Settings) 生成一个传统地址。\n在未来的更新中,将自动为所有用户\n启用 SegWit。</string>
     <!-- Segwit extra confirmation title. -->
-    <string name="Segwit.ConfirmChoiceLayout">启用 SegWit 是不可逆转的功能。是否确定要继续？</string>
+    <string name="Segwit.ConfirmChoiceLayout">启用 SegWit 是不可撤销的。确定要继续？</string>
     <!-- Segwit enableButton -->
     <string name="Segwit.Enable">启用</string>
     <!-- Send money amount label -->
@@ -587,11 +587,11 @@
     <!-- Permission required to access camera -->
     <string name="Send.cameraUnavailabeTitle.android">Electra 没有访问相机的权限</string>
     <!-- Camera not allowed message -->
-    <string name="Send.cameraunavailableMessage">前往“设置”以允许访问照相机。</string>
+    <string name="Send.cameraunavailableMessage">前往“设置”以启用相机访问权限。</string>
     <!-- Camera not allowed alert title -->
-    <string name="Send.cameraUnavailableTitle">Electra 不允许访问照相机</string>
+    <string name="Send.cameraUnavailableTitle">Electra 没有访问相机的权限</string>
     <!-- Warning when sending to self. -->
-    <string name="Send.containsAddress">目标是您自己的地址。您不能发送给您自己。</string>
+    <string name="Send.containsAddress">目标是您自己的钱包地址。您不能发送给您自己。</string>
     <!-- Could not create transaction alert title -->
     <string name="Send.creatTransactionError">无法创建交易。</string>
     <!-- Description for sending money label -->
@@ -599,7 +599,7 @@
     <!-- Emtpy pasteboard error message -->
     <string name="Send.emptyPasteboard">粘贴板为空</string>
     <!-- "(you) can't send (to your)self" -->
-    <string name="Send.ethSendSelf">不能发给自己</string>
+    <string name="Send.ethSendSelf">不能发送给自己</string>
     <!-- Network Fee: $0.01 -->
     <string name="Send.fee">网络费：%1$s</string>
     <!-- Payee identity not certified alert title. -->
@@ -617,23 +617,23 @@
     <!-- Invalid address alert title -->
     <string name="Send.invalidAddressTitle">无效地址</string>
     <!-- Is rescanning error message -->
-    <string name="Send.isRescanning">完全扫描期间发送功能已被禁用。</string>
+    <string name="Send.isRescanning">完整扫描期间发送功能已被禁用。</string>
     <!-- Warning when the user is trying to send bitcoin cash to a legacy bitcoin address (possible, but probably not what the user wants to do) -->
-    <string name="Send.legacyAddressWarning">警告：这是已停用的比特币地址。您确定要向这个地址发送比特币现金吗？</string>
+    <string name="Send.legacyAddressWarning">警告：这是已被比特币地址。您确定要向这个地址发送比特币现金吗？</string>
     <!-- We are loading the request (now) -->
     <string name="Send.loadingRequest">加载请求中</string>
     <!-- Transaction fee could not be be caluculated error. -->
     <string name="Send.nilFeeError">资金不够支付交易费。</string>
     <!-- Empty address alert message -->
-    <string name="Send.noAddress">请输入收件人地址。</string>
+    <string name="Send.noAddress">请输入收款认地址。</string>
     <!-- Emtpy amount alert message -->
-    <string name="Send.noAmount">请输入汇款金额。</string>
+    <string name="Send.noAmount">请输入交易金额。</string>
     <!-- No Fees error -->
-    <string name="Send.noFeesError">正在下载网络费状态。请重试。</string>
+    <string name="Send.noFeesError">正在下载网络费用状态。请重试。</string>
     <!-- Paste button label -->
     <string name="Send.pasteLabel">粘贴</string>
     <!-- Could not publish transaction alert title -->
-    <string name="Send.publishTransactionError">无法发布交易。</string>
+    <string name="Send.publishTransactionError">无法广播交易。</string>
     <!-- Could not load remote request error message -->
     <string name="Send.remoteRequestError">无法加载支付请求</string>
     <!-- Scan button label -->
@@ -641,15 +641,15 @@
     <!-- Send button label (the action, "press here to send") -->
     <string name="Send.sendLabel">发送</string>
     <!-- Send button label (for special case where the user specified send amount is too high and does not leave a balance to cover fees.) -->
-    <string name="Send.sendMaximum">发送最高金额?</string>
+    <string name="Send.sendMaximum">发送交易最高限额?</string>
     <!-- Send screen title (as in "this is the screen for sending money") -->
     <string name="Send.title">发送</string>
     <!-- Send money to label -->
     <string name="Send.toLabel">至</string>
     <!-- Adress already used alert message - first part -->
-    <string name="Send.UsedAddress.firstLine">比特币地址仅供一次性使用。</string>
+    <string name="Send.UsedAddress.firstLine">Electra地址仅供一次性使用。</string>
     <!-- Adress already used alert message - second part -->
-    <string name="Send.UsedAddress.secondLIne">重复使用会削弱您和收件人的隐私，如果收件人不直接控制地址，可能会导致损失。</string>
+    <string name="Send.UsedAddress.secondLIne">重复使用会削弱您和收款人的隐私，如果收款人不直接控制地址，可能会导致损失。</string>
     <!-- Adress already used alert title -->
     <string name="Send.UsedAddress.title">地址已被使用</string>
     <!-- About label -->
@@ -665,7 +665,7 @@
     <!-- Section title for a collection of different settings screens, one for each currency -->
     <string name="Settings.currencySettings">货币设置</string>
     <!-- Join Early access label -->
-    <string name="Settings.earlyAccess">加入早期访问</string>
+    <string name="Settings.earlyAccess">加入Early Access</string>
     <!-- Enable segwit. -->
     <string name="Settings.EnableSegwit">启用 SegWit</string>
     <!-- Are you enjoying Electra alert message body -->
@@ -685,7 +685,7 @@
     <!-- Tap here to reset the list of currencies to the default settings. -->
     <string name="Settings.resetCurrencies">重置为默认货币</string>
     <!-- Leave review button label -->
-    <string name="Settings.review">给我们评论</string>
+    <string name="Settings.review">留下评论</string>
     <!-- Share anonymous data label -->
     <string name="Settings.shareData">分享匿名数据</string>
     <!-- Sync blockchain label -->
@@ -695,13 +695,13 @@
     <!-- Touch ID spending limit label -->
     <string name="Settings.touchIdLimit">触摸 ID 支出限制</string>
     <!-- The fingerprint spending limit -->
-    <string name="Settings.touchIdLimit.android">指纹认证支出限额</string>
+    <string name="Settings.touchIdLimit.android">指纹识别支出限额</string>
     <!-- View legacy address (old format). -->
     <string name="Settings.ViewLegacyAddress">查看传统接收地址</string>
     <!-- Receive Electra instructions -->
-    <string name="Settings.ViewLegacyAddressReceiveDescription">请仅发送Electra (ECA) 至此地址。发送至此地址的任何其他资产将永久丢失。</string>
+    <string name="Settings.ViewLegacyAddressReceiveDescription">请仅发送Electra(ECA)至此地址。发送至此地址的任何其他资产将永久丢失。</string>
     <!-- Receive Electra -->
-    <string name="Settings.ViewLegacyAddressReceiveTitle">接收比特币</string>
+    <string name="Settings.ViewLegacyAddressReceiveTitle">接收Electra</string>
     <!-- Wallet Settings section header -->
     <string name="Settings.wallet">钱包</string>
     <!-- Unlink/delete your wallet from the current device. -->
@@ -715,15 +715,15 @@
     <!-- button label -->
     <string name="StartPaperPhrase.againButtonTitle">再次书写纸键</string>
     <!-- Paper key explanation text. -->
-    <string name="StartPaperPhrase.body">如果您的手机丢失、被盗、损坏或升级，纸上密钥是恢复 Electra 的唯一方法。\n\n\n我们将向您显示一张单词表，请将其写在纸上并保存在安全的地方。</string>
+    <string name="StartPaperPhrase.body">如果您的手机丢失、被盗、损坏或升级，纸密钥是恢复 Electra 的唯一方法。\n\n\n我们将向您显示一张单词表，请将其写在纸上并保存在安全的地方。</string>
     <!-- button label -->
     <string name="StartPaperPhrase.buttonTitle">写下纸键</string>
     <!-- Argument is date -->
-    <string name="StartPaperPhrase.date">您最后一次记录纸上密钥是在 %1$s</string>
+    <string name="StartPaperPhrase.date">您最后一次记录纸密钥是在 %1$s</string>
     <!-- button label -->
     <string name="StartViewController.createButton">创建新钱包</string>
     <!-- Start view message -->
-    <string name="StartViewController.message">使用比特币最安全且最可靠的方式。</string>
+    <string name="StartViewController.message">使用Electra最安全且最可靠的方式。</string>
     <!-- Recover your wallet from a backup -->
     <string name="StartViewController.recoverButton">恢复钱包</string>
     <!-- Syncing view connectiong state header text -->
@@ -735,7 +735,7 @@
     <!-- Retry button label -->
     <string name="SyncingView.retry">重试</string>
     <!-- "eg. Synced through <Jan 12, 2015> -->
-    <string name="SyncingView.syncedThrough">从 %1$s 同步</string>
+    <string name="SyncingView.syncedThrough">上一次同步时间： %1$s</string>
     <!-- Syncing view syncing state header text -->
     <string name="SyncingView.syncing">同步中</string>
     <!-- 6 d (6 days) -->
@@ -759,47 +759,47 @@
     <!-- Show [this item on your home screen] -->
     <string name="TokenList.show">显示</string>
     <!-- You can customize your Touch ID Spending Limit from the [TouchIdSettings.linkText gets added here as a button] -->
-    <string name="TouchIdSettings.customizeText">你可以自定义从 %1$s 的 Touch ID 支出限额。</string>
+    <string name="TouchIdSettings.customizeText">你可以自定义从 %1$s 的 触控 ID 支出限额。</string>
     <!-- Fingerprint enabling description body -->
     <string name="TouchIdSettings.customizeText.android">您可以从“指纹授权支出限额”页面自定义指纹认证支出限额</string>
     <!-- Instruction for the fingerprint setup -->
-    <string name="TouchIdSettings.disabledWarning.body.android">您尚未在此设备上启用指纹认证。前往“设置” -&gt;“安全”来设置指纹认证。</string>
+    <string name="TouchIdSettings.disabledWarning.body.android">您尚未在此设备上启用指纹识别。前往“设置” -&gt;“安全”来设置指纹识别。</string>
     <!-- Fingerprint Is Not Setup -->
-    <string name="TouchIdSettings.disabledWarning.title.android">指纹认证未启用</string>
+    <string name="TouchIdSettings.disabledWarning.title.android">指纹识别未启用</string>
     <!-- Touch Id screen label -->
-    <string name="TouchIdSettings.label">请用指纹解锁 Electra 并在设定限额下汇钱。</string>
+    <string name="TouchIdSettings.label">请用指纹解锁 Electra 并在设定限额下交易。</string>
     <!-- Link Text (see TouchIdSettings.customizeText) -->
-    <string name="TouchIdSettings.linkText">Touch ID 支出限额屏幕</string>
+    <string name="TouchIdSettings.linkText">触控 ID 支出限额页面</string>
     <!-- Spending Limit: b100,000 ($100) -->
-    <string name="TouchIdSettings.spendingLimit">支出限制：%1$s (%2$s)</string>
+    <string name="TouchIdSettings.spendingLimit">消费限制：%1$s (%2$s)</string>
     <!-- Touch id switch label. -->
-    <string name="TouchIdSettings.switchLabel">针对 Electra 启用触摸 ID</string>
+    <string name="TouchIdSettings.switchLabel">针对 Electra 启用触控 ID</string>
     <!-- Enable fingerprint for this wallet called Electra -->
-    <string name="TouchIdSettings.switchLabel.android">指纹认证</string>
+    <string name="TouchIdSettings.switchLabel.android">指纹识别</string>
     <!-- Touch ID settings view title -->
-    <string name="TouchIdSettings.title">触摸 ID</string>
+    <string name="TouchIdSettings.title">触控 ID</string>
     <!-- Fingerprint authentication label -->
-    <string name="TouchIdSettings.title.android">指纹认证</string>
+    <string name="TouchIdSettings.title.android">指纹识别</string>
     <!-- Touch ID unavailable alert message -->
-    <string name="TouchIdSettings.unavailableAlertMessage">您尚未在本设备上设置触摸 ID。现在前往设置 -&gt; 触摸 ID和密码进行设置。</string>
+    <string name="TouchIdSettings.unavailableAlertMessage">您尚未在本设备上设置触控 ID。现在前往设置 -&gt; 触摸 ID和密码进行设置。</string>
     <!-- Touch ID unavailable alert title -->
-    <string name="TouchIdSettings.unavailableAlertTitle">触摸 ID 未设置</string>
+    <string name="TouchIdSettings.unavailableAlertTitle">触控 ID 未设置</string>
     <!-- Always require passcode option -->
     <string name="TouchIdSpendingLimit">始终需要密码</string>
     <!-- Touch ID spending limit screen body -->
     <string name="TouchIdSpendingLimit.body">如需发送超过您支出金额限制的任何交易，您将需要输入您的 6 位数 PIN 码。在您输入 6 位数 PIN 码后每 48 小时您都需要重新输入该 PIN 码。</string>
     <!-- Touch Id spending limit screen title -->
-    <string name="TouchIdSpendingLimit.title">触摸 ID 支出限制</string>
+    <string name="TouchIdSpendingLimit.title">触控 ID 消费限额</string>
     <!-- name of spending limit when using fingerprint authorization -->
-    <string name="TouchIdSpendingLimit.title.android">指纹授权支出限额</string>
+    <string name="TouchIdSpendingLimit.title.android">指纹授权消费限额</string>
     <!-- Availability status text -->
     <string name="Transaction.available">可供支出</string>
     <!-- Transaction complete label -->
     <string name="Transaction.complete">完成</string>
     <!-- Transaction is confirming status text -->
-    <string name="Transaction.confirming">进行中</string>
+    <string name="Transaction.confirming">处理中</string>
     <!-- eg. Ending balance: $50.00 -->
-    <string name="Transaction.ending">期末余额：%1$s</string>
+    <string name="Transaction.ending">完成交易后余额：%1$s</string>
     <!-- Exchange rate on date header -->
     <string name="Transaction.exchangeOnDayReceived">接收时汇率：</string>
     <!-- Exchange rate on date header -->
@@ -807,23 +807,23 @@
     <!-- Transaction failed status text -->
     <string name="Transaction.failed">失败</string>
     <!-- (b600 fee) -->
-    <string name="Transaction.fee">(%1$s 费用)</string>
+    <string name="Transaction.fee">(费用：%1$s )</string>
     <!-- Invalid transaction -->
     <string name="Transaction.invalid">无效</string>
     <!-- Timestamp label for event that just happened -->
     <string name="Transaction.justNow">刚刚</string>
     <!-- Transaction is pending status text -->
-    <string name="Transaction.pending">待定</string>
+    <string name="Transaction.pending">处理中</string>
     <!-- Receive status text: 'In progress: 20%' -->
-    <string name="Transaction.receivedStatus">进行中：%1$s</string>
+    <string name="Transaction.receivedStatus">处理中：%1$s</string>
     <!-- Send status text: 'In progress: 20%' -->
-    <string name="Transaction.sendingStatus">进行中：%1$s</string>
+    <string name="Transaction.sendingStatus">处理中：%1$s</string>
     <!-- sending to <address> -->
     <string name="Transaction.sendingTo">正在发送至 %1$s</string>
     <!-- sent to <address> -->
     <string name="Transaction.sentTo">已发送至 %1$s</string>
     <!-- eg. Starting balance: $50.00 -->
-    <string name="Transaction.starting">期初余额：%1$s</string>
+    <string name="Transaction.starting">交易前余额：%1$s</string>
     <!-- e.g. "[The money you paid was a] Fee for token transfer: Electra" (Electra is the token that was transfered) -->
     <string name="Transaction.tokenTransfer">代币转让费用： %1$s</string>
     <!-- Waiting to be confirmed string -->
@@ -845,15 +845,15 @@
     <!-- Block height label -->
     <string name="TransactionDetails.blockHeightLabel">已在区块中确认</string>
     <!-- Memo section header -->
-    <string name="TransactionDetails.commentsHeader">备忘录</string>
+    <string name="TransactionDetails.commentsHeader">备注</string>
     <!-- Memo field placeholder -->
-    <string name="TransactionDetails.commentsPlaceholder">添加备忘录...</string>
+    <string name="TransactionDetails.commentsPlaceholder">添加备注...</string>
     <!-- Timestamp section header for complete tx -->
     <string name="TransactionDetails.completeTimestampHeader">完成</string>
     <!-- Empty transaction list message. -->
-    <string name="TransactionDetails.emptyMessage">您的交易将显示在这里。</string>
+    <string name="TransactionDetails.emptyMessage">您的交易记录将显示在这里。</string>
     <!-- e.g. the users balance after the transaction was compeleted -->
-    <string name="TransactionDetails.endingBalanceHeader">期末余额</string>
+    <string name="TransactionDetails.endingBalanceHeader">交易完成后余额</string>
     <!-- Exchange rate section header -->
     <string name="TransactionDetails.exchangeRateHeader">汇率</string>
     <!-- Tx detail field header -->
@@ -893,7 +893,7 @@
     <!-- Show Details button -->
     <string name="TransactionDetails.showDetails">显示详细信息</string>
     <!-- The balance the user started with before the transaction completed -->
-    <string name="TransactionDetails.startingBalanceHeader">起始余额</string>
+    <string name="TransactionDetails.startingBalanceHeader">交易前余额</string>
     <!-- Status section header -->
     <string name="TransactionDetails.statusHeader">状态</string>
     <!-- Transaction Details Title -->
@@ -915,11 +915,11 @@
     <!-- Tx detail field header -->
     <string name="TransactionDetails.totalHeader">总计</string>
     <!-- Transaction ID header -->
-    <string name="TransactionDetails.txHashHeader">比特币交易 ID</string>
+    <string name="TransactionDetails.txHashHeader">Electra交易 ID</string>
     <!-- (this transaction was) Received at this address: -->
     <string name="TransactionDirection.address">已在此地址接收</string>
     <!-- (this transaction was) Sent to this address: -->
-    <string name="TransactionDirection.to">已汇至此地址</string>
+    <string name="TransactionDirection.to">已发送至此地址</string>
     <!-- Disabled until date -->
     <string name="UnlockScreen.disabled">在此日期前禁用：%1$s</string>
     <!-- Unlock with FaceID accessibility label -->
@@ -927,23 +927,23 @@
     <!-- My Address button title -->
     <string name="UnlockScreen.myAddress">我的地址</string>
     <!-- Reset PIN with Paper Key button label. -->
-    <string name="UnlockScreen.resetPin">复位 PIN</string>
+    <string name="UnlockScreen.resetPin">重置 PIN</string>
     <!-- Scan button title -->
     <string name="UnlockScreen.scan">扫描</string>
     <!-- Instruction to touch the sensor for fingerprint authentication -->
-    <string name="UnlockScreen.touchIdInstructions.android">触控感应器</string>
+    <string name="UnlockScreen.touchIdInstructions.android">指纹传感器</string>
     <!-- TouchID prompt text -->
-    <string name="UnlockScreen.touchIdPrompt">解锁您的 Electra。</string>
+    <string name="UnlockScreen.touchIdPrompt">解锁您的 Electra钱包。</string>
     <!-- Device authentication body -->
-    <string name="UnlockScreen.touchIdPrompt.android">请解锁您的安卓设备以便继续。</string>
+    <string name="UnlockScreen.touchIdPrompt.android">请解锁您的安卓设备以继续。</string>
     <!-- Unlock with TouchID accessibility label -->
-    <string name="UnlockScreen.touchIdText">使用 TouchID 解锁</string>
+    <string name="UnlockScreen.touchIdText">使用 触控ID 解锁</string>
     <!-- Device authentication title -->
     <string name="UnlockScreen.touchIdTitle.android">需要身份认证</string>
     <!-- Update PIN caption text -->
-    <string name="UpdatePin.caption">请牢记此 PIN 码。如果您忘记，您将无法访问您的比特币。</string>
+    <string name="UpdatePin.caption">请牢记此 PIN 码。如果您忘记，您将无法访问您的Electra。</string>
     <!-- PIN creation info. -->
-    <string name="UpdatePin.createInstruction">您的 PIN 码将用于解锁您的 Electra 并发送款项。</string>
+    <string name="UpdatePin.createInstruction">您的 PIN 码将用于解锁您的 Electra 钱包以及进行交易。</string>
     <!-- Update PIN title -->
     <string name="UpdatePin.createTitle">设置 PIN 码</string>
     <!-- Update PIN title -->
@@ -961,13 +961,13 @@
     <!-- Update PIN title -->
     <string name="UpdatePin.updateTitle">更新 PIN 码</string>
     <!-- Authorize to copy wallet addresses alert message -->
-    <string name="URLHandling.addressaddressListAlertMessage">是否拷贝钱包地址到剪贴板？</string>
+    <string name="URLHandling.addressaddressListAlertMessage">是否复制钱包地址到剪贴板？</string>
     <!-- Authorize to copy wallet address PIN view prompt. -->
-    <string name="URLHandling.addressList">授权以拷贝钱包地址到剪贴板</string>
+    <string name="URLHandling.addressList">授权以复制钱包地址到剪贴板</string>
     <!-- Authorize to copy wallet address alert title -->
-    <string name="URLHandling.addressListAlertTitle">拷贝钱包地址</string>
+    <string name="URLHandling.addressListAlertTitle">复制钱包地址</string>
     <!-- Copy wallet addresses alert button label -->
-    <string name="URLHandling.copy">拷贝</string>
+    <string name="URLHandling.copy">复制</string>
     <!-- Verify PIN for transaction view body -->
     <string name="VerifyPin.authorize">请输入您的个人识别码（PIN）以便授权此交易。</string>
     <!-- Verify PIN view body -->
@@ -977,7 +977,7 @@
     <!-- Authorize transaction with touch id message -->
     <string name="VerifyPin.touchIdMessage">授权此交易</string>
     <!-- 'No wallet' warning for watch app -->
-    <string name="Watch.noWalletWarning">打开 Electra iPhone app 以设置您的钱包。</string>
+    <string name="Watch.noWalletWarning">打开 Electra 应用 以设置您的钱包。</string>
     <!-- Dismiss button label -->
     <string name="Webview.dismiss">忽略</string>
     <!-- Webview loading error message -->
@@ -985,35 +985,35 @@
     <!-- Updating webview message -->
     <string name="Webview.updating">正在更新...</string>
     <!-- Welcome screen text. (?) will be replaced with the help icon users should look for. -->
-    <string name="Welcome.body">Electrawallet 更名为 Electra， 并增加了全新的界面和功能。如果您需要帮助，请使用在大多数设备屏幕右上角的(?)</string>
+    <string name="Welcome.body">欢迎使用Electra的掌上钱包</string>
     <!-- Top title of welcome screen -->
-    <string name="Welcome.title">欢迎使用Electra！</string>
+    <string name="Welcome.title">欢迎使用Electra钱包！</string>
     <!-- Wipe wallet alert message -->
     <string name="WipeWallet.alertMessage">您确认要删除此钱包吗？</string>
     <!-- Wipe wallet alert title -->
-    <string name="WipeWallet.alertTitle">擦除钱包吗？</string>
+    <string name="WipeWallet.alertTitle">删除钱包吗？</string>
     <!-- Failed wipe wallet alert message -->
-    <string name="WipeWallet.failedMessage">擦除钱包失败。</string>
+    <string name="WipeWallet.failedMessage">删除钱包失败。</string>
     <!-- Failed wipe wallet alert title -->
     <string name="WipeWallet.failedTitle">失败</string>
     <!-- Enter phrase to wipe wallet instruction. (Important to explain it is the CURRENT [this wallet's] paper key that needs to be entered). -->
-    <string name="WipeWallet.instruction">若想启用新钱包或恢复已有钱包，首先需要取消现钱包的链接。如要继续，输入现钱包的纸钥匙（Paper Key）。</string>
+    <string name="WipeWallet.instruction">若想启用新钱包或恢复已有钱包，首先需要删除现有钱包。如要继续，输入此钱包的纸密钥（Paper Key）。</string>
     <!-- Instructions for unlinking the wallet -->
-    <string name="WipeWallet.startMessage">取消钱包链接可将其从本设备移除。一旦钱包链接被取消，您可以启用新钱包，或恢复本设备的其他钱包。</string>
+    <string name="WipeWallet.startMessage">删除钱包链接可将其从本设备移除。一旦钱包被删除，您可以启用新钱包，或恢复本设备的其他钱包。</string>
     <!-- Start wipe wallet view warning -->
-    <string name="WipeWallet.startWarning">您无法再在这个设备上使用现在的Electra钱包。 现在的一切资金都留在纸键上。</string>
+    <string name="WipeWallet.startWarning">您无法再在这个设备上使用现在的Electra钱包。 现在的一切资金都留在纸密钥上。</string>
     <!-- Unlink this wallet from this device. -->
-    <string name="WipeWallet.title">取消钱包的链接</string>
+    <string name="WipeWallet.title">删除钱包</string>
     <!-- Wipe wallet button title -->
-    <string name="WipeWallet.wipe">擦除</string>
+    <string name="WipeWallet.wipe">删除</string>
     <!-- Wiping activity message -->
-    <string name="WipeWallet.wiping">正在擦除...</string>
+    <string name="WipeWallet.wiping">正在删除...</string>
     <!-- Paper key instructions. -->
-    <string name="WritePaperPhrase.instruction">按顺序写下每个词并保存到安全位置。</string>
+    <string name="WritePaperPhrase.instruction">按顺序写下每个单词并保存到安全且不会遗忘位置。</string>
     <!-- button label -->
     <string name="WritePaperPhrase.next">下一个</string>
     <!-- button label -->
-    <string name="WritePaperPhrase.previous">上一步</string>
+    <string name="WritePaperPhrase.previous">上一个</string>
     <!-- 1 of 3 -->
     <string name="WritePaperPhrase.step">%1$d / %2$d</string>
 </resources>

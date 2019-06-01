@@ -699,7 +699,7 @@
     <!-- View legacy address (old format). -->
     <string name="Settings.ViewLegacyAddress">查看舊版接收位址</string>
     <!-- Receive Electra instructions -->
-    <string name="Settings.ViewLegacyAddressReceiveDescription">請只發送比特幣（BTC）至此位址。任何發送到此位址的資產將永久遺失。</string>
+    <string name="Settings.ViewLegacyAddressReceiveDescription">請只發送Electra（ECA）至此位址。任何發送到此位址的資產將永久遺失。</string>
     <!-- Receive Electra -->
     <string name="Settings.ViewLegacyAddressReceiveTitle">接收比特幣</string>
     <!-- Wallet Settings section header -->

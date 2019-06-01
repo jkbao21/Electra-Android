@@ -699,7 +699,7 @@
     <!-- View legacy address (old format). -->
     <string name="Settings.ViewLegacyAddress">Ver Endereço de Receção Legada</string>
     <!-- Receive Electra instructions -->
-    <string name="Settings.ViewLegacyAddressReceiveDescription">Apenas envie Electra (BTC) para este endereço. Qualquer outro ativo enviado para este endereço será irreversivelmente perdido</string>
+    <string name="Settings.ViewLegacyAddressReceiveDescription">Apenas envie Electra (ECA) para este endereço. Qualquer outro ativo enviado para este endereço será irreversivelmente perdido</string>
     <!-- Receive Electra -->
     <string name="Settings.ViewLegacyAddressReceiveTitle">Receber Electra</string>
     <!-- Wallet Settings section header -->

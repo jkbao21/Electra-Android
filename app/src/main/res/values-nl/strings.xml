@@ -11,7 +11,7 @@
     <!-- About screen reddit label -->
     <string name="About.reddit">Telegram</string>
     <!-- Terms of Use button label -->
-    <string name="About.terms">Gebruikersvoorwaarden</string>
+    <string name="About.terms">Gebruiksvoorwaarden</string>
     <!-- About screen title -->
     <string name="About.title">Over</string>
     <!-- About screen twitter label -->
@@ -25,29 +25,29 @@
     <!-- Account balance -->
     <string name="Account.balance">Balans</string>
     <!-- Delisted token alert banner message -->
-    <string name="Account.delistedToken">Dit token is verwijderd omdat de uitgever besloot de ERC20-ondersteuning stop te zetten. \n\nMogelijk kunt u deze tokens nog steeds naar een ander platform verzenden. Ga voor meer informatie naar onze ondersteuningspagina.</string>
+    <string name="Account.delistedToken">Dit token is verwijderd omdat de uitgever ERC20-ondersteuning gestaakt heeft. \n\nMogelijk kan je deze tokens nog naar een ander platform verzenden. Ga voor meer informatie naar onze ondersteuningspagina.</string>
     <!-- $10000 per BTC -->
     <string name="Account.exchangeRate">%1$s BTC per %2$s</string>
     <!-- Loading Wallet Message -->
-    <string name="Account.loadingMessage">Portemonnee laden</string>
+    <string name="Account.loadingMessage">Wallet laden</string>
     <!-- Default wallet name -->
     <string name="AccountHeader.defaultWalletName">Mijn Electra</string>
     <!-- Third party keyboard warning -->
-    <string name="Alert.customKeyboard.android">Het lijkt erop dat u een toetsenbord van een derde gebruikt. Deze kan bijhouden wat u typt en eventueel uw sleutel stelen. Schakel alstublieft over naar het standaard Android toetsenbord voor extra veiligheid.</string>
+    <string name="Alert.customKeyboard.android">Het lijkt er op dat je een third-party keyboard gebruikt dat toetsaanslagen op kan nemen. Mogelijk kunnen anderen daarmee toegang krijgen tot jouw paper key. Schakel over naar het standaard Android keyboard voor extra beveiliging.</string>
     <!-- Error alert title -->
     <string name="Alert.error">Error</string>
     <!-- Keystore error -->
-    <string name="Alert.keystore.generic.android">Er is een probleem met uw Android OS keystore, neem alstublieft contact op met support@electraproject.org</string>
+    <string name="Alert.keystore.generic.android">Er is een probleem met je Android OS keystore, neem alsjeblieft contact op met support@electraproject.org</string>
     <!-- KeyStore error, keys are invalidated -->
-    <string name="Alert.keystore.invalidated.android">Uw door Electra geëncrypteerde data is onlangs ongeldig gemaakt omdat uw Android schermvergrendeling is uitgeschakeld.</string>
+    <string name="Alert.keystore.invalidated.android">De door Electra versleutelde data is onlangs ongeldig geworden omdat de Android schermvergrendeling is uitgeschakeld.</string>
     <!-- Keystore error title -->
     <string name="Alert.keystore.title.android">Android KeyStore fout</string>
     <!-- No internet alert message -->
-    <string name="Alert.noInternet">Er is geen internetconnectie gevonden. Controleer je connectie en probeer opnieuw.</string>
+    <string name="Alert.noInternet">Geen internetverbinding beschikbaar. Controleer de verbinding en probeer het opnieuw.</string>
     <!-- General error message -->
-    <string name="Alert.somethingWentWrong">Er is iets misgegaan. Probeer het alstublieft opnieuw.</string>
+    <string name="Alert.somethingWentWrong">Er is iets misgegaan. Probeer het nog eens.</string>
     <!-- Request timed out error message -->
-    <string name="Alert.timedOut">Verzoek loopt af. Controleer uw verbinding en probeer het opnieuw.</string>
+    <string name="Alert.timedOut">Verzoek loopt af. Controleer de verbinding en probeer het opnieuw.</string>
     <!-- Warning alert title -->
     <string name="Alert.warning">Waarschuwing</string>
     <!-- 'the addresses were copied'' Alert title -->
@@ -59,19 +59,19 @@
     <!-- Alert Subheader label (playfully positive) -->
     <string name="Alerts.paperKeySetSubheader">Geweldig!</string>
     <!-- Alert Header label (the PIN was set) -->
-    <string name="Alerts.pinSet">PIN Set.</string>
+    <string name="Alerts.pinSet">PIN ingesteld</string>
     <!-- Send failure alert header label (the send failed to happen) -->
-    <string name="Alerts.sendFailure">Zending mislukt</string>
+    <string name="Alerts.sendFailure">Verzenden mislukt</string>
     <!-- Send success alert header label (confirmation that the send happened) -->
-    <string name="Alerts.sendSuccess">Verstuursbevestiging</string>
+    <string name="Alerts.sendSuccess">Verzendbevestiging</string>
     <!-- Send success alert subheader label (e.g. the money was sent) -->
-    <string name="Alerts.sendSuccessSubheader">Geld Verstuurd!</string>
+    <string name="Alerts.sendSuccessSubheader">Geld verstuurd!</string>
     <!-- Fingerprint was recognized by the scanner -->
     <string name="Alerts.touchIdSucceeded.android">Vingerafdruk geaccepteerd</string>
     <!-- Tell the user where they can enable permissions to access device storage. -->
-    <string name="Android.allowFileSystemAccess">Schakel opslagtoestemmingen in uw apparaatinstellingen in: \"Instellingen\"&gt; \"Apps\"&gt; \"Electra\"&gt; \"Toestemmingen\".</string>
+    <string name="Android.allowFileSystemAccess">Schakel opslag permissie in via apparaatinstellingen in: \"Instellingen\"&gt; \"Apps\"&gt; \"Electra\"&gt; \"Toestemmingen\".</string>
     <!-- The "home" screen is the name of the top level menu for the app. -->
-    <string name="Android.BCH.welcome.message">Elke BCH in uw wallet is toegankelijk via het startscherm.</string>
+    <string name="Android.BCH.welcome.message">Alle BCH in je wallet is toegankelijk via het startscherm.</string>
     <!-- Warning about using apps that can alter the screen -->
     <string name="Android.screenAlteringMessage">Electra zal niet goed werken tenzij schermveranderende apps (zoals Twilight) zijn uitgeschakeld.</string>
     <!-- An app that alters the screen ("screen-altering app") has been detected. -->
@@ -81,7 +81,7 @@
     <!-- Wallet not ready error message -->
     <string name="ApiClient.notReady">Wallet niet gereed</string>
     <!-- API Token error message -->
-    <string name="ApiClient.tokenError">Niet in staat op API teken te vinden</string>
+    <string name="ApiClient.tokenError">Niet in staat om API teken te vinden</string>
     <!-- Send BCH view body. -->
     <string name="BCH.body">Voer hieronder een BCH adres in. Alle BCH die op het moment van de fork  (%1$s) in in je wallet zitten, zullen worden gestuurd.</string>
     <!-- Confirm sending <$5.00> to <address>? -->
@@ -105,13 +105,13 @@
     <!-- Approve button label -->
     <string name="BitID.approve">Goedkeuren</string>
     <!-- <sitename> is requesting authentication using your Electra wallet -->
-    <string name="BitID.authenticationRequest">%1$s vraagt om authenticatie om je Electra-portemonnee te gebruiken</string>
+    <string name="BitID.authenticationRequest">%1$s vraagt om authenticatie om je Electra-wallet te gebruiken</string>
     <!-- Deny button label -->
     <string name="BitID.deny">Weigeren</string>
     <!-- BitID error alert title -->
-    <string name="BitID.error">Authenticatie Fout</string>
+    <string name="BitID.error">Authenticatie fout</string>
     <!-- BitID error alert messaage (The payment service you are trying to use isn't working. Please contact them, as you may need to try again) -->
-    <string name="BitID.errorMessage">Vraag het na bij de service. Je moet het mogelijk opnieuw proberen.</string>
+    <string name="BitID.errorMessage">Betaalservice werkt niet. Neem contact met ze op, of probeer het opnieuw.</string>
     <!-- BitID success alert title -->
     <string name="BitID.success">Succesvol geïdentificeerd</string>
     <!-- BitID Authentication Request alert view title -->
@@ -141,7 +141,7 @@
     <!-- Click this button to sell an asset -->
     <string name="Button.sell">Verkoop</string>
     <!-- send button -->
-    <string name="Button.send">versturen</string>
+    <string name="Button.send">Versturen</string>
     <!-- Settings button label -->
     <string name="Button.settings">Instellingen</string>
     <!-- Settings button label -->
@@ -163,21 +163,21 @@
     <!-- To: (address) -->
     <string name="Confirmation.to">Naar</string>
     <!-- Total Cost: ($5.00) -->
-    <string name="Confirmation.totalLabel">Totale Prijs:</string>
+    <string name="Confirmation.totalLabel">Totale prijs:</string>
     <!-- Confirm paper phrase error message -->
-    <string name="ConfirmPaperPhrase.error">De ingevulde woorden komen niet overeen met uw paper key. Probeer het opnieuw.</string>
+    <string name="ConfirmPaperPhrase.error">De ingevulde woorden komen niet overeen met de paper key. Probeer het opnieuw.</string>
     <!-- Confirm paper phrase view label. -->
-    <string name="ConfirmPaperPhrase.label">Voer de volgende woorden in van je papieren sleutel om te verzekeren dat alles correct is opgeschreven.</string>
+    <string name="ConfirmPaperPhrase.label">Voer de volgende woorden in van je paper key om te verzekeren dat alles correct is opgeschreven.</string>
     <!-- Word label eg. Word #1, Word #2 -->
     <string name="ConfirmPaperPhrase.word">Woord #%1$s</string>
     <!-- Agree to legal terms button -->
     <string name="Crowdsale.agree">Akkoord</string>
     <!-- As in "(tap here to) buy (some) tokens" -->
-    <string name="Crowdsale.buyButton">Koop Tokens</string>
+    <string name="Crowdsale.buyButton">Koop tokens</string>
     <!-- Decline to legal terms button -->
     <string name="Crowdsale.decline">Afwijzen</string>
     <!-- Resume Idnetify verification button -->
-    <string name="Crowdsale.resume">Verificatie Voortzetten</string>
+    <string name="Crowdsale.resume">Verificatie voortzetten</string>
     <!-- Retry Identity verification button -->
     <string name="Crowdsale.retry">Opnieuw proberen</string>
     <!-- Electra denomination picker label -->
@@ -197,7 +197,7 @@
     <!-- Email unavailable alert title -->
     <string name="ErrorMessages.emailUnavailableTitle">E-mail niet beschikbaar</string>
     <!-- Message that gets shown when we've detected the user has encountered the looping lock-screen bug. (preserve [ ] characters) -->
-    <string name="ErrorMessages.loopingLockScreen.android">Electra kan niet gewaarmerkt worden vanwege een fout in uw versie van Android. [Klik hier voor meer informatie.]</string>
+    <string name="ErrorMessages.loopingLockScreen.android">Electra kan niet gewaarmerkt worden vanwege een fout in de versie van Android. [Klik hier voor meer informatie.]</string>
     <!-- Messaging unavailable alert title -->
     <string name="ErrorMessages.messagingUnavailableMessage">Dit apparaat is niet geconfigureerd om berichten te sturen.</string>
     <!-- Messaging unavailable alert title -->
@@ -207,7 +207,7 @@
     <!-- You can customize your Face ID Spending Limit from the [menu] -->
     <string name="FaceIDSettings.customizeText">Je kunt de bestedingslimiet van je Face-ID aanpassen vanuit het %1$s.</string>
     <!-- Face Id screen label -->
-    <string name="FaceIDSettings.label">Gebruik uw gezicht om uw Electra te ontgrendelen en verstuur geld tot een vastgestelde limiet.</string>
+    <string name="FaceIDSettings.label">Gebruik Face-ID om je Electra te ontgrendelen en verstuur geld tot een vastgestelde limiet.</string>
     <!-- Title of the screen for setting the Face ID Spending Limit -->
     <string name="FaceIDSettings.linkText">Scherm bestedingslimiet Face-ID</string>
     <!-- Setting to turn on Face ID for Electra -->
@@ -253,7 +253,7 @@
     <!-- Sweep private key confirmation message -->
     <string name="Import.confirm">%1$s van deze private key naar je wallet sturen? Het Electranetwerk zal een fee ontvangen van %2$s.</string>
     <!-- Duplicate key error message -->
-    <string name="Import.Error.duplicate">Deze private key zit al in je portemonnee.</string>
+    <string name="Import.Error.duplicate">Deze private key zit al in je wallet.</string>
     <!-- empty private key error message -->
     <string name="Import.Error.empty">Deze private key is leeg.</string>
     <!-- High fees error message -->
@@ -273,9 +273,9 @@
     <!-- Enter password alert view title -->
     <string name="Import.password">Deze private key is beveiligd met een wachtwoord.</string>
     <!-- password textfield placeholder -->
-    <string name="Import.passwordPlaceholder">wachtwoord</string>
+    <string name="Import.passwordPlaceholder">Wachtwoord</string>
     <!-- Caption for graphics -->
-    <string name="Import.rightCaption">Jouw Electra Portemonnee</string>
+    <string name="Import.rightCaption">Jouw Electra wallet</string>
     <!-- Scan Private key button label -->
     <string name="Import.scan">Scan private key </string>
     <!-- Import wallet success alert title -->
@@ -283,9 +283,9 @@
     <!-- Successfully imported wallet message body -->
     <string name="Import.SuccessBody">Persoonlijke sleutel met succes ingewisseld.</string>
     <!-- Import Wallet screen title -->
-    <string name="Import.title">Persoonlijke Sleutel Inwisselen</string>
+    <string name="Import.title">Persoonlijke sleutel inwisselen</string>
     <!-- Unlocking Private key activity view message. -->
-    <string name="Import.unlockingActivity">Sleutel Ontgrendelen</string>
+    <string name="Import.unlockingActivity">Sleutel ontgrendelen</string>
     <!-- Import wallet intro warning message -->
     <string name="Import.warning">Het inwisselen van een persoonlijke sleutel zal geen transactiegeschiedenis of andere details importeren.</string>
     <!-- Wrong password alert message -->
@@ -295,7 +295,7 @@
     <!-- Ignore jailbreak warning button -->
     <string name="JailbreakWarnings.ignore">Negeren</string>
     <!-- Jailbreak warning message -->
-    <string name="JailbreakWarnings.messageWithBalance">APPARAAT BEVEILIGING BESCHADIGD\nElke \'jailbreak\' app heeft toegang tot de sleutelhanger data van Electra en kan hiermee je Electras stelen! Wis deze portemonnee direct en herstel het op een veilig apparaat.</string>
+    <string name="JailbreakWarnings.messageWithBalance">APPARAAT BEVEILIGING BESCHADIGD\nElke \'jailbreak\' app heeft toegang tot de sleutelhanger data van Electra en kan hiermee je Electras stelen! Wis deze wallet direct en herstel het op een veilig apparaat.</string>
     <!-- Jailbreak warning message -->
     <string name="JailbreakWarnings.messageWithoutBalance">APPARAAT BEVEILIGING BESCHADIGD\nElke \'jailbreak\' app heeft toegang tot de sleutelhanger data van Electra en kan hiermee je Electras stelen. Gebruik Electra a.u.b. alleen op een niet-gejailbreakt apparaat.</string>
     <!-- Jailbreak warning title -->
@@ -311,27 +311,27 @@
     <!-- Link Wallet view title above domain list -->
     <string name="LinkWallet.domainTitle">Let op: werk alleen met deze app wanneer je je op één van de volgende domeinen bevind</string>
     <!-- Link wallet logo footer text -->
-    <string name="LinkWallet.logoFooter">Beveiligde Betalingspagina</string>
+    <string name="LinkWallet.logoFooter">Beveiligde betalingspagina</string>
     <!-- Link Wallet view title above permissions list -->
     <string name="LinkWallet.permissionsTitle">Deze app zal in staat zijn om:</string>
     <!-- Link Wallet view title -->
-    <string name="LinkWallet.title">Portefeuille Koppelen</string>
+    <string name="LinkWallet.title">Portefeuille koppelen</string>
     <!-- Location services disabled error -->
     <string name="LocationPlugin.disabled">Locatievoorzieningen zijn uitgeschakeld.</string>
     <!-- No permissions for location services -->
     <string name="LocationPlugin.notAuthorized">Electra heeft geen toestemming om locatievoorzieningen te gebruiken.</string>
     <!-- Wallet creation date prefix -->
-    <string name="ManageWallet.creationDatePrefix">Je hebt je portemonnee gecreëerd op %1$s</string>
+    <string name="ManageWallet.creationDatePrefix">Je hebt je wallet gecreëerd op %1$s</string>
     <!-- Manage wallet description text -->
-    <string name="ManageWallet.description">Jouw portemonnee naam zal alleen verschijnen in je account transactie geschiedenis en kan door niemand anders worden gezien.</string>
+    <string name="ManageWallet.description">Jouw wallet naam zal alleen verschijnen in je account transactie geschiedenis en kan door niemand anders worden gezien.</string>
     <!-- Change Wallet name textfield label -->
-    <string name="ManageWallet.textFeildLabel">Portemonnee Naam</string>
+    <string name="ManageWallet.textFeildLabel">Wallet naam</string>
     <!-- Manage wallet modal title -->
-    <string name="ManageWallet.title">Portemonnee Beheren</string>
+    <string name="ManageWallet.title">Wallet beheren</string>
     <!-- "Add [a] Wallet [to the home screen]" -->
-    <string name="MenuButton.addWallet">Voeg Wallet toe</string>
+    <string name="MenuButton.addWallet">Voeg wallet toe</string>
     <!-- Menu button title -->
-    <string name="MenuButton.lock">Portemonnee Vergrendelen</string>
+    <string name="MenuButton.lock">Wallet vergrendelen</string>
     <!-- (Click here to) manage (your list of) wallets -->
     <string name="MenuButton.manageWallets">Beheer wallets</string>
     <!-- (press here to) scan (a) QR code -->
@@ -343,11 +343,11 @@
     <!-- Menu button title -->
     <string name="MenuButton.support">Ondersteuning</string>
     <!-- button label -->
-    <string name="MenuViewController.createButton">Nieuwe Portemonnee Creëren</string>
+    <string name="MenuViewController.createButton">Nieuwe wallet aanmaken</string>
     <!-- Menu modal title -->
     <string name="MenuViewController.modalTitle">Menu</string>
     <!-- button label -->
-    <string name="MenuViewController.recoverButton">Portemonnee Herstellen</string>
+    <string name="MenuViewController.recoverButton">Wallet herstellen</string>
     <!-- Switch to automatic mode button label -->
     <string name="NodeSelector.automaticButton">Omschakelen naar automatische modus</string>
     <!-- Node is connected label -->
@@ -365,7 +365,7 @@
     <!-- Node is not connected label -->
     <string name="NodeSelector.notConnected">Niet Verbonden</string>
     <!-- Node status label -->
-    <string name="NodeSelector.statusLabel">Connectiestatus van de node</string>
+    <string name="NodeSelector.statusLabel">Verbindingsstatus van de node</string>
     <!-- Node Selector view title -->
     <string name="NodeSelector.title">Electra-nodes</string>
     <!-- Onboarding screen 'I'll browse first' button -->
@@ -377,33 +377,33 @@
     <!-- Onboarding screen 'Next' button -->
     <string name="Onboarding.next">Volgende</string>
     <!-- Onboarding screen restore an existing wallet. -->
-    <string name="Onboarding.restoreWallet">Herstel portemonnee</string>
+    <string name="Onboarding.restoreWallet">Herstel wallet</string>
     <!-- Onboarding screen Skip button title that allows the user to exit the onboarding process. -->
     <string name="Onboarding.skip">Overslaan</string>
     <!-- Onboarding screen Page 4 title -->
     <string name="OnboardingPageFour.title">Begin vandaag met investeren vanaf slechts $50!</string>
     <!-- Onboarding screen Page 1 title -->
-    <string name="OnboardingPageOne.title">Welkom bij uw nieuwe Electra portemonnee!</string>
+    <string name="OnboardingPageOne.title">Welkom bij jouw nieuwe Electra wallet!</string>
     <!-- Onboarding screen Page 3 subtitle -->
     <string name="OnboardingPageThree.subtitle">Investeer en diversifieer met Electra, snel en veilig.</string>
     <!-- Onboarding screen Page 3 title -->
     <string name="OnboardingPageThree.title">Koop en handel in Electra, tokens en andere digitale valuta.</string>
     <!-- Onboarding screen Page 2 subtitle -->
-    <string name="OnboardingPageTwo.subtitle">We hebben meer dan $6 miljard USD waard aan aandelen onder onze bescherming.</string>
+    <string name="OnboardingPageTwo.subtitle">We hebben meer dan $6 miljard aan aandelen onder onze bescherming.</string>
     <!-- Onboarding screen Page 2 title -->
-    <string name="OnboardingPageTwo.title">Sluit u aan bij de 1,5 miljoen mensen van over de hele wereld die op Electra vertrouwen.</string>
+    <string name="OnboardingPageTwo.title">Sluit je aan bij 1,5 miljoen mensen van over de hele wereld die op Electra vertrouwen.</string>
     <!-- Eg. Send 1.0Eth to purchase CCC -->
     <string name="PaymentConfirmation.amountText">%1$s versturen om %2$s te kopen</string>
     <!-- Payment confirmation view title -->
     <string name="PaymentConfirmation.title">Bevestiging</string>
     <!-- Bad Payment request alert title -->
-    <string name="PaymentProtocol.Errors.badPaymentRequest">Slecht Betalingsverzoek</string>
+    <string name="PaymentProtocol.Errors.badPaymentRequest">Onjuist betalingsverzoek</string>
     <!-- Error opening payment protocol file message -->
     <string name="PaymentProtocol.Errors.corruptedDocument">Niet-ondersteund of beschadigd document</string>
     <!-- Missing certificate payment protocol error message -->
-    <string name="PaymentProtocol.Errors.missingCertificate">missend certificaat</string>
+    <string name="PaymentProtocol.Errors.missingCertificate">Ontbrekend certificaat</string>
     <!-- Request expired payment protocol error message -->
-    <string name="PaymentProtocol.Errors.requestExpired">verzoek verlopen</string>
+    <string name="PaymentProtocol.Errors.requestExpired">Verzoek verlopen</string>
     <!-- Payment too small alert title -->
     <string name="PaymentProtocol.Errors.smallOutputError">Kon de betaling niet uitvoeren</string>
     <!-- Amount too small error message -->
@@ -411,51 +411,51 @@
     <!-- Output too small error message. -->
     <string name="PaymentProtocol.Errors.smallTransaction">Electra transactie outputs kunnen niet minder zijn dan %1$s.</string>
     <!-- Unsupported signature type payment protocol error message -->
-    <string name="PaymentProtocol.Errors.unsupportedSignatureType">niet-ondersteund handtekening type</string>
+    <string name="PaymentProtocol.Errors.unsupportedSignatureType">Niet ondersteund type handtekening</string>
     <!-- Untrusted certificate payment protocol error message -->
-    <string name="PaymentProtocol.Errors.untrustedCertificate">niet-vertrouwd certificaat</string>
+    <string name="PaymentProtocol.Errors.untrustedCertificate">Niet vertrouwd certificaat</string>
     <!-- Body text for a prompt that asks the user to subscribe to email updates to find out product updates. -->
     <string name="Prompts.Email.body">Wees de eerste om belangrijke support- en productupdates te ontvangen</string>
     <!-- Placeholder text for an email address text field. -->
-    <string name="Prompts.Email.placeholder">voer uw e-mailadres in</string>
+    <string name="Prompts.Email.placeholder">Voer je e-mailadres in</string>
     <!-- Body text that is shown when the user successfully subscribes to email updates. -->
-    <string name="Prompts.Email.successBody">U hebt zich succesvol ingeschreven voor het ontvangen van onze updates</string>
+    <string name="Prompts.Email.successBody">Je hebt je succesvol ingeschreven voor het ontvangen van onze updates</string>
     <!-- Text that is displayed as a footnote when the user successfully subscribes to email updates. -->
-    <string name="Prompts.Email.successFootnote">We waarderen uw constante support</string>
+    <string name="Prompts.Email.successFootnote">We waarderen je constante support</string>
     <!-- Title that is shown when the user successfully subscribes to email updates. -->
     <string name="Prompts.Email.successTitle">Bedankt!</string>
     <!-- Title for a prompt that asks the user to subscribe to email updates to find out product updates. -->
     <string name="Prompts.Email.title">Blijf op de hoogte</string>
     <!-- Enable face ID prompt body -->
-    <string name="Prompts.FaceId.body">Tik op Doorgaan om Face-ID in te schakelen</string>
+    <string name="Prompts.FaceId.body">Tik op doorgaan om Face-ID in te schakelen</string>
     <!-- Enable face ID prompt title -->
     <string name="Prompts.FaceId.title">Face-ID inschakelen</string>
     <!-- No passcode set warning body -->
-    <string name="Prompts.NoPasscode.body">Er is een apparaat-pascode nodig om je portomonnee te beschermen. Ga naar de instellingen en zet je pascode aan.</string>
+    <string name="Prompts.NoPasscode.body">Er is een apparaat-passcode nodig om je wallet te beschermen. Ga naar instellingen en zet de passcode aan.</string>
     <!-- No Passcode set warning title -->
-    <string name="Prompts.NoPasscode.title">Zet pascode voor apparaat aan</string>
+    <string name="Prompts.NoPasscode.title">Zet passcode voor apparaat aan</string>
     <!-- Instruction how to enable device encryption -->
-    <string name="Prompts.NoScreenLock.body.android">Een schermvergrendeling voor uw apparaat is nodig om uw portemonnee te beveiligen. Ga naar \"Instellingen\" &gt; \"Beveiliging\" &gt; \"Schermvergrendeling\" en stel in om door te gaan.</string>
+    <string name="Prompts.NoScreenLock.body.android">Er is een schermvergrendeling nodig nodig om de wallet te beveiligen. Ga naar \"Instellingen\" &gt; \"Beveiliging\" &gt; \"Schermvergrendeling\" en stel in om door te gaan.</string>
     <!-- Device encryption prompt title -->
     <string name="Prompts.NoScreenLock.title.android">Schermvergrendeling uitgeschakeld</string>
     <!-- Warning about paper key. -->
-    <string name="Prompts.PaperKey.body">Uw Papiersleutel moet opgeslagen worden voor het geval dat u uw telefoon ooit verliest of vervangt. Klik hier om door te gaan.</string>
+    <string name="Prompts.PaperKey.body">Uw paper key moet opgeslagen worden voor het geval je je telefoon ooit verliest of vervangt. Druk hier om door te gaan.</string>
     <!-- An action is required (You must do this action). -->
-    <string name="Prompts.PaperKey.title">Actie Vereist</string>
+    <string name="Prompts.PaperKey.title">Actie vereist</string>
     <!-- Transaction rejected prompt body -->
-    <string name="Prompts.RecommendRescan.body">Je portemonnee is misschien niet gesynchroniseerd. Dit kan vaak worden verholpen door de blokketen opnieuw te scannen.</string>
+    <string name="Prompts.RecommendRescan.body">Je wallet is mogelijk niet gesynchroniseerd. Dit kan vaak worden verholpen door de blockchain opnieuw te scannen.</string>
     <!-- Transaction rejected prompt title -->
-    <string name="Prompts.RecommendRescan.title">Transactie Geweigerd</string>
+    <string name="Prompts.RecommendRescan.title">Transactie geweigerd</string>
     <!-- Share data prompt body -->
     <string name="Prompts.ShareData.body">Help ons bij het verbeteren van Electra door je anonieme data met ons te delen</string>
     <!-- Share data prompt title -->
-    <string name="Prompts.ShareData.title">Deel Anonieme Data</string>
+    <string name="Prompts.ShareData.title">Anonieme data delen</string>
     <!-- Enable touch ID prompt body -->
     <string name="Prompts.TouchId.body">Tik hier om Touch ID in te schakelen</string>
     <!-- Enable Fingerprint prompt body -->
     <string name="Prompts.TouchId.body.android">Klik hier om authenticatie met vingerafdruk in te stellen</string>
     <!-- Enable touch ID prompt title -->
-    <string name="Prompts.TouchId.title">Touch ID Inschakelen</string>
+    <string name="Prompts.TouchId.title">Touch ID inschakelen</string>
     <!-- Enable Fingerprint prompt title -->
     <string name="Prompts.TouchId.title.android">Stel authenticatie met vingerafdruk in</string>
     <!-- Button on fingerprint prompt so the user can enter their PIN instead -->
@@ -463,15 +463,15 @@
     <!-- Upgrade PIN prompt body. -->
     <string name="Prompts.UpgradePin.body">Electra is geüpgrade naar een 6-cijferige PIN. Tik hier om te upgraden.</string>
     <!-- Upgrade PIN prompt title. -->
-    <string name="Prompts.UpgradePin.title">PIN Upgraden</string>
+    <string name="Prompts.UpgradePin.title">PIN upgraden</string>
     <!-- Notifications will be added later but users can set their preferences now, which is why we specify "in the future". -->
-    <string name="PushNotifications.body">Zet notificaties aan om in de toekomst speciale berichten van Brood te ontvangen.</string>
+    <string name="PushNotifications.body">Zet notificaties aan om in de toekomst speciale berichten te ontvangen.</string>
     <!-- Push notifications are disabled alert title" -->
-    <string name="PushNotifications.disabled">Meldingen Uitgeschakeld</string>
+    <string name="PushNotifications.disabled">Meldingen uitgeschakeld</string>
     <!-- Push notifications settings instructions -->
-    <string name="PushNotifications.enableInstructions">Schakel meldingen in in Instellingen om notificaties te ontvangen</string>
+    <string name="PushNotifications.enableInstructions">Schakel meldingen in onder instellingen om notificaties te ontvangen</string>
     <!-- Push notifications toggle switch label -->
-    <string name="PushNotifications.label">Push Meldingen</string>
+    <string name="PushNotifications.label">Push berichten</string>
     <!-- Push notifications are off label -->
     <string name="PushNotifications.off">Uit</string>
     <!-- Push notifications are on label -->
@@ -479,7 +479,7 @@
     <!-- Push notifications settings view title label -->
     <string name="PushNotifications.title">Notificaties</string>
     <!-- Address copied message. -->
-    <string name="Receive.copied">Gekopieerd naar plakbord.</string>
+    <string name="Receive.copied">Gekopieerd naar klembord.</string>
     <!-- Share via email button label -->
     <string name="Receive.emailButton">E-mail</string>
     <!-- Request button label -->
@@ -493,29 +493,29 @@
     <!-- Done button text -->
     <string name="RecoverWallet.done">Voltooid</string>
     <!-- Recover wallet header -->
-    <string name="RecoverWallet.header">Portemonnee Herstellen</string>
+    <string name="RecoverWallet.header">Wallet herstellen</string>
     <!-- Reset PIN with paper key: header -->
-    <string name="RecoverWallet.header_reset_pin">PIN Resetten</string>
+    <string name="RecoverWallet.header_reset_pin">PIN resetten</string>
     <!-- Enter paper key instruction -->
-    <string name="RecoverWallet.instruction">Papieren Sleutel Invoeren</string>
+    <string name="RecoverWallet.instruction">Paper key invoeren</string>
     <!-- Recover wallet intro -->
-    <string name="RecoverWallet.intro">Herstel je Electra met je papieren sleutel.</string>
+    <string name="RecoverWallet.intro">Herstel jouw Electra met de paper key</string>
     <!-- Invalid paper key message -->
-    <string name="RecoverWallet.invalid">De papieren sleutel die je hebt ingevoerd is ongeldig. Check ieder woord a.u.b. en probeer het opnieuw.</string>
+    <string name="RecoverWallet.invalid">De paper key die je hebt ingevoerd is ongeldig. Controleer ieder woord en probeer het opnieuw.</string>
     <!-- Previous button accessibility label -->
-    <string name="RecoverWallet.leftArrow">Linker Pijl</string>
+    <string name="RecoverWallet.leftArrow">Linker pijl</string>
     <!-- Next button label -->
     <string name="RecoverWallet.next">Volgende</string>
     <!-- Reset PIN with paper key: more information button. -->
     <string name="RecoverWallet.reset_pin_more_info">Tik hier voor meer informatie.</string>
     <!-- Next button accessibility label -->
-    <string name="RecoverWallet.rightArrow">Rechter Pijl</string>
+    <string name="RecoverWallet.rightArrow">Rechter pijl</string>
     <!-- Recover wallet sub-header -->
-    <string name="RecoverWallet.subheader">Voer de papieren sleutel in voor de portemonnee die je wilt herstellen.</string>
+    <string name="RecoverWallet.subheader">Voer de paper key in voor de wallet die je wilt herstellen.</string>
     <!-- Reset PIN with paper key: sub-header -->
-    <string name="RecoverWallet.subheader_reset_pin">Om je PIN te resetten moet je de woorden van je papieren sleutel in onderstaande velden invoeren.</string>
+    <string name="RecoverWallet.subheader_reset_pin">Om de PIN te resetten moet je de woorden van de paper key in onderstaande velden invoeren.</string>
     <!-- No amount entered error message. -->
-    <string name="RequestAnAmount.noAmount">Vul alstublieft eerst een bedrag in.</string>
+    <string name="RequestAnAmount.noAmount">Vul alstjeblieft eerst een bedrag in.</string>
     <!-- Request a specific amount of Electra -->
     <string name="RequestAnAmount.title">Een bedrag aanvragen</string>
     <!-- Alert action button label -->
@@ -523,41 +523,41 @@
     <!-- Alert message body -->
     <string name="ReScan.alertMessage">Je zult niet in staat zijn om geld te versturen wanneer je aan het synchroniseren bent.</string>
     <!-- Alert message title -->
-    <string name="ReScan.alertTitle">Synchroniseren met Blockchain?</string>
+    <string name="ReScan.alertTitle">Synchroniseren met de blockchain?</string>
     <!-- extimated time -->
     <string name="ReScan.body1">20-45 minuten</string>
     <!-- Syncing explanation -->
-    <string name="ReScan.body2">Als een transactie als voltooid staat op het Electra netwerk maar niet in je Electra.</string>
+    <string name="ReScan.body2">Als een transactie als voltooid staat op het Electra netwerk, maar niet in je Electra wallet.</string>
     <!-- Syncing explanation -->
     <string name="ReScan.body3">Je kreeg herhaaldelijk een foutmelding die zei dat je transactie werd afgewezen.</string>
     <!-- Start Sync button label -->
-    <string name="ReScan.buttonTitle">Start Synchronisatie</string>
+    <string name="ReScan.buttonTitle">Start synchronisatie</string>
     <!-- Sync blockchain view footer -->
-    <string name="ReScan.footer">Je zult niet in staat zijn om geld te versturen wanneer je aan het synchroniseren bent met de blokketen.</string>
+    <string name="ReScan.footer">Je kunt geen transacties uitvoeren wanneer je aan het synchroniseren bent met de blockchain.</string>
     <!-- Sync Blockchain view header -->
-    <string name="ReScan.header">Synchroniseer Blockchain</string>
+    <string name="ReScan.header">Synchroniseer blockchain</string>
     <!-- Subheader label -->
     <string name="ReScan.subheader1">Geschatte tijd</string>
     <!-- Subheader label -->
-    <string name="ReScan.subheader2">Wanneer Synchroniseren?</string>
+    <string name="ReScan.subheader2">Wanneer synchroniseren?</string>
     <!-- Scan Electra address camera flash toggle -->
-    <string name="Scanner.flashButtonLabel">Camera Flits</string>
+    <string name="Scanner.flashButtonLabel">Camera flits</string>
     <!-- Complete filter label -->
-    <string name="Search.complete">complete</string>
+    <string name="Search.complete">Compleet</string>
     <!-- Pending filter label -->
-    <string name="Search.pending">in afwachting van</string>
+    <string name="Search.pending">In afwachting van</string>
     <!-- Received filter label -->
-    <string name="Search.received">ontvangen</string>
+    <string name="Search.received">Ontvangen</string>
     <!-- [Click here to] search -->
     <string name="Search.search">Zoeken</string>
     <!-- Sent filter label -->
-    <string name="Search.sent">verstuurd</string>
+    <string name="Search.sent">Verstuurd</string>
     <!-- Face ID button title -->
     <string name="SecurityCenter.faceIdTitle">Face-ID</string>
     <!-- Paper Key button description -->
-    <string name="SecurityCenter.paperKeyDescription">De enige manier om toegang te hebben tot je Electras is als je je telefoon verliest of upgrade.</string>
+    <string name="SecurityCenter.paperKeyDescription">De enige manier om toegang te hebben tot jouw Electra, is als je je telefoon verliest of upgrade.</string>
     <!-- Paper Key button title -->
-    <string name="SecurityCenter.paperKeyTitle">Papieren Sleutel</string>
+    <string name="SecurityCenter.paperKeyTitle">Paper key</string>
     <!-- PIN button description -->
     <string name="SecurityCenter.pinDescription">Beschermt je Electra van ongeautoriseerde gebruikers.</string>
     <!-- PIN button title -->
@@ -569,13 +569,13 @@
     <!-- Security center fingerprint authentication button -->
     <string name="SecurityCenter.touchIdTitle.android">Authenticatie met vingerafdruk</string>
     <!-- Segwit enabled confirmation title -->
-    <string name="Segwit.ConfirmationConfirmationTitle">U hebt SegWit geactiveerd!</string>
+    <string name="Segwit.ConfirmationConfirmationTitle">Je hebt SegWit geactiveerd!</string>
     <!-- Segwit enabled confirmation description -->
     <string name="Segwit.ConfirmationInstructionsDescription">Bedankt voor het ondersteunen van Electra.</string>
     <!-- Segwit instructions -->
-    <string name="Segwit.ConfirmationInstructionsInstructions">SegWit-support is nog een bèta-functie.\nZodra SegWit is geactiveerd, zal het niet langer mogelijk zijn om de functie te deactiveren. U kunt de het legacyadres vinden onder Instellingen.\nSommige externe diensten, waaronder de cryptotrade, zijn mogelijk niet beschikbaar voor gebruikers die SegWit hebben geactiveerd. In geval van nood kunt u een legacyadres genereren via Voorkeuren &gt; Electrainstellingen.\nSegWit zal automatisch worden geactiveerd voor alle gebruikers in een toekomstige update.</string>
+    <string name="Segwit.ConfirmationInstructionsInstructions">SegWit-support is nog een bèta-functie.\nZodra SegWit is geactiveerd, zal het niet langer mogelijk zijn om de functie te deactiveren. Je kunt het legacyadres vinden onder Instellingen.\nSommige externe diensten, waaronder de cryptotrade, zijn mogelijk niet beschikbaar voor gebruikers die SegWit hebben geactiveerd. In geval van nood kun je een legacyadres genereren via Voorkeuren &gt; Electrainstellingen.\nSegWit zal automatisch worden geactiveerd voor alle gebruikers in een toekomstige update.</string>
     <!-- Segwit extra confirmation title. -->
-    <string name="Segwit.ConfirmChoiceLayout">Het activeren van SegWit is een onomkeerbaar proces. Weet u zeker dat u verder wilt gaan?</string>
+    <string name="Segwit.ConfirmChoiceLayout">Het activeren van SegWit is een onomkeerbaar proces. Weet je zeker dat je verder wil gaan?</string>
     <!-- Segwit enableButton -->
     <string name="Segwit.Enable">Activeer</string>
     <!-- Send money amount label -->
@@ -587,17 +587,17 @@
     <!-- Permission required to access camera -->
     <string name="Send.cameraUnavailabeTitle.android">Electra heeft geen toegang tot de camera</string>
     <!-- Camera not allowed message -->
-    <string name="Send.cameraunavailableMessage">Ga naar Instellingen om camera gebruik toe te staan.</string>
+    <string name="Send.cameraunavailableMessage">Ga naar instellingen om gebruik van de camera toe te staan.</string>
     <!-- Camera not allowed alert title -->
     <string name="Send.cameraUnavailableTitle">Electra heeft geen toestemming voor het gebruik van de camera</string>
     <!-- Warning when sending to self. -->
-    <string name="Send.containsAddress">De bestemming is je eigen adres. Je kunt het niet naar jezelf sturen.</string>
+    <string name="Send.containsAddress">De bestemming is je eigen adres. Je kunt geen transacties naar jezelf sturen.</string>
     <!-- Could not create transaction alert title -->
     <string name="Send.creatTransactionError">Kon de transactie niet creëren.</string>
     <!-- Description for sending money label -->
     <string name="Send.descriptionLabel">Memo</string>
     <!-- Emtpy pasteboard error message -->
-    <string name="Send.emptyPasteboard">Plakbord is leeg</string>
+    <string name="Send.emptyPasteboard">Klembord is leeg</string>
     <!-- "(you) can't send (to your)self" -->
     <string name="Send.ethSendSelf">Kan niet naar jezelf sturen.</string>
     <!-- Network Fee: $0.01 -->
@@ -605,31 +605,31 @@
     <!-- Payee identity not certified alert title. -->
     <string name="Send.identityNotCertified">Begunstigde is niet gecertifcieerd.</string>
     <!-- Insufficient funds error -->
-    <string name="Send.insufficientFunds">Onvoldoende middelen</string>
+    <string name="Send.insufficientFunds">Onvoldoende saldo</string>
     <!-- e,g, "You must have at least $2 in your wallet in order to transfer this type of token." In this case, "token" is an ethereum ERC20 token. -->
     <string name="Send.insufficientGasMessage">Je moet minstens %1$s in je wallet hebben om dit type token te versturen. Wil je graag nu naar je Ethereum wallet gaan?</string>
     <!-- Your ethereum balance is insufficient to complete this action. -->
-    <string name="Send.insufficientGasTitle">Onvoldoende Ethereum Saldo</string>
+    <string name="Send.insufficientGasTitle">Onvoldoende Ethereum saldo</string>
     <!-- e.g. The destination is not a valid (Electra) address. -->
     <string name="Send.invalidAddressMessage">Het bestemmingsadres is geen geldig %1$s-adres.</string>
     <!-- Invalid address on pasteboard message -->
-    <string name="Send.invalidAddressOnPasteboard">Plakbord bevat geen geldig %1$s adres.</string>
+    <string name="Send.invalidAddressOnPasteboard">Klembord bevat geen geldig %1$s adres.</string>
     <!-- Invalid address alert title -->
-    <string name="Send.invalidAddressTitle">Ongeldig Adres</string>
+    <string name="Send.invalidAddressTitle">Ongeldig adres</string>
     <!-- Is rescanning error message -->
-    <string name="Send.isRescanning">Zenden is uitgeschakeld tijdens volledig opnieuw scannen</string>
+    <string name="Send.isRescanning">Verzenden is uitgeschakeld tijdens volledig opnieuw scannen</string>
     <!-- Warning when the user is trying to send bitcoin cash to a legacy bitcoin address (possible, but probably not what the user wants to do) -->
     <string name="Send.legacyAddressWarning">Waarschuwing: dit is een verouderd bitcoinadres. Weet je zeker dat je er bitcoincash naartoe wilt sturen?</string>
     <!-- We are loading the request (now) -->
     <string name="Send.loadingRequest">Verzoek aan het laden</string>
     <!-- Transaction fee could not be be caluculated error. -->
-    <string name="Send.nilFeeError">Onvoldoende middelen om de transactiekosten te betalen.</string>
+    <string name="Send.nilFeeError">Onvoldoende saldo om de transactiekosten te betalen.</string>
     <!-- Empty address alert message -->
-    <string name="Send.noAddress">Voer a.u.b. het adres van de begunstigde in.</string>
+    <string name="Send.noAddress">Voer het adres van de begunstigde in.</string>
     <!-- Emtpy amount alert message -->
-    <string name="Send.noAmount">Voer a.u.b. een bedrag in om te versturen.</string>
+    <string name="Send.noAmount">Voer een bedrag in om te versturen.</string>
     <!-- No Fees error -->
-    <string name="Send.noFeesError">Voorwaarden voor Netwerkkosten worden gedownload. Probeer het opnieuw.</string>
+    <string name="Send.noFeesError">Voorwaarden voor netwerkkosten worden gedownload. Probeer het opnieuw.</string>
     <!-- Paste button label -->
     <string name="Send.pasteLabel">Plakken</string>
     <!-- Could not publish transaction alert title -->
@@ -647,11 +647,11 @@
     <!-- Send money to label -->
     <string name="Send.toLabel">Naar</string>
     <!-- Adress already used alert message - first part -->
-    <string name="Send.UsedAddress.firstLine">Electra adressen zijn alleen bedoeld voor enkel gebruik.</string>
+    <string name="Send.UsedAddress.firstLine">Electra adres al gebruikt. Adressen zijn uitsluitend bedoeld voor eenmalig gebruik.</string>
     <!-- Adress already used alert message - second part -->
-    <string name="Send.UsedAddress.secondLIne">Hergebruikt vermindert privacy voor zowel jou en de ontvanger en kan resulteren in verlies als de ontvanger niet direct het adres beheert.</string>
+    <string name="Send.UsedAddress.secondLIne">Hergebruik van adressen vermindert privacy voor zowel jou als de ontvanger. Dit kan resulteren in verlies van gelden.</string>
     <!-- Adress already used alert title -->
-    <string name="Send.UsedAddress.title">Adres Al Gebruikt</string>
+    <string name="Send.UsedAddress.title">Adres al gebruikt</string>
     <!-- About label -->
     <string name="Settings.about">Over</string>
     <!-- Advanced settings header -->
@@ -665,7 +665,7 @@
     <!-- Section title for a collection of different settings screens, one for each currency -->
     <string name="Settings.currencySettings">Valuta-instellingen</string>
     <!-- Join Early access label -->
-    <string name="Settings.earlyAccess">Doe Mee aan Early Access</string>
+    <string name="Settings.earlyAccess">Doe mee aan early Access</string>
     <!-- Enable segwit. -->
     <string name="Settings.EnableSegwit">Activeer SegWit</string>
     <!-- Are you enjoying Electra alert message body -->
@@ -673,7 +673,7 @@
     <!-- Face ID spending limit label -->
     <string name="Settings.faceIdLimit">Bestedingslimiet Face-ID</string>
     <!-- Redeem the funds stored on this private key. -->
-    <string name="Settings.importTitle">Persoonlijke Sleutel Inwisselen</string>
+    <string name="Settings.importTitle">Persoonlijke sleutel inwisselen</string>
     <!-- Manage settings section header -->
     <string name="Settings.manage">Beheer</string>
     <!-- Notifications label -->
@@ -687,39 +687,39 @@
     <!-- Leave review button label -->
     <string name="Settings.review">Laat een review achter</string>
     <!-- Share anonymous data label -->
-    <string name="Settings.shareData">Deel Anonieme Data</string>
+    <string name="Settings.shareData">Deel anonieme data</string>
     <!-- Sync blockchain label -->
-    <string name="Settings.sync">Synchroniseer Blockchain</string>
+    <string name="Settings.sync">Synchroniseer blockchain</string>
     <!-- Settings title -->
     <string name="Settings.title">Instellingen</string>
     <!-- Touch ID spending limit label -->
-    <string name="Settings.touchIdLimit">Touch ID Bestedingslimiet</string>
+    <string name="Settings.touchIdLimit">Touch ID bestedingslimiet</string>
     <!-- The fingerprint spending limit -->
     <string name="Settings.touchIdLimit.android">Uitgavelimiet voor authenticatie met vingerafdruk</string>
     <!-- View legacy address (old format). -->
-    <string name="Settings.ViewLegacyAddress">Bekijk Legacyontvangstadres</string>
+    <string name="Settings.ViewLegacyAddress">Bekijk legacyontvangstadres</string>
     <!-- Receive Electra instructions -->
-    <string name="Settings.ViewLegacyAddressReceiveDescription">Verzend enkel Electra (BTC) naar dit adres. Elk ander activum dat naar dit adres wordt verzonden, zal permanent verloren gaan.</string>
+    <string name="Settings.ViewLegacyAddressReceiveDescription">Verzend uitsluitend Electra (ECA) naar dit adres. Wanneer je andere valuta naar dit adres stuurt, zullen deze permanent verloren gaan.</string>
     <!-- Receive Electra -->
     <string name="Settings.ViewLegacyAddressReceiveTitle">Ontvang Electra</string>
     <!-- Wallet Settings section header -->
-    <string name="Settings.wallet">Portemonnee</string>
+    <string name="Settings.wallet">Wallet</string>
     <!-- Unlink/delete your wallet from the current device. -->
     <string name="Settings.wipe">Ontkoppelen van dit toestel</string>
     <!-- Share data view body -->
     <string name="ShareData.body">Help om Electra te verbeteren door je anonieme data met ons te delen. Dit bevat geen financiële informatie. We respecteren je financiële privacy.</string>
     <!-- Share data header -->
-    <string name="ShareData.header">Data Delen?</string>
+    <string name="ShareData.header">Data delen?</string>
     <!-- Share data switch label. -->
-    <string name="ShareData.toggleLabel">Anonieme Data Delen?</string>
+    <string name="ShareData.toggleLabel">Anonieme data Delen?</string>
     <!-- button label -->
-    <string name="StartPaperPhrase.againButtonTitle">Schrijf Papieren Sleutel Opnieuw Op</string>
+    <string name="StartPaperPhrase.againButtonTitle">Schrijf paper key opnieuw op</string>
     <!-- Paper key explanation text. -->
-    <string name="StartPaperPhrase.body">Je papieren sleutel is de enige manier om je Electra te herstellen als je telefoon verloren, gestolen, kapot of geüpgrade is.\n\nWe zullen je een lijst met woorden laten zie die je op een papiertje moet schrijven en veilig moet bewaren.</string>
+    <string name="StartPaperPhrase.body">Je paper key is de enige manier om je Electra te herstellen als je telefoon verloren, gestolen, kapot of geüpgrade is.\n\nWe zullen je een lijst met woorden laten zien die je op een papiertje moet schrijven en veilig moet bewaren.</string>
     <!-- button label -->
-    <string name="StartPaperPhrase.buttonTitle">Schrijf Papieren Sleutel Op</string>
+    <string name="StartPaperPhrase.buttonTitle">Schrijf paper key op</string>
     <!-- Argument is date -->
-    <string name="StartPaperPhrase.date">Je hebt voor het laatst je papieren sleutel opgeschreven op %1$s</string>
+    <string name="StartPaperPhrase.date">Je hebt voor het laatst je paper key opgeschreven op %1$s</string>
     <!-- button label -->
     <string name="StartViewController.createButton">Nieuwe wallet maken</string>
     <!-- Start view message -->
@@ -731,13 +731,13 @@
     <!-- The sync has failed (to complete) -->
     <string name="SyncingView.failed">Synchronisatie mislukt</string>
     <!-- Syncing view header text -->
-    <string name="SyncingView.header"> </string>
+    <string name="SyncingView.header">Synchroniseren</string>
     <!-- Retry button label -->
     <string name="SyncingView.retry">Opnieuw proberen</string>
     <!-- "eg. Synced through <Jan 12, 2015> -->
     <string name="SyncingView.syncedThrough">Gesynchroniseerd via %1$s</string>
     <!-- Syncing view syncing state header text -->
-    <string name="SyncingView.syncing"> </string>
+    <string name="SyncingView.syncing">Aan het synchroniseren</string>
     <!-- 6 d (6 days) -->
     <string name="TimeSince.days">%1$s d</string>
     <!-- 6 h (6 hours) -->
@@ -749,11 +749,11 @@
     <!-- Add [this item to the list] -->
     <string name="TokenList.add">Toevoegen</string>
     <!-- Add Wallets  [to your home screen] -->
-    <string name="TokenList.addTitle">Voeg Wallets toe</string>
+    <string name="TokenList.addTitle">Voeg wallets toe</string>
     <!-- Hide [this token from view] -->
     <string name="TokenList.hide">Verbergen</string>
     <!-- [click here to] Manage [your] Wallets -->
-    <string name="TokenList.manageTitle">Beheer Wallets</string>
+    <string name="TokenList.manageTitle">Beheer wallets</string>
     <!-- Remove [this item from the list] -->
     <string name="TokenList.remove">Verwijderen</string>
     <!-- Show [this item on your home screen] -->
@@ -761,9 +761,9 @@
     <!-- You can customize your Touch ID Spending Limit from the [TouchIdSettings.linkText gets added here as a button] -->
     <string name="TouchIdSettings.customizeText">Je kunt je Touch-ID uitgavenlimiet aanpassen van de %1$s.</string>
     <!-- Fingerprint enabling description body -->
-    <string name="TouchIdSettings.customizeText.android">U kunt uw uitgavelimiet voor authenticatie met vingerafdruk aanpassen in het scherm voor de uitgavelimiet voor authenticatie met vingerafdruk</string>
+    <string name="TouchIdSettings.customizeText.android">Je kunt de uitgavelimiet voor authenticatie met een vingerafdruk aanpassen. Dit doe je in het scherm voor de uitgavelimiet voor authenticatie met vingerafdruk</string>
     <!-- Instruction for the fingerprint setup -->
-    <string name="TouchIdSettings.disabledWarning.body.android">U heeft authenticatie met vingerafdruk niet ingesteld op dit apparaat. Ga naar Instellingen -&gt; Beveiliging om dit in te stellen.</string>
+    <string name="TouchIdSettings.disabledWarning.body.android">Je hebt authenticatie met vingerafdruk niet ingesteld op dit apparaat. Ga naar Instellingen -&gt; Beveiliging om dit in te stellen.</string>
     <!-- Fingerprint Is Not Setup -->
     <string name="TouchIdSettings.disabledWarning.title.android">Authenticatie met vingerafdruk niet ingesteld</string>
     <!-- Touch Id screen label -->
@@ -775,7 +775,7 @@
     <!-- Touch id switch label. -->
     <string name="TouchIdSettings.switchLabel">Schakel Touch ID in voor Electra</string>
     <!-- Enable fingerprint for this wallet called Electra -->
-    <string name="TouchIdSettings.switchLabel.android">Stel authenticatie met vingerafdruk</string>
+    <string name="TouchIdSettings.switchLabel.android">Schakel authenticatie met vingerafdruk in</string>
     <!-- Touch ID settings view title -->
     <string name="TouchIdSettings.title">Touch ID</string>
     <!-- Fingerprint authentication label -->
@@ -783,13 +783,13 @@
     <!-- Touch ID unavailable alert message -->
     <string name="TouchIdSettings.unavailableAlertMessage">Je hebt je Touch ID niet ingesteld op dit apparaat. Ga naar Instellingen -&gt; Touch ID &amp; Wachtwoord om het nu in te stellen.</string>
     <!-- Touch ID unavailable alert title -->
-    <string name="TouchIdSettings.unavailableAlertTitle">Touch ID Niet Ingesteld</string>
+    <string name="TouchIdSettings.unavailableAlertTitle">Touch ID niet ingesteld</string>
     <!-- Always require passcode option -->
     <string name="TouchIdSpendingLimit">Vraag altijd naar wachtwoord</string>
     <!-- Touch ID spending limit screen body -->
     <string name="TouchIdSpendingLimit.body">Je zal gevraagd worden om je 6-cijferige PIN in te voeren om elke transactie boven je bestedingslimiet te versturen, en elke 48 uur sinds de laatste keer dat je je 6-cijferige PIN hebt ingevoerd.</string>
     <!-- Touch Id spending limit screen title -->
-    <string name="TouchIdSpendingLimit.title">Touch ID Bestedingslimiet</string>
+    <string name="TouchIdSpendingLimit.title">Touch ID bestedingslimiet</string>
     <!-- name of spending limit when using fingerprint authorization -->
     <string name="TouchIdSpendingLimit.title.android">Uitgavelimiet voor authenticatie met vingerafdruk</string>
     <!-- Availability status text -->
@@ -811,25 +811,25 @@
     <!-- Invalid transaction -->
     <string name="Transaction.invalid">ONGELDIG</string>
     <!-- Timestamp label for event that just happened -->
-    <string name="Transaction.justNow">zojuist</string>
+    <string name="Transaction.justNow">Zojuist</string>
     <!-- Transaction is pending status text -->
-    <string name="Transaction.pending">In Afwachting</string>
+    <string name="Transaction.pending">In afwachting</string>
     <!-- Receive status text: 'In progress: 20%' -->
     <string name="Transaction.receivedStatus">In uitvoering: %1$s</string>
     <!-- Send status text: 'In progress: 20%' -->
     <string name="Transaction.sendingStatus">In uitvoering: %1$s</string>
     <!-- sending to <address> -->
-    <string name="Transaction.sendingTo">versturen naar %1$s</string>
+    <string name="Transaction.sendingTo">Versturen naar %1$s</string>
     <!-- sent to <address> -->
-    <string name="Transaction.sentTo">verstuurd naar %1$s</string>
+    <string name="Transaction.sentTo">Verstuurd naar %1$s</string>
     <!-- eg. Starting balance: $50.00 -->
     <string name="Transaction.starting">Startbalans: %1$s</string>
     <!-- e.g. "[The money you paid was a] Fee for token transfer: Electra" (Electra is the token that was transfered) -->
     <string name="Transaction.tokenTransfer">Fee voor token verzending: %1$s</string>
     <!-- Waiting to be confirmed string -->
-    <string name="Transaction.waiting">Wachtend op bevestiging. Sommige handelaren willen bevestiging om een transactie af te roden. Geschatte tijd: 1-2 uur.</string>
+    <string name="Transaction.waiting">Wachtend op bevestiging. Sommige handelaren willen bevestiging om een transactie af te ronden. Geschatte tijd: 1-2 uur.</string>
     <!-- e.g. I received money from an account. -->
-    <string name="TransactionDetails.account">account</string>
+    <string name="TransactionDetails.account">Account</string>
     <!-- Address received from header -->
     <string name="TransactionDetails.addressFromHeader">Van</string>
     <!-- Address sent to header -->
@@ -935,13 +935,13 @@
     <!-- TouchID prompt text -->
     <string name="UnlockScreen.touchIdPrompt">Ontgrendel je Electra.</string>
     <!-- Device authentication body -->
-    <string name="UnlockScreen.touchIdPrompt.android">Ontgrendel alstublieft uw Android-apparaat om door te gaan.</string>
+    <string name="UnlockScreen.touchIdPrompt.android">Ontgrendel je Android apparaat om door te gaan.</string>
     <!-- Unlock with TouchID accessibility label -->
     <string name="UnlockScreen.touchIdText">Ontgrendel met Touch ID</string>
     <!-- Device authentication title -->
     <string name="UnlockScreen.touchIdTitle.android">Authenticatie vereist</string>
     <!-- Update PIN caption text -->
-    <string name="UpdatePin.caption">Onthoud deze PIN. Als je deze vergeet, zul je niet in staat zijn om bij je Electras te kunnen.</string>
+    <string name="UpdatePin.caption">Onthoud deze PIN. Als je deze vergeet, kan je niet langer bij jouw Electra.</string>
     <!-- PIN creation info. -->
     <string name="UpdatePin.createInstruction">Je PIN zal worden gebruikt om je Electra te ontgrendelen en geld te versturen.</string>
     <!-- Update PIN title -->
@@ -961,49 +961,49 @@
     <!-- Update PIN title -->
     <string name="UpdatePin.updateTitle">Update PIN</string>
     <!-- Authorize to copy wallet addresses alert message -->
-    <string name="URLHandling.addressaddressListAlertMessage">Portemonnee adressen naar plakbord kopiëren?</string>
+    <string name="URLHandling.addressaddressListAlertMessage">Wallet adressen naar klembord kopiëren?</string>
     <!-- Authorize to copy wallet address PIN view prompt. -->
-    <string name="URLHandling.addressList">Autoriseer om portemonnee adres naar plakbord te kopiëren</string>
+    <string name="URLHandling.addressList">Autoriseer om wallet adres naar klembord te kopiëren</string>
     <!-- Authorize to copy wallet address alert title -->
-    <string name="URLHandling.addressListAlertTitle">Kopieer Portemonnee Adressen</string>
+    <string name="URLHandling.addressListAlertTitle">Kopieer wallet Adressen</string>
     <!-- Copy wallet addresses alert button label -->
     <string name="URLHandling.copy">Kopiëren</string>
     <!-- Verify PIN for transaction view body -->
-    <string name="VerifyPin.authorize">Voer alstublieft uw PIN in om deze transactie te autoriseren.</string>
+    <string name="VerifyPin.authorize">Voer je PIN in om deze transactie te autoriseren.</string>
     <!-- Verify PIN view body -->
-    <string name="VerifyPin.continueBody">Voer a.u.b. je PIN in om verder te gaan.</string>
+    <string name="VerifyPin.continueBody">Voer je PIN in om verder te gaan.</string>
     <!-- Verify PIN view title -->
     <string name="VerifyPin.title">PIN Vereist</string>
     <!-- Authorize transaction with touch id message -->
     <string name="VerifyPin.touchIdMessage">Autoriseer deze transactie</string>
     <!-- 'No wallet' warning for watch app -->
-    <string name="Watch.noWalletWarning">Open de Electra iPhone app om je portemonnee in te stellen.</string>
+    <string name="Watch.noWalletWarning">Open de Electra iPhone app om je wallet in te stellen.</string>
     <!-- Dismiss button label -->
     <string name="Webview.dismiss">Verwerpen</string>
     <!-- Webview loading error message -->
-    <string name="Webview.errorMessage">Er was een error bij het laden van de inhoud. Probeer a.u.b. opnieuw.</string>
+    <string name="Webview.errorMessage">Er was een error bij het laden van de inhoud. Probeer het opnieuw.</string>
     <!-- Updating webview message -->
     <string name="Webview.updating">Updaten...</string>
     <!-- Welcome screen text. (?) will be replaced with the help icon users should look for. -->
-    <string name="Welcome.body">Electrawallet is omgedoopt tot Electra, met een gloednieuw uiterlijk en enkele nieuwe functies.\n\nAls u hulp nodig hebt, zoek naar de (?) rechtsboven in de meeste schermen.</string>
+    <string name="Welcome.body">Electrawallet is omgedoopt tot Electra, met een gloednieuw uiterlijk en enkele nieuwe functies.\n\nAls je hulp nodig hebt, ga dan naar het (?) rechtsboven.</string>
     <!-- Top title of welcome screen -->
     <string name="Welcome.title">Welkom bij Electra!</string>
     <!-- Wipe wallet alert message -->
-    <string name="WipeWallet.alertMessage">Weet je zeker dat je deze portomonnee wilt verwijderen?</string>
+    <string name="WipeWallet.alertMessage">Weet je zeker dat je deze wallet wilt verwijderen?</string>
     <!-- Wipe wallet alert title -->
-    <string name="WipeWallet.alertTitle">Portomonnee wissen?</string>
+    <string name="WipeWallet.alertTitle">Wallet wissen?</string>
     <!-- Failed wipe wallet alert message -->
-    <string name="WipeWallet.failedMessage">Wissen van portomonnee niet gelukt</string>
+    <string name="WipeWallet.failedMessage">Wissen van wallet niet gelukt</string>
     <!-- Failed wipe wallet alert title -->
     <string name="WipeWallet.failedTitle">Mislukt</string>
     <!-- Enter phrase to wipe wallet instruction. (Important to explain it is the CURRENT [this wallet's] paper key that needs to be entered). -->
-    <string name="WipeWallet.instruction">Om een nieuwe portemonnee te beginnen of een bestaande te laden, moet u eerst de portemonnee die momenteel geïnstalleerd is ontkoppelen. Voer de Papieren Sleutel van de huidige portemonnee in om door te gaan.</string>
+    <string name="WipeWallet.instruction">Om een nieuwe wallet te beginnen of een bestaande te laden, dien je eerst de wallet die momenteel geïnstalleerd is te ontkoppelen. Voer de paper key van de huidige wallet in om door te gaan.</string>
     <!-- Instructions for unlinking the wallet -->
-    <string name="WipeWallet.startMessage">Ontkoppel je portemonnee om het te verwijderen van dit toestel. Wanneer deze portemonnee ontkoppeld is kunt u een nieuwe portemonnee beginnen of een andere portemonnee laden op dit toestel.</string>
+    <string name="WipeWallet.startMessage">Ontkoppel je wallet om het te verwijderen van dit toestel. Wanneer deze wallet ontkoppeld is kan je een nieuwe wallet beginnen of een andere wallet laden op dit toestel.</string>
     <!-- Start wipe wallet view warning -->
-    <string name="WipeWallet.startWarning">U zal niet langer uw huidige Electra portemonnee kunnen bereiken vanaf dit apparaat. Uw saldo zal hetzelfde blijven.</string>
+    <string name="WipeWallet.startWarning">Je zult niet langer je huidige Electra wallet kunnen bereiken vanaf dit apparaat. Je saldo zal hetzelfde blijven.</string>
     <!-- Unlink this wallet from this device. -->
-    <string name="WipeWallet.title">Portemonnee Ontkoppelen</string>
+    <string name="WipeWallet.title">Wallet ontkoppelen</string>
     <!-- Wipe wallet button title -->
     <string name="WipeWallet.wipe">Wissen</string>
     <!-- Wiping activity message -->

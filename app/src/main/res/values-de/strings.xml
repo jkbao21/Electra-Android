@@ -43,7 +43,7 @@
     <!-- Keystore error title -->
     <string name="Alert.keystore.title.android">Android-KeyStore-Fehler</string>
     <!-- No internet alert message -->
-    <string name="Alert.noInternet">Es konnte keine Verbindung zum Internet hergestellt werden. Bitte überprüfen Sie Ihre Verbindung und versuche Sie es erneut.</string>
+    <string name="Alert.noInternet">Es konnte keine Verbindung zum Internet hergestellt werden. Bitte überprüfen Sie Ihre Verbindung und versuchen Sie es erneut.</string>
     <!-- General error message -->
     <string name="Alert.somethingWentWrong">Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut.</string>
     <!-- Request timed out error message -->
@@ -501,7 +501,7 @@
     <!-- Recover wallet intro -->
     <string name="RecoverWallet.intro">Stellen Sie Ihr Electra mithilfe Ihres Offlineschlüssels wieder her.</string>
     <!-- Invalid paper key message -->
-    <string name="RecoverWallet.invalid">Der von dir eingegebene Offlineschlüssel ist ungültig. Bitte überprüfe jedes Wort und versuche es erneut.</string>
+    <string name="RecoverWallet.invalid">Der von Ihnen eingegebene Offlineschlüssel ist ungültig. Bitte überprüfen Sie jedes Wort und versuchen Sie es erneut.</string>
     <!-- Previous button accessibility label -->
     <string name="RecoverWallet.leftArrow">Linker Pfeil</string>
     <!-- Next button label -->
@@ -669,7 +669,7 @@
     <!-- Enable segwit. -->
     <string name="Settings.EnableSegwit">SegWit aktivieren</string>
     <!-- Are you enjoying Electra alert message body -->
-    <string name="Settings.enjoying">Gefällt dir Electra?</string>
+    <string name="Settings.enjoying">Gefällt Ihnen Electra?</string>
     <!-- Face ID spending limit label -->
     <string name="Settings.faceIdLimit">Face ID Ausgabenlimit</string>
     <!-- Redeem the funds stored on this private key. -->
@@ -735,7 +735,7 @@
     <!-- Retry button label -->
     <string name="SyncingView.retry">Erneut versuchen</string>
     <!-- "eg. Synced through <Jan 12, 2015> -->
-    <string name="SyncingView.syncedThrough">Synchronsiert durch %1$s</string>
+    <string name="SyncingView.syncedThrough">Synchronisiert am %1$s</string>
     <!-- Syncing view syncing state header text -->
     <string name="SyncingView.syncing"> </string>
     <!-- 6 d (6 days) -->
@@ -981,7 +981,7 @@
     <!-- Dismiss button label -->
     <string name="Webview.dismiss">Verwerfen</string>
     <!-- Webview loading error message -->
-    <string name="Webview.errorMessage">Beim Laden des Inhalts ist ein Fehler aufgetreten. Bitte versuche es erneut.</string>
+    <string name="Webview.errorMessage">Beim Laden des Inhalts ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut.</string>
     <!-- Updating webview message -->
     <string name="Webview.updating">Aktualisierung läuft …</string>
     <!-- Welcome screen text. (?) will be replaced with the help icon users should look for. -->
@@ -1009,7 +1009,7 @@
     <!-- Wiping activity message -->
     <string name="WipeWallet.wiping">Wird gelöscht ...</string>
     <!-- Paper key instructions. -->
-    <string name="WritePaperPhrase.instruction">Schreib dir jedes Wort der Reihenfolge nach auf und bewahre die Notiz an einem sicheren Ort auf.</string>
+    <string name="WritePaperPhrase.instruction">Schreib Sie sich jedes Wort der Reihenfolge nach auf und bewahren Sie die Notiz an einem sicheren Ort auf.</string>
     <!-- button label -->
     <string name="WritePaperPhrase.next">Weiter</string>
     <!-- button label -->

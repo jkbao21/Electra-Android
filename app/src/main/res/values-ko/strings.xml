@@ -699,7 +699,7 @@
     <!-- View legacy address (old format). -->
     <string name="Settings.ViewLegacyAddress">유산 수령 주소 보기</string>
     <!-- Receive Electra instructions -->
-    <string name="Settings.ViewLegacyAddressReceiveDescription">이 주소에는 Electra(BTC)만 보낼 수 있습니다. 이 주소로 다른 자산을 보낼 경우 모두 영구 소실됩니다.</string>
+    <string name="Settings.ViewLegacyAddressReceiveDescription">이 주소에는 Electra(ECA)만 보낼 수 있습니다. 이 주소로 다른 자산을 보낼 경우 모두 영구 소실됩니다.</string>
     <!-- Receive Electra -->
     <string name="Settings.ViewLegacyAddressReceiveTitle">Electra 수령</string>
     <!-- Wallet Settings section header -->

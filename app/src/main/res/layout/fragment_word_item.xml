@@ -11,7 +11,7 @@
         android:layout_height="96dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:background="@drawable/signal_layout"
+        android:background="@color/primary_background"
         android:clickable="false"
         android:focusable="false"
         android:gravity="center"

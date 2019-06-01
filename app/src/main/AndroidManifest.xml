@@ -134,6 +134,10 @@
             android:launchMode="singleTask"
             android:screenOrientation="portrait" />
         <activity
+            android:name=".presenter.activities.intro.IntroTos"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
             android:name=".presenter.activities.PaperKeyActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait" />

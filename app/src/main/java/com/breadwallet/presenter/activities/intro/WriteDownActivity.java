@@ -61,11 +61,11 @@ public class WriteDownActivity extends BRActivity {
         setContentView(R.layout.activity_write_down);
 
         Button writeButton = findViewById(R.id.button_write_down);
-        ImageButton close = findViewById(R.id.close_button);
+      //  ImageButton close = findViewById(R.id.close_button);
         final ViewReason viewReason = ViewReason.valueOf(getIntent().getIntExtra(EXTRA_VIEW_REASON, ViewReason.ERROR.getValue()));
         final String doneAction = getIntent().getStringExtra(PaperKeyProveActivity.EXTRA_DONE_ACTION);
 
-        close.setOnClickListener(new View.OnClickListener() {
+       /* close.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (PaperKeyActivity.DoneAction.SHOW_BUY_SCREEN.name().equals(doneAction)) {
@@ -88,7 +88,7 @@ public class WriteDownActivity extends BRActivity {
                 }
 
             }
-        });
+        }); */
 
         writeButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -115,8 +115,8 @@ public class WriteDownActivity extends BRActivity {
 
     @Override
     public void onBackPressed() {
-        super.onBackPressed();
-        overridePendingTransition(R.anim.fade_up, R.anim.exit_to_bottom);
+     /*   super.onBackPressed();
+        overridePendingTransition(R.anim.fade_up, R.anim.exit_to_bottom); */
     }
 
 }

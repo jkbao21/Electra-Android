@@ -83,7 +83,7 @@ public class PaperKeyActivity extends BRActivity {
 
         mNextButton = findViewById(R.id.next_button);
         mPreviousButton = findViewById(R.id.previous_button);
-        ImageButton closeImageButton = findViewById(R.id.close_button);
+        // ImageButton closeImageButton = findViewById(R.id.close_button);
         mItemIndexTextView = findViewById(R.id.item_index_text);
         mButtonsLayout = findViewById(R.id.buttons_layout);
         updateNavigationButtons(false);
@@ -95,14 +95,14 @@ public class PaperKeyActivity extends BRActivity {
             }
         });
 
-        closeImageButton.setOnClickListener(new View.OnClickListener() {
+      /*  closeImageButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (!UiUtils.isClickAllowed()) return;
                 UiUtils.startBreadActivity(PaperKeyActivity.this, false);
                 if (!isDestroyed()) finish();
             }
-        });
+        }); */
 
         mPreviousButton.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -5,7 +5,7 @@
     <!-- About screen blog label -->
     <string name="About.blog">Discord</string>
     <!-- About screen footer -->
-    <string name="About.footer">Made by the Electra Team. Version %1$s Build %2$s</string>
+    <string name="About.footer">由Electra小组开发. 版本 %1$s Build %2$s</string>
     <!-- Privay Policy button label -->
     <string name="About.privacy">隐私政策</string>
     <!-- About screen reddit label -->
@@ -15,7 +15,7 @@
     <!-- About screen title -->
     <string name="About.title">关于</string>
     <!-- About screen twitter label -->
-    <string name="About.twitter">推特</string>
+    <string name="About.twitter">Twitter</string>
     <!-- About screen wallet ID label -->
     <string name="About.walletID">网站</string>
     <!-- Close modal button accessibility label -->
@@ -137,7 +137,7 @@
     <!-- OK button label -->
     <string name="Button.ok">好的</string>
     <!-- receive button -->
-    <string name="Button.receive">收到</string>
+    <string name="Button.receive">接收</string>
     <!-- Click this button to sell an asset -->
     <string name="Button.sell">出售</string>
     <!-- send button -->
@@ -287,7 +287,7 @@
     <!-- Unlocking Private key activity view message. -->
     <string name="Import.unlockingActivity">解锁键</string>
     <!-- Import wallet intro warning message -->
-    <string name="Import.warning">导入钱包不包含交易历史或其他细节。</string>
+    <string name="Import.warning">导入钱包的内容仅含数字货币，不包含交易历史或其他细节。</string>
     <!-- Wrong password alert message -->
     <string name="Import.wrongPassword">密码错误，请重试。</string>
     <!-- Close app button -->
@@ -527,9 +527,9 @@
     <!-- extimated time -->
     <string name="ReScan.body1">20-45 分钟</string>
     <!-- Syncing explanation -->
-    <string name="ReScan.body2">如果某次交易在Electra网络上显示为已完成，却不在您的 Electra 钱包里。</string>
+    <string name="ReScan.body2">1.如果某次交易在Electra网络上显示为已完成，却不在您的 Electra 钱包里。</string>
     <!-- Syncing explanation -->
-    <string name="ReScan.body3">你反复得到交易被拒绝的出错信息。</string>
+    <string name="ReScan.body3">2.你反复得到交易被拒绝的出错信息。</string>
     <!-- Start Sync button label -->
     <string name="ReScan.buttonTitle">开始同步</string>
     <!-- Sync blockchain view footer -->
@@ -583,7 +583,7 @@
     <!-- Balance: $4.00 -->
     <string name="Send.balance">余额：%1$s</string>
     <!-- Instructions how to allow the camera access for the app -->
-    <string name="Send.cameraUnavailabeMessage.android">在“设置”&gt;“应用”&gt;“Electra”&gt;“权限”中允许访问相机</string>
+    <string name="Send.cameraUnavailabeMessage.android">在“设置”&gt;“应用”&gt;“Electra”&gt;“权限”中允许Electra钱包访问相机</string>
     <!-- Permission required to access camera -->
     <string name="Send.cameraUnavailabeTitle.android">Electra 没有访问相机的权限</string>
     <!-- Camera not allowed message -->
@@ -705,7 +705,7 @@
     <!-- Wallet Settings section header -->
     <string name="Settings.wallet">钱包</string>
     <!-- Unlink/delete your wallet from the current device. -->
-    <string name="Settings.wipe">取消与此设备的链接</string>
+    <string name="Settings.wipe">删除钱包</string>
     <!-- Share data view body -->
     <string name="ShareData.body">同我们分享您的匿名数据来帮助改善 Electra。这不包括任何财务信息。我们尊重您的财务隐私。</string>
     <!-- Share data header -->
@@ -713,11 +713,11 @@
     <!-- Share data switch label. -->
     <string name="ShareData.toggleLabel">共享匿名数据？</string>
     <!-- button label -->
-    <string name="StartPaperPhrase.againButtonTitle">再次书写纸键</string>
+    <string name="StartPaperPhrase.againButtonTitle">再次输入纸密钥</string>
     <!-- Paper key explanation text. -->
-    <string name="StartPaperPhrase.body">如果您的手机丢失、被盗、损坏或升级，纸密钥是恢复 Electra 的唯一方法。\n\n\n我们将向您显示一张单词表，请将其写在纸上并保存在安全的地方。</string>
+    <string name="StartPaperPhrase.body">如果您的手机丢失、被盗、损坏或升级，纸密钥是恢复Electra钱包的唯一方法。\n\n\n我们将向您展示一张单词表，请将其写在纸上并保存在安全且不会被遗忘的地方。</string>
     <!-- button label -->
-    <string name="StartPaperPhrase.buttonTitle">写下纸键</string>
+    <string name="StartPaperPhrase.buttonTitle">写下纸密钥</string>
     <!-- Argument is date -->
     <string name="StartPaperPhrase.date">您最后一次记录纸密钥是在 %1$s</string>
     <!-- button label -->
@@ -835,13 +835,13 @@
     <!-- Address sent to header -->
     <string name="TransactionDetails.addressToHeader">至</string>
     <!-- e.g. "(this was received) via (address #1)" via = by way of -->
-    <string name="TransactionDetails.addressViaHeader">通过</string>
+    <string name="TransactionDetails.addressViaHeader">由此钱包接收</string>
     <!-- Amount section header -->
     <string name="TransactionDetails.amountHeader">金额</string>
     <!-- "(it was worth) $100 when sent, (and it is worth) $200 now" -->
-    <string name="TransactionDetails.amountWhenReceived">收到时%1$s]，现在%2$s</string>
+    <string name="TransactionDetails.amountWhenReceived">收到时价值%1$s]，现在价值%2$s</string>
     <!-- "(it was worth) $100 when sent, (and it is worth) $200 now" -->
-    <string name="TransactionDetails.amountWhenSent">发送时 %1$s，现在 %2$s</string>
+    <string name="TransactionDetails.amountWhenSent">发送时价值 %1$s，现在价值 %2$s</string>
     <!-- Block height label -->
     <string name="TransactionDetails.blockHeightLabel">已在区块中确认</string>
     <!-- Memo section header -->
@@ -881,7 +881,7 @@
     <!-- received from <address> -->
     <string name="TransactionDetails.receivedFrom">已接收，来自 %1$s</string>
     <!-- received via <address> -->
-    <string name="TransactionDetails.receivedVia">已通过 %1$s 接收</string>
+    <string name="TransactionDetails.receivedVia">由此钱包接收 %1$s</string>
     <!-- receiving from <address> -->
     <string name="TransactionDetails.receivingFrom">正在接收，来自 %1$s</string>
     <!-- receiving via <address> -->
@@ -997,9 +997,9 @@
     <!-- Failed wipe wallet alert title -->
     <string name="WipeWallet.failedTitle">失败</string>
     <!-- Enter phrase to wipe wallet instruction. (Important to explain it is the CURRENT [this wallet's] paper key that needs to be entered). -->
-    <string name="WipeWallet.instruction">若想启用新钱包或恢复已有钱包，首先需要删除现有钱包。如要继续，输入此钱包的纸密钥（Paper Key）。</string>
+    <string name="WipeWallet.instruction">若想启用新钱包或恢复曾经使用过的钱包，需要先删除现有钱包。如需继续，输入此钱包的纸密钥（Paper Key）。</string>
     <!-- Instructions for unlinking the wallet -->
-    <string name="WipeWallet.startMessage">删除钱包链接可将其从本设备移除。一旦钱包被删除，您可以启用新钱包，或恢复本设备的其他钱包。</string>
+    <string name="WipeWallet.startMessage">删除钱包可将其从本设备移除。一旦钱包被删除，您可以启用新钱包，或恢复本设备上使用过的其他钱包。</string>
     <!-- Start wipe wallet view warning -->
     <string name="WipeWallet.startWarning">您无法再在这个设备上使用现在的Electra钱包。 现在的一切资金都留在纸密钥上。</string>
     <!-- Unlink this wallet from this device. -->
@@ -1009,7 +1009,7 @@
     <!-- Wiping activity message -->
     <string name="WipeWallet.wiping">正在删除...</string>
     <!-- Paper key instructions. -->
-    <string name="WritePaperPhrase.instruction">按顺序写下每个单词并保存到安全且不会遗忘位置。</string>
+    <string name="WritePaperPhrase.instruction">按顺序写下每个单词并保存到安全且不会被遗忘位置。</string>
     <!-- button label -->
     <string name="WritePaperPhrase.next">下一个</string>
     <!-- button label -->

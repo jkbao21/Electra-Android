@@ -95,7 +95,6 @@ public class FragmentSend extends ModalDialogFragment implements BRKeyboard.OnIn
     private TextView mFeeText;
     private ImageView mEditFeeIcon;
     private String mSelectedCurrencyCode;
-    private Button mCurrencyCodeButton;
     private int mKeyboardIndex;
     private LinearLayout mKeyboardLayout;
     private ImageButton mCloseButton;
@@ -133,7 +132,6 @@ public class FragmentSend extends ModalDialogFragment implements BRKeyboard.OnIn
         mBalanceText = rootView.findViewById(R.id.balance_text);
         mFeeText = rootView.findViewById(R.id.fee_text);
         mEditFeeIcon = rootView.findViewById(R.id.edit);
-        mCurrencyCodeButton = rootView.findViewById(R.id.iso_button);
         mKeyboardLayout = rootView.findViewById(R.id.keyboard_layout);
         mAmountLayout = rootView.findViewById(R.id.amount_layout);
         mFeeLayout = rootView.findViewById(R.id.fee_buttons_layout);
@@ -329,22 +327,6 @@ public class FragmentSend extends ModalDialogFragment implements BRKeyboard.OnIn
                 } else {
                     sayInvalidClipboardData();
                 }
-
-            }
-        });
-
-        mCurrencyCodeButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (mSelectedCurrencyCode.equalsIgnoreCase(BRSharedPrefs.getPreferredFiatIso(getContext()))) {
-                    Activity app = getActivity();
-                    mSelectedCurrencyCode = WalletsMaster.getInstance(app).getCurrentWallet(app).getCurrencyCode();
-                } else {
-                    Activity app = getActivity();
-                    mSelectedCurrencyCode = WalletsMaster.getInstance(app).getCurrentWallet(app).getCurrencyCode();
-                    // mSelectedCurrencyCode = BRSharedPrefs.getPreferredFiatIso(getContext());
-                }
-                updateText();
 
             }
         });
@@ -661,7 +643,6 @@ public class FragmentSend extends ModalDialogFragment implements BRKeyboard.OnIn
         if (!mIsAmountLabelShown) {
             mCurrencyCode.setText(CurrencyUtils.getSymbolByIso(context, mSelectedCurrencyCode));
         }
-        mCurrencyCodeButton.setText(mSelectedCurrencyCode);
 
         //is the chosen ISO a crypto (could be also a fiat currency)
         boolean isIsoCrypto = WalletsMaster.getInstance(context).isIsoCrypto(context, mSelectedCurrencyCode);

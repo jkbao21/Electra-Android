@@ -214,9 +214,12 @@ public class HomeActivity extends BRActivity implements InternetManager.Connecti
         String fiatBalance = CurrencyUtils.getFormattedAmount(getApplication(),
                 BRSharedPrefs.getPreferredFiatIso(getApplication()), walletManager.getFiatBalance(getApplication()), 2);
         BigDecimal cryptoBalance = convertSats(walletManager.getCachedBalance(this)).setScale(2, RoundingMode.HALF_EVEN);
-
+        rate = rate.multiply(new BigDecimal(100000000));
+        rate = rate.setScale(0,RoundingMode.HALF_DOWN);
         mCurrencyPriceUsd.setText(String.format(getString(R.string.Account_exchangeRate),
                 rate.toPlainString(), walletManager.getCurrencyCode()));
+
+
         mBalancePrimary.setText(fiatBalance);
         mBalanceSecondary.setText(String.format(getString(R.string.Account_balanceValue),
                 cryptoBalance.toString(), walletManager.getCurrencyCode()));

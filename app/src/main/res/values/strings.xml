@@ -27,7 +27,7 @@
     <!-- Delisted token alert banner message -->
     <string name="Account.delistedToken">This token has been delisted because the issuer decided to cease ERC20 support. \n\nYou may still be able to send these tokens to another platform. For more details, visit our support page.</string>
     <!-- $10000 per BTC -->
-    <string name="Account.exchangeRate">%1$s BTC per %2$s</string>
+    <string name="Account.exchangeRate">%1$s Satoshi/%2$s</string>
     <!-- $10000 USD -->
     <string name="Account.balanceValue">%1$s %2$s</string>
     <!-- Loading Wallet Message -->

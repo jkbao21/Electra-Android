@@ -27,7 +27,7 @@
     <!-- Delisted token alert banner message -->
     <string name="Account.delistedToken">由于开发者已经决定停止支持ERC20，该代币已被下架。\n\n您仍然可以将这些代币发送到别的平台。请访问我们的支持页面获取更多细节。</string>
     <!-- $10000 per BTC -->
-    <string name="Account.exchangeRate">%1$s BTC / %2$s</string>
+    <string name="Account.exchangeRate">%1$s Satoshi/%2$s</string>
     <!-- Loading Wallet Message -->
     <string name="Account.loadingMessage">正在加载钱包</string>
     <!-- Default wallet name -->

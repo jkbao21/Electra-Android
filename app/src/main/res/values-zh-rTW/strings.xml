@@ -27,7 +27,7 @@
     <!-- Delisted token alert banner message -->
     <string name="Account.delistedToken">這個令牌已遭摘牌，因為發行人決定停止ERC20支援。\n\n您仍然能夠將這些令牌發送至另一個平台。關於進一步細節，請訪問我們的支援網頁。</string>
     <!-- $10000 per ECA -->
-    <string name="Account.exchangeRate">%1$s BTC 每 %2$s</string>
+    <string name="Account.exchangeRate">%1$s Satoshi/%2$s</string>
     <!-- Loading Wallet Message -->
     <string name="Account.loadingMessage">正在載入電子錢包</string>
     <!-- Default wallet name -->

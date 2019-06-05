@@ -29,6 +29,8 @@ import com.breadwallet.tools.util.Utils;
 
 import java.util.Locale;
 
+import static com.breadwallet.presenter.activities.intro.IntroActivity.showCloseButton;
+
 
 public class PaperKeyActivity extends BRActivity {
     private static final String TAG = PaperKeyActivity.class.getName();
@@ -83,7 +85,7 @@ public class PaperKeyActivity extends BRActivity {
 
         mNextButton = findViewById(R.id.next_button);
         mPreviousButton = findViewById(R.id.previous_button);
-        // ImageButton closeImageButton = findViewById(R.id.close_button);
+        ImageButton closeImageButton = findViewById(R.id.close_button);
         mItemIndexTextView = findViewById(R.id.item_index_text);
         mButtonsLayout = findViewById(R.id.buttons_layout);
         updateNavigationButtons(false);
@@ -95,14 +97,18 @@ public class PaperKeyActivity extends BRActivity {
             }
         });
 
-      /*  closeImageButton.setOnClickListener(new View.OnClickListener() {
+        closeImageButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (!UiUtils.isClickAllowed()) return;
                 UiUtils.startBreadActivity(PaperKeyActivity.this, false);
                 if (!isDestroyed()) finish();
             }
-        }); */
+        });
+
+        if (showCloseButton != null) {
+            closeImageButton.setVisibility(View.INVISIBLE);
+        }
 
         mPreviousButton.setOnClickListener(new View.OnClickListener() {
             @Override

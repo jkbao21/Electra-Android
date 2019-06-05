@@ -1,6 +1,7 @@
 package com.breadwallet.presenter.activities.intro;
 
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -16,6 +17,8 @@ import com.breadwallet.tools.security.PostAuth;
 import com.breadwallet.tools.util.BRConstants;
 import com.breadwallet.wallet.WalletsMaster;
 import com.breadwallet.wallet.abstracts.BaseWalletManager;
+
+import static com.breadwallet.presenter.activities.intro.IntroActivity.showCloseButton;
 
 public class WriteDownActivity extends BRActivity {
     private static final String TAG = WriteDownActivity.class.getName();
@@ -61,34 +64,19 @@ public class WriteDownActivity extends BRActivity {
         setContentView(R.layout.activity_write_down);
 
         Button writeButton = findViewById(R.id.button_write_down);
-      //  ImageButton close = findViewById(R.id.close_button);
+        ImageButton close = findViewById(R.id.close_button);
         final ViewReason viewReason = ViewReason.valueOf(getIntent().getIntExtra(EXTRA_VIEW_REASON, ViewReason.ERROR.getValue()));
         final String doneAction = getIntent().getStringExtra(PaperKeyProveActivity.EXTRA_DONE_ACTION);
 
-       /* close.setOnClickListener(new View.OnClickListener() {
+        if (IntroActivity.showCloseButton != null) {
+            close.setVisibility(View.INVISIBLE);
+        }
+       close.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (PaperKeyActivity.DoneAction.SHOW_BUY_SCREEN.name().equals(doneAction)) {
-                    OnBoardingActivity.showBuyScreen(WriteDownActivity.this);
-                    WriteDownActivity.this.finishAffinity();
-                } else {
-                    switch (viewReason) {
-                        case NEW_WALLET:
-                            UiUtils.startBreadActivity(WriteDownActivity.this, false);
-                            break;
-                        case ON_BOARDING:
-                            UiUtils.startBreadActivity(WriteDownActivity.this, false);
-                            break;
-                        case SETTINGS:
-                            // Fall through
-                        default:
-                            onBackPressed();
-                            break;
-                    }
-                }
-
+                onBackPressed();
             }
-        }); */
+        });
 
         writeButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -115,8 +103,12 @@ public class WriteDownActivity extends BRActivity {
 
     @Override
     public void onBackPressed() {
-     /*   super.onBackPressed();
-        overridePendingTransition(R.anim.fade_up, R.anim.exit_to_bottom); */
-    }
+        if (IntroActivity.showCloseButton != null)  {
 
+        }
+        else {
+            super.onBackPressed();
+            overridePendingTransition(R.anim.fade_up, R.anim.exit_to_bottom);
+        }
+    }
 }

@@ -49,6 +49,7 @@ import com.platform.APIClient;
 
 public class IntroActivity extends BRActivity {
     private static final String TAG = IntroActivity.class.getSimpleName();
+    public static String showCloseButton = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -94,6 +95,7 @@ public class IntroActivity extends BRActivity {
                     return;
                 }
                 //EventUtils.pushEvent(EventUtils.EVENT_LANDING_PAGE_GET_STARTED);
+                showCloseButton = "newwallet";
                 Intent intent = new Intent(IntroActivity.this, IntroTos.class);
                 overridePendingTransition(R.anim.enter_from_right, R.anim.exit_to_left);
                 startActivity(intent);

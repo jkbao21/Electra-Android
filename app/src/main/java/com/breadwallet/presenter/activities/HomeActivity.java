@@ -46,6 +46,7 @@ import android.widget.ViewFlipper;
 
 import com.breadwallet.R;
 import com.breadwallet.model.Wallet;
+import com.breadwallet.presenter.activities.intro.IntroActivity;
 import com.breadwallet.presenter.activities.settings.SettingsActivity;
 import com.breadwallet.presenter.activities.util.BRActivity;
 import com.breadwallet.presenter.customviews.BRButton;
@@ -137,6 +138,7 @@ public class HomeActivity extends BRActivity implements InternetManager.Connecti
         mSearchBar = findViewById(R.id.search_bar);
         ImageButton searchIcon = findViewById(R.id.search_icon);
         mBarFlipper = findViewById(R.id.tool_bar_flipper);
+        IntroActivity.showCloseButton = null;
 
         mMenuLayout = findViewById(R.id.menu_layout);
         mMenuLayout.setOnClickListener(new View.OnClickListener() {

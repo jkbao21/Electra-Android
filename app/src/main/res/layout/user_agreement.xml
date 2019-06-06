@@ -43,6 +43,7 @@
         android:layout_margin="16dp"
         android:layout_below="@+id/gradient_layout"
         android:lineSpacingMultiplier="1.3"
+        android:textAlignment="center"
         android:text="@string/Intro.Tos.Body"
         android:scrollbars="vertical"
         android:textSize="18sp" />

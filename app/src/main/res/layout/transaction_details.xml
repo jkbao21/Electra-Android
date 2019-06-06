@@ -51,52 +51,56 @@
                 android:textColor="@color/primary_background"
                 android:textSize="26sp" />
 
-            <com.breadwallet.presenter.customviews.BaseTextView
-                android:id="@+id/amount_when_sent"
-                android:layout_width="wrap_content"
+            <RelativeLayout
+                android:id="@+id/whenNow"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/tx_amount"
-                android:layout_marginStart="60dp"
-                android:text="X"
-                android:textColor="@color/settings_chevron_right"
-                app:brdFont="@string/Font.CircularPro_Bold" />
-
-            <com.breadwallet.presenter.customviews.BaseTextView
-                android:id="@+id/label_when_sent"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:layout_below="@+id/tx_amount"
-                android:layout_toEndOf="@+id/amount_when_sent"
-                android:text=" when sent"
-                android:textColor="@color/settings_chevron_right" />
-
-            <com.breadwallet.presenter.customviews.BaseTextView
-                android:id="@+id/amount_now"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/tx_amount"
-                android:layout_marginStart="2dp"
-                android:layout_toEndOf="@id/label_when_sent"
-                android:text="X"
-                android:textColor="@color/settings_chevron_right"
-                app:brdFont="@string/Font.CircularPro_Bold" />
-
-            <com.breadwallet.presenter.customviews.BaseTextView
-                android:id="@+id/label_now"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/tx_amount"
-                android:layout_marginStart="2dp"
-                android:layout_toEndOf="@id/amount_now"
-                android:text=" now"
-                android:textColor="@color/settings_chevron_right" />
+                android:layout_centerHorizontal="true">
 
 
-            <View
+                <com.breadwallet.presenter.customviews.BaseTextView
+                    android:id="@+id/amount_when_sent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/settings_chevron_right"
+                    app:brdFont="@string/Font.CircularPro_Bold" />
+
+                <com.breadwallet.presenter.customviews.BaseTextView
+                    android:id="@+id/label_when_sent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/amount_when_sent"
+                    android:text=" when sent"
+                    android:textColor="@color/settings_chevron_right" />
+
+                <com.breadwallet.presenter.customviews.BaseTextView
+                    android:id="@+id/amount_now"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:layout_toEndOf="@id/label_when_sent"
+                    android:text="X"
+                    android:textColor="@color/settings_chevron_right"
+                    app:brdFont="@string/Font.CircularPro_Bold" />
+
+                <com.breadwallet.presenter.customviews.BaseTextView
+                    android:id="@+id/label_now"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:layout_toEndOf="@id/amount_now"
+                    android:text=" now"
+                    android:textColor="@color/settings_chevron_right" />
+
+            </RelativeLayout>
+
+
+                <View
                 android:id="@+id/divider1"
                 android:layout_width="match_parent"
                 android:layout_height="1px"
-                android:layout_below="@id/amount_when_sent"
+                android:layout_below="@id/whenNow"
                 android:layout_marginTop="14dp"
                 android:background="@color/light_gray" />
 

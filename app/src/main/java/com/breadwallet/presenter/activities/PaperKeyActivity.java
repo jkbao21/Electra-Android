@@ -29,6 +29,8 @@ import com.breadwallet.tools.util.Utils;
 
 import java.util.Locale;
 
+import static com.breadwallet.presenter.activities.intro.IntroActivity.showCloseButton;
+
 
 public class PaperKeyActivity extends BRActivity {
     private static final String TAG = PaperKeyActivity.class.getName();
@@ -103,6 +105,10 @@ public class PaperKeyActivity extends BRActivity {
                 if (!isDestroyed()) finish();
             }
         });
+
+        if (showCloseButton != null) {
+            closeImageButton.setVisibility(View.INVISIBLE);
+        }
 
         mPreviousButton.setOnClickListener(new View.OnClickListener() {
             @Override

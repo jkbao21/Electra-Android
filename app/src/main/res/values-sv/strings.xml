@@ -27,7 +27,7 @@
     <!-- Delisted token alert banner message -->
     <string name="Account.delistedToken">Denna token har avförts eftersom utfärdaren har beslutat att sluta stödja ERC20. \n\nDu kan eventuellt skicka dessa tokens till en annan plattform. Besök vår supportsida för mer information.</string>
     <!-- $10000 per BTC -->
-    <string name="Account.exchangeRate">%1$s BTC per %2$s</string>
+    <string name="Account.exchangeRate">%1$s Satoshi/%2$s</string>
     <!-- Loading Wallet Message -->
     <string name="Account.loadingMessage">Laddar plånbok</string>
     <!-- Default wallet name -->

@@ -27,7 +27,7 @@
     <!-- Delisted token alert banner message -->
     <string name="Account.delistedToken">発行者がERC20のサポートを終了することを決定した為、このトークンはリストから外れています。 \n\nそれらのトークンを他のプラットフォームに転送することは依然可能かもしれません。詳しくは、サポートページをご覧ください。</string>
     <!-- $10000 per BTC -->
-    <string name="Account.exchangeRate">%2$sあたり%1$s</string>
+    <string name="Account.exchangeRate">%1$s Satoshi/%2$s</string>
     <!-- Loading Wallet Message -->
     <string name="Account.loadingMessage">ウォレット読み込み中</string>
     <!-- Default wallet name -->

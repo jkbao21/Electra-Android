@@ -27,7 +27,7 @@
     <!-- Delisted token alert banner message -->
     <string name="Account.delistedToken">Este token se ha eliminado de la lista porque el emisor ha decidido abandonar la compatibilidad con ERC20. \n\nTodavía puede enviar estos tokens a otra plataforma. Para obtener más información, visite nuestra página de asistencia.</string>
     <!-- $10000 per BTC -->
-    <string name="Account.exchangeRate">%1$s BTC por %2$s</string>
+    <string name="Account.exchangeRate">%1$s Satoshi/%2$s</string>
     <!-- Loading Wallet Message -->
     <string name="Account.loadingMessage">Cargando monedero</string>
     <!-- Default wallet name -->

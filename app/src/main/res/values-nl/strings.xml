@@ -27,7 +27,7 @@
     <!-- Delisted token alert banner message -->
     <string name="Account.delistedToken">Dit token is verwijderd omdat de uitgever ERC20-ondersteuning gestaakt heeft. \n\nMogelijk kan je deze tokens nog naar een ander platform verzenden. Ga voor meer informatie naar onze ondersteuningspagina.</string>
     <!-- $10000 per BTC -->
-    <string name="Account.exchangeRate">%1$s BTC per %2$s</string>
+    <string name="Account.exchangeRate">%1$s Satoshi/%2$s</string>
     <!-- Loading Wallet Message -->
     <string name="Account.loadingMessage">Wallet laden</string>
     <!-- Default wallet name -->

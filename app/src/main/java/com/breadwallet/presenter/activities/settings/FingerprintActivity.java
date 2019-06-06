@@ -11,6 +11,7 @@ import android.text.method.LinkMovementMethod;
 import android.text.style.ClickableSpan;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.ImageButton;
 import android.widget.RelativeLayout;
@@ -18,7 +19,11 @@ import android.widget.TextView;
 import android.widget.ToggleButton;
 
 import com.breadwallet.R;
+import com.breadwallet.presenter.activities.intro.IntroActivity;
+import com.breadwallet.presenter.activities.intro.IntroTos;
+import com.breadwallet.presenter.activities.intro.OnBoardingActivity;
 import com.breadwallet.presenter.activities.util.BRActivity;
+import com.breadwallet.presenter.customviews.BRButton;
 import com.breadwallet.presenter.customviews.BRDialogView;
 import com.breadwallet.presenter.entities.CurrencyEntity;
 import com.breadwallet.presenter.interfaces.BRAuthCompletion;
@@ -30,6 +35,7 @@ import com.breadwallet.tools.security.BRKeyStore;
 import com.breadwallet.tools.sqlite.RatesDataSource;
 import com.breadwallet.tools.util.BRConstants;
 import com.breadwallet.tools.util.CurrencyUtils;
+import com.breadwallet.tools.util.EventUtils;
 import com.breadwallet.tools.util.Utils;
 import com.breadwallet.wallet.WalletsMaster;
 import com.breadwallet.wallet.abstracts.BaseWalletManager;
@@ -49,6 +55,7 @@ public class FingerprintActivity extends BaseSettingsActivity {
     private TextView limitInfo;
 
     private ToggleButton toggleButton;
+    private Button mLimitButton;
 
     public static FingerprintActivity getApp() {
         return app;
@@ -61,6 +68,7 @@ public class FingerprintActivity extends BaseSettingsActivity {
         toggleButton = findViewById(R.id.toggleButton);
         limitExchange = findViewById(R.id.limit_exchange);
         limitInfo = findViewById(R.id.limit_info);
+        setOnClickListeners();
 
         toggleButton.setChecked(BRSharedPrefs.getUseFingerprint(this));
 
@@ -115,9 +123,9 @@ public class FingerprintActivity extends BaseSettingsActivity {
             }
         };
         //start index of the last space (beginning of the last word)
-        int indexOfSpace = limitInfo.getText().toString().lastIndexOf(" ");
+       // int indexOfSpace = limitInfo.getText().toString().lastIndexOf(" ");
         // make the whole text clickable if failed to select the last word
-        ss.setSpan(clickableSpan, indexOfSpace == -1 ? 0 : indexOfSpace, limitInfo.getText().length(), Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+       // ss.setSpan(clickableSpan, indexOfSpace == -1 ? 0 : indexOfSpace, limitInfo.getText().length(), Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
 
         limitInfo.setText(ss);
         limitInfo.setMovementMethod(LinkMovementMethod.getInstance());
@@ -141,6 +149,29 @@ public class FingerprintActivity extends BaseSettingsActivity {
         BigDecimal total = wm.getFiatExchangeRate(this).multiply(new BigDecimal(btcFiatRate.rate)).multiply(cryptoLimit);
         total = total.setScale(2, RoundingMode.CEILING);
         return String.format(getString(R.string.TouchIdSettings_spendingLimit), cryptoLimit+"ECA", total+iso.toUpperCase());
+    }
+
+    private void setOnClickListeners() {
+        Button mLimitButton = findViewById(R.id.button_limit);
+        mLimitButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AuthManager.getInstance().authPrompt(FingerprintActivity.this, null, getString(R.string.VerifyPin_continueBody), true, false, new BRAuthCompletion() {
+                    @Override
+                    public void onComplete() {
+                        Intent intent = new Intent(FingerprintActivity.this, SpendLimitActivity.class);
+                        overridePendingTransition(R.anim.enter_from_right, R.anim.exit_to_left);
+                        startActivity(intent);
+                        finish();
+                    }
+
+                    @Override
+                    public void onCancel() {
+
+                    }
+                });
+            }
+        });
     }
 
     @Override

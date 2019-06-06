@@ -27,7 +27,7 @@
     <!-- Delisted token alert banner message -->
     <string name="Account.delistedToken">Регистрация этого токена была отменена из-за того, что эмитент решил прекратить поддержку ERC20. \n\nВероятно, вы все равно можете отправлять эти токены на другую платформу. Для получения дополнительной информации посетите нашу страницу поддержки.</string>
     <!-- $10000 per BTC -->
-    <string name="Account.exchangeRate">%1$s BTC за %2$s</string>
+    <string name="Account.exchangeRate">%1$s Satoshi/%2$s</string>
     <!-- Loading Wallet Message -->
     <string name="Account.loadingMessage">Загружаем кошелек</string>
     <!-- Default wallet name -->
@@ -47,7 +47,7 @@
     <!-- General error message -->
     <string name="Alert.somethingWentWrong">Что-то пошло не так. Повторите попытку.</string>
     <!-- Request timed out error message -->
-    <string name="Alert.timedOut">Истекло время запроса. Проверьте подключение и повторите попытку.</string>
+    <string name="Alert.timedOut">Время запроса истекло. Проверьте подключение и повторите попытку.</string>
     <!-- Warning alert title -->
     <string name="Alert.warning">Предупреждение</string>
     <!-- 'the addresses were copied'' Alert title -->
@@ -71,7 +71,7 @@
     <!-- Tell the user where they can enable permissions to access device storage. -->
     <string name="Android.allowFileSystemAccess">Включите разрешения на хранение в настройках вашего устройства: «Настройки» &gt; «Приложения» &gt; «Electra» &gt; «Разрешения».</string>
     <!-- The "home" screen is the name of the top level menu for the app. -->
-    <string name="Android.BCH.welcome.message">Доступ к BCH в вашем кошельке теперь возможен с главного экрана.</string>
+    <string name="Android.BCH.welcome.message">Доступ к Electra в вашем кошельке теперь возможен с главного экрана.</string>
     <!-- Warning about using apps that can alter the screen -->
     <string name="Android.screenAlteringMessage">Electra не сможет нормально работать, если не отключить изменяющие экран приложения (такие как Twilight).</string>
     <!-- An app that alters the screen ("screen-altering app") has been detected. -->
@@ -79,21 +79,21 @@
     <!-- JSON Serialization error message -->
     <string name="ApiClient.jsonError">Ошибка JSON-сериализации</string>
     <!-- Wallet not ready error message -->
-    <string name="ApiClient.notReady">Кошелек не готов</string>
+    <string name="ApiClient.notReady">Кошелёк не готов</string>
     <!-- API Token error message -->
     <string name="ApiClient.tokenError">Не удалось извлечь токен API</string>
     <!-- Send BCH view body. -->
-    <string name="BCH.body">Введите адрес адресата BCH ниже. Вся сумма BCH в вашем кошельке во время форка (%1$s) будет отправлена.</string>
+    <string name="BCH.body">Введите адрес адресата Electra ниже. Вся сумма ECA в вашем кошельке во время форка (%1$s) будет отправлена.</string>
     <!-- Confirm sending <$5.00> to <address>? -->
     <string name="BCH.confirmationMessage">Подтвердить отправку %1$s на %2$s</string>
     <!-- Confirmation alert title -->
     <string name="BCH.confirmationTitle">Подтверждение</string>
     <!-- Generic bch erorr message -->
-    <string name="BCH.genericError">На Вашем аккаунте нет BCH, или вы получили BCH после форка.</string>
+    <string name="BCH.genericError">На Вашем аккаунте нет ECA.</string>
     <!-- Transaction ID copied message -->
     <string name="BCH.hashCopiedMessage">Идентификатор транзакции скопирован</string>
     <!-- No address error message -->
-    <string name="BCH.noAddressError">Пожалуйста, введите и адрес</string>
+    <string name="BCH.noAddressError">Пожалуйста, введите адрес</string>
     <!-- Attempted to scan unsupported qr code error message. -->
     <string name="BCH.paymentProtocolError">Запросы протокола платежей не поддерживаются для транзакций BCH</string>
     <!-- BCH successfully sent alert message -->
@@ -141,7 +141,7 @@
     <!-- Click this button to sell an asset -->
     <string name="Button.sell">Продать</string>
     <!-- send button -->
-    <string name="Button.send">отправить</string>
+    <string name="Button.send">Отправить</string>
     <!-- Settings button label -->
     <string name="Button.settings">Настройки</string>
     <!-- Settings button label -->
@@ -167,11 +167,11 @@
     <!-- Confirm paper phrase error message -->
     <string name="ConfirmPaperPhrase.error">Введенные слова не совпадают с вашим бумажным ключом. Повторите попытку.</string>
     <!-- Confirm paper phrase view label. -->
-    <string name="ConfirmPaperPhrase.label">Чтобы убедиться, что всё записано корректно, пожалуйста, введите следующие слова с вашего бумажного ключа.</string>
+    <string name="ConfirmPaperPhrase.label">Чтобы убедиться, что всё записано корректно, пожалуйста, введите следующие слова из вашего бумажного ключа.</string>
     <!-- Word label eg. Word #1, Word #2 -->
     <string name="ConfirmPaperPhrase.word">Слово #%1$s</string>
     <!-- Agree to legal terms button -->
-    <string name="Crowdsale.agree">Согласен</string>
+    <string name="Crowdsale.agree">Подтвердить</string>
     <!-- As in "(tap here to) buy (some) tokens" -->
     <string name="Crowdsale.buyButton">Купить токены</string>
     <!-- Decline to legal terms button -->
@@ -185,7 +185,7 @@
     <!-- Exchange rate label -->
     <string name="DefaultCurrency.rateLabel">Обменный курс</string>
     <!-- The wallet is disabled. -->
-    <string name="Disabled.title">Кошелек отключен</string>
+    <string name="Disabled.title">Кошелёк отключен</string>
     <!-- Service capabilities description -->
     <string name="EME.permissions.accountRequest">Запросить %1$s информацию об учётной записи</string>
     <!-- Service capabilities description -->
@@ -217,7 +217,7 @@
     <!-- Instructions on how to turn on face id on the iPhone. Please ensure the name of the menu in this string matches the wording Apple uses in the iPhone menu. -->
     <string name="FaceIDSettings.unavailableAlertMessage">Вы не настроили Face ID на данном устройстве. Перейдите в Настройки-&gt;Face ID и Секретный код, чтобы настроить его сейчас.</string>
     <!-- Face ID unavailable alert title -->
-    <string name="FaceIDSettings.unavailableAlertTitle">Face ID не настроена</string>
+    <string name="FaceIDSettings.unavailableAlertTitle">Face ID не настроен</string>
     <!-- Face Id spending limit screen title -->
     <string name="FaceIDSpendingLimit.title">Лимит расходов Face ID</string>
     <!-- Economy fee -->
@@ -225,13 +225,13 @@
     <!-- E.g. [This transaction is predicted to complete in] 1-24 hours -->
     <string name="FeeSelector.economyTime"> </string>
     <!-- Warning message for economy fee -->
-    <string name="FeeSelector.economyWarning">Этот параметр не рекомендуется для транзакций, чувствительных с точки зрения времени.</string>
+    <string name="FeeSelector.economyWarning">Этот параметр не рекомендуется для транзакций, чувствительных к времени.</string>
     <!-- E.g. Estimated delivery: 10-60 minutes -->
     <string name="FeeSelector.estimatedDeliver">Ожидаемое исполнение: %1$s</string>
     <!-- [This transaction will complete in] 2-5 minutes -->
     <string name="FeeSelector.ethTime">2-5 минут</string>
     <!-- Regular fee -->
-    <string name="FeeSelector.regular">Обычна сумма</string>
+    <string name="FeeSelector.regular">Обычная сумма</string>
     <!-- E.g. [This transaction is predicted to complete in] 10-60 minutes -->
     <string name="FeeSelector.regularTime">64 секунды</string>
     <!-- Fee Selector title -->
@@ -257,7 +257,7 @@
     <!-- empty private key error message -->
     <string name="Import.Error.empty">Этот персональный ключ пуст.</string>
     <!-- High fees error message -->
-    <string name="Import.Error.highFees">Комиссия транзакции стоит больше, чем доступно средств на счете</string>
+    <string name="Import.Error.highFees">Комиссия транзакции стоит больше, чем доступно средств на счёте</string>
     <!-- Not a valid private key error message -->
     <string name="Import.Error.notValid">Недействительный персональный ключ</string>
     <!-- Import signing error message -->
@@ -275,7 +275,7 @@
     <!-- password textfield placeholder -->
     <string name="Import.passwordPlaceholder">пароль</string>
     <!-- Caption for graphics -->
-    <string name="Import.rightCaption">Ваш кошелек Electra</string>
+    <string name="Import.rightCaption">Ваш кошелёк Electra</string>
     <!-- Scan Private key button label -->
     <string name="Import.scan">Сканировать персональный ключ</string>
     <!-- Import wallet success alert title -->
@@ -295,11 +295,11 @@
     <!-- Ignore jailbreak warning button -->
     <string name="JailbreakWarnings.ignore">Игнорировать</string>
     <!-- Jailbreak warning message -->
-    <string name="JailbreakWarnings.messageWithBalance">БЕЗОПАСНОСТЬ УСТРОЙСТВА ПОДВЕРГНУТА РИСКУ\n Какое-либо приложение по снятию ограничений с файловой системы может получить доступ к данным цепочки ключей  Electra и украсть ваши биткойны! Немедленно очистите ваш кошелек и восстановите его на безопасном устройстве.</string>
+    <string name="JailbreakWarnings.messageWithBalance">БЕЗОПАСНОСТЬ УСТРОЙСТВА ПОДВЕРГНУТА РИСКУ\n Какое-либо приложение по снятию ограничений с файловой системы может получить доступ к данным цепочки ключей Electra и украсть ваши средства! Немедленно очистите ваш кошелек и восстановите его на безопасном устройстве.</string>
     <!-- Jailbreak warning message -->
-    <string name="JailbreakWarnings.messageWithoutBalance">БЕЗОПАСНОСТЬ УСТРОЙСТВА ПОДВЕРГНУТА РИСКУ\n Какое-либо приложение по снятию ограничений с файловой системы может получить доступ к данным цепочки ключей  Electra и украсть ваши биткойны. Пожалуйста, используйте Electra только на устройствах с не снятыми с файловой системы ограничениями.</string>
+    <string name="JailbreakWarnings.messageWithoutBalance">БЕЗОПАСНОСТЬ УСТРОЙСТВА ПОДВЕРГНУТА РИСКУ\n Какое-либо приложение по снятию ограничений с файловой системы может получить доступ к данным цепочки ключей Electra и украсть ваши средства. Пожалуйста, используйте Electra только на устройствах с не снятыми с файловой системы ограничениями.</string>
     <!-- Jailbreak warning title -->
-    <string name="JailbreakWarnings.title">ПРЕДУПРЕЖДЕНИЕ</string>
+    <string name="JailbreakWarnings.title">Предупреждение!</string>
     <!-- Wipe wallet button -->
     <string name="JailbreakWarnings.wipe">Очистить</string>
     <!-- Approve link wallet button label -->
@@ -307,35 +307,35 @@
     <!-- Decline link wallet button label -->
     <string name="LinkWallet.decline">Отклонить</string>
     <!-- Link Wallet view dislaimer footer -->
-    <string name="LinkWallet.disclaimer">Внешние приложения не могут отправлять деньги без согласия с этого устройства</string>
+    <string name="LinkWallet.disclaimer">Внешние приложения не могут отправлять деньги без согласия, с этого устройства</string>
     <!-- Link Wallet view title above domain list -->
     <string name="LinkWallet.domainTitle">Примечание: взаимодействуйте ТОЛЬКО с этим приложением, когда находитесь на одном из следующих доменов</string>
     <!-- Link wallet logo footer text -->
-    <string name="LinkWallet.logoFooter">Защищенная Оплата Покупок</string>
+    <string name="LinkWallet.logoFooter">Защищённая оплата покупок</string>
     <!-- Link Wallet view title above permissions list -->
     <string name="LinkWallet.permissionsTitle">Это приложение способно:</string>
     <!-- Link Wallet view title -->
-    <string name="LinkWallet.title">Прикрепить Кошелек</string>
+    <string name="LinkWallet.title">Прикрепить Кошелёк</string>
     <!-- Location services disabled error -->
     <string name="LocationPlugin.disabled">Сервисы определения местоположения отключены.</string>
     <!-- No permissions for location services -->
-    <string name="LocationPlugin.notAuthorized">У Electra не разрешения на доступ к сервисам определения местоположения.</string>
+    <string name="LocationPlugin.notAuthorized">У Electra нет разрешения на доступ к сервисам определения местоположения.</string>
     <!-- Wallet creation date prefix -->
     <string name="ManageWallet.creationDatePrefix">Вы создали ваш кошелек %1$s</string>
     <!-- Manage wallet description text -->
-    <string name="ManageWallet.description">Название вашего кошелька отображается только в журнале транзакций вашей учетной записи, и ни один другой пользователь не может его видеть.</string>
+    <string name="ManageWallet.description">Название вашего кошелька отображается только в журнале транзакций вашей учетной записи и ни один другой пользователь не может его видеть.</string>
     <!-- Change Wallet name textfield label -->
     <string name="ManageWallet.textFeildLabel">Название кошелька</string>
     <!-- Manage wallet modal title -->
     <string name="ManageWallet.title">Управление кошельком</string>
     <!-- "Add [a] Wallet [to the home screen]" -->
-    <string name="MenuButton.addWallet">Добавить кошелек</string>
+    <string name="MenuButton.addWallet">Добавить кошелёк</string>
     <!-- Menu button title -->
-    <string name="MenuButton.lock">Заблокировать кошелек</string>
+    <string name="MenuButton.lock">Заблокировать кошелёк</string>
     <!-- (Click here to) manage (your list of) wallets -->
     <string name="MenuButton.manageWallets">Управлять кошельками</string>
     <!-- (press here to) scan (a) QR code -->
-    <string name="MenuButton.scan">Сканировать QR код</string>
+    <string name="MenuButton.scan">Сканировать QR-код</string>
     <!-- Menu button title -->
     <string name="MenuButton.security">Центр безопасности</string>
     <!-- Menu button title -->
@@ -343,7 +343,7 @@
     <!-- Menu button title -->
     <string name="MenuButton.support">Поддержка</string>
     <!-- button label -->
-    <string name="MenuViewController.createButton">Создать новый кошелек</string>
+    <string name="MenuViewController.createButton">Создать новый кошелёк</string>
     <!-- Menu modal title -->
     <string name="MenuViewController.modalTitle">Меню</string>
     <!-- button label -->
@@ -381,9 +381,9 @@
     <!-- Onboarding screen Skip button title that allows the user to exit the onboarding process. -->
     <string name="Onboarding.skip">Пропустить</string>
     <!-- Onboarding screen Page 4 title -->
-    <string name="OnboardingPageFour.title">Начинайте инвестировать уже сегодня всего с 50 долларами США!</string>
+    <string name="OnboardingPageFour.title">Начинайте инвестировать уже сегодня всего с 50$!</string>
     <!-- Onboarding screen Page 1 title -->
-    <string name="OnboardingPageOne.title">Добро пожаловать в ваш новый глобальный кошелек!</string>
+    <string name="OnboardingPageOne.title">Добро пожаловать в ваш новый мобильный кошелек Electra!</string>
     <!-- Onboarding screen Page 3 subtitle -->
     <string name="OnboardingPageThree.subtitle">Инвестируйте и диверсифицируйте c Electra, просто и безопасно.</string>
     <!-- Onboarding screen Page 3 title -->
@@ -401,23 +401,23 @@
     <!-- Error opening payment protocol file message -->
     <string name="PaymentProtocol.Errors.corruptedDocument">Неподдерживаемый или поврежденный документ</string>
     <!-- Missing certificate payment protocol error message -->
-    <string name="PaymentProtocol.Errors.missingCertificate">недостающий сертификат</string>
+    <string name="PaymentProtocol.Errors.missingCertificate">Отсутсвуюет сертификат</string>
     <!-- Request expired payment protocol error message -->
-    <string name="PaymentProtocol.Errors.requestExpired">срок действия запроса истек</string>
+    <string name="PaymentProtocol.Errors.requestExpired">Срок действия запроса истёк</string>
     <!-- Payment too small alert title -->
-    <string name="PaymentProtocol.Errors.smallOutputError">Не удалось выполнить платеж</string>
+    <string name="PaymentProtocol.Errors.smallOutputError">Не удалось выполнить платёж</string>
     <!-- Amount too small error message -->
     <string name="PaymentProtocol.Errors.smallPayment">Размер Electra-платежей должен превышать %1$s.</string>
     <!-- Output too small error message. -->
-    <string name="PaymentProtocol.Errors.smallTransaction">Результаты биткойн-транзакции должны превышать %1$s.</string>
+    <string name="PaymentProtocol.Errors.smallTransaction">Результаты Electra-транзакции должны превышать %1$s.</string>
     <!-- Unsupported signature type payment protocol error message -->
-    <string name="PaymentProtocol.Errors.unsupportedSignatureType">неподдерживаемый тип подписи</string>
+    <string name="PaymentProtocol.Errors.unsupportedSignatureType">Неподдерживаемый тип подписи</string>
     <!-- Untrusted certificate payment protocol error message -->
-    <string name="PaymentProtocol.Errors.untrustedCertificate">недостоверный сертификат</string>
+    <string name="PaymentProtocol.Errors.untrustedCertificate">Сертификат ненадежён</string>
     <!-- Body text for a prompt that asks the user to subscribe to email updates to find out product updates. -->
-    <string name="Prompts.Email.body">Станьте первым, кто получит существенную поддержку и обновления продукта</string>
+    <string name="Prompts.Email.body">Станьте первым, кто узнает о самом важном</string>
     <!-- Placeholder text for an email address text field. -->
-    <string name="Prompts.Email.placeholder">введите ваш адрес электронной почты</string>
+    <string name="Prompts.Email.placeholder">Введите ваш адрес электронной почты</string>
     <!-- Body text that is shown when the user successfully subscribes to email updates. -->
     <string name="Prompts.Email.successBody">Вы успешно подписались на получение обновлений</string>
     <!-- Text that is displayed as a footnote when the user successfully subscribes to email updates. -->
@@ -425,9 +425,9 @@
     <!-- Title that is shown when the user successfully subscribes to email updates. -->
     <string name="Prompts.Email.successTitle">Спасибо!</string>
     <!-- Title for a prompt that asks the user to subscribe to email updates to find out product updates. -->
-    <string name="Prompts.Email.title">Войти в узкий круг</string>
+    <string name="Prompts.Email.title">Будьте в курсе обновлений</string>
     <!-- Enable face ID prompt body -->
-    <string name="Prompts.FaceId.body">Нажмите \"Продолжить\", чтобы включить Идентификацию по лицу</string>
+    <string name="Prompts.FaceId.body">Нажмите \"Продолжить\", чтобы включить FaceId</string>
     <!-- Enable face ID prompt title -->
     <string name="Prompts.FaceId.title">Включить Face ID</string>
     <!-- No passcode set warning body -->
@@ -499,7 +499,7 @@
     <!-- Enter paper key instruction -->
     <string name="RecoverWallet.instruction">Введите бумажный ключ</string>
     <!-- Recover wallet intro -->
-    <string name="RecoverWallet.intro">Восстановите Ваш Electra-кошелек с помощью бумажного ключа.</string>
+    <string name="RecoverWallet.intro">Восстановите Ваш Electra-кошелёк с помощью бумажного ключа.</string>
     <!-- Invalid paper key message -->
     <string name="RecoverWallet.invalid">Введенный вами бумажный ключ недействителен. Пожалуйста, внимательно перепроверьте каждое слово и повторите попытку.</string>
     <!-- Previous button accessibility label -->
@@ -541,17 +541,17 @@
     <!-- Subheader label -->
     <string name="ReScan.subheader2">Когда синхронизировать?</string>
     <!-- Scan Electra address camera flash toggle -->
-    <string name="Scanner.flashButtonLabel">Вспышка камеры</string>
+    <string name="Scanner.flashButtonLabel">Включить вспышку</string>
     <!-- Complete filter label -->
-    <string name="Search.complete">выполнено</string>
+    <string name="Search.complete">Выполнено</string>
     <!-- Pending filter label -->
-    <string name="Search.pending">в ожидании</string>
+    <string name="Search.pending">В ожидании</string>
     <!-- Received filter label -->
-    <string name="Search.received">получено</string>
+    <string name="Search.received">Получено</string>
     <!-- [Click here to] search -->
     <string name="Search.search">Поиск</string>
     <!-- Sent filter label -->
-    <string name="Search.sent">отправлено</string>
+    <string name="Search.sent">Отправлено</string>
     <!-- Face ID button title -->
     <string name="SecurityCenter.faceIdTitle">Face ID</string>
     <!-- Paper Key button description -->
@@ -563,7 +563,7 @@
     <!-- PIN button title -->
     <string name="SecurityCenter.pinTitle">6-цифровой PIN-код</string>
     <!-- Touch ID button description -->
-    <string name="SecurityCenter.touchIdDescription">Легко и просто разблокируйте ваш Electra-кошелек и отправляйте суммы, не превышающие ваш лимит на расходы.</string>
+    <string name="SecurityCenter.touchIdDescription">Легко и просто разблокируйте ваш Electra-кошелёк и отправляйте суммы, не превышающие ваш лимит на расходы.</string>
     <!-- Touch ID button title -->
     <string name="SecurityCenter.touchIdTitle">Touch ID</string>
     <!-- Security center fingerprint authentication button -->
@@ -571,9 +571,9 @@
     <!-- Segwit enabled confirmation title -->
     <string name="Segwit.ConfirmationConfirmationTitle">Вы активировали SegWit!</string>
     <!-- Segwit enabled confirmation description -->
-    <string name="Segwit.ConfirmationInstructionsDescription">Благодарим вас за продвижение Electra.</string>
+    <string name="Segwit.ConfirmationInstructionsDescription">Благодарим вас за продвижение биткоина.</string>
     <!-- Segwit instructions -->
-    <string name="Segwit.ConfirmationInstructionsInstructions">Поддержка SegWit еще является бета-функцией.\nС момента активации функции SegWit ее нельзя будет отключить. Вы сможете найти унаследованный адрес в Настройках. \nНекоторые услуги третьей стороны, включая крипто-трейдинг, могут быть недоступными для пользователей, которые активировали SegWit. В случае крайней необходимости, вы сможете генерировать унаследованный адрес, зайдя в Preferences (Параметры) &gt; Electra Settings (Настройки Electra). \nВ будущем обновлении SegWit будет автоматически активирована для всех пользователей.</string>
+    <string name="Segwit.ConfirmationInstructionsInstructions">Поддержка SegWit еще является бета-функцией.\nС момента активации функции SegWit ее нельзя будет отключить. Вы сможете найти унаследованный адрес в Настройках. \nНекоторые услуги третьей стороны, включая крипто-трейдинг, могут быть недоступными для пользователей, которые активировали SegWit. В случае крайней необходимости, вы сможете генерировать унаследованный адрес, зайдя в Preferences (Параметры) &gt; Electra Settings (Настройки биткоина). \nВ будущем обновлении SegWit будет автоматически активирована для всех пользователей.</string>
     <!-- Segwit extra confirmation title. -->
     <string name="Segwit.ConfirmChoiceLayout">Активация SegWit является необратимой функцией. Вы уверены, что хотите продолжить?</string>
     <!-- Segwit enableButton -->
@@ -585,7 +585,7 @@
     <!-- Instructions how to allow the camera access for the app -->
     <string name="Send.cameraUnavailabeMessage.android">Разрешить доступ к камере в: \"Настройки\" &gt; \"Приложения\" &gt; \"Electra\" &gt; \"Разрешения\"</string>
     <!-- Permission required to access camera -->
-    <string name="Send.cameraUnavailabeTitle.android">Приложению Electra не разрешен доступ к камере</string>
+    <string name="Send.cameraUnavailabeTitle.android">Приложению Electra не разрешён доступ к камере</string>
     <!-- Camera not allowed message -->
     <string name="Send.cameraunavailableMessage">Перейдите в \"Настройки\", чтобы разрешить доступ к камере.</string>
     <!-- Camera not allowed alert title -->
@@ -607,9 +607,9 @@
     <!-- Insufficient funds error -->
     <string name="Send.insufficientFunds">Недостаточно средств</string>
     <!-- e,g, "You must have at least $2 in your wallet in order to transfer this type of token." In this case, "token" is an ethereum ERC20 token. -->
-    <string name="Send.insufficientGasMessage">Чтобы передать токен этого типа, у вас в кошельке должно быть хотя бы %1$s. Вы хотите перейти к своему Ethereum-кошельку?</string>
+    <string name="Send.insufficientGasMessage">Чтобы передать токен этого типа, у вас в кошельке должно быть хотя бы %1$s. Вы хотите перейти к своему Electra-кошельку?</string>
     <!-- Your ethereum balance is insufficient to complete this action. -->
-    <string name="Send.insufficientGasTitle">Недостаточно Ethereum</string>
+    <string name="Send.insufficientGasTitle">Недостаточно Electra</string>
     <!-- e.g. The destination is not a valid (Electra) address. -->
     <string name="Send.invalidAddressMessage">Недействительный %1$s-адрес получателя.</string>
     <!-- Invalid address on pasteboard message -->
@@ -619,7 +619,7 @@
     <!-- Is rescanning error message -->
     <string name="Send.isRescanning">Отправка отключена во время полного сканирования.</string>
     <!-- Warning when the user is trying to send bitcoin cash to a legacy bitcoin address (possible, but probably not what the user wants to do) -->
-    <string name="Send.legacyAddressWarning">Внимание: это унаследованный биткойн-адрес. Вы уверены, что хотите отправить криптовалюту bitcoin Cash на него?</string>
+    <string name="Send.legacyAddressWarning">Внимание: этот кошелёк не из сети Electra. Вы уверены, что хотите отправить криптовалюту Electra на него?</string>
     <!-- We are loading the request (now) -->
     <string name="Send.loadingRequest">Загрузка запроса</string>
     <!-- Transaction fee could not be be caluculated error. -->
@@ -629,7 +629,7 @@
     <!-- Emtpy amount alert message -->
     <string name="Send.noAmount">Пожалуйста, введите сумму для отправки.</string>
     <!-- No Fees error -->
-    <string name="Send.noFeesError">Условия Network Fee загружаются. Повторите попытку.</string>
+    <string name="Send.noFeesError">Комиссионные загружаются. Повторите попытку.</string>
     <!-- Paste button label -->
     <string name="Send.pasteLabel">Вставить</string>
     <!-- Could not publish transaction alert title -->
@@ -668,7 +668,7 @@
     <string name="Settings.earlyAccess">Присоединитесь к пользователям с ранним доступом</string>
     <!-- Enable segwit. -->
     <string name="Settings.EnableSegwit">Активировать Segwit</string>
-    <!-- Are you enjoying Electra alert message body -->
+    <!-- Are you enjoying bread alert message body -->
     <string name="Settings.enjoying">Нравится ли вам использовать Electra?</string>
     <!-- Face ID spending limit label -->
     <string name="Settings.faceIdLimit">Лимит расходов Face ID</string>
@@ -703,7 +703,7 @@
     <!-- Receive Electra -->
     <string name="Settings.ViewLegacyAddressReceiveTitle">Получить Electra</string>
     <!-- Wallet Settings section header -->
-    <string name="Settings.wallet">Кошелек</string>
+    <string name="Settings.wallet">Кошелёк</string>
     <!-- Unlink/delete your wallet from the current device. -->
     <string name="Settings.wipe">Отвязать от этого устройства</string>
     <!-- Share data view body -->
@@ -715,29 +715,29 @@
     <!-- button label -->
     <string name="StartPaperPhrase.againButtonTitle">Выписать бумажный ключ снова</string>
     <!-- Paper key explanation text. -->
-    <string name="StartPaperPhrase.body">Бумажный ключ – это единственный способ восстановить ваш Electra-кошелек в случае потери, кражи, поломки или замены вашего телефона.\n\nМы покажем вам список слов, которые необходимо записать на листе бумаги и хранить в надежном месте.</string>
+    <string name="StartPaperPhrase.body">Бумажный ключ – это единственный способ восстановить ваш Electra-кошелёк в случае потери, кражи, поломки или замены вашего телефона.\n\nМы покажем вам список слов, которые необходимо записать на листе бумаги и хранить в надежном месте.</string>
     <!-- button label -->
     <string name="StartPaperPhrase.buttonTitle">Выписать бумажный ключ</string>
     <!-- Argument is date -->
-    <string name="StartPaperPhrase.date">Вы выписывали свой бумажный ключ в последний раз %1$s</string>
+    <string name="StartPaperPhrase.date">Когда вы выписывали свой бумажный ключ в последний раз %1$s</string>
     <!-- button label -->
-    <string name="StartViewController.createButton">Создать новый кошелек</string>
+    <string name="StartViewController.createButton">Создать новый кошелёк</string>
     <!-- Start view message -->
-    <string name="StartViewController.message">Самый надежный и безопасный способ использования биткойна.</string>
+    <string name="StartViewController.message">Самый надежный и безопасный способ использования Electra.</string>
     <!-- Recover your wallet from a backup -->
-    <string name="StartViewController.recoverButton">Восстановить кошелек</string>
+    <string name="StartViewController.recoverButton">Восстановить кошелёк</string>
     <!-- Syncing view connectiong state header text -->
     <string name="SyncingView.connecting">Соединение</string>
     <!-- The sync has failed (to complete) -->
     <string name="SyncingView.failed">Ошибка синхронизации</string>
     <!-- Syncing view header text -->
-    <string name="SyncingView.header"> </string>
+    <string name="SyncingView.header">Синхронизация</string>
     <!-- Retry button label -->
     <string name="SyncingView.retry">Повторить</string>
     <!-- "eg. Synced through <Jan 12, 2015> -->
     <string name="SyncingView.syncedThrough">Синхронизированно до %1$s</string>
     <!-- Syncing view syncing state header text -->
-    <string name="SyncingView.syncing"> </string>
+    <string name="SyncingView.syncing">Синхронизация</string>
     <!-- 6 d (6 days) -->
     <string name="TimeSince.days">%1$s д</string>
     <!-- 6 h (6 hours) -->
@@ -774,7 +774,7 @@
     <string name="TouchIdSettings.spendingLimit">Лимит на расходы: %1$s (%2$s)</string>
     <!-- Touch id switch label. -->
     <string name="TouchIdSettings.switchLabel">Активировать функцию Touch ID для Electra</string>
-    <!-- Enable fingerprint for this wallet called Electra -->
+    <!-- Enable fingerprint for this wallet called Bread -->
     <string name="TouchIdSettings.switchLabel.android">Включить аутентификацию по отпечаткам пальцев</string>
     <!-- Touch ID settings view title -->
     <string name="TouchIdSettings.title">Touch ID</string>
@@ -819,9 +819,9 @@
     <!-- Send status text: 'In progress: 20%' -->
     <string name="Transaction.sendingStatus">Выполнено: %1$s</string>
     <!-- sending to <address> -->
-    <string name="Transaction.sendingTo">отправка по адресу %1$s</string>
+    <string name="Transaction.sendingTo">Отправка по адресу %1$s</string>
     <!-- sent to <address> -->
-    <string name="Transaction.sentTo">отправлено по адресу %1$s</string>
+    <string name="Transaction.sentTo">Отправлено по адресу %1$s</string>
     <!-- eg. Starting balance: $50.00 -->
     <string name="Transaction.starting">Начальный баланс: %1$s</string>
     <!-- e.g. "[The money you paid was a] Fee for token transfer: Electra" (Electra is the token that was transfered) -->
@@ -829,7 +829,7 @@
     <!-- Waiting to be confirmed string -->
     <string name="Transaction.waiting">Ожидает подтверждения. Некоторые продавцы требуют подтверждения для выполнения транзакции. Предполагаемое время: 1-2 часа.</string>
     <!-- e.g. I received money from an account. -->
-    <string name="TransactionDetails.account">счет</string>
+    <string name="TransactionDetails.account">Счет</string>
     <!-- Address received from header -->
     <string name="TransactionDetails.addressFromHeader">От:</string>
     <!-- Address sent to header -->
@@ -879,13 +879,13 @@
     <!-- Received $5.00 -->
     <string name="TransactionDetails.receivedAmountDescription"><![CDATA[Получено <b>%1$s</b>]]></string>
     <!-- received from <address> -->
-    <string name="TransactionDetails.receivedFrom">получено от %1$s</string>
+    <string name="TransactionDetails.receivedFrom">Получено от %1$s</string>
     <!-- received via <address> -->
-    <string name="TransactionDetails.receivedVia">получено через %1$s</string>
+    <string name="TransactionDetails.receivedVia">Получено через %1$s</string>
     <!-- receiving from <address> -->
-    <string name="TransactionDetails.receivingFrom">получение от %1$s</string>
+    <string name="TransactionDetails.receivingFrom">Получение от %1$s</string>
     <!-- receiving via <address> -->
-    <string name="TransactionDetails.receivingVia">идет получение через %1$s</string>
+    <string name="TransactionDetails.receivingVia">Идет получение через %1$s</string>
     <!-- "Sent [$5] to [address]" => This is the "Sent [$5]" part. -->
     <string name="TransactionDetails.sent">Отправить %1$s</string>
     <!-- Sent $5.00 -->
@@ -911,7 +911,7 @@
     <!-- Transaction Details Title - Sent -->
     <string name="TransactionDetails.titleSent">Отправлено</string>
     <!-- "Sent [$5] to [address]" => This is the "to [address]" part. -->
-    <string name="TransactionDetails.to">на %1$s</string>
+    <string name="TransactionDetails.to">На %1$s</string>
     <!-- Tx detail field header -->
     <string name="TransactionDetails.totalHeader">Всего</string>
     <!-- Transaction ID header -->
@@ -941,7 +941,7 @@
     <!-- Device authentication title -->
     <string name="UnlockScreen.touchIdTitle.android">Требуется аутентификация</string>
     <!-- Update PIN caption text -->
-    <string name="UpdatePin.caption">Запомните этот PIN-код. Если вы его забудете, что не сможете получить доступ к вашим биткойнам.</string>
+    <string name="UpdatePin.caption">Запомните этот PIN-код. Если вы его забудете, что не сможете получить доступ к вашим средствам.</string>
     <!-- PIN creation info. -->
     <string name="UpdatePin.createInstruction">Ваш PIN-код будет использоваться для разблокировки кошелька Electra и отправки денег.</string>
     <!-- Update PIN title -->
@@ -985,13 +985,13 @@
     <!-- Updating webview message -->
     <string name="Webview.updating">Идет обновление...</string>
     <!-- Welcome screen text. (?) will be replaced with the help icon users should look for. -->
-    <string name="Welcome.body">Electrawallet сменил свое название на Electra и обзавелся новым дизайном и функциями.\n\nЕсли вам нужна помощь, то ищите иконку (?) в правом верхнем углу большинства экранов.</string>
+    <string name="Welcome.body">Breadwallet сменил свое название на Electra и обзавелся новым дизайном и функциями.\n\nЕсли вам нужна помощь, то ищите иконку (?) в правом верхнем углу экранов.</string>
     <!-- Top title of welcome screen -->
     <string name="Welcome.title">Добро пожаловать в Electra!</string>
     <!-- Wipe wallet alert message -->
-    <string name="WipeWallet.alertMessage">Вы действительно хотите удалить этот кошелек?</string>
+    <string name="WipeWallet.alertMessage">Вы действительно хотите удалить этот кошелёк?</string>
     <!-- Wipe wallet alert title -->
-    <string name="WipeWallet.alertTitle">Удалить кошелек?</string>
+    <string name="WipeWallet.alertTitle">Удалить кошелёк?</string>
     <!-- Failed wipe wallet alert message -->
     <string name="WipeWallet.failedMessage">Не удалось удалить кошелек.</string>
     <!-- Failed wipe wallet alert title -->

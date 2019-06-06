@@ -95,12 +95,13 @@
                             android:id="@+id/currency_usd_price"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginEnd="8dp"
                             android:text="$16,904.34 per BTC"
                             android:textColor="@color/white"
-                            android:textSize="@dimen/sub_header"
+                            android:textSize="12sp"
                             app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="@id/currency_label" />
+                            app:layout_constraintTop_toTopOf="@+id/balance_primary" />
 
 
                         <com.breadwallet.presenter.customviews.BaseTextView
@@ -108,51 +109,51 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginRight="16dp"
+                            android:layout_marginStart="20dp"
                             android:text="$26,495.69"
                             android:textColor="@color/white"
-                            android:textSize="22sp"
-                            app:brdFont="@string/Font.CircularPro_Bold"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintLeft_toRightOf="@+id/swap"
-                            app:layout_constraintTop_toBottomOf="@+id/search_icon"
-                            app:layout_constraintVertical_bias="0.492" />
+                            android:textSize="16sp"
+                            app:layout_constraintTop_toBottomOf="@+id/swap"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toStartOf="@+id/currency_usd_price" />
 
 
                         <ImageButton
                             android:id="@+id/swap"
-                            android:layout_width="14dp"
-                            android:layout_height="14dp"
-                            android:layout_marginStart="8dp"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginEnd="8dp"
-                            android:layout_marginBottom="30dp"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginStart="20dp"
                             android:background="@drawable/ic_swap_horizontal"
-                            app:layout_constraintEnd_toStartOf="@+id/balance_primary"
-                            app:layout_constraintTop_toBottomOf="@+id/search_icon"
-                            app:layout_constraintVertical_bias="0.492" />
+                            app:layout_constraintTop_toBottomOf="@+id/balance_secondary"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toStartOf="@+id/currency_usd_price" />
 
                         <com.breadwallet.presenter.customviews.BaseTextView
                             android:id="@+id/balance_secondary"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginEnd="8dp"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginStart="20dp"
                             android:maxLines="1"
                             android:text="1.56739 BTC"
-                            android:textColor="@color/trans_white"
-                            android:textSize="16sp"
-                            app:layout_constraintRight_toLeftOf="@id/swap"
-                            app:layout_constraintTop_toTopOf="@+id/swap" />
+                            android:textColor="@color/white"
+                            android:textSize="22sp"
+                            app:brdFont="@string/Font.CircularPro_Bold"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toStartOf="@+id/currency_usd_price" />
 
 
                         <ImageButton
                             android:id="@+id/search_icon"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
                             android:layout_marginLeft="10dp"
-                            android:layout_marginBottom="98dp"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginTop="10dp"
                             android:background="@drawable/ic_search_white_24dp"
                             app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintTop_toTopOf="@id/currency_usd_price" />
+                            app:layout_constraintTop_toTopOf="@id/balance_secondary" />
 
 
                     </android.support.constraint.ConstraintLayout>

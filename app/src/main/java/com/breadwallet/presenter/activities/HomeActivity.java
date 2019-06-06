@@ -46,6 +46,7 @@ import android.widget.ViewFlipper;
 
 import com.breadwallet.R;
 import com.breadwallet.model.Wallet;
+import com.breadwallet.presenter.activities.intro.IntroActivity;
 import com.breadwallet.presenter.activities.settings.SettingsActivity;
 import com.breadwallet.presenter.activities.util.BRActivity;
 import com.breadwallet.presenter.customviews.BRButton;
@@ -97,7 +98,7 @@ public class HomeActivity extends BRActivity implements InternetManager.Connecti
     private static final float SYNC_PROGRESS_LAYOUT_ANIMATION_ALPHA = 0.0f;
 
     public static final String EXTRA_CRYPTO_REQUEST = "com.breadwallet.presenter.activities.HomeActivity.EXTRA_CRYPTO_REQUEST";
-    private static final int SEND_SHOW_DELAY = 300;
+    private static final int SEND_SHOW_DELAY = 1900;
 
     private BRNotificationBar mNotificationBar;
     private LinearLayout mMenuLayout;
@@ -137,6 +138,7 @@ public class HomeActivity extends BRActivity implements InternetManager.Connecti
         mSearchBar = findViewById(R.id.search_bar);
         ImageButton searchIcon = findViewById(R.id.search_icon);
         mBarFlipper = findViewById(R.id.tool_bar_flipper);
+        IntroActivity.showCloseButton = null;
 
         mMenuLayout = findViewById(R.id.menu_layout);
         mMenuLayout.setOnClickListener(new View.OnClickListener() {
@@ -213,10 +215,13 @@ public class HomeActivity extends BRActivity implements InternetManager.Connecti
         BigDecimal rate = walletManager.getFiatExchangeRate(this).setScale(8, RoundingMode.HALF_EVEN);
         String fiatBalance = CurrencyUtils.getFormattedAmount(getApplication(),
                 BRSharedPrefs.getPreferredFiatIso(getApplication()), walletManager.getFiatBalance(getApplication()), 2);
-        BigDecimal cryptoBalance = convertSats(walletManager.getCachedBalance(this));
-
+        BigDecimal cryptoBalance = convertSats(walletManager.getCachedBalance(this)).setScale(2, RoundingMode.HALF_EVEN);
+        rate = rate.multiply(new BigDecimal(100000000));
+        rate = rate.setScale(0,RoundingMode.HALF_DOWN);
         mCurrencyPriceUsd.setText(String.format(getString(R.string.Account_exchangeRate),
                 rate.toPlainString(), walletManager.getCurrencyCode()));
+
+
         mBalancePrimary.setText(fiatBalance);
         mBalanceSecondary.setText(String.format(getString(R.string.Account_balanceValue),
                 cryptoBalance.toString(), walletManager.getCurrencyCode()));

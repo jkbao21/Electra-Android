@@ -27,7 +27,7 @@
     <!-- Delisted token alert banner message -->
     <string name="Account.delistedToken">由于开发者已经决定停止支持ERC20，该代币已被下架。\n\n您仍然可以将这些代币发送到别的平台。请访问我们的支持页面获取更多细节。</string>
     <!-- $10000 per BTC -->
-    <string name="Account.exchangeRate">%1$s BTC / %2$s</string>
+    <string name="Account.exchangeRate">%1$s Satoshi/%2$s</string>
     <!-- Loading Wallet Message -->
     <string name="Account.loadingMessage">正在加载钱包</string>
     <!-- Default wallet name -->
@@ -197,7 +197,7 @@
     <!-- Email unavailable alert title -->
     <string name="ErrorMessages.emailUnavailableTitle">电子邮箱不可用</string>
     <!-- Message that gets shown when we've detected the user has encountered the looping lock-screen bug. (preserve [ ] characters) -->
-    <string name="ErrorMessages.loopingLockScreen.android">由于您的 Android 版本中的错误，Electra 无法验证。[Please tap here for more information.]</string>
+    <string name="ErrorMessages.loopingLockScreen.android">由于您的安卓系统版本中的错误，Electra 无法进行验证。[点击此处了解更多信息]</string>
     <!-- Messaging unavailable alert title -->
     <string name="ErrorMessages.messagingUnavailableMessage">本设备尚未执行相关配置，不能发送消息。</string>
     <!-- Messaging unavailable alert title -->
@@ -225,9 +225,9 @@
     <!-- E.g. [This transaction is predicted to complete in] 1-24 hours -->
     <string name="FeeSelector.economyTime"> </string>
     <!-- Warning message for economy fee -->
-    <string name="FeeSelector.economyWarning">对于有时效性的交易，不推荐使用此选项。</string>
+    <string name="FeeSelector.economyWarning">对于即时交易，不推荐使用此选项。</string>
     <!-- E.g. Estimated delivery: 10-60 minutes -->
-    <string name="FeeSelector.estimatedDeliver">预计交付时间：%1$s</string>
+    <string name="FeeSelector.estimatedDeliver">预计到账时间：%1$s</string>
     <!-- [This transaction will complete in] 2-5 minutes -->
     <string name="FeeSelector.ethTime">2-5 分钟</string>
     <!-- Regular fee -->
@@ -257,7 +257,7 @@
     <!-- empty private key error message -->
     <string name="Import.Error.empty">这是一个空的私钥。</string>
     <!-- High fees error message -->
-    <string name="Import.Error.highFees">交易费将超过本私钥的可用资金。</string>
+    <string name="Import.Error.highFees">手续费将超过本私钥的可用资金。</string>
     <!-- Not a valid private key error message -->
     <string name="Import.Error.notValid">该私钥无效</string>
     <!-- Import signing error message -->
@@ -285,7 +285,7 @@
     <!-- Import Wallet screen title -->
     <string name="Import.title">导入钱包</string>
     <!-- Unlocking Private key activity view message. -->
-    <string name="Import.unlockingActivity">解锁键</string>
+    <string name="Import.unlockingActivity">解锁钱包</string>
     <!-- Import wallet intro warning message -->
     <string name="Import.warning">导入钱包的内容仅含数字货币，不包含交易历史或其他细节。</string>
     <!-- Wrong password alert message -->
@@ -595,19 +595,19 @@
     <!-- Could not create transaction alert title -->
     <string name="Send.creatTransactionError">无法创建交易。</string>
     <!-- Description for sending money label -->
-    <string name="Send.descriptionLabel">备忘录</string>
+    <string name="Send.descriptionLabel">备注</string>
     <!-- Emtpy pasteboard error message -->
     <string name="Send.emptyPasteboard">粘贴板为空</string>
     <!-- "(you) can't send (to your)self" -->
     <string name="Send.ethSendSelf">不能发送给自己</string>
     <!-- Network Fee: $0.01 -->
-    <string name="Send.fee">网络费：%1$s</string>
+    <string name="Send.fee">手续费：%1$s</string>
     <!-- Payee identity not certified alert title. -->
     <string name="Send.identityNotCertified">收款人身份未经认证。</string>
     <!-- Insufficient funds error -->
     <string name="Send.insufficientFunds">资金不足</string>
     <!-- e,g, "You must have at least $2 in your wallet in order to transfer this type of token." In this case, "token" is an ethereum ERC20 token. -->
-    <string name="Send.insufficientGasMessage">您的钱包里必须至少有 %1$s 才能够转让此种类型的代币。您现在想前往您的以太坊钱包吗？</string>
+    <string name="Send.insufficientGasMessage">您的钱包里必须至少有 %1$s 才能够发送此种类型的代币。您现在想前往您的以太坊钱包吗？</string>
     <!-- Your ethereum balance is insufficient to complete this action. -->
     <string name="Send.insufficientGasTitle">以太坊余额不足</string>
     <!-- e.g. The destination is not a valid (Electra) address. -->
@@ -623,7 +623,7 @@
     <!-- We are loading the request (now) -->
     <string name="Send.loadingRequest">加载请求中</string>
     <!-- Transaction fee could not be be caluculated error. -->
-    <string name="Send.nilFeeError">资金不够支付交易费。</string>
+    <string name="Send.nilFeeError">资金不够支付手续费。</string>
     <!-- Empty address alert message -->
     <string name="Send.noAddress">请输入收款认地址。</string>
     <!-- Emtpy amount alert message -->
@@ -673,7 +673,7 @@
     <!-- Face ID spending limit label -->
     <string name="Settings.faceIdLimit">面部识别支出限额</string>
     <!-- Redeem the funds stored on this private key. -->
-    <string name="Settings.importTitle">兑换私钥</string>
+    <string name="Settings.importTitle">导入私钥</string>
     <!-- Manage settings section header -->
     <string name="Settings.manage">管理</string>
     <!-- Notifications label -->

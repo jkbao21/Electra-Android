@@ -274,17 +274,16 @@ public class FragmentTxDetails extends DialogFragment {
             if (metaData == null || metaData.exchangeRate == 0 || Utils.isNullOrEmpty(metaData.exchangeCurrency)) {
                 fiatAmountWhenSent = BigDecimal.ZERO;
                 //always fiat amount
-                amountWhenSent = CurrencyUtils.getFormattedAmount(app, fiatIso, fiatAmountWhenSent);
+                amountWhenSent = CurrencyUtils.getFormattedAmount(app, fiatIso, fiatAmountWhenSent, 2);
             } else {
                 CurrencyEntity ent = new CurrencyEntity(metaData.exchangeCurrency, null, (float) metaData.exchangeRate, walletManager.getCurrencyCode());
                 fiatAmountWhenSent = walletManager.getFiatForSmallestCrypto(app, cryptoAmount.abs(), ent);
                 //always fiat amount
-                amountWhenSent = CurrencyUtils.getFormattedAmount(app, ent.code, fiatAmountWhenSent);
-
+                amountWhenSent = CurrencyUtils.getFormattedAmount(app, ent.code, fiatAmountWhenSent,2);
             }
 
             //always fiat amount
-            amountNow = CurrencyUtils.getFormattedAmount(app, fiatIso, fiatAmountNow);
+            amountNow = CurrencyUtils.getFormattedAmount(app, fiatIso, fiatAmountNow, 2);
 
             mAmountWhenSent.setText(amountWhenSent);
             mAmountNow.setText(amountNow);

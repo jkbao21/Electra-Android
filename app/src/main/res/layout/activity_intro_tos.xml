@@ -65,7 +65,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginStart="@dimen/bread_margin"
         android:layout_marginEnd="@dimen/bread_margin"
-        android:layout_marginBottom="13dp"
+        android:layout_marginBottom="16dp"
         android:background="@android:color/transparent"
         android:padding="10dp"
         android:text="@string/Crowdsale.decline"

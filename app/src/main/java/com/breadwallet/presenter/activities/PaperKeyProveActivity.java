@@ -16,6 +16,7 @@ import android.view.WindowManager;
 import android.view.inputmethod.EditorInfo;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -50,6 +51,7 @@ public class PaperKeyProveActivity extends BRActivity {
     private TextView mWordTextViewSecond;
     private ImageView mCheckMark1;
     private ImageView mCheckMark2;
+    private ImageButton mBackButton;
     private SparseArray<String> mWordsSparseArray = new SparseArray<>();
     private ConstraintLayout mMainConstraintLayout;
     private ConstraintSet mModifiedConstraintSet = new ConstraintSet();
@@ -66,6 +68,15 @@ public class PaperKeyProveActivity extends BRActivity {
         mWordEditTextSecond = findViewById(R.id.word_edittext_second);
         mWordTextViewFirst = findViewById(R.id.word_number_first);
         mWordTextViewSecond = findViewById(R.id.word_number_second);
+
+        mBackButton = findViewById(R.id.back_button);
+
+        mBackButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
 
         mCheckMark1 = findViewById(R.id.check_mark_1);
         mCheckMark2 = findViewById(R.id.check_mark_2);

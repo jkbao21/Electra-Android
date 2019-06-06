@@ -715,7 +715,7 @@
     <!-- button label -->
     <string name="StartPaperPhrase.againButtonTitle">Offlineschlüssel erneut notieren</string>
     <!-- Paper key explanation text. -->
-    <string name="StartPaperPhrase.body">Ihr Offlineschlüssel ist die einzige Möglichkeit Ihr Electra wiederherzustellen, falls Sie ihr Smartphone verlieren, austauschen, es gestohlen wird oder kaputtgeht.\n\nHierfür zeigen wir Ihnen eine Liste von Wörtern an, welche Sie sich diese auf ein Stück Papier notieren können, das sicher aufzubewahren gilt.</string>
+    <string name="StartPaperPhrase.body">Ihr Offlineschlüssel ist die einzige Möglichkeit Ihr Electra wiederherzustellen, falls Sie ihr Smartphone verlieren, austauschen, es gestohlen wird oder kaputtgeht.\n\nHierfür zeigen wir Ihnen eine Liste von Wörtern an, welche Sie sich auf ein Stück Papier notieren können, das sicher aufzubewahren gilt.</string>
     <!-- button label -->
     <string name="StartPaperPhrase.buttonTitle">Offlineschlüssel notieren</string>
     <!-- Argument is date -->

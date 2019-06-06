@@ -5,7 +5,7 @@
     <!-- About screen blog label -->
     <string name="About.blog">Discord</string>
     <!-- About screen footer -->
-    <string name="About.footer">Made by the Electra Team. Version %1$s Build %2$s</string>
+    <string name="About.footer">The Electra Project. Version %1$s Build %2$s</string>
     <!-- Privay Policy button label -->
     <string name="About.privacy">Privacyverklaring</string>
     <!-- About screen reddit label -->
@@ -251,25 +251,25 @@
     <!-- Checking private key balance progress view text -->
     <string name="Import.checking">Private key balans checken...</string>
     <!-- Sweep private key confirmation message -->
-    <string name="Import.confirm">%1$s van deze private key naar je wallet sturen? Het Electranetwerk zal een fee ontvangen van %2$s.</string>
+    <string name="Import.confirm">%1$s van deze private key naar je wallet sturen? De transactiekosten zijn %2$s.</string>
     <!-- Duplicate key error message -->
     <string name="Import.Error.duplicate">Deze private key zit al in je wallet.</string>
     <!-- empty private key error message -->
     <string name="Import.Error.empty">Deze private key is leeg.</string>
     <!-- High fees error message -->
-    <string name="Import.Error.highFees">Transactiekosten zouden hoger zijn dan de fondsen die op deze private key aanwezig zijn.</string>
+    <string name="Import.Error.highFees">Transactiekosten zijn hoger dan het beschikbare saldo op deze wallet.</string>
     <!-- Not a valid private key error message -->
     <string name="Import.Error.notValid">Geen geldige private key</string>
     <!-- Import signing error message -->
-    <string name="Import.Error.signing">Error bij transactie ondertekenen</string>
+    <string name="Import.Error.signing">Error bij het ondertekenen van de transactie.</string>
     <!-- [Redeem] the funds stored on this private key. -->
-    <string name="Import.importButton">Import</string>
+    <string name="Import.importButton">Importeren</string>
     <!-- Importing wallet progress view label -->
     <string name="Import.importing">Private key importeren</string>
     <!-- Caption for graphics -->
     <string name="Import.leftCaption">Wallet om te importeren</string>
     <!-- Import wallet intro screen message -->
-    <string name="Import.message">Private keys worden vaak afgedrukt op papier als een QR-code en gebruikt om middelen online op te slaan. Wissel een persoonlijke sleutel in om al het geld dat het beheert over te schrijven naar je Electra via een enkele transactie.</string>
+    <string name="Import.message">Private keys worden vaak afgedrukt op papier als een QR-code en bieden de mogelijkheid om geld uit te geven. Scan de private key om het volledige saldo van die wallet over te schrijven naar deze Android Electra wallet, via één enkele transactie.</string>
     <!-- Enter password alert view title -->
     <string name="Import.password">Deze private key is beveiligd met een wachtwoord.</string>
     <!-- password textfield placeholder -->
@@ -281,15 +281,15 @@
     <!-- Import wallet success alert title -->
     <string name="Import.success">Succes</string>
     <!-- Successfully imported wallet message body -->
-    <string name="Import.SuccessBody">Persoonlijke sleutel met succes ingewisseld.</string>
+    <string name="Import.SuccessBody">Private key met succes geïmporteerd.</string>
     <!-- Import Wallet screen title -->
-    <string name="Import.title">Persoonlijke sleutel inwisselen</string>
+    <string name="Import.title">Private key scannen</string>
     <!-- Unlocking Private key activity view message. -->
-    <string name="Import.unlockingActivity">Sleutel ontgrendelen</string>
+    <string name="Import.unlockingActivity">Private key ontgrendelen</string>
     <!-- Import wallet intro warning message -->
-    <string name="Import.warning">Het inwisselen van een persoonlijke sleutel zal geen transactiegeschiedenis of andere details importeren.</string>
+    <string name="Import.warning">Het importeren van een private key zal geen transactiegeschiedenis of andere details importeren.</string>
     <!-- Wrong password alert message -->
-    <string name="Import.wrongPassword">Verkeerd wachtwoord, probeer alstublieft opnieuw.</string>
+    <string name="Import.wrongPassword">Verkeerd wachtwoord, probeer het nog eens.</string>
     <!-- Close app button -->
     <string name="JailbreakWarnings.close">Sluiten</string>
     <!-- Ignore jailbreak warning button -->
@@ -315,7 +315,7 @@
     <!-- Link Wallet view title above permissions list -->
     <string name="LinkWallet.permissionsTitle">Deze app zal in staat zijn om:</string>
     <!-- Link Wallet view title -->
-    <string name="LinkWallet.title">Portefeuille koppelen</string>
+    <string name="LinkWallet.title">Wallet koppelen</string>
     <!-- Location services disabled error -->
     <string name="LocationPlugin.disabled">Locatievoorzieningen zijn uitgeschakeld.</string>
     <!-- No permissions for location services -->
@@ -383,7 +383,7 @@
     <!-- Onboarding screen Page 4 title -->
     <string name="OnboardingPageFour.title">Begin vandaag met investeren vanaf slechts $50!</string>
     <!-- Onboarding screen Page 1 title -->
-    <string name="OnboardingPageOne.title">Welkom bij jouw nieuwe Electra wallet!</string>
+    <string name="OnboardingPageOne.title">Welkom bij jouw Electra wallet!</string>
     <!-- Onboarding screen Page 3 subtitle -->
     <string name="OnboardingPageThree.subtitle">Investeer en diversifieer met Electra, snel en veilig.</string>
     <!-- Onboarding screen Page 3 title -->
@@ -527,9 +527,9 @@
     <!-- extimated time -->
     <string name="ReScan.body1">20-45 minuten</string>
     <!-- Syncing explanation -->
-    <string name="ReScan.body2">Als een transactie als voltooid staat op het Electra netwerk, maar niet in je Electra wallet.</string>
+    <string name="ReScan.body2">Als een transactie als voltooid staat op het Electra netwerk, maar niet in de Electra wallet.</string>
     <!-- Syncing explanation -->
-    <string name="ReScan.body3">Je kreeg herhaaldelijk een foutmelding die zei dat je transactie werd afgewezen.</string>
+    <string name="ReScan.body3">Of, wanneer je herhaaldelijk een foutmelding kreeg die zei dat de transactie werd afgewezen.</string>
     <!-- Start Sync button label -->
     <string name="ReScan.buttonTitle">Start synchronisatie</string>
     <!-- Sync blockchain view footer -->
@@ -715,11 +715,11 @@
     <!-- button label -->
     <string name="StartPaperPhrase.againButtonTitle">Schrijf paper key opnieuw op</string>
     <!-- Paper key explanation text. -->
-    <string name="StartPaperPhrase.body">Je paper key is de enige manier om je Electra te herstellen als je telefoon verloren, gestolen, kapot of geüpgrade is.\n\nWe zullen je een lijst met woorden laten zien die je op een papiertje moet schrijven en veilig moet bewaren.</string>
+    <string name="StartPaperPhrase.body">De paper key is de enige manier om je Electra te herstellen als je telefoon verloren, gestolen, kapot of geüpgrade is.\n\nJe krijgt een lijst met woorden te zien, noteer deze en waar het op een veilige plek. Dit is de paper key.</string>
     <!-- button label -->
     <string name="StartPaperPhrase.buttonTitle">Schrijf paper key op</string>
     <!-- Argument is date -->
-    <string name="StartPaperPhrase.date">Je hebt voor het laatst je paper key opgeschreven op %1$s</string>
+    <string name="StartPaperPhrase.date">Je hebt de paper key voor het laatst opgeschreven op %1$s</string>
     <!-- button label -->
     <string name="StartViewController.createButton">Nieuwe wallet maken</string>
     <!-- Start view message -->
@@ -735,7 +735,7 @@
     <!-- Retry button label -->
     <string name="SyncingView.retry">Opnieuw proberen</string>
     <!-- "eg. Synced through <Jan 12, 2015> -->
-    <string name="SyncingView.syncedThrough">Gesynchroniseerd via %1$s</string>
+    <string name="SyncingView.syncedThrough">Laatst gesynchroniseerd op %1$s</string>
     <!-- Syncing view syncing state header text -->
     <string name="SyncingView.syncing">Aan het synchroniseren</string>
     <!-- 6 d (6 days) -->
@@ -959,7 +959,7 @@
     <!-- Update PIN failure alert view title -->
     <string name="UpdatePin.setPinErrorTitle">Update PIN Error</string>
     <!-- Update PIN title -->
-    <string name="UpdatePin.updateTitle">Update PIN</string>
+    <string name="UpdatePin.updateTitle">PIN updaten</string>
     <!-- Authorize to copy wallet addresses alert message -->
     <string name="URLHandling.addressaddressListAlertMessage">Wallet adressen naar klembord kopiëren?</string>
     <!-- Authorize to copy wallet address PIN view prompt. -->

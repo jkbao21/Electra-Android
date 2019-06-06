@@ -98,7 +98,7 @@ public class HomeActivity extends BRActivity implements InternetManager.Connecti
     private static final float SYNC_PROGRESS_LAYOUT_ANIMATION_ALPHA = 0.0f;
 
     public static final String EXTRA_CRYPTO_REQUEST = "com.breadwallet.presenter.activities.HomeActivity.EXTRA_CRYPTO_REQUEST";
-    private static final int SEND_SHOW_DELAY = 1900;
+    private static final int SEND_SHOW_DELAY = 300;
 
     private BRNotificationBar mNotificationBar;
     private LinearLayout mMenuLayout;

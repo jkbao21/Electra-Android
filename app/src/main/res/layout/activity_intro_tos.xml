@@ -38,6 +38,7 @@
         android:layout_marginBottom="15dp"
         android:lineSpacingMultiplier="1.3"
         android:text="@string/Intro.Tos.Body"
+        android:textAlignment="center"
         android:scrollbars="vertical"
         android:textSize="18sp" />
 

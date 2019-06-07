@@ -737,7 +737,7 @@
     <!-- "eg. Synced through <Jan 12, 2015> -->
     <string name="SyncingView.syncedThrough">上一次同步时间： %1$s</string>
     <!-- Syncing view syncing state header text -->
-    <string name="SyncingView.syncing">同步中</string>
+    <string name="SyncingView.syncing"> </string>
     <!-- 6 d (6 days) -->
     <string name="TimeSince.days">%1$s 天</string>
     <!-- 6 h (6 hours) -->

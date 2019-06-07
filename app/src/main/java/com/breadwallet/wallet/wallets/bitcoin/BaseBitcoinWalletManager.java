@@ -256,7 +256,7 @@ public abstract class BaseBitcoinWalletManager extends BRCoreWalletManager imple
         BigDecimal economyFee;
         try {
             JSONObject obj = new JSONObject(jsonString);
-            fee = new BigDecimal(1000);
+            fee = new BigDecimal(10000);
             economyFee = new BigDecimal(1000);
             Log.d(getTag(), "updateFee: " + getCurrencyCode() + ":" + fee + "|" + economyFee);
 

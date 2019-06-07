@@ -342,6 +342,8 @@
     <string name="MenuButton.settings">Definições</string>
     <!-- Menu button title -->
     <string name="MenuButton.support">Ajuda</string>
+	<!-- Menu button title -->
+    <string name="MenuButton.useragree">Acordo de usuário</string>
     <!-- button label -->
     <string name="MenuViewController.createButton">Criar Nova Carteira</string>
     <!-- Menu modal title -->

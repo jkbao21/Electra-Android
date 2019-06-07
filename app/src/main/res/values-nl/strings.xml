@@ -341,7 +341,9 @@
     <!-- Menu button title -->
     <string name="MenuButton.settings">Instellingen</string>
     <!-- Menu button title -->
-    <string name="MenuButton.support">Ondersteuning</string>
+    <string name="MenuButton.support">Ondersteuning</string>	
+	<!-- Menu button title -->
+    <string name="MenuButton.useragree">Gebruikersovereenkomst</string>
     <!-- button label -->
     <string name="MenuViewController.createButton">Nieuwe wallet aanmaken</string>
     <!-- Menu modal title -->

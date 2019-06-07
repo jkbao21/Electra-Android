@@ -342,6 +342,8 @@
     <string name="MenuButton.settings">Einstellungen</string>
     <!-- Menu button title -->
     <string name="MenuButton.support">Support</string>
+	<!-- Menu button title -->
+    <string name="MenuButton.useragree">Nutzungsvereinbarung</string>
     <!-- button label -->
     <string name="MenuViewController.createButton">Neues Wallet erstellen</string>
     <!-- Menu modal title -->

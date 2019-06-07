@@ -344,6 +344,8 @@
     <string name="MenuButton.settings">Ajustes</string>
     <!-- Menu button title -->
     <string name="MenuButton.support">Ayuda técnica</string>
+	<!-- Menu button title -->
+    <string name="MenuButton.useragree">Acuerdo de usuario</string>
     <!-- button label -->
     <string name="MenuViewController.createButton">Crear nuevo monedero</string>
     <!-- Menu modal title -->

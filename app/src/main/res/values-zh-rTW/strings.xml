@@ -342,6 +342,8 @@
     <string name="MenuButton.settings">設定</string>
     <!-- Menu button title -->
     <string name="MenuButton.support">支援</string>
+	<!-- Menu button title -->
+    <string name="MenuButton.useragree">User Agreement</string>
     <!-- button label -->
     <string name="MenuViewController.createButton">建立新的電子錢包</string>
     <!-- Menu modal title -->

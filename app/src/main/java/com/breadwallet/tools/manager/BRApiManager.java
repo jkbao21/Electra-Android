@@ -328,6 +328,7 @@ public final class BRApiManager implements ApplicationLifecycleObserver.Applicat
         ArrayList<String> ignoredExchanges = new ArrayList<>();
         ignoredExchanges.add("Crypto Hub");
         ignoredExchanges.add("Cryptopia");
+        ignoredExchanges.add("Nova Exchange"); //temporary
         try{
             String jsonString = urlGET(context, ECA_URL);
 

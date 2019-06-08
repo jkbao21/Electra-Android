@@ -11,7 +11,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.electraproject.BreadApp;
+import com.electraproject.ElectraApp;
 import com.electraproject.BuildConfig;
 import com.electraproject.R;
 import com.electraproject.presenter.activities.InputPinActivity;
@@ -278,18 +278,18 @@ public final class SettingsUtil {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(context);
         alertDialogBuilder.setView(promptView);
         final EditText editText = promptView.findViewById(R.id.server_input);
-        editText.setText(BreadApp.getHost());
+        editText.setText(ElectraApp.getHost());
         // setup a dialog window
         alertDialogBuilder.setCancelable(false)
                 .setPositiveButton(context.getString(R.string.Button_ok), new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
                         String host = editText.getText().toString().trim();
                         if (Utils.isNullOrEmpty(host)) {
-                            BreadApp.setDebugHost(null);
+                            ElectraApp.setDebugHost(null);
                         } else {
-                            BreadApp.setDebugHost(host);
+                            ElectraApp.setDebugHost(host);
                         }
-                        BRToast.showCustomToast(context, String.format(API_SERVER_SET_FORMAT, BreadApp.getHost().toUpperCase()), 0, Toast.LENGTH_LONG, 0);
+                        BRToast.showCustomToast(context, String.format(API_SERVER_SET_FORMAT, ElectraApp.getHost().toUpperCase()), 0, Toast.LENGTH_LONG, 0);
                     }
                 })
                 .setNegativeButton(context.getString(R.string.Button_cancel),

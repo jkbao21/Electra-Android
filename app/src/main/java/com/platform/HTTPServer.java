@@ -6,7 +6,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.util.Log;
 
-import com.electraproject.BreadApp;
+import com.electraproject.ElectraApp;
 import com.electraproject.tools.manager.BRSharedPrefs;
 import com.electraproject.tools.threads.executor.BRExecutor;
 import com.electraproject.tools.util.BRConstants;
@@ -247,7 +247,7 @@ public class HTTPServer extends AbstractLifeCycle {
 
     private static boolean dispatch(String target, Request baseRequest, HttpServletRequest request, HttpServletResponse response) {
         Log.d(TAG, "TRYING TO HANDLE: " + target + " (" + request.getMethod() + ")");
-        final Context app = BreadApp.getBreadContext();
+        final Context app = ElectraApp.getBreadContext();
         boolean result = false;
         if (target.equalsIgnoreCase(BRConstants.CLOSE)) {
             if (app != null) {

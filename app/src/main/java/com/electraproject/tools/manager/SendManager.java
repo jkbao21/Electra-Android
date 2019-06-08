@@ -6,7 +6,7 @@ import android.support.annotation.WorkerThread;
 import android.text.format.DateUtils;
 import android.util.Log;
 
-import com.electraproject.BreadApp;
+import com.electraproject.ElectraApp;
 import com.electraproject.BuildConfig;
 import com.electraproject.R;
 import com.electraproject.presenter.customviews.BRDialogView;
@@ -77,7 +77,7 @@ public class SendManager {
             }
             //TODO: Remove when Sendmanager is refactored such that an activity is not needed.
             if (!(app instanceof Activity)) {
-                app = BreadApp.getBreadContext();
+                app = ElectraApp.getBreadContext();
             }
             sending = true;
             long now = System.currentTimeMillis();

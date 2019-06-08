@@ -3,7 +3,7 @@ package com.platform.middlewares;
 import android.content.Context;
 import android.util.Log;
 
-import com.electraproject.BreadApp;
+import com.electraproject.ElectraApp;
 import com.electraproject.tools.crypto.CryptoHelper;
 import com.electraproject.tools.util.BRConstants;
 import com.electraproject.tools.util.ServerBundlesHelper;
@@ -69,7 +69,7 @@ public class HTTPFileMiddleware implements Middleware {
             return BRHTTPHelper.handleSuccess(resp, baseRequest, response);
         }
 
-        Context app = BreadApp.getBreadContext();
+        Context app = ElectraApp.getBreadContext();
         if (app == null) {
             Log.e(TAG, "handle: app is null!");
             return true;

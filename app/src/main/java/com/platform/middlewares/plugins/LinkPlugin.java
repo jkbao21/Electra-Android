@@ -6,7 +6,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.util.Log;
 
-import com.electraproject.BreadApp;
+import com.electraproject.ElectraApp;
 import com.electraproject.R;
 import com.electraproject.presenter.activities.settings.WebViewActivity;
 import com.electraproject.tools.manager.BRReportsManager;
@@ -66,7 +66,7 @@ public class LinkPlugin implements Plugin {
             Log.i(TAG, "handling: " + target + " " + baseRequest.getMethod());
             String url = request.getParameter(BRConstants.URL);
 
-            Context app = BreadApp.getBreadContext();
+            Context app = ElectraApp.getBreadContext();
             if (app == null) {
                 Log.e(TAG, "handle: context is null: " + target + " " + baseRequest.getMethod());
                 return BRHTTPHelper.handleError(HttpStatus.INTERNAL_SERVER_ERROR_500, "context is null", baseRequest, response);
@@ -83,7 +83,7 @@ public class LinkPlugin implements Plugin {
             return BRHTTPHelper.handleSuccess(resp, baseRequest, response);
         } else if (target.startsWith(OPEN_MAPS_PATH)) {
             Log.i(TAG, "handling: " + target + " " + baseRequest.getMethod());
-            Context app = BreadApp.getBreadContext();
+            Context app = ElectraApp.getBreadContext();
             if (app == null) {
                 Log.e(TAG, "handle: context is null: " + target + " " + baseRequest.getMethod());
                 return BRHTTPHelper.handleError(HttpStatus.INTERNAL_SERVER_ERROR_500, "context is null", baseRequest, response);
@@ -101,7 +101,7 @@ public class LinkPlugin implements Plugin {
 
             return BRHTTPHelper.handleSuccess(resp, baseRequest, response);
         } else if (target.startsWith(BROWSER_PATH)) {
-            Context app = BreadApp.getBreadContext();
+            Context app = ElectraApp.getBreadContext();
             if (app == null) {
                 Log.e(TAG, "handle: context is null: " + target + " " + baseRequest.getMethod());
                 return BRHTTPHelper.handleError(HttpStatus.INTERNAL_SERVER_ERROR_500, "context is null", baseRequest, response);

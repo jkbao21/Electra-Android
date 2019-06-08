@@ -70,8 +70,8 @@ import io.fabric.sdk.android.Fabric;
  * THE SOFTWARE.
  */
 
-public class BreadApp extends Application implements ApplicationLifecycleObserver.ApplicationLifecycleListener {
-    private static final String TAG = BreadApp.class.getName();
+public class ElectraApp extends Application implements ApplicationLifecycleObserver.ApplicationLifecycleListener {
+    private static final String TAG = ElectraApp.class.getName();
 
     // The server(s) on which the API is hosted
     private static final String HOST = BuildConfig.DEBUG ? "stage2.breadwallet.com" : "api.breadwallet.com";
@@ -80,7 +80,7 @@ public class BreadApp extends Application implements ApplicationLifecycleObserve
     private static final String WALLET_ID_SEPARATOR = " ";
     private static final int NUMBER_OF_BYTES_FOR_SHA256_NEEDED = 10;
 
-    private static BreadApp mInstance;
+    private static ElectraApp mInstance;
     public static int mDisplayHeightPx;
     public static int mDisplayWidthPx;
     private static long mBackgroundedTime;
@@ -89,13 +89,13 @@ public class BreadApp extends Application implements ApplicationLifecycleObserve
     private Runnable mDisconnectWalletsRunnable = new Runnable() {
         @Override
         public void run() {
-            List<BaseWalletManager> list = new ArrayList<>(WalletsMaster.getInstance(BreadApp.this).getAllWallets(BreadApp.this));
+            List<BaseWalletManager> list = new ArrayList<>(WalletsMaster.getInstance(ElectraApp.this).getAllWallets(ElectraApp.this));
             for (final BaseWalletManager walletManager : list) {
                 //TODO Temporary new thread until the core lags are fixed
                 BRExecutor.getInstance().forLightWeightBackgroundTasks().execute(new Runnable() {
                     @Override
                     public void run() {
-                        walletManager.disconnect(BreadApp.this);
+                        walletManager.disconnect(ElectraApp.this);
                     }
                 });
             }
@@ -105,20 +105,20 @@ public class BreadApp extends Application implements ApplicationLifecycleObserve
     private Runnable mConnectWalletsRunnable = new Runnable() {
         @Override
         public void run() {
-            List<BaseWalletManager> list = new ArrayList<>(WalletsMaster.getInstance(BreadApp.this).getAllWallets(BreadApp.this));
+            List<BaseWalletManager> list = new ArrayList<>(WalletsMaster.getInstance(ElectraApp.this).getAllWallets(ElectraApp.this));
             for (final BaseWalletManager walletManager : list) {
                 //TODO Temporary new thread until the core lags are fixed
                 BRExecutor.getInstance().forLightWeightBackgroundTasks().execute(new Runnable() {
                     @Override
                     public void run() {
-                        walletManager.connect(BreadApp.this);
+                        walletManager.connect(ElectraApp.this);
                     }
                 });
             }
         }
     };
 
-    private static final String PACKAGE_NAME = BreadApp.getBreadContext() == null ? null : BreadApp.getBreadContext().getApplicationContext().getPackageName();
+    private static final String PACKAGE_NAME = ElectraApp.getBreadContext() == null ? null : ElectraApp.getBreadContext().getApplicationContext().getPackageName();
 
     static {
         try {
@@ -126,7 +126,7 @@ public class BreadApp extends Application implements ApplicationLifecycleObserve
         } catch (UnsatisfiedLinkError e) {
             e.printStackTrace();
             Log.d(TAG, "Native code library failed to load.\\n\" + " + e);
-            Log.d(TAG, "Installer Package Name -> " + (PACKAGE_NAME == null ? "null" : BreadApp.getBreadContext().getPackageManager().getInstallerPackageName(PACKAGE_NAME)));
+            Log.d(TAG, "Installer Package Name -> " + (PACKAGE_NAME == null ? "null" : ElectraApp.getBreadContext().getPackageManager().getInstallerPackageName(PACKAGE_NAME)));
         }
     }
 
@@ -325,8 +325,8 @@ public class BreadApp extends Application implements ApplicationLifecycleObserve
                 BRExecutor.getInstance().forLightWeightBackgroundTasks().execute(new Runnable() {
                     @Override
                     public void run() {
-                        EventUtils.saveEvents(BreadApp.this);
-                        EventUtils.pushToServer(BreadApp.this);
+                        EventUtils.saveEvents(ElectraApp.this);
+                        EventUtils.pushToServer(ElectraApp.this);
                     }
                 });
                 HTTPServer.getInstance().stopServer();

@@ -13,7 +13,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.electraproject.BreadApp;
+import com.electraproject.ElectraApp;
 import com.electraproject.R;
 import com.electraproject.core.BRCoreAddress;
 import com.electraproject.core.BRCoreKey;
@@ -125,7 +125,7 @@ public class ImportPrivKeyTask extends AsyncTask<String, String, String> {
             BRExecutor.getInstance().forMainThreadTasks().execute(new Runnable() {
                 @Override
                 public void run() {
-                    Context context = BreadApp.getBreadContext();
+                    Context context = ElectraApp.getBreadContext();
                     BRDialog.showCustomDialog(context, context.getString(R.string.Alert_error),
                             finalErrorMessage, context.getString(R.string.Button_ok), null, new BRDialogView.BROnClickListener() {
                                 @Override

@@ -28,7 +28,7 @@ import android.content.Context;
 import android.os.Build;
 import android.util.Log;
 
-import com.electraproject.BreadApp;
+import com.electraproject.ElectraApp;
 import com.electraproject.BuildConfig;
 import com.electraproject.tools.manager.BRSharedPrefs;
 import com.electraproject.tools.threads.executor.BRExecutor;
@@ -110,7 +110,7 @@ public final class UserMetricsUtil {
         BRExecutor.getInstance().forLightWeightBackgroundTasks().execute(new Runnable() {
             @Override
             public void run() {
-                UserMetricsUtil.makeUserMetricsRequest(BreadApp.getBreadContext());
+                UserMetricsUtil.makeUserMetricsRequest(ElectraApp.getBreadContext());
             }
         });
     }

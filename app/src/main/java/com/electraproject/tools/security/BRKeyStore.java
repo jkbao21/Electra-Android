@@ -44,7 +44,7 @@ import android.util.Base64;
 import android.util.Log;
 import android.view.View;
 
-import com.electraproject.BreadApp;
+import com.electraproject.ElectraApp;
 import com.electraproject.R;
 import com.electraproject.tools.exceptions.BRKeystoreErrorException;
 import com.electraproject.presenter.customviews.BRDialogView;
@@ -541,7 +541,7 @@ public final class BRKeyStore {
             @Override
             public void onDismiss(DialogInterface dialog) {
                 Log.e(TAG, "Device password was disabled. Clearing all user data now.");
-                BreadApp.clearApplicationUserData();
+                ElectraApp.clearApplicationUserData();
             }
         }, 0);
     }

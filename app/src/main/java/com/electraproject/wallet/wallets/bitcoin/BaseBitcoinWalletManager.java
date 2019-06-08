@@ -10,7 +10,7 @@ import android.text.format.DateUtils;
 import android.util.Log;
 import android.widget.Toast;
 
-import com.electraproject.BreadApp;
+import com.electraproject.ElectraApp;
 import com.electraproject.BuildConfig;
 import com.electraproject.R;
 import com.electraproject.core.BRCoreAddress;
@@ -122,7 +122,7 @@ public abstract class BaseBitcoinWalletManager extends BRCoreWalletManager imple
     protected abstract List<BigDecimal> getFingerprintLimits(Context context);
 
     protected BRCoreWallet createWalletRetry() {
-        Context app = BreadApp.getBreadContext();
+        Context app = ElectraApp.getBreadContext();
         if (0 == mCreateWalletAllowedRetries) {
             // The app is dead - tell the user...
             BRDialog.showSimpleDialog(app, "Wallet error!", "please contact support@electraproject.org");
@@ -234,7 +234,7 @@ public abstract class BaseBitcoinWalletManager extends BRCoreWalletManager imple
     @Override
     public void updateFee(Context app) {
         if (app == null) {
-            app = BreadApp.getBreadContext();
+            app = ElectraApp.getBreadContext();
             if (app == null) {
                 Log.e(getTag(), "updateFee: FAILED, app is null");
                 return;
@@ -711,7 +711,7 @@ public abstract class BaseBitcoinWalletManager extends BRCoreWalletManager imple
 
     public void txPublished(final String error) {
         super.txPublished(error);
-        final Context app = BreadApp.getBreadContext();
+        final Context app = ElectraApp.getBreadContext();
         BRExecutor.getInstance().forMainThreadTasks().execute(new Runnable() {
             @Override
             public void run() {
@@ -736,7 +736,7 @@ public abstract class BaseBitcoinWalletManager extends BRCoreWalletManager imple
     public void saveBlocks(boolean replace, BRCoreMerkleBlock[] blocks) {
         super.saveBlocks(replace, blocks);
 
-        Context app = BreadApp.getBreadContext();
+        Context app = ElectraApp.getBreadContext();
         if (app == null) return;
         if (replace) MerkleBlockDataSource.getInstance(app).deleteAllBlocks(app, getCurrencyCode());
         BlockEntity[] entities = new BlockEntity[blocks.length];
@@ -749,7 +749,7 @@ public abstract class BaseBitcoinWalletManager extends BRCoreWalletManager imple
 
     public void savePeers(boolean replace, BRCorePeer[] peers) {
         super.savePeers(replace, peers);
-        Context app = BreadApp.getBreadContext();
+        Context app = ElectraApp.getBreadContext();
         if (app == null) return;
         if (replace) PeerDataSource.getInstance(app).deleteAllPeers(app, getCurrencyCode());
         PeerEntity[] entities = new PeerEntity[peers.length];
@@ -761,12 +761,12 @@ public abstract class BaseBitcoinWalletManager extends BRCoreWalletManager imple
     }
 
     public boolean networkIsReachable() {
-        Context app = BreadApp.getBreadContext();
+        Context app = ElectraApp.getBreadContext();
         return InternetManager.getInstance().isConnected(app);
     }
 
     public BRCoreTransaction[] loadTransactions() {
-        Context app = BreadApp.getBreadContext();
+        Context app = ElectraApp.getBreadContext();
         List<BRTransactionEntity> txs = BtcBchTransactionDataStore.getInstance(app).getAllTransactions(app, getCurrencyCode());
         if (txs == null || txs.size() == 0) {
             return new BRCoreTransaction[0];
@@ -804,7 +804,7 @@ public abstract class BaseBitcoinWalletManager extends BRCoreWalletManager imple
     }
 
     public BRCoreMerkleBlock[] loadBlocks() {
-        Context app = BreadApp.getBreadContext();
+        Context app = ElectraApp.getBreadContext();
         List<BRMerkleBlockEntity> blocks = MerkleBlockDataSource.getInstance(app).getAllMerkleBlocks(app, getCurrencyCode());
         if (blocks == null || blocks.size() == 0) return new BRCoreMerkleBlock[0];
         BRCoreMerkleBlock arr[] = new BRCoreMerkleBlock[blocks.size()];
@@ -816,7 +816,7 @@ public abstract class BaseBitcoinWalletManager extends BRCoreWalletManager imple
     }
 
     public BRCorePeer[] loadPeers() {
-        Context app = BreadApp.getBreadContext();
+        Context app = ElectraApp.getBreadContext();
         List<BRPeerEntity> peers = PeerDataSource.getInstance(app).getAllPeers(app, getCurrencyCode());
         if (peers == null || peers.size() == 0) return new BRCorePeer[0];
         BRCorePeer arr[] = new BRCorePeer[peers.size()];
@@ -889,7 +889,7 @@ public abstract class BaseBitcoinWalletManager extends BRCoreWalletManager imple
      */
     public void balanceChanged(final long balance) {
         super.balanceChanged(balance);
-        final Context context = BreadApp.getBreadContext();
+        final Context context = ElectraApp.getBreadContext();
         onBalanceChanged(context, new BigDecimal(balance));
         refreshAddress(context);
     }
@@ -908,7 +908,7 @@ public abstract class BaseBitcoinWalletManager extends BRCoreWalletManager imple
             public void run() {
                 long blockHeight = getPeerManager().getLastBlockHeight();
 
-                final Context context = BreadApp.getBreadContext();
+                final Context context = ElectraApp.getBreadContext();
                 if (context != null) {
                     BRSharedPrefs.putLastBlockHeight(context, getCurrencyCode(), (int) blockHeight);
                 }
@@ -919,7 +919,7 @@ public abstract class BaseBitcoinWalletManager extends BRCoreWalletManager imple
     public void syncStarted() {
         super.syncStarted();
         Log.d(getTag(), "syncStarted: ");
-        final Context app = BreadApp.getBreadContext();
+        final Context app = ElectraApp.getBreadContext();
         onSyncStarted();
     }
 
@@ -928,7 +928,7 @@ public abstract class BaseBitcoinWalletManager extends BRCoreWalletManager imple
     public void syncStopped(final String error) {
         super.syncStopped(error);
         Log.d(getTag(), "syncStopped: " + error);
-        final Context context = BreadApp.getBreadContext();
+        final Context context = ElectraApp.getBreadContext();
         if (Utils.isNullOrEmpty(error)) {
             BRSharedPrefs.putAllowSpend(context, getCurrencyCode(), true);
             syncStopped(context);
@@ -967,8 +967,8 @@ public abstract class BaseBitcoinWalletManager extends BRCoreWalletManager imple
 
     public void onTxAdded(BRCoreTransaction transaction) {
         super.onTxAdded(transaction);
-        final Context ctx = BreadApp.getBreadContext();
-        final WalletsMaster master = WalletsMaster.getInstance(ctx);
+        final Context ctx = ElectraApp.getBreadContext();
+        final WalletsMaster ElectraApp = WalletsMaster.getInstance(ctx);
 
         TxMetaData metaData = KVStoreManager.createMetadata(ctx, this, new CryptoTransaction(transaction));
         KVStoreManager.putTxMetaData(ctx, metaData, transaction.getHash());
@@ -990,7 +990,7 @@ public abstract class BaseBitcoinWalletManager extends BRCoreWalletManager imple
                             if (!BRToast.isToastShown()) {
                                 if (BuildConfig.DEBUG)
                                     BRToast.showCustomToast(ctx, strToShow,
-                                            BreadApp.mDisplayHeightPx / 2, Toast.LENGTH_LONG, R.drawable.toast_layout_black);
+                                            ElectraApp.mDisplayHeightPx / 2, Toast.LENGTH_LONG, R.drawable.toast_layout_black);
                                 AudioManager audioManager = (AudioManager) ctx.getSystemService(Context.AUDIO_SERVICE);
                                 if (audioManager.getRingerMode() == AudioManager.RINGER_MODE_NORMAL) {
                                     final MediaPlayer mp = MediaPlayer.create(ctx, R.raw.coinflip);
@@ -1023,7 +1023,7 @@ public abstract class BaseBitcoinWalletManager extends BRCoreWalletManager imple
     public void onTxDeleted(final String hash, int notifyUser, int recommendRescan) {
         super.onTxDeleted(hash, notifyUser, recommendRescan);
         Log.e(getTag(), "onTxDeleted: " + String.format("hash: %s, notifyUser: %d, recommendRescan: %d", hash, notifyUser, recommendRescan));
-        final Context ctx = BreadApp.getBreadContext();
+        final Context ctx = ElectraApp.getBreadContext();
         if (ctx != null) {
             if (recommendRescan != 0)
                 BRSharedPrefs.putScanRecommended(ctx, getCurrencyCode(), true);
@@ -1044,7 +1044,7 @@ public abstract class BaseBitcoinWalletManager extends BRCoreWalletManager imple
     public void onTxUpdated(String hash, int blockHeight, int timeStamp) {
         super.onTxUpdated(hash, blockHeight, timeStamp);
         Log.d(getTag(), "onTxUpdated: " + String.format("hash: %s, blockHeight: %d, timestamp: %d", hash, blockHeight, timeStamp));
-        Context ctx = BreadApp.getBreadContext();
+        Context ctx = ElectraApp.getBreadContext();
         if (ctx != null) {
             TransactionStorageManager.updateTransaction(ctx, getCurrencyCode(), new BRTransactionEntity(null, blockHeight, timeStamp, hash, getCurrencyCode()));
 

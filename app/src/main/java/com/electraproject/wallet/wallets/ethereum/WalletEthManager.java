@@ -4,7 +4,7 @@ import android.content.Context;
 import android.security.keystore.UserNotAuthenticatedException;
 import android.util.Log;
 
-import com.electraproject.BreadApp;
+import com.electraproject.ElectraApp;
 import com.electraproject.BuildConfig;
 import com.electraproject.core.BRCoreMasterPubKey;
 import com.electraproject.core.ethereum.BREthereumAmount;
@@ -343,7 +343,7 @@ public class WalletEthManager extends BaseEthereumWalletManager implements BREth
     public void updateFee(Context app) {
 
         if (app == null) {
-            app = BreadApp.getBreadContext();
+            app = ElectraApp.getBreadContext();
 
             if (app == null) {
                 Log.d(TAG, "updateFee: FAILED, app is null");
@@ -488,7 +488,7 @@ public class WalletEthManager extends BaseEthereumWalletManager implements BREth
 
     @Override
     public boolean networkIsReachable() {
-        Context app = BreadApp.getBreadContext();
+        Context app = ElectraApp.getBreadContext();
         return InternetManager.getInstance().isConnected(app);
     }
 
@@ -649,7 +649,7 @@ public class WalletEthManager extends BaseEthereumWalletManager implements BREth
                     e.printStackTrace();
                 }
 
-                JsonRpcHelper.makeRpcRequest(BreadApp.getBreadContext(), ethRpcUrl, payload, new JsonRpcHelper.JsonRpcRequestListener() {
+                JsonRpcHelper.makeRpcRequest(ElectraApp.getBreadContext(), ethRpcUrl, payload, new JsonRpcHelper.JsonRpcRequestListener() {
                     @Override
                     public void onRpcRequestCompleted(String jsonResult) {
                         try {
@@ -693,7 +693,7 @@ public class WalletEthManager extends BaseEthereumWalletManager implements BREth
                     e.printStackTrace();
                 }
 
-                JsonRpcHelper.makeRpcRequest(BreadApp.getBreadContext(), ethRpcUrl, payload, new JsonRpcHelper.JsonRpcRequestListener() {
+                JsonRpcHelper.makeRpcRequest(ElectraApp.getBreadContext(), ethRpcUrl, payload, new JsonRpcHelper.JsonRpcRequestListener() {
                     @Override
                     public void onRpcRequestCompleted(String jsonResult) {
                         try {
@@ -737,7 +737,7 @@ public class WalletEthManager extends BaseEthereumWalletManager implements BREth
                     e.printStackTrace();
                 }
 
-                JsonRpcHelper.makeRpcRequest(BreadApp.getBreadContext(), ethUrl, payload, new JsonRpcHelper.JsonRpcRequestListener() {
+                JsonRpcHelper.makeRpcRequest(ElectraApp.getBreadContext(), ethUrl, payload, new JsonRpcHelper.JsonRpcRequestListener() {
                     @Override
                     public void onRpcRequestCompleted(String jsonResult) {
                         try {
@@ -790,7 +790,7 @@ public class WalletEthManager extends BaseEthereumWalletManager implements BREth
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }
-                JsonRpcHelper.makeRpcRequest(BreadApp.getBreadContext(), ethUrl, payload, new JsonRpcHelper.JsonRpcRequestListener() {
+                JsonRpcHelper.makeRpcRequest(ElectraApp.getBreadContext(), ethUrl, payload, new JsonRpcHelper.JsonRpcRequestListener() {
                     @Override
                     public void onRpcRequestCompleted(String jsonResult) {
                         try {
@@ -840,7 +840,7 @@ public class WalletEthManager extends BaseEthereumWalletManager implements BREth
                     e.printStackTrace();
                 }
 
-                JsonRpcHelper.makeRpcRequest(BreadApp.getBreadContext(), eth_url, payload, new JsonRpcHelper.JsonRpcRequestListener() {
+                JsonRpcHelper.makeRpcRequest(ElectraApp.getBreadContext(), eth_url, payload, new JsonRpcHelper.JsonRpcRequestListener() {
                     @Override
                     public void onRpcRequestCompleted(String jsonResult) {
                         String txHash = null;
@@ -869,7 +869,7 @@ public class WalletEthManager extends BaseEthereumWalletManager implements BREth
                         BRExecutor.getInstance().forMainThreadTasks().execute(new Runnable() {
                             @Override
                             public void run() {
-                                final Context context = BreadApp.getBreadContext();
+                                final Context context = ElectraApp.getBreadContext();
                                 if (context instanceof Activity) {
                                     if (!Utils.isNullOrEmpty(finalTxHash)) {
                                         PostAuth.stampMetaData(context, finalTxHash.getBytes());
@@ -920,7 +920,7 @@ public class WalletEthManager extends BaseEthereumWalletManager implements BREth
                     e.printStackTrace();
                 }
 
-                JsonRpcHelper.makeRpcRequest(BreadApp.getBreadContext(), ethRpcUrl, payload, new JsonRpcHelper.JsonRpcRequestListener() {
+                JsonRpcHelper.makeRpcRequest(ElectraApp.getBreadContext(), ethRpcUrl, payload, new JsonRpcHelper.JsonRpcRequestListener() {
                     @Override
                     public void onRpcRequestCompleted(String jsonResult) {
 
@@ -1056,7 +1056,7 @@ public class WalletEthManager extends BaseEthereumWalletManager implements BREth
                                             (mWallet.getAccount().getPrimaryAddress().equalsIgnoreCase(txFrom) ? address : txFrom),
                                             (mWallet.getAccount().getPrimaryAddress().equalsIgnoreCase(txTo) ? address : txTo),
                                             txContract, txValue, txGas, txGasPrice, txData, txNonce, txGasUsed, txBlockNumber, txBlockHash, txBlockConfirmations, txBlockTransactionIndex, txBlockTimestamp, txIsError);
-                                    Context app = BreadApp.getBreadContext();
+                                    Context app = ElectraApp.getBreadContext();
 
                                     int blockHeight = (int) node.getBlockHeight();
                                     if (app != null && blockHeight != Integer.MAX_VALUE && blockHeight > 0) {
@@ -1092,7 +1092,7 @@ public class WalletEthManager extends BaseEthereumWalletManager implements BREth
                     e.printStackTrace();
                 }
 
-                JsonRpcHelper.makeRpcRequest(BreadApp.getBreadContext(), ethRpcUtl, payload, new JsonRpcHelper.JsonRpcRequestListener() {
+                JsonRpcHelper.makeRpcRequest(ElectraApp.getBreadContext(), ethRpcUtl, payload, new JsonRpcHelper.JsonRpcRequestListener() {
                     @Override
                     public void onRpcRequestCompleted(String jsonResult) {
 
@@ -1157,7 +1157,7 @@ public class WalletEthManager extends BaseEthereumWalletManager implements BREth
                     e.printStackTrace();
                 }
 
-                JsonRpcHelper.makeRpcRequest(BreadApp.getBreadContext(), eth_url, payload, new JsonRpcHelper.JsonRpcRequestListener() {
+                JsonRpcHelper.makeRpcRequest(ElectraApp.getBreadContext(), eth_url, payload, new JsonRpcHelper.JsonRpcRequestListener() {
                     @Override
                     public void onRpcRequestCompleted(String jsonResult) {
                         try {
@@ -1186,7 +1186,7 @@ public class WalletEthManager extends BaseEthereumWalletManager implements BREth
     public void handleWalletEvent(BREthereumWallet wallet, WalletEvent event,
                                   Status status,
                                   String errorDescription) {
-        Context context = BreadApp.getBreadContext();
+        Context context = ElectraApp.getBreadContext();
 
         if (context != null) {
             String currencyCode = (null == wallet.getToken() ? getCurrencyCode() : wallet.getToken().getSymbol());
@@ -1222,7 +1222,7 @@ public class WalletEthManager extends BaseEthereumWalletManager implements BREth
                                  Status status,
                                  String errorDescription) {
         Log.d(TAG, "handleBlockEvent: " + block + ", event: " + event);
-        Context app = BreadApp.getBreadContext();
+        Context app = ElectraApp.getBreadContext();
         if (app != null) {
             //String iso = (null == wallet.getToken() ? "ETH" : wallet.getToken().getSymbol());
 
@@ -1243,7 +1243,7 @@ public class WalletEthManager extends BaseEthereumWalletManager implements BREth
                                        TransactionEvent event,
                                        Status status,
                                        String errorDescription) {
-        Context app = BreadApp.getBreadContext();
+        Context app = ElectraApp.getBreadContext();
 
         if (app != null) {
             String iso = (null == wallet.getToken() ? getCurrencyCode() : wallet.getToken().getSymbol());
@@ -1323,7 +1323,7 @@ public class WalletEthManager extends BaseEthereumWalletManager implements BREth
                     e.printStackTrace();
                 }
 
-                JsonRpcHelper.makeRpcRequest(BreadApp.getBreadContext(), ethUrl, payload, new JsonRpcHelper.JsonRpcRequestListener() {
+                JsonRpcHelper.makeRpcRequest(ElectraApp.getBreadContext(), ethUrl, payload, new JsonRpcHelper.JsonRpcRequestListener() {
                     @Override
                     public void onRpcRequestCompleted(String jsonResult) {
                         try {

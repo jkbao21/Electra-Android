@@ -10,7 +10,7 @@ import android.support.annotation.RequiresApi;
 import android.support.v4.app.NotificationCompat;
 import android.util.Log;
 
-import com.electraproject.BreadApp;
+import com.electraproject.ElectraApp;
 import com.electraproject.BuildConfig;
 import com.electraproject.R;
 import com.electraproject.presenter.activities.HomeActivity;
@@ -92,7 +92,7 @@ public final class BRDFirebaseMessagingService extends FirebaseMessagingService 
     public void onNewToken(final String token) {
         super.onNewToken(token);
 
-        // TODO Investigate: I think if BreadApp.bRDWalletExists(), then updateFcmRegistrationToken should be called right away, else save to preferences and wait for BRD wallet to be created at which point the token will be sent.
+        // TODO Investigate: I think if ElectraApp.bRDWalletExists(), then updateFcmRegistrationToken should be called right away, else save to preferences and wait for BRD wallet to be created at which point the token will be sent.
         // Save token in shared preferences.
         BRSharedPrefs.putFCMRegistrationToken(this, token);
         Log.d(TAG, "onNewToken: token value: " + token);
@@ -131,7 +131,7 @@ public final class BRDFirebaseMessagingService extends FirebaseMessagingService 
                     .setContentIntent(pendingIntent);
 
             // TODO: should this check be around the whole method? Why create objects we aren't using?
-            if (BreadApp.isInBackground()) {
+            if (ElectraApp.isInBackground()) {
                 notificationManager.notify(notificationId, notificationBuilder.build());
             }
         }

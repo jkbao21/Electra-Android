@@ -8,7 +8,7 @@ import android.support.annotation.WorkerThread;
 import android.text.format.DateUtils;
 import android.util.Log;
 
-import com.electraproject.BreadApp;
+import com.electraproject.ElectraApp;
 import com.electraproject.R;
 import com.electraproject.core.BRCoreKey;
 import com.electraproject.core.BRCoreMasterPubKey;
@@ -102,7 +102,7 @@ public class PostAuth {
         }
         boolean success = WalletsMaster.getInstance(context).generateRandomSeed(context);
         if (success) {
-            BreadApp.initialize(false);
+            ElectraApp.initialize(false);
             mAuthenticationSuccessListener.onAuthenticatedSuccess();
         } else {
             if (authAsked) {
@@ -216,7 +216,7 @@ public class PostAuth {
                     BRKeyStore.putAuthKey(authKey, activity);
                     BRCoreMasterPubKey mpk = new BRCoreMasterPubKey(mCachedPaperKey.getBytes(), true);
                     BRKeyStore.putMasterPublicKey(mpk.serialize(), activity);
-                    BreadApp.initialize(false);
+                    ElectraApp.initialize(false);
 
                     Intent intent = new Intent(activity, InputPinActivity.class);
                     intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);

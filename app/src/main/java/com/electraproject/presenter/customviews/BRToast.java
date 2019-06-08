@@ -9,7 +9,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.electraproject.BreadApp;
+import com.electraproject.ElectraApp;
 import com.electraproject.R;
 import com.electraproject.tools.manager.BRSharedPrefs;
 
@@ -50,7 +50,7 @@ public class BRToast {
 
     public static void showCustomToast(Context context, String message, int yOffSet, int duration, int layoutDrawable) {
         if (!(context instanceof Activity)) {
-            context = BreadApp.getBreadContext();
+            context = ElectraApp.getBreadContext();
         }
         if (context == null || ((Activity) context).isDestroyed()) {
             return;

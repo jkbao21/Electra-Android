@@ -10,7 +10,7 @@ import android.support.v4.app.JobIntentService;
 import android.util.Base64;
 import android.util.Log;
 
-import com.electraproject.BreadApp;
+import com.electraproject.ElectraApp;
 import com.electraproject.R;
 import com.electraproject.app.util.UserMetricsUtil;
 import com.electraproject.core.BRCoreKey;
@@ -303,7 +303,7 @@ public final class MessageExchangeService extends JobIntentService {
                     }
                 }
                 String cursor = inboxEntry.getCursor();
-                if (BreadApp.isInBackground() && envelope.getMessageType().equalsIgnoreCase(MessageType.CALL_REQUEST.name())) {
+                if (ElectraApp.isInBackground() && envelope.getMessageType().equalsIgnoreCase(MessageType.CALL_REQUEST.name())) {
                     continue;
                 }
                 cursors.add(cursor);

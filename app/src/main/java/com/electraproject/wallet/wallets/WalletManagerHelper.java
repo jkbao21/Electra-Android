@@ -6,7 +6,7 @@ import android.content.Context;
 import com.electraproject.tools.manager.BRSharedPrefs;
 import com.electraproject.wallet.abstracts.BalanceUpdateListener;
 import com.electraproject.wallet.abstracts.OnTxListModified;
-//import com.breadwallet.wallet.abstracts.OnTxStatusUpdatedListener;
+//import com.electraproject.wallet.abstracts.OnTxStatusUpdatedListener;
 import com.electraproject.wallet.abstracts.SyncListener;
 
 import java.math.BigDecimal;

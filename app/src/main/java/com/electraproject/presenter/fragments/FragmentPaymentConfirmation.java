@@ -10,7 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
-import com.electraproject.BreadApp;
+import com.electraproject.ElectraApp;
 import com.electraproject.R;
 import com.electraproject.presenter.activities.HomeActivity;
 import com.electraproject.presenter.customviews.BRButton;
@@ -100,7 +100,7 @@ public class FragmentPaymentConfirmation extends Fragment {
             getActivity().onBackPressed();
         }
 
-        MessageExchangeService.enqueueWork(BreadApp.getBreadContext(), MessageExchangeService.createIntent(BreadApp.getBreadContext(), metaData, approved));
+        MessageExchangeService.enqueueWork(ElectraApp.getBreadContext(), MessageExchangeService.createIntent(ElectraApp.getBreadContext(), metaData, approved));
 
     }
 

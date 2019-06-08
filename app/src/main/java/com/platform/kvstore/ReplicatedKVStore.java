@@ -33,7 +33,7 @@ import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 import android.util.Log;
 
-import com.electraproject.BreadApp;
+import com.electraproject.ElectraApp;
 import com.electraproject.app.ApplicationLifecycleObserver;
 import com.electraproject.core.BRCoreKey;
 import com.electraproject.tools.crypto.CryptoHelper;
@@ -847,7 +847,7 @@ public class ReplicatedKVStore implements ApplicationLifecycleObserver.Applicati
             Log.e(TAG, "encrypt: data is null");
             return null;
         }
-        if (app == null) app = BreadApp.getBreadContext();
+        if (app == null) app = ElectraApp.getBreadContext();
         if (app == null) {
             Log.e(TAG, "encrypt: app is null");
             return null;
@@ -883,7 +883,7 @@ public class ReplicatedKVStore implements ApplicationLifecycleObserver.Applicati
             Log.e(TAG, "decrypt: failed to decrypt: " + (data == null ? null : data.length));
             return null;
         }
-        if (app == null) app = BreadApp.getBreadContext();
+        if (app == null) app = ElectraApp.getBreadContext();
         if (app == null) return null;
         if (mTempAuthKey == null)
             cacheKeyIfNeeded(app);

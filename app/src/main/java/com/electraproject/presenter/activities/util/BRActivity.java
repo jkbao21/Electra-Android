@@ -10,7 +10,7 @@ import android.support.v4.app.FragmentActivity;
 import android.util.Log;
 import android.view.Display;
 
-import com.electraproject.BreadApp;
+import com.electraproject.ElectraApp;
 import com.electraproject.R;
 import com.electraproject.presenter.activities.InputPinActivity;
 import com.electraproject.presenter.activities.InputWordsActivity;
@@ -52,7 +52,7 @@ import com.electraproject.wallet.WalletsMaster;
  */
 public class BRActivity extends FragmentActivity {
     private static final String TAG = BRActivity.class.getName();
-    private static final String PACKAGE_NAME = BreadApp.getBreadContext() == null ? null : BreadApp.getBreadContext().getApplicationContext().getPackageName();
+    private static final String PACKAGE_NAME = ElectraApp.getBreadContext() == null ? null : ElectraApp.getBreadContext().getApplicationContext().getPackageName();
 
     static {
         try {
@@ -60,7 +60,7 @@ public class BRActivity extends FragmentActivity {
         } catch (UnsatisfiedLinkError e) {
             e.printStackTrace();
             Log.d(TAG, "Native code library failed to load.\\n\" + " + e);
-            Log.d(TAG, "Installer Package Name -> " + (PACKAGE_NAME == null ? "null" : BreadApp.getBreadContext().getPackageManager().getInstallerPackageName(PACKAGE_NAME)));
+            Log.d(TAG, "Installer Package Name -> " + (PACKAGE_NAME == null ? "null" : ElectraApp.getBreadContext().getPackageManager().getInstallerPackageName(PACKAGE_NAME)));
         }
     }
 
@@ -209,7 +209,7 @@ public class BRActivity extends FragmentActivity {
                     });
                 } else {
                     Log.e(TAG, "User failed to authenticate device while creating a wallet. Clearing all user data now.");
-                    // TODO: Should this be BreadApp.clearApplicationUserData();?
+                    // TODO: Should this be ElectraApp.clearApplicationUserData();?
                     WalletsMaster m = WalletsMaster.getInstance(BRActivity.this);
                     m.wipeWalletButKeystore(this);
                     finish();
@@ -230,9 +230,9 @@ public class BRActivity extends FragmentActivity {
                 AuthManager.getInstance().setWalletDisabled(this);
             }
         }
-        BreadApp.setBreadContext(this);
+        ElectraApp.setBreadContext(this);
 
-        BreadApp.lockIfNeeded(this);
+        ElectraApp.lockIfNeeded(this);
     }
 
     private void saveScreenSizesIfNeeded() {

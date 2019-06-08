@@ -12,7 +12,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.electraproject.BreadApp;
+import com.electraproject.ElectraApp;
 import com.electraproject.BuildConfig;
 import com.electraproject.R;
 import com.electraproject.presenter.activities.util.BRActivity;
@@ -149,7 +149,7 @@ public class InputWordsActivity extends BRActivity implements View.OnFocusChange
                                         getString(R.string.WipeWallet_alertMessage), getString(R.string.WipeWallet_wipe), getString(R.string.Button_cancel), new BRDialogView.BROnClickListener() {
                                             @Override
                                             public void onClick(BRDialogView brDialogView) {
-                                                BreadApp.clearApplicationUserData();
+                                                ElectraApp.clearApplicationUserData();
                                             }
                                         }, new BRDialogView.BROnClickListener() {
                                             @Override

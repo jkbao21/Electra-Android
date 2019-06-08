@@ -9,7 +9,7 @@ import android.os.Bundle;
 import android.text.format.DateUtils;
 import android.util.Log;
 
-import com.electraproject.BreadApp;
+import com.electraproject.ElectraApp;
 import com.electraproject.R;
 import com.electraproject.presenter.activities.DisabledActivity;
 import com.electraproject.presenter.customviews.BRDialogView;
@@ -88,7 +88,7 @@ public class AuthManager {
     }
 
     public void authPrompt(Context context, String title, String message, boolean forcePin, boolean forceFingerprint, BRAuthCompletion completion) {
-        context = BreadApp.getBreadContext();
+        context = ElectraApp.getBreadContext();
         if (context == null || !(context instanceof Activity)) {
             Log.e(TAG, "authPrompt: context is null or not Activity: " + context);
             return;

@@ -4,7 +4,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.util.Log;
 
-import com.electraproject.BreadApp;
+import com.electraproject.ElectraApp;
 import com.electraproject.presenter.entities.CryptoRequest;
 import com.electraproject.presenter.interfaces.BRAuthCompletion;
 import com.electraproject.tools.animation.BRDialog;
@@ -118,7 +118,7 @@ public class WalletPlugin implements Plugin {
         if (!target.startsWith(PATH_BASE)) {
             return false;
         }
-        Activity context = (Activity) BreadApp.getBreadContext();
+        Activity context = (Activity) ElectraApp.getBreadContext();
 
         if (target.startsWith(PATH_BASE + PATH_INFO) && request.getMethod().equalsIgnoreCase(GET.asString())) {
             Log.i(TAG, "handling: " + target + " " + baseRequest.getMethod());

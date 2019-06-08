@@ -7,7 +7,7 @@ import android.support.annotation.NonNull;
 import android.text.SpannableString;
 import android.util.Log;
 
-import com.electraproject.BreadApp;
+import com.electraproject.ElectraApp;
 import com.electraproject.R;
 import com.electraproject.presenter.customviews.BRDialogView;
 import com.electraproject.tools.threads.executor.BRExecutor;
@@ -48,7 +48,7 @@ public class BRDialog {
     public static void showCustomDialog(@NonNull final Context context, @NonNull final String title, @NonNull final String message,
                                         @NonNull final String posButton, final String negButton, final BRDialogView.BROnClickListener posListener,
                                         final BRDialogView.BROnClickListener negListener, final DialogInterface.OnDismissListener dismissListener, final int iconRes) {
-        final Activity activity = (context instanceof Activity) ? (Activity) context : (Activity) BreadApp.getBreadContext();
+        final Activity activity = (context instanceof Activity) ? (Activity) context : (Activity) ElectraApp.getBreadContext();
         if (activity.isDestroyed()) {
             Log.e(TAG, "showCustomDialog: FAILED, context is destroyed");
             return;
@@ -146,7 +146,7 @@ public class BRDialog {
                                         final BRDialogView.BROnClickListener negListener,
                                         final DialogInterface.OnDismissListener dismissListener,
                                         final boolean mAlignTextToStart) {
-        final Activity activity = (context instanceof Activity) ? (Activity) context : (Activity) BreadApp.getBreadContext();
+        final Activity activity = (context instanceof Activity) ? (Activity) context : (Activity) ElectraApp.getBreadContext();
         if (activity.isDestroyed()) {
             Log.e(TAG, "showCustomDialog: FAILED, context is destroyed");
             return;

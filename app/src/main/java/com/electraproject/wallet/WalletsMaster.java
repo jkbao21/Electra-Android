@@ -9,7 +9,7 @@ import android.support.annotation.WorkerThread;
 import android.text.format.DateUtils;
 import android.util.Log;
 
-import com.electraproject.BreadApp;
+import com.electraproject.ElectraApp;
 import com.electraproject.R;
 import com.electraproject.core.BRCoreKey;
 import com.electraproject.core.BRCoreMasterPubKey;
@@ -360,7 +360,7 @@ public class WalletsMaster {
     @WorkerThread
     public void initLastWallet(Context app) {
         if (app == null) {
-            app = BreadApp.getBreadContext();
+            app = ElectraApp.getBreadContext();
             if (app == null) {
                 Log.e(TAG, "initLastWallet: FAILED, app is null");
                 return;

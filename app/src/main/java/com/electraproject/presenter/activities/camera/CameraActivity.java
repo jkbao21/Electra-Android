@@ -42,7 +42,7 @@ import android.view.TextureView;
 import android.view.View;
 import android.widget.Toast;
 
-import com.electraproject.BreadApp;
+import com.electraproject.ElectraApp;
 import com.electraproject.R;
 import com.electraproject.presenter.activities.util.BRActivity;
 import com.electraproject.tools.threads.executor.BRExecutor;
@@ -895,7 +895,7 @@ public class CameraActivity extends BRActivity implements View.OnClickListener, 
                             Thread.currentThread().setName("BG:" + TAG + ":handleCameraImageTaken");
                             try {
                                 Thread.sleep(1000);
-                                CameraPlugin.handleCameraImageTaken(BreadApp.getBreadContext(), bytes);
+                                CameraPlugin.handleCameraImageTaken(ElectraApp.getBreadContext(), bytes);
                             } catch (InterruptedException e) {
                                 e.printStackTrace();
                             }

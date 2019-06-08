@@ -15,7 +15,7 @@ import com.electraproject.tools.security.PostAuth;
 
 public class WriteDownActivity extends BRActivity {
     private static final String TAG = WriteDownActivity.class.getName();
-    public static final String EXTRA_VIEW_REASON = "com.breadwallet.EXTRA_VIEW_REASON";
+    public static final String EXTRA_VIEW_REASON = "com.electraproject.EXTRA_VIEW_REASON";
 
     public enum ViewReason {
         /* Activity was shown because a new wallet was created. */

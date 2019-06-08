@@ -39,7 +39,7 @@ public class PaperKeyActivity extends BRActivity {
     private static final int WORD_COUNT = 12;
     private static final float BUTTONS_LAYOUT_WEIGHT_SUM_DEFAULT = 2.0f;
     private static final float BUTTONS_LAYOUT_WEIGHT_SUM_SINGLE = 1.0f;
-    public static final String EXTRA_PAPER_KEY = "com.breadwallet.presenter.activities.EXTRA_PAPER_KEY";
+    public static final String EXTRA_PAPER_KEY = "com.electraproject.presenter.activities.EXTRA_PAPER_KEY";
 
     private ViewPager mWordViewPager;
     private Button mNextButton;

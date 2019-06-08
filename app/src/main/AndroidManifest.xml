@@ -39,7 +39,7 @@
         android:required="false" />
 
     <application
-        android:name="com.electraproject.BreadApp"
+        android:name="com.electraproject.ElectraApp"
         android:allowBackup="false"
         android:fullBackupContent="false"
         android:icon="${applicationIcon}"
@@ -214,7 +214,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
 
-                <data android:scheme="bread" />
+                <data android:scheme="electra" />
             </intent-filter>
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />

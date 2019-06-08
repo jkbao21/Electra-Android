@@ -15,7 +15,7 @@ import java.util.List;
 
 public class SettingsActivity extends BaseSettingsActivity {
     private static final String TAG = SettingsActivity.class.getName();
-    public static final String EXTRA_MODE = "com.breadwallet.presenter.activities.settings.EXTRA_MODE";
+    public static final String EXTRA_MODE = "com.electraproject.presenter.activities.settings.EXTRA_MODE";
     public static final String MODE_SETTINGS = "settings";
     public static final String MODE_PREFERENCES = "preferences";
     public static final String MODE_SECURITY = "security";

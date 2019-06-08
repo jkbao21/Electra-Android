@@ -20,8 +20,8 @@ public class InputPinActivity extends BRActivity implements PinLayout.OnPinInser
     private String mNewPin;
     private PinMode mPinMode;
     private boolean mPinUpdateMode;
-    public static final String EXTRA_PIN_MODE_UPDATE = "com.breadwallet.EXTRA_PIN_MODE_UPDATE";
-    public static final String EXTRA_PIN_ACCEPTED = "com.breadwallet.EXTRA_PIN_ACCEPTED";
+    public static final String EXTRA_PIN_MODE_UPDATE = "com.electraproject.EXTRA_PIN_MODE_UPDATE";
+    public static final String EXTRA_PIN_ACCEPTED = "com.electraproject.EXTRA_PIN_ACCEPTED";
     public static final int SET_PIN_REQUEST_CODE = 274;
     private BRKeyboard mKeyboard;
 

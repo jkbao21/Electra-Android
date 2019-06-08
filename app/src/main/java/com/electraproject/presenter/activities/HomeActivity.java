@@ -84,12 +84,12 @@ public class HomeActivity extends BRActivity implements InternetManager.Connecti
         OnTxListModified, RatesDataSource.OnDataChanged, SyncListener, BalanceUpdateListener {
     private static final String TAG = HomeActivity.class.getSimpleName();
     private static final String URBAN_APP_PACKAGE_NAME = "com.urbandroid.lux";
-    public static final String EXTRA_DATA = "com.breadwallet.presenter.activities.HomeActivity.EXTRA_DATA";
+    public static final String EXTRA_DATA = "com.electraproject.presenter.activities.HomeActivity.EXTRA_DATA";
 
     private static final String SYNCED_THROUGH_DATE_FORMAT = "MM/dd/yy HH:mm";
     private static final float SYNC_PROGRESS_LAYOUT_ANIMATION_ALPHA = 0.0f;
 
-    public static final String EXTRA_CRYPTO_REQUEST = "com.breadwallet.presenter.activities.HomeActivity.EXTRA_CRYPTO_REQUEST";
+    public static final String EXTRA_CRYPTO_REQUEST = "com.electraproject.presenter.activities.HomeActivity.EXTRA_CRYPTO_REQUEST";
     private static final int SEND_SHOW_DELAY = 300;
 
     private BRNotificationBar mNotificationBar;

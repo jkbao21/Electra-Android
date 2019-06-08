@@ -76,7 +76,7 @@ public class WalletActivity extends BRActivity implements InternetManager.Connec
     private static final String URBAN_APP_PACKAGE_NAME = "com.urbandroid.lux";
 
     public static final String EXTRA_CRYPTO_REQUEST =
-            "com.breadwallet.presenter.activities.WalletActivity.EXTRA_CRYPTO_REQUEST";
+            "com.electraproject.presenter.activities.WalletActivity.EXTRA_CRYPTO_REQUEST";
 
     private static final String SYNCED_THROUGH_DATE_FORMAT = "MM/dd/yy HH:mm";
     private static final float SYNC_PROGRESS_LAYOUT_ANIMATION_ALPHA = 0.0f;

@@ -65,7 +65,7 @@ import java.math.BigDecimal;
 public class FragmentReceive extends ModalDialogFragment implements BalanceUpdateListener {
     private static final String TAG = FragmentReceive.class.getName();
 
-    public static final String EXTRA_RECEIVE = "com.breadwallet.presenter.fragments.FragmentReceive.EXTRA_RECEIVE";
+    public static final String EXTRA_RECEIVE = "com.electraproject.presenter.fragments.FragmentReceive.EXTRA_RECEIVE";
     public TextView mTitle;
     public TextView mAddress;
     public ImageView mQrImage;

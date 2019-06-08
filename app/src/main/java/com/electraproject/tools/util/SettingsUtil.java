@@ -68,8 +68,8 @@ import java.util.List;
  */
 public final class SettingsUtil {
     private static final String TAG = SettingsUtil.class.getSimpleName();
-    private static final String MARKET_URI = "market://details?id=com.breadwallet";
-    private static final String GOOGLE_PLAY_URI = "https://play.google.com/store/apps/details?id=com.breadwallet";
+    private static final String MARKET_URI = "market://details?id=com.electraproject";
+    private static final String GOOGLE_PLAY_URI = "https://play.google.com/store/apps/details?id=com.electraproject";
     private static final String APP_STORE_PACKAGE = "com.android.vending";
     private static final String DEVELOPER_OPTIONS_TITLE = "Developer Options";
     private static final String SEND_LOGS = "Send Logs";

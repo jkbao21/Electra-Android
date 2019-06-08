@@ -39,8 +39,8 @@ import java.util.Random;
 
 public class PaperKeyProveActivity extends BRActivity {
     private static final String TAG = PaperKeyProveActivity.class.getName();
-    public static final String EXTRA_PAPER_KEY = "com.breadwallet.presenter.activities.EXTRA_PAPER_KEY";
-    public static final String EXTRA_DONE_ACTION = "com.breadwallet.presenter.activities.EXTRA_DONE_ACTION";
+    public static final String EXTRA_PAPER_KEY = "com.electraproject.presenter.activities.EXTRA_PAPER_KEY";
+    public static final String EXTRA_DONE_ACTION = "com.electraproject.presenter.activities.EXTRA_DONE_ACTION";
     public static final int WORD_COUNT = 12;
     public static final char NULL_TERMINATOR = '\0';
     public static final int RANDOM_MAX_DIGIT = 10;

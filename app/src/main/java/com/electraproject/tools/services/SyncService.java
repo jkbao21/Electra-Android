@@ -48,10 +48,10 @@ public class SyncService extends /*Job*/ IntentService {
 
 //    private static final int JOB_ID = 0xe1743572; // Used to identify jobs that belong to this service. (Random number used for uniqueness.)
 
-    public static final String ACTION_START_SYNC_PROGRESS_POLLING = "com.breadwallet.tools.services.ACTION_START_SYNC_PROGRESS_POLLING";
-    public static final String ACTION_SYNC_PROGRESS_UPDATE = "com.breadwallet.tools.services.ACTION_SYNC_PROGRESS_UPDATE";
-    public static final String EXTRA_WALLET_CURRENCY_CODE = "com.breadwallet.tools.services.EXTRA_WALLET_CURRENCY_CODE";
-    public static final String EXTRA_PROGRESS = "com.breadwallet.tools.services.EXTRA_PROGRESS";
+    public static final String ACTION_START_SYNC_PROGRESS_POLLING = "com.electraproject.tools.services.ACTION_START_SYNC_PROGRESS_POLLING";
+    public static final String ACTION_SYNC_PROGRESS_UPDATE = "com.electraproject.tools.services.ACTION_SYNC_PROGRESS_UPDATE";
+    public static final String EXTRA_WALLET_CURRENCY_CODE = "com.electraproject.tools.services.EXTRA_WALLET_CURRENCY_CODE";
+    public static final String EXTRA_PROGRESS = "com.electraproject.tools.services.EXTRA_PROGRESS";
 
     private static final int POLLING_INTERVAL = 500; // in milliseconds
 

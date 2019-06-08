@@ -55,7 +55,7 @@ public class ScanQRActivity extends BRActivity implements ActivityCompat.OnReque
     private static final int CAMERA_EXPANSION_DELAY_MILLISECONDS = 400;
     private static final long AUTO_FOCUS_PERIOD_TIME = 500;
     private static final long CAMERA_UI_UPDATE_MILLISECONDS = 100;
-    public static final String EXTRA_RESULT = "com.breadwallet.presenter.activities.camera.ScanQRActivity.EXTRA_RESULT";
+    public static final String EXTRA_RESULT = "com.electraproject.presenter.activities.camera.ScanQRActivity.EXTRA_RESULT";
 
     private ImageView mCameraGuide;
     private long mLastUpdated;

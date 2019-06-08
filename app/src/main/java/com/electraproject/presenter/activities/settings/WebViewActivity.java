@@ -62,11 +62,11 @@ import java.util.Map;
 public class WebViewActivity extends BRActivity {
     private static final String TAG = WebViewActivity.class.getName();
 
-    public static final String EXTRA_JSON_PARAM = "com.breadwallet.presenter.activities.settings.WebViewActivity.EXTRA_JSON_PARAM";
+    public static final String EXTRA_JSON_PARAM = "com.electraproject.presenter.activities.settings.WebViewActivity.EXTRA_JSON_PARAM";
     public static final String EXTRA_ENTER_TRANSITION =
-            "com.breadwallet.presenter.activities.settings.WebViewActivity.EXTRA_ENTER_TRANSITION";
+            "com.electraproject.presenter.activities.settings.WebViewActivity.EXTRA_ENTER_TRANSITION";
     public static final String EXTRA_EXIT_TRANSITION =
-            "com.breadwallet.presenter.activities.settings.WebViewActivity.EXTRA_EXIT_TRANSITION";
+            "com.electraproject.presenter.activities.settings.WebViewActivity.EXTRA_EXIT_TRANSITION";
     private static final String DATE_FORMAT = "yyyyMMdd_HHmmss";
     private static final String IMAGE_FILE_NAME_SUFFIX = "_kyc.jpg";
     private static final String BUY_PATH = "/buy";

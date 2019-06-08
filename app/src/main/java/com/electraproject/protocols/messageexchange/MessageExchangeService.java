@@ -79,13 +79,13 @@ public final class MessageExchangeService extends JobIntentService {
 
     private static final int JOB_ID = 0xcebbbf9b; // Used to identify jobs that belong to this service. (Random number used for uniqueness.)
 
-    public static final String ACTION_REQUEST_TO_PAIR = "com.breadwallet.protocols.messageexchange.ACTION_REQUEST_TO_PAIR";
-    public static final String ACTION_RETRIEVE_MESSAGES = "com.breadwallet.protocols.messageexchange.ACTION_RETRIEVE_MESSAGES";
-    private static final String ACTION_PROCESS_PAIR_REQUEST = "com.breadwallet.protocols.messageexchange.ACTION_PROCESS_PAIR_REQUEST";
-    public static final String ACTION_PROCESS_REQUEST = "com.breadwallet.protocols.messageexchange.ACTION_PROCESS_REQUEST";
-    public static final String ACTION_GET_USER_CONFIRMATION = "com.breadwallet.protocols.messageexchange.ACTION_GET_USER_CONFIRMATION";
-    private static final String EXTRA_IS_USER_APPROVED = "com.breadwallet.protocols.messageexchange.EXTRA_IS_USER_APPROVED";
-    public static final String EXTRA_METADATA = "com.breadwallet.protocols.messageexchange.EXTRA_METADATA";
+    public static final String ACTION_REQUEST_TO_PAIR = "com.electraproject.protocols.messageexchange.ACTION_REQUEST_TO_PAIR";
+    public static final String ACTION_RETRIEVE_MESSAGES = "com.electraproject.protocols.messageexchange.ACTION_RETRIEVE_MESSAGES";
+    private static final String ACTION_PROCESS_PAIR_REQUEST = "com.electraproject.protocols.messageexchange.ACTION_PROCESS_PAIR_REQUEST";
+    public static final String ACTION_PROCESS_REQUEST = "com.electraproject.protocols.messageexchange.ACTION_PROCESS_REQUEST";
+    public static final String ACTION_GET_USER_CONFIRMATION = "com.electraproject.protocols.messageexchange.ACTION_GET_USER_CONFIRMATION";
+    private static final String EXTRA_IS_USER_APPROVED = "com.electraproject.protocols.messageexchange.EXTRA_IS_USER_APPROVED";
+    public static final String EXTRA_METADATA = "com.electraproject.protocols.messageexchange.EXTRA_METADATA";
 
     private static final int ENVELOPE_VERSION = 1;  // The current envelope version number for our message exchange protocol.
     private static final int NONCE_SIZE = 12; // Nonce size for our message exchange protocol.

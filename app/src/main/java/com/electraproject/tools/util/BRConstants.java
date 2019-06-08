@@ -125,7 +125,7 @@ public final class BRConstants {
      * Extra constants
      */
 
-    public static final String EXTRA_URL = "com.breadwallet.EXTRA_URL";
+    public static final String EXTRA_URL = "com.electraproject.EXTRA_URL";
     public static final String DRAWABLE = "drawable";
     public static final String CURRENCY_PARAMETER_STRING_FORMAT = "%s?currency=%s";
 

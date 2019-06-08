@@ -52,7 +52,7 @@ import com.platform.HTTPServer;
 public class FragmentWebModal extends ModalDialogFragment {
     private static final String TAG = FragmentWebModal.class.getName();
     private String mOnCloseUrl;
-    public static final String EXTRA_URL = "com.breadwallet.presenter.fragments.FragmentWebModal.URL";
+    public static final String EXTRA_URL = "com.electraproject.presenter.fragments.FragmentWebModal.URL";
     public static final String CLOSE = "_close";
 
     @SuppressLint("SetJavaScriptEnabled")

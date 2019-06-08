@@ -16,7 +16,7 @@ import com.electraproject.tools.security.BRKeyStore;
 import com.electraproject.tools.util.EventUtils;
 
 public class FragmentOnBoarding extends Fragment {
-    private static final String ARGUMENT_POSITION = "com.breadwallet.presenter.fragments.FragmentOnBoarding.POSITION";
+    private static final String ARGUMENT_POSITION = "com.electraproject.presenter.fragments.FragmentOnBoarding.POSITION";
 
     public FragmentOnBoarding() {
     }

@@ -328,7 +328,6 @@ public final class BRApiManager implements ApplicationLifecycleObserver.Applicat
         ArrayList<String> ignoredExchanges = new ArrayList<>();
         ignoredExchanges.add("Crypto Hub");
         ignoredExchanges.add("Cryptopia");
-        ignoredExchanges.add("Nova Exchange"); //temporary
         try{
             String jsonString = urlGET(context, ECA_URL);
 
@@ -345,8 +344,9 @@ public final class BRApiManager implements ApplicationLifecycleObserver.Applicat
                 JSONObject market = object.getJSONObject("market");
                 String exchange = market.getString("name");
                 BigDecimal last = new BigDecimal(object.getString("last")).setScale(8, RoundingMode.HALF_EVEN);
+                BigDecimal volume = new BigDecimal(object.getString("volume"));
 
-                if(target.compareToIgnoreCase("BTC") == 0 && last.compareTo(BigDecimal.ZERO) > 0 && !ignoredExchanges.contains(exchange)){
+                if(target.compareToIgnoreCase("BTC") == 0 && last.compareTo(BigDecimal.ZERO) > 0 && !ignoredExchanges.contains(exchange) && volume.compareTo(BigDecimal.ZERO) > 0 ) {
 
                     Log.i(exchange,last.toPlainString());
                     totalValue = totalValue.add(last);

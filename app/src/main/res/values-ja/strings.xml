@@ -344,6 +344,8 @@
     <string name="MenuButton.settings">設定</string>
     <!-- Menu button title -->
     <string name="MenuButton.support">サポート</string>
+	<!-- Menu button title -->
+    <string name="MenuButton.useragree">ユーザー規約</string>
     <!-- button label -->
     <string name="MenuViewController.createButton">新規ウォレットを作成</string>
     <!-- Menu modal title -->

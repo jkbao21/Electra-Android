@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="80dp">
 
-        <com.breadwallet.presenter.customviews.BaseTextView
+        <com.electraproject.presenter.customviews.BaseTextView
             android:id="@+id/introheader"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -25,7 +25,7 @@
 
     </FrameLayout>
 
-    <com.breadwallet.presenter.customviews.BaseTextView
+    <com.electraproject.presenter.customviews.BaseTextView
         android:id="@+id/texttos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -42,7 +42,7 @@
         android:scrollbars="vertical"
         android:textSize="18sp" />
 
-    <com.breadwallet.presenter.customviews.BRButton
+    <com.electraproject.presenter.customviews.BRButton
         android:id="@+id/introagree"
         android:layout_width="100dp"
         android:layout_height="@dimen/button_height"
@@ -59,7 +59,7 @@
         app:buttonType="4"
         app:isBreadButton="true" />
 
-    <com.breadwallet.presenter.customviews.BRButton
+    <com.electraproject.presenter.customviews.BRButton
         android:id="@+id/introdecline"
         android:layout_width="100dp"
         android:layout_height="@dimen/button_height"

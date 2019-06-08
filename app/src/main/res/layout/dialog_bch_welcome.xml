@@ -5,7 +5,7 @@
     android:layout_height="180dp">
 
 
-    <com.breadwallet.presenter.customviews.BaseTextView
+    <com.electraproject.presenter.customviews.BaseTextView
         android:id="@+id/bch_dialog_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -14,7 +14,7 @@
         android:text="BRD now supports Bitcoin Cash!"
         android:textSize="18sp" />
 
-    <com.breadwallet.presenter.customviews.BaseTextView
+    <com.electraproject.presenter.customviews.BaseTextView
         android:id="@+id/bch_dialog_message"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -34,7 +34,7 @@
         android:orientation="horizontal"
         android:weightSum="2">
 
-        <com.breadwallet.presenter.customviews.BRButton
+        <com.electraproject.presenter.customviews.BRButton
             android:id="@+id/dialog_home_button"
             android:layout_width="0dp"
             android:layout_height="65dp"
@@ -46,7 +46,7 @@
             app:isBreadButton="true" />
 
 
-        <com.breadwallet.presenter.customviews.BRButton
+        <com.electraproject.presenter.customviews.BRButton
             android:id="@+id/dialog_dismiss_button"
             android:layout_width="0dp"
             android:layout_height="65dp"

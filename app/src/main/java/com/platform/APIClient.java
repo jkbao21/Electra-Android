@@ -10,22 +10,22 @@ import android.os.NetworkOnMainThreadException;
 import android.support.annotation.NonNull;
 import android.util.Log;
 
-import com.breadwallet.BreadApp;
-import com.breadwallet.BuildConfig;
-import com.breadwallet.core.BRCoreKey;
-import com.breadwallet.tools.animation.UiUtils;
-import com.breadwallet.tools.crypto.Base58;
-import com.breadwallet.tools.manager.BRReportsManager;
-import com.breadwallet.tools.manager.BRSharedPrefs;
-import com.breadwallet.tools.crypto.CryptoHelper;
-import com.breadwallet.tools.security.BRKeyStore;
-import com.breadwallet.tools.threads.executor.BRExecutor;
-import com.breadwallet.tools.util.BRCompressor;
-import com.breadwallet.tools.util.BRConstants;
-import com.breadwallet.tools.util.ServerBundlesHelper;
-import com.breadwallet.tools.util.Utils;
-import com.breadwallet.wallet.WalletsMaster;
-import com.breadwallet.wallet.abstracts.BaseWalletManager;
+import com.electraproject.BreadApp;
+import com.electraproject.BuildConfig;
+import com.electraproject.core.BRCoreKey;
+import com.electraproject.tools.animation.UiUtils;
+import com.electraproject.tools.crypto.Base58;
+import com.electraproject.tools.manager.BRReportsManager;
+import com.electraproject.tools.manager.BRSharedPrefs;
+import com.electraproject.tools.crypto.CryptoHelper;
+import com.electraproject.tools.security.BRKeyStore;
+import com.electraproject.tools.threads.executor.BRExecutor;
+import com.electraproject.tools.util.BRCompressor;
+import com.electraproject.tools.util.BRConstants;
+import com.electraproject.tools.util.ServerBundlesHelper;
+import com.electraproject.tools.util.Utils;
+import com.electraproject.wallet.WalletsMaster;
+import com.electraproject.wallet.abstracts.BaseWalletManager;
 import com.platform.kvstore.RemoteKVStore;
 import com.platform.kvstore.ReplicatedKVStore;
 import com.platform.tools.TokenHolder;
@@ -70,7 +70,7 @@ import okhttp3.ResponseBody;
 import okio.Buffer;
 import okio.BufferedSink;
 
-import static com.breadwallet.tools.util.BRConstants.*;
+import static com.electraproject.tools.util.BRConstants.*;
 
 
 /**

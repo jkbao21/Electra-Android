@@ -14,7 +14,7 @@
         app:layout_constraintLeft_toLeftOf="@+id/gridLayout"
         app:layout_constraintTop_toTopOf="@id/title"/>
 
-    <com.breadwallet.presenter.customviews.BaseTextView
+    <com.electraproject.presenter.customviews.BaseTextView
         android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -28,7 +28,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
 
-    <com.breadwallet.presenter.customviews.BaseTextView
+    <com.electraproject.presenter.customviews.BaseTextView
         android:id="@+id/description"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -45,7 +45,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/title" />
 
-    <com.breadwallet.presenter.customviews.BRButton
+    <com.electraproject.presenter.customviews.BRButton
         android:id="@+id/send_button"
         android:layout_width="0dp"
         android:layout_height="@dimen/button_height"
@@ -93,7 +93,7 @@
                 android:orientation="vertical"
                 android:weightSum="2">
 
-                <com.breadwallet.presenter.customviews.BREdit
+                <com.electraproject.presenter.customviews.BREdit
                     android:id="@+id/word1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -108,7 +108,7 @@
                     android:textCursorDrawable="@null"
                     app:customEFont="CircularPro-Medium.otf" />
 
-                <com.breadwallet.presenter.customviews.BaseTextView
+                <com.electraproject.presenter.customviews.BaseTextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center_horizontal"
@@ -127,7 +127,7 @@
 
                 >
 
-                <com.breadwallet.presenter.customviews.BREdit
+                <com.electraproject.presenter.customviews.BREdit
                     android:id="@+id/word2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -140,7 +140,7 @@
                     android:nextFocusForward="@+id/word3"
                     android:textAlignment="center" />
 
-                <com.breadwallet.presenter.customviews.BaseTextView
+                <com.electraproject.presenter.customviews.BaseTextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center_horizontal"
@@ -159,7 +159,7 @@
 
                 >
 
-                <com.breadwallet.presenter.customviews.BREdit
+                <com.electraproject.presenter.customviews.BREdit
                     android:id="@+id/word3"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -172,7 +172,7 @@
                     android:nextFocusForward="@+id/word4"
                     android:textAlignment="center" />
 
-                <com.breadwallet.presenter.customviews.BaseTextView
+                <com.electraproject.presenter.customviews.BaseTextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center_horizontal"
@@ -198,7 +198,7 @@
 
                 >
 
-                <com.breadwallet.presenter.customviews.BREdit
+                <com.electraproject.presenter.customviews.BREdit
                     android:id="@+id/word4"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -211,7 +211,7 @@
                     android:nextFocusForward="@+id/word5"
                     android:textAlignment="center" />
 
-                <com.breadwallet.presenter.customviews.BaseTextView
+                <com.electraproject.presenter.customviews.BaseTextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center_horizontal"
@@ -230,7 +230,7 @@
 
                 >
 
-                <com.breadwallet.presenter.customviews.BREdit
+                <com.electraproject.presenter.customviews.BREdit
                     android:id="@+id/word5"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -243,7 +243,7 @@
                     android:nextFocusForward="@+id/word6"
                     android:textAlignment="center" />
 
-                <com.breadwallet.presenter.customviews.BaseTextView
+                <com.electraproject.presenter.customviews.BaseTextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center_horizontal"
@@ -262,7 +262,7 @@
 
                 >
 
-                <com.breadwallet.presenter.customviews.BREdit
+                <com.electraproject.presenter.customviews.BREdit
                     android:id="@+id/word6"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -275,7 +275,7 @@
                     android:nextFocusForward="@+id/word7"
                     android:textAlignment="center" />
 
-                <com.breadwallet.presenter.customviews.BaseTextView
+                <com.electraproject.presenter.customviews.BaseTextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center_horizontal"
@@ -301,7 +301,7 @@
 
                 >
 
-                <com.breadwallet.presenter.customviews.BREdit
+                <com.electraproject.presenter.customviews.BREdit
                     android:id="@+id/word7"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -314,7 +314,7 @@
                     android:nextFocusForward="@+id/word8"
                     android:textAlignment="center" />
 
-                <com.breadwallet.presenter.customviews.BaseTextView
+                <com.electraproject.presenter.customviews.BaseTextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center_horizontal"
@@ -333,7 +333,7 @@
 
                 >
 
-                <com.breadwallet.presenter.customviews.BREdit
+                <com.electraproject.presenter.customviews.BREdit
                     android:id="@+id/word8"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -346,7 +346,7 @@
                     android:nextFocusForward="@+id/word9"
                     android:textAlignment="center" />
 
-                <com.breadwallet.presenter.customviews.BaseTextView
+                <com.electraproject.presenter.customviews.BaseTextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center_horizontal"
@@ -365,7 +365,7 @@
 
                 >
 
-                <com.breadwallet.presenter.customviews.BREdit
+                <com.electraproject.presenter.customviews.BREdit
                     android:id="@+id/word9"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -378,7 +378,7 @@
                     android:nextFocusForward="@+id/word10"
                     android:textAlignment="center" />
 
-                <com.breadwallet.presenter.customviews.BaseTextView
+                <com.electraproject.presenter.customviews.BaseTextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center_horizontal"
@@ -406,7 +406,7 @@
 
                 >
 
-                <com.breadwallet.presenter.customviews.BREdit
+                <com.electraproject.presenter.customviews.BREdit
                     android:id="@+id/word10"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -419,7 +419,7 @@
                     android:nextFocusForward="@+id/word11"
                     android:textAlignment="center" />
 
-                <com.breadwallet.presenter.customviews.BaseTextView
+                <com.electraproject.presenter.customviews.BaseTextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center_horizontal"
@@ -439,7 +439,7 @@
 
                 >
 
-                <com.breadwallet.presenter.customviews.BREdit
+                <com.electraproject.presenter.customviews.BREdit
                     android:id="@+id/word11"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -452,7 +452,7 @@
                     android:nextFocusForward="@+id/word12"
                     android:textAlignment="center" />
 
-                <com.breadwallet.presenter.customviews.BaseTextView
+                <com.electraproject.presenter.customviews.BaseTextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center_horizontal"
@@ -472,7 +472,7 @@
 
                 >
 
-                <com.breadwallet.presenter.customviews.BREdit
+                <com.electraproject.presenter.customviews.BREdit
                     android:id="@+id/word12"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -484,7 +484,7 @@
                     android:lines="1"
                     android:textAlignment="center" />
 
-                <com.breadwallet.presenter.customviews.BaseTextView
+                <com.electraproject.presenter.customviews.BaseTextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center_horizontal"

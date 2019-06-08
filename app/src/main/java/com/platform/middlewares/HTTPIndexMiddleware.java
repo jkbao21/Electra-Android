@@ -3,8 +3,8 @@ package com.platform.middlewares;
 import android.content.Context;
 import android.util.Log;
 
-import com.breadwallet.BreadApp;
-import com.breadwallet.tools.util.ServerBundlesHelper;
+import com.electraproject.BreadApp;
+import com.electraproject.tools.util.ServerBundlesHelper;
 import com.platform.APIClient;
 import com.platform.BRHTTPHelper;
 import com.platform.interfaces.Middleware;

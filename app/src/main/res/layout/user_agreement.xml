@@ -11,7 +11,7 @@
         android:layout_height="80dp"
         app:layout_constraintTop_toTopOf="parent">
 
-        <com.breadwallet.presenter.customviews.BaseTextView
+        <com.electraproject.presenter.customviews.BaseTextView
             android:id="@+id/introHeader"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -35,7 +35,7 @@
     </FrameLayout>
 
 
-    <com.breadwallet.presenter.customviews.BaseTextView
+    <com.electraproject.presenter.customviews.BaseTextView
         android:id="@+id/texttos1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

@@ -7,16 +7,16 @@ import android.text.format.DateUtils;
 import android.util.Base64;
 import android.util.Log;
 
-import com.breadwallet.core.BRCoreKey;
-import com.breadwallet.core.BRCoreMasterPubKey;
-import com.breadwallet.presenter.interfaces.BRAuthCompletion;
-import com.breadwallet.tools.manager.BRSharedPrefs;
-import com.breadwallet.tools.security.AuthManager;
-import com.breadwallet.tools.security.BRKeyStore;
-import com.breadwallet.tools.security.PostAuth;
-import com.breadwallet.tools.threads.executor.BRExecutor;
-import com.breadwallet.tools.util.BRConstants;
-import com.breadwallet.tools.util.Utils;
+import com.electraproject.core.BRCoreKey;
+import com.electraproject.core.BRCoreMasterPubKey;
+import com.electraproject.presenter.interfaces.BRAuthCompletion;
+import com.electraproject.tools.manager.BRSharedPrefs;
+import com.electraproject.tools.security.AuthManager;
+import com.electraproject.tools.security.BRKeyStore;
+import com.electraproject.tools.security.PostAuth;
+import com.electraproject.tools.threads.executor.BRExecutor;
+import com.electraproject.tools.util.BRConstants;
+import com.electraproject.tools.util.Utils;
 import com.platform.APIClient;
 import com.platform.middlewares.plugins.WalletPlugin;
 

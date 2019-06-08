@@ -1,4 +1,4 @@
-<com.breadwallet.presenter.customviews.BRRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.electraproject.presenter.customviews.BRRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/layout"
     android:layout_width="match_parent"
@@ -32,7 +32,7 @@
                 android:layout_marginTop="16dp"
                 android:layout_marginLeft="16dp"/>
 
-            <com.breadwallet.presenter.customviews.BaseTextView
+            <com.electraproject.presenter.customviews.BaseTextView
                 android:id="@+id/title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -55,7 +55,7 @@
 
     </LinearLayout>
 
-    <com.breadwallet.presenter.customviews.BaseTextView
+    <com.electraproject.presenter.customviews.BaseTextView
         android:id="@+id/textView10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -66,7 +66,7 @@
         android:text="@string/TouchIdSettings.label"
         android:textSize="@dimen/sub_header" />
 
-    <com.breadwallet.presenter.customviews.BaseTextView
+    <com.electraproject.presenter.customviews.BaseTextView
         android:id="@+id/enable_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -99,7 +99,7 @@
         android:layout_marginEnd="16dp"
         android:background="@color/extra_light_gray" />
 
-    <com.breadwallet.presenter.customviews.BaseTextView
+    <com.electraproject.presenter.customviews.BaseTextView
         android:id="@+id/limit_exchange"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -107,7 +107,7 @@
         android:layout_margin="@dimen/bread_margin"
         android:textSize="18sp" />
 
-    <com.breadwallet.presenter.customviews.BaseTextView
+    <com.electraproject.presenter.customviews.BaseTextView
         android:id="@+id/limit_info"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -132,4 +132,4 @@
         android:textSize="16sp"
         app:layout_constraintTop_toBottomOf="@+id/limit_info"/>
 
-</com.breadwallet.presenter.customviews.BRRelativeLayout>
+</com.electraproject.presenter.customviews.BRRelativeLayout>

@@ -3,8 +3,8 @@ package com.platform.middlewares;
 import android.content.Context;
 import android.util.Log;
 
-import com.breadwallet.BreadApp;
-import com.breadwallet.tools.util.Utils;
+import com.electraproject.BreadApp;
+import com.electraproject.tools.util.Utils;
 import com.platform.APIClient;
 import com.platform.interfaces.Middleware;
 

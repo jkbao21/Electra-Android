@@ -3,12 +3,12 @@ package com.platform.middlewares;
 import android.content.Context;
 import android.util.Log;
 
-import com.breadwallet.BreadApp;
-import com.breadwallet.tools.crypto.CryptoHelper;
-import com.breadwallet.tools.util.BRConstants;
-import com.breadwallet.tools.util.ServerBundlesHelper;
-import com.breadwallet.tools.util.TypesConverter;
-import com.breadwallet.tools.util.Utils;
+import com.electraproject.BreadApp;
+import com.electraproject.tools.crypto.CryptoHelper;
+import com.electraproject.tools.util.BRConstants;
+import com.electraproject.tools.util.ServerBundlesHelper;
+import com.electraproject.tools.util.TypesConverter;
+import com.electraproject.tools.util.Utils;
 import com.platform.APIClient;
 import com.platform.BRHTTPHelper;
 import com.platform.interfaces.Middleware;

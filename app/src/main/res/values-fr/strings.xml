@@ -342,6 +342,8 @@
     <string name="MenuButton.settings">Paramètres</string>
     <!-- Menu button title -->
     <string name="MenuButton.support">Assistance</string>
+	<!-- Menu button title -->
+    <string name="MenuButton.useragree">Licence utilisateur</string>
     <!-- button label -->
     <string name="MenuViewController.createButton">Créer un nouveau portefeuille</string>
     <!-- Menu modal title -->

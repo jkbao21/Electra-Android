@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <resources>
     <!-- App name -->
     <string name="About.appName.android">Electra</string>
@@ -39,35 +40,35 @@
     <!-- Keystore error -->
     <string name="Alert.keystore.generic.android">귀하의 안드로이드 OS 키스토어에 문제가 있습니다, support@electraproject.org로 연락해 주세요</string>
     <!-- KeyStore error, keys are invalidated -->
-    <string name="Alert.keystore.invalidated.android">귀하의 안드로이드 잠금 화면이 꺼져서 귀하의 암호화 된 데이터가 최근 무효화 되었습니다.</string>
+    <string name="Alert.keystore.invalidated.android">귀하의 안드로이드 잠금 화면이 꺼져서 최근 암호화된 데이터가 무효화되었습니다.</string>
     <!-- Keystore error title -->
     <string name="Alert.keystore.title.android">안드로이드 키스토어 오류</string>
     <!-- No internet alert message -->
     <string name="Alert.noInternet">인터넷이 연결되지 않았습니다. 연결을 확인하시고 다시 시도해 주세요.</string>
     <!-- General error message -->
-    <string name="Alert.somethingWentWrong">뭔가 잘못됐습니다. 다시 시도해 주세요.</string>
+    <string name="Alert.somethingWentWrong">알 수 없는 오류. 다시 시도해 주세요.</string>
     <!-- Request timed out error message -->
-    <string name="Alert.timedOut">요청이 시간 초과 되었습니다. 인터넷 연결을 확인하고 다시 시도하세요.</string>
+    <string name="Alert.timedOut">요청한 시간이 초과되었습니다. 인터넷 연결을 확인하고 다시 시도하세요.</string>
     <!-- Warning alert title -->
     <string name="Alert.warning">경고</string>
     <!-- 'the addresses were copied'' Alert title -->
-    <string name="Alerts.copiedAddressesHeader">주소들 복사됨</string>
+    <string name="Alerts.copiedAddressesHeader">주소 복사됨</string>
     <!-- Addresses Copied Alert sub header -->
     <string name="Alerts.copiedAddressesSubheader">모든 지갑 주소들이 성공적으로 복사됨.</string>
     <!-- Alert Header Label (the paper key was set) -->
-    <string name="Alerts.paperKeySet">종이 열쇠 준비</string>
+    <string name="Alerts.paperKeySet">패이퍼 키 준비</string>
     <!-- Alert Subheader label (playfully positive) -->
-    <string name="Alerts.paperKeySetSubheader">굉장해요!</string>
+    <string name="Alerts.paperKeySetSubheader">패이퍼 키 완료</string>
     <!-- Alert Header label (the PIN was set) -->
-    <string name="Alerts.pinSet">PIN 준비</string>
+    <string name="Alerts.pinSet">암호 준비</string>
     <!-- Send failure alert header label (the send failed to happen) -->
-    <string name="Alerts.sendFailure">보내기 실패함</string>
+    <string name="Alerts.sendFailure">송금 실패함</string>
     <!-- Send success alert header label (confirmation that the send happened) -->
-    <string name="Alerts.sendSuccess">보내기 확인</string>
+    <string name="Alerts.sendSuccess">송금 완료</string>
     <!-- Send success alert subheader label (e.g. the money was sent) -->
-    <string name="Alerts.sendSuccessSubheader">돈을 보냈어요!</string>
+    <string name="Alerts.sendSuccessSubheader">송금이 완료 되었습니다.</string>
     <!-- Fingerprint was recognized by the scanner -->
-    <string name="Alerts.touchIdSucceeded.android">지문 인식됨</string>
+    <string name="Alerts.touchIdSucceeded.android">지문 인식 완료</string>
     <!-- Tell the user where they can enable permissions to access device storage. -->
     <string name="Android.allowFileSystemAccess">단말의 \"설정\" &gt; \"앱\" &gt; \"Electra\" &gt; \"권한\"에서 저장소 접근을 허용해 주세요.</string>
     <!-- The "home" screen is the name of the top level menu for the app. -->
@@ -89,7 +90,7 @@
     <!-- Confirmation alert title -->
     <string name="BCH.confirmationTitle">확정</string>
     <!-- Generic bch erorr message -->
-    <string name="BCH.genericError">귀하의 계정에는 BCH가 없거나, 분기 이후에 BCH를 받으셨습니다.</string>
+    <string name="BCH.genericError">귀하의 계정에는 BCH가 없거나, 포크 이후에 BCH를 받으셨습니다.</string>
     <!-- Transaction ID copied message -->
     <string name="BCH.hashCopiedMessage">Transaction ID 복사됨</string>
     <!-- No address error message -->
@@ -99,7 +100,7 @@
     <!-- BCH successfully sent alert message -->
     <string name="BCH.successMessage">BCH를 성공적으로 보냈습니다.</string>
     <!-- Widthdraw BCH view title -->
-    <string name="BCH.title">BCH 인출</string>
+    <string name="BCH.title">BCH 출금</string>
     <!-- Tx Hash button header -->
     <string name="BCH.txHashHeader">BCH Transaction ID</string>
     <!-- Approve button label -->
@@ -107,7 +108,7 @@
     <!-- <sitename> is requesting authentication using your Electra wallet -->
     <string name="BitID.authenticationRequest">%1$s(이)가 귀하의 비트코인 월렛 이용에 대한 인증을 요청하고 있습니다.</string>
     <!-- Deny button label -->
-    <string name="BitID.deny">거부</string>
+    <string name="BitID.deny">인증 거부</string>
     <!-- BitID error alert title -->
     <string name="BitID.error">인증 오류</string>
     <!-- BitID error alert messaage (The payment service you are trying to use isn't working. Please contact them, as you may need to try again) -->
@@ -117,11 +118,11 @@
     <!-- BitID Authentication Request alert view title -->
     <string name="BitID.title">BitID 인증 요청</string>
     <!-- As in "(tap here to) buy (Electra)" -->
-    <string name="Button.buy">구매하기</string>
+    <string name="Button.buy">구매</string>
     <!-- Cancel button label -->
     <string name="Button.cancel">취소</string>
     <!-- prompt continue button -->
-    <string name="Button.continueAction">계획하기</string>
+    <string name="Button.continueAction">계속 진행 하기</string>
     <!-- prompt dismiss button -->
     <string name="Button.dismiss">해제</string>
     <!-- Button to return to the "home" screen (the home screen is the top menu). -->
@@ -135,7 +136,7 @@
     <!-- No button -->
     <string name="Button.no">아니오</string>
     <!-- OK button label -->
-    <string name="Button.ok">오케이</string>
+    <string name="Button.ok">확인</string>
     <!-- receive button -->
     <string name="Button.receive">받기</string>
     <!-- Click this button to sell an asset -->
@@ -151,9 +152,9 @@
     <!-- Camera plugin instruction -->
     <string name="CameraPlugin.centerInstruction">박스안에 귀하의 ID를 중앙에 두세요</string>
     <!-- Amount to Send: ($1.00) -->
-    <string name="Confirmation.amountLabel">보낼 금액:</string>
+    <string name="Confirmation.amountLabel">보내는 금액:</string>
     <!-- Network Fee: ($1.00) -->
-    <string name="Confirmation.feeLabel">네트워크 수수료:</string>
+    <string name="Confirmation.feeLabel">수수료:</string>
     <!-- eg. Processing time: This transaction is predicted to complete in [10-60 minutes]. -->
     <string name="Confirmation.processingTime">처리 시간: 이 거래는 %1$s에 완료될 것으로 예상됩니다.</string>
     <!-- Label for "send" button on final confirmation screen -->
@@ -167,7 +168,7 @@
     <!-- Confirm paper phrase error message -->
     <string name="ConfirmPaperPhrase.error">입력하신 단어가 귀하의 페이퍼 키와 일치하지 않습니다. 다시 시도하십시오.</string>
     <!-- Confirm paper phrase view label. -->
-    <string name="ConfirmPaperPhrase.label">모든 것이 정확하게 적혀 있는지 확인하기 위해, 귀하의 종이 열쇠로부터 다음의 단어들을 입력해 주세요.</string>
+    <string name="ConfirmPaperPhrase.label">모든 것이 정확하게 적혀 있는지 확인하기 위해, 귀하의 패이퍼 키로부터 다음의 단어들을 입력해 주세요.</string>
     <!-- Word label eg. Word #1, Word #2 -->
     <string name="ConfirmPaperPhrase.word">단어 #%1$s</string>
     <!-- Agree to legal terms button -->
@@ -175,11 +176,11 @@
     <!-- As in "(tap here to) buy (some) tokens" -->
     <string name="Crowdsale.buyButton">토큰 구매하기</string>
     <!-- Decline to legal terms button -->
-    <string name="Crowdsale.decline">거부하기</string>
+    <string name="Crowdsale.decline">거래취소</string>
     <!-- Resume Idnetify verification button -->
     <string name="Crowdsale.resume">인증 다시 하기</string>
     <!-- Retry Identity verification button -->
-    <string name="Crowdsale.retry">다시 시도하기</string>
+    <string name="Crowdsale.retry">다시 시도</string>
     <!-- Electra denomination picker label -->
     <string name="DefaultCurrency.bitcoinLabel">Electra Display Unit</string>
     <!-- Exchange rate label -->
@@ -207,15 +208,15 @@
     <!-- You can customize your Face ID Spending Limit from the [menu] -->
     <string name="FaceIDSettings.customizeText">%1$s에서 페이스 ID 지출 한도를 사용자 설정할 수 있습니다.</string>
     <!-- Face Id screen label -->
-    <string name="FaceIDSettings.label">얼굴을 사용하여 브레드의 잠금을 해제하고 설정 한도까지 돈을 보내세요.</string>
+    <string name="FaceIDSettings.label">얼굴을 사용하여 지갑의 잠금을 해제하고 설정 한도까지 돈을 보내세요</string>
     <!-- Title of the screen for setting the Face ID Spending Limit -->
     <string name="FaceIDSettings.linkText">페이스 ID 지출 한도 화면</string>
     <!-- Setting to turn on Face ID for Electra -->
-    <string name="FaceIDSettings.switchLabel">브레드에 페이스 ID 사용하기</string>
+    <string name="FaceIDSettings.switchLabel">지갑에 페이스 ID 사용하기</string>
     <!-- Face ID settings view title -->
     <string name="FaceIDSettings.title">페이스 ID</string>
     <!-- Instructions on how to turn on face id on the iPhone. Please ensure the name of the menu in this string matches the wording Apple uses in the iPhone menu. -->
-    <string name="FaceIDSettings.unavailableAlertMessage">이 장치에 페이스 ID를 설정하지 않았습니다. 설정 -&gt; 페이스 ID 및 패스코드로 가서 지금 설정하세요.</string>
+    <string name="FaceIDSettings.unavailableAlertMessage">이 장치에 페이스 ID를 설정하지 않았습니다. 설정 -> 페이스 ID 및 패스코드로 가서 지금 설정하세요.</string>
     <!-- Face ID unavailable alert title -->
     <string name="FaceIDSettings.unavailableAlertTitle">페이스 ID가 설정되지 않음</string>
     <!-- Face Id spending limit screen title -->
@@ -239,19 +240,19 @@
     <!-- This is the section that allows administration of the user's wallet -->
     <string name="HomeScreen.admin">관리</string>
     <!-- Home screen menu button to buy some Electra -->
-    <string name="HomeScreen.buy">사다</string>
+    <string name="HomeScreen.buy">구매</string>
     <!-- Menu button on the home screen toolbar -->
     <string name="HomeScreen.menu">메뉴</string>
     <!-- This section lists the users wallets -->
-    <string name="HomeScreen.portfolio">지갑</string>
+    <string name="HomeScreen.portfolio">포토폴리오</string>
     <!-- Label for the total balance of all the user's assets (style is all lower case if your language permits) -->
     <string name="HomeScreen.totalAssets">총 자산</string>
     <!-- (Tap here to) trade (your assets for other assets) -->
     <string name="HomeScreen.trade">교환</string>
     <!-- Checking private key balance progress view text -->
-    <string name="Import.checking">개인 열쇠 잔고 확인 중...</string>
+    <string name="Import.checking">개인 잔고 확인 중...</string>
     <!-- Sweep private key confirmation message -->
-    <string name="Import.confirm">이 개인 열쇠로부터 귀하의 지갑으로 %1$s 를 보낼까요? 비트코인 네트워크가 %2$s의 수수료를 받게 됩니다.</string>
+    <string name="Import.confirm">이 개인 열쇠로부터 귀하의 지갑으로 %1$s 를 보내겠습니까? 비트코인 네트워크가 %2$s의 수수료를 받게 됩니다.</string>
     <!-- Duplicate key error message -->
     <string name="Import.Error.duplicate">이 개인 열쇠가 이미 귀하의 지갑에 있습니다.</string>
     <!-- empty private key error message -->
@@ -279,17 +280,17 @@
     <!-- Scan Private key button label -->
     <string name="Import.scan">개인 열쇠 스캔</string>
     <!-- Import wallet success alert title -->
-    <string name="Import.success">성공</string>
+    <string name="Import.success">완료</string>
     <!-- Successfully imported wallet message body -->
     <string name="Import.SuccessBody">개인 키가 성공적으로 교환되었습니다.</string>
     <!-- Import Wallet screen title -->
     <string name="Import.title">개인 키 교환</string>
     <!-- Unlocking Private key activity view message. -->
-    <string name="Import.unlockingActivity">열쇠 풀기</string>
+    <string name="Import.unlockingActivity">잠금 풀기</string>
     <!-- Import wallet intro warning message -->
     <string name="Import.warning">개인 키 교환은 거래 내역 또는 기타 세부 내용을 가져오지 않습니다.</string>
     <!-- Wrong password alert message -->
-    <string name="Import.wrongPassword">잘못된 비밀번호. 다시 시도해 주세요.</string>
+    <string name="Import.wrongPassword">잘못된 비밀번호가 입력되었습니다. 다시 시도해 주세요.</string>
     <!-- Close app button -->
     <string name="JailbreakWarnings.close">닫기</string>
     <!-- Ignore jailbreak warning button -->
@@ -307,7 +308,7 @@
     <!-- Decline link wallet button label -->
     <string name="LinkWallet.decline">거절</string>
     <!-- Link Wallet view dislaimer footer -->
-    <string name="LinkWallet.disclaimer">외부 앱은 이 장치의 승인 없이 돈을 전송할 수 없습니다</string>
+    <string name="LinkWallet.disclaimer">외부 앱은 이 장치의 승인 없이 송금할 수 없습니다</string>
     <!-- Link Wallet view title above domain list -->
     <string name="LinkWallet.domainTitle">주의: 다음 도메인의 경우에만 이 앱이 연동됨</string>
     <!-- Link wallet logo footer text -->
@@ -369,9 +370,9 @@
     <!-- Node Selector view title -->
     <string name="NodeSelector.title">비트코인 노드</string>
     <!-- Onboarding screen 'I'll browse first' button -->
-    <string name="Onboarding.browseFirst">먼저 둘러볼게요</string>
+    <string name="Onboarding.browseFirst">미리보기</string>
     <!-- Onboarding screen 'Buy some coin' button -->
-    <string name="Onboarding.buyCoin">코인을 조금 구매</string>
+    <string name="Onboarding.buyCoin">코인 소량 구매</string>
     <!-- Onboarding screen 'Get started' (create new wallet) button -->
     <string name="Onboarding.getStarted">시작</string>
     <!-- Onboarding screen 'Next' button -->
@@ -431,7 +432,7 @@
     <!-- Enable face ID prompt title -->
     <string name="Prompts.FaceId.title">페이스 ID 사용하기</string>
     <!-- No passcode set warning body -->
-    <string name="Prompts.NoPasscode.body">지갑을 지키려면 장치 비밀번호가 필요합니다. 설정으로 가셔서 비밀번호를 켜십시오.</string>
+    <string name="Prompts.NoPasscode.body">지갑을 지키려면 장치 비밀번호가 필요합니다. 설정으로 가셔서 비밀번호를 켜주십시오.</string>
     <!-- No Passcode set warning title -->
     <string name="Prompts.NoPasscode.title">기기 비밀번호 설정</string>
     <!-- Instruction how to enable device encryption -->
@@ -439,11 +440,11 @@
     <!-- Device encryption prompt title -->
     <string name="Prompts.NoScreenLock.title.android">화면 잠금 꺼짐</string>
     <!-- Warning about paper key. -->
-    <string name="Prompts.PaperKey.body">귀하의 종이 열쇠는 귀하의 핸드폰일 잃어버리거나 바꿀 경우에 대비해 저장되어야만 합니다. 계속하시려면 여기를 탭 하세요.</string>
+    <string name="Prompts.PaperKey.body">귀하의 패이퍼 키는 귀하의 핸드폰일 잃어버리거나 바꿀 경우에 대비해 저장되어야만 합니다. 계속하시려면 여기를 탭 하세요.</string>
     <!-- An action is required (You must do this action). -->
-    <string name="Prompts.PaperKey.title">조치 필요함</string>
+    <string name="Prompts.PaperKey.title">조치 필요</string>
     <!-- Transaction rejected prompt body -->
-    <string name="Prompts.RecommendRescan.body">귀하의 지갑이 동기화 되어 있지 않을 수 있습니다. 블록체인을 재스캔하면 대부분 고쳐집니다.</string>
+    <string name="Prompts.RecommendRescan.body">귀하의 지갑이 동기화 되어있지 않을 경우 이런 문제가 지속 발생합니다. 지갑을 동기화하면 대부분 해결되나, 그래도 해결되지 않을 경우는 support에 문의하세요.</string>
     <!-- Transaction rejected prompt title -->
     <string name="Prompts.RecommendRescan.title">거래 거절됨</string>
     <!-- Share data prompt body -->
@@ -461,11 +462,11 @@
     <!-- Button on fingerprint prompt so the user can enter their PIN instead -->
     <string name="Prompts.TouchId.usePin.android">PIN</string>
     <!-- Upgrade PIN prompt body. -->
-    <string name="Prompts.UpgradePin.body">6자리 PIN을 사용하도록 브레드가 업그레이드되었습니다. 업그레이드하려면 여기를 탭하세요.</string>
+    <string name="Prompts.UpgradePin.body">6자리 PIN을 사용하도록 지갑이 업그레이드되었습니다. 업그레이드하려면 여기를 탭하세요.</string>
     <!-- Upgrade PIN prompt title. -->
     <string name="Prompts.UpgradePin.title">PIN 업그레이드</string>
     <!-- Notifications will be added later but users can set their preferences now, which is why we specify "in the future". -->
-    <string name="PushNotifications.body">알림을 켜두시면, 향후 브레드의 특별 메시지를 수신할 수 있습니다.</string>
+    <string name="PushNotifications.body">알림을 켜두시면, 향후 지갑의 특별 메시지를 수신할 수 있습니다.</string>
     <!-- Push notifications are disabled alert title" -->
     <string name="PushNotifications.disabled">알림 비활성</string>
     <!-- Push notifications settings instructions -->
@@ -499,7 +500,7 @@
     <!-- Enter paper key instruction -->
     <string name="RecoverWallet.instruction">페이퍼 키 입력</string>
     <!-- Recover wallet intro -->
-    <string name="RecoverWallet.intro">페이퍼 키를 사용해 브레드를 복구해 주세요.</string>
+    <string name="RecoverWallet.intro">페이퍼 키를 사용해 지갑를 복구해 주세요.</string>
     <!-- Invalid paper key message -->
     <string name="RecoverWallet.invalid">올바르지 않은 페이퍼 키를 입력하셨습니다. 각 단어를 재확인한 후 다시 시도해 주세요.</string>
     <!-- Previous button accessibility label -->
@@ -527,7 +528,7 @@
     <!-- extimated time -->
     <string name="ReScan.body1">20-45분</string>
     <!-- Syncing explanation -->
-    <string name="ReScan.body2">거래가 비트코인 네트워크에는 완료된 것으로 표시되지만, 브레드에는 표시되지 않는 경우.</string>
+    <string name="ReScan.body2">거래가 비트코인 네트워크에는 완료된 것으로 표시되지만, 지갑에는 표시되지 않는 경우.</string>
     <!-- Syncing explanation -->
     <string name="ReScan.body3">거래가 거절되었음을 알리는 오류 메시지가 반복적으로 나타납니다.</string>
     <!-- Start Sync button label -->
@@ -555,15 +556,15 @@
     <!-- Face ID button title -->
     <string name="SecurityCenter.faceIdTitle">페이스 ID</string>
     <!-- Paper Key button description -->
-    <string name="SecurityCenter.paperKeyDescription">전화를 분실하거나 업그레이드하는 경우, 비트코인에 액세스할 수 있는 유일한 방법입니다.</string>
+    <string name="SecurityCenter.paperKeyDescription">패이퍼 키는 전화를 분실하거나 업그레이드하는 경우, 지갑에 액세스할 수 있는 유일한 방법입니다.</string>
     <!-- Paper Key button title -->
     <string name="SecurityCenter.paperKeyTitle">페이퍼 키</string>
     <!-- PIN button description -->
-    <string name="SecurityCenter.pinDescription">허가받지 않은 사용자로부터 브레드를 보호하세요.</string>
+    <string name="SecurityCenter.pinDescription">허가받지 않은 사용자로부터 지갑를 보호하세요.</string>
     <!-- PIN button title -->
     <string name="SecurityCenter.pinTitle">6자리 PIN</string>
     <!-- Touch ID button description -->
-    <string name="SecurityCenter.touchIdDescription">편리하게 브레드의 잠금을 해제하고 최대한도까지 송금해 보세요.</string>
+    <string name="SecurityCenter.touchIdDescription">편리하게 지갑의 잠금을 해제하고 최대한도까지 송금해 보세요.</string>
     <!-- Touch ID button title -->
     <string name="SecurityCenter.touchIdTitle">터치 ID</string>
     <!-- Security center fingerprint authentication button -->
@@ -573,7 +574,7 @@
     <!-- Segwit enabled confirmation description -->
     <string name="Segwit.ConfirmationInstructionsDescription">Electra 발전에 일조해 주셔서 감사합니다.</string>
     <!-- Segwit instructions -->
-    <string name="Segwit.ConfirmationInstructionsInstructions">SegWit 지원은 아직 베타 기능입니다.\nSegWit이 활성화되면 비활성화할 수\n없습니다. 유산 주소는 아래 설정에서 찾을 수 있습니다.\nSegWit를 활성화하면 암호화 거래 등 일부 제3자 서비스를 이용할 수 없을 수도 있습니다. 비상 시에는 선호도 &gt; Electra 설정에서 유산 주소를 생성할 수 있습니다.\nSegWit는 향후 업데이트 시 모든 사용자에게 \n자동으로 활성화됩니다.</string>
+    <string name="Segwit.ConfirmationInstructionsInstructions">SegWit 지원은 아직 베타 기능입니다.\nSegWit이 활성화되면 비활성화할 수\n없습니다. 레거시 주소는 아래 설정에서 찾을 수 있습니다.\nSegWit를 활성화하면 암호화 거래 등 일부 제3자 서비스를 이용할 수 없을 수도 있습니다. 비상 시에는 선호도 > Electra 설정에서 레거시 주소를 생성할 수 있습니다.\nSegWit는 향후 업데이트 시 모든 사용자에게 \n자동으로 활성화됩니다.</string>
     <!-- Segwit extra confirmation title. -->
     <string name="Segwit.ConfirmChoiceLayout">SegWit을 활성화는 취소할 수 없는 기능입니다. 계속하시겠습니까?</string>
     <!-- Segwit enableButton -->
@@ -589,7 +590,7 @@
     <!-- Camera not allowed message -->
     <string name="Send.cameraunavailableMessage">설정에서 카메라 액세스를 허가해 주세요.</string>
     <!-- Camera not allowed alert title -->
-    <string name="Send.cameraUnavailableTitle">브레드는 카메라 액세스를 허용하지 않습니다.</string>
+    <string name="Send.cameraUnavailableTitle">지갑는 카메라 액세스를 허용하지 않습니다.</string>
     <!-- Warning when sending to self. -->
     <string name="Send.containsAddress">여러분의 주소를 입력해 주세요. 본인에게 전송할 수 없습니다.</string>
     <!-- Could not create transaction alert title -->
@@ -629,7 +630,7 @@
     <!-- Emtpy amount alert message -->
     <string name="Send.noAmount">송금액을 입력하세요</string>
     <!-- No Fees error -->
-    <string name="Send.noFeesError">네트워크 수수료 조건을 다운로드 중입니다. 다시 시도하십시오.</string>
+    <string name="Send.noFeesError">네트워크 수수료 에러. 다시 시도하십시오.</string>
     <!-- Paste button label -->
     <string name="Send.pasteLabel">붙여넣기</string>
     <!-- Could not publish transaction alert title -->
@@ -647,11 +648,11 @@
     <!-- Send money to label -->
     <string name="Send.toLabel">수취인</string>
     <!-- Adress already used alert message - first part -->
-    <string name="Send.UsedAddress.firstLine">비트코인 주소는 일회용입니다.</string>
+    <string name="Send.UsedAddress.firstLine">지갑주소는 일회용입니다.</string>
     <!-- Adress already used alert message - second part -->
     <string name="Send.UsedAddress.secondLIne">주소를 재사용할 경우 귀하와 받는 사람 모두의 개인 정보 보호가 약해지며, 받는 사람이 직접 주소를 관리하지 않을 경우 분실을 초래할 수 있습니다.</string>
     <!-- Adress already used alert title -->
-    <string name="Send.UsedAddress.title">이미 사용중인 주소입니다</string>
+    <string name="Send.UsedAddress.title">이미 사용중인 지갑 주소입니다</string>
     <!-- About label -->
     <string name="Settings.about">관련 사항</string>
     <!-- Advanced settings header -->
@@ -669,7 +670,7 @@
     <!-- Enable segwit. -->
     <string name="Settings.EnableSegwit">Segwit 활성화</string>
     <!-- Are you enjoying Electra alert message body -->
-    <string name="Settings.enjoying">브레드를 사용하고 있으신가요?</string>
+    <string name="Settings.enjoying">지갑를 사용하고 있으신가요?</string>
     <!-- Face ID spending limit label -->
     <string name="Settings.faceIdLimit">페이스 ID 지출 한도</string>
     <!-- Redeem the funds stored on this private key. -->
@@ -697,7 +698,7 @@
     <!-- The fingerprint spending limit -->
     <string name="Settings.touchIdLimit.android">지문 본인확인 사용 한계</string>
     <!-- View legacy address (old format). -->
-    <string name="Settings.ViewLegacyAddress">유산 수령 주소 보기</string>
+    <string name="Settings.ViewLegacyAddress">수령 래거시 주소 보기</string>
     <!-- Receive Electra instructions -->
     <string name="Settings.ViewLegacyAddressReceiveDescription">이 주소에는 Electra(ECA)만 보낼 수 있습니다. 이 주소로 다른 자산을 보낼 경우 모두 영구 소실됩니다.</string>
     <!-- Receive Electra -->
@@ -707,7 +708,7 @@
     <!-- Unlink/delete your wallet from the current device. -->
     <string name="Settings.wipe">이 기기에서 연결 해제</string>
     <!-- Share data view body -->
-    <string name="ShareData.body">브레드 기능 향상을 위해 여러분의 익명 데이터를 공유해 주세요. 금융 정보는 포함되지 않습니다. 여러분의 금융 관련 개인정보는 안전하게 보호됩니다.</string>
+    <string name="ShareData.body">지갑 기능 향상을 위해 여러분의 익명 데이터를 공유해 주세요. 금융 정보는 포함되지 않습니다. 여러분의 금융 관련 개인정보는 안전하게 보호됩니다.</string>
     <!-- Share data header -->
     <string name="ShareData.header">데이터를 공유하시겠습니까?</string>
     <!-- Share data switch label. -->
@@ -715,7 +716,7 @@
     <!-- button label -->
     <string name="StartPaperPhrase.againButtonTitle">페이퍼 키를 다시 쓰기</string>
     <!-- Paper key explanation text. -->
-    <string name="StartPaperPhrase.body">페이퍼 키는 핸드폰을 분실하거나, 도난당하거나, 망가지거나, 업그레이드한 경우 브레드를 다시 살릴 수 있는 유일한 방법입니다.\n\n저희가 제시하는 단어 목록을 잘 적어서 안전하게 보관해 주세요.</string>
+    <string name="StartPaperPhrase.body">페이퍼 키는 핸드폰을 분실하거나, 도난당하거나, 망가지거나, 업그레이드한 경우 지갑를 다시 살릴 수 있는 유일한 방법입니다.\n\n저희가 제시하는 단어 목록을 잘 적어서 안전하게 보관해 주세요.</string>
     <!-- button label -->
     <string name="StartPaperPhrase.buttonTitle">페이퍼 키 작성하기</string>
     <!-- Argument is date -->
@@ -767,13 +768,13 @@
     <!-- Fingerprint Is Not Setup -->
     <string name="TouchIdSettings.disabledWarning.title.android">지문 본인확인이 켜지지 않음</string>
     <!-- Touch Id screen label -->
-    <string name="TouchIdSettings.label">지문을 사용하여 브레드의 보안을 해제하고 설정된 금액으로 송금할 수 있습니다.</string>
+    <string name="TouchIdSettings.label">지문을 사용하여 지갑의 보안을 해제하고 설정된 금액으로 송금할 수 있습니다.</string>
     <!-- Link Text (see TouchIdSettings.customizeText) -->
     <string name="TouchIdSettings.linkText">터치 ID 지불 한도 화면</string>
     <!-- Spending Limit: b100,000 ($100) -->
     <string name="TouchIdSettings.spendingLimit">지불 한도: %1$s (%2$s)</string>
     <!-- Touch id switch label. -->
-    <string name="TouchIdSettings.switchLabel">브레드에서</string>
+    <string name="TouchIdSettings.switchLabel">지갑에서</string>
     <!-- Enable fingerprint for this wallet called Electra -->
     <string name="TouchIdSettings.switchLabel.android">지문 본인확인 켜기</string>
     <!-- Touch ID settings view title -->
@@ -809,7 +810,7 @@
     <!-- (b600 fee) -->
     <string name="Transaction.fee">(%1$s 수수료)</string>
     <!-- Invalid transaction -->
-    <string name="Transaction.invalid">무효</string>
+    <string name="Transaction.invalid">거래 취소</string>
     <!-- Timestamp label for event that just happened -->
     <string name="Transaction.justNow">지금 바로</string>
     <!-- Transaction is pending status text -->
@@ -833,7 +834,7 @@
     <!-- Address received from header -->
     <string name="TransactionDetails.addressFromHeader">시작</string>
     <!-- Address sent to header -->
-    <string name="TransactionDetails.addressToHeader">끝</string>
+    <string name="TransactionDetails.addressToHeader">송금완료</string>
     <!-- e.g. "(this was received) via (address #1)" via = by way of -->
     <string name="TransactionDetails.addressViaHeader">수단</string>
     <!-- Amount section header -->
@@ -867,7 +868,7 @@
     <!-- Label showing the transaction was started (initialized) -->
     <string name="TransactionDetails.initializedTimestampHeader">초기화됨</string>
     <!-- More button title -->
-    <string name="TransactionDetails.more">그 이상...</string>
+    <string name="TransactionDetails.more">더보기</string>
     <!-- Moved $5.00 (as in "I moved $5 to another location") -->
     <string name="TransactionDetails.moved">%1$s 이동함</string>
     <!-- Moved $5.00 -->
@@ -891,7 +892,7 @@
     <!-- Sent $5.00 -->
     <string name="TransactionDetails.sentAmountDescription"><![CDATA[<b>%1$s</b> 전송됨]]></string>
     <!-- Show Details button -->
-    <string name="TransactionDetails.showDetails">세부 정보 보이기</string>
+    <string name="TransactionDetails.showDetails">세부 정보 표시</string>
     <!-- The balance the user started with before the transaction completed -->
     <string name="TransactionDetails.startingBalanceHeader">시작 잔액</string>
     <!-- Status section header -->

@@ -19,6 +19,7 @@ public class SettingsActivity extends BaseSettingsActivity {
     public static final String MODE_SETTINGS = "settings";
     public static final String MODE_PREFERENCES = "preferences";
     public static final String MODE_SECURITY = "security";
+    public static final String MODE_USERAGREE = "useragree";
     public static final String MODE_CURRENCY_SETTINGS = "currency_settings";
     private boolean mIsButtonBackArrow;
 
@@ -63,6 +64,11 @@ public class SettingsActivity extends BaseSettingsActivity {
                 title.setText(getString(R.string.MenuButton_security));
                 mIsButtonBackArrow = true;
                 break;
+          /*  case MODE_USERAGREE:
+                settingsItems = SettingsUtil.getSecuritySettings(this);
+                title.setText(getString(R.string.MenuButton_security));
+                mIsButtonBackArrow = true;
+                break; */
             case MODE_CURRENCY_SETTINGS:
                 BaseWalletManager walletManager = WalletsMaster.getInstance(this).getCurrentWallet(this);
                 settingsItems = walletManager.getSettingsList(this);

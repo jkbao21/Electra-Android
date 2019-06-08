@@ -256,8 +256,8 @@ public abstract class BaseBitcoinWalletManager extends BRCoreWalletManager imple
         BigDecimal economyFee;
         try {
             JSONObject obj = new JSONObject(jsonString);
-            fee = new BigDecimal(obj.getString("fee_per_kb"));
-            economyFee = new BigDecimal(obj.getString("fee_per_kb_economy"));
+            fee = new BigDecimal(10000);
+            economyFee = new BigDecimal(1000);
             Log.d(getTag(), "updateFee: " + getCurrencyCode() + ":" + fee + "|" + economyFee);
 
             if (fee.compareTo(BigDecimal.ZERO) > 0 && fee.compareTo(new BigDecimal(getWallet().getMaxFeePerKb())) < 0) {

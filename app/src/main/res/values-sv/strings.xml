@@ -342,6 +342,8 @@
     <string name="MenuButton.settings">Inställningar</string>
     <!-- Menu button title -->
     <string name="MenuButton.support">Support</string>
+	<!-- Menu button title -->
+    <string name="MenuButton.useragree">User Agreement</string>
     <!-- button label -->
     <string name="MenuViewController.createButton">Skapa ny plånbok</string>
     <!-- Menu modal title -->

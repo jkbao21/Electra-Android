@@ -342,6 +342,8 @@
     <string name="MenuButton.settings">Impostazioni</string>
     <!-- Menu button title -->
     <string name="MenuButton.support">Assistenza</string>
+	<!-- Menu button title -->
+    <string name="MenuButton.useragree">termini di servizio</string>
     <!-- button label -->
     <string name="MenuViewController.createButton">Crea Nuovo Portafoglio</string>
     <!-- Menu modal title -->

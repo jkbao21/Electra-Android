@@ -17,7 +17,7 @@
     <dimen name="faq_dimen">24dp</dimen>
     <dimen name="close_dimen">24dp</dimen>
     <dimen name="radius">4dp</dimen>
-    <dimen name="paragraph">14sp</dimen>
+    <dimen name="paragraph">12sp</dimen>
     <dimen name="header">18sp</dimen>
     <dimen name="sub_header">16sp</dimen>
     <dimen name="animation_long">2000</dimen>

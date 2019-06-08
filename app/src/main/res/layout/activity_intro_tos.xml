@@ -38,6 +38,7 @@
         android:layout_marginBottom="15dp"
         android:lineSpacingMultiplier="1.3"
         android:text="@string/Intro.Tos.Body"
+        android:textAlignment="center"
         android:scrollbars="vertical"
         android:textSize="18sp" />
 
@@ -45,6 +46,7 @@
         android:id="@+id/introagree"
         android:layout_width="100dp"
         android:layout_height="@dimen/button_height"
+        android:layout_alignEnd="@id/gradient_layout"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="@dimen/bread_margin"
         android:layout_marginEnd="@dimen/bread_margin"
@@ -61,7 +63,6 @@
         android:id="@+id/introdecline"
         android:layout_width="100dp"
         android:layout_height="@dimen/button_height"
-        android:layout_alignEnd="@id/gradient_layout"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="@dimen/bread_margin"
         android:layout_marginEnd="@dimen/bread_margin"

@@ -6,10 +6,13 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
+import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
+import android.text.method.ScrollingMovementMethod;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 import com.breadwallet.BreadApp;
@@ -17,6 +20,7 @@ import com.breadwallet.BuildConfig;
 import com.breadwallet.R;
 import com.breadwallet.presenter.activities.InputPinActivity;
 import com.breadwallet.presenter.activities.ManageWalletsActivity;
+import com.breadwallet.presenter.activities.intro.IntroTos;
 import com.breadwallet.presenter.activities.intro.OnBoardingActivity;
 import com.breadwallet.presenter.activities.intro.WriteDownActivity;
 import com.breadwallet.presenter.activities.settings.AboutActivity;
@@ -29,8 +33,10 @@ import com.breadwallet.presenter.activities.settings.SettingsActivity;
 import com.breadwallet.presenter.activities.settings.ShareDataActivity;
 import com.breadwallet.presenter.activities.settings.SpendLimitActivity;
 import com.breadwallet.presenter.activities.settings.SyncBlockchainActivity;
+import com.breadwallet.presenter.activities.settings.TOS;
 import com.breadwallet.presenter.activities.settings.UnlinkActivity;
 import com.breadwallet.presenter.customviews.BRToast;
+import com.breadwallet.presenter.customviews.BaseTextView;
 import com.breadwallet.presenter.entities.BRSettingsItem;
 import com.breadwallet.presenter.interfaces.BRAuthCompletion;
 import com.breadwallet.tools.animation.UiUtils;
@@ -116,6 +122,17 @@ public final class SettingsUtil {
                 activity.overridePendingTransition(R.anim.enter_from_right, R.anim.exit_to_left);
             }
         }, false, R.drawable.ic_security_settings));
+
+        settingsItems.add(new BRSettingsItem(activity.getString(R.string.MenuButton_useragree), "", new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(activity, TOS.class);
+                //intent.putExtra(SettingsActivity.EXTRA_MODE, SettingsActivity.MODE_USERAGREE);
+                activity.startActivity(intent);
+                activity.overridePendingTransition(R.anim.enter_from_right, R.anim.exit_to_left);
+            }
+        }, false, R.drawable.ic_pen));
+
         settingsItems.add(new BRSettingsItem(activity.getString(R.string.About_title), "", new View.OnClickListener() {
             @Override
             public void onClick(View view) {

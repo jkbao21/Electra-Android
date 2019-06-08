@@ -181,6 +181,10 @@
             android:launchMode="singleTask"
             android:screenOrientation="portrait" />
         <activity
+            android:name=".presenter.activities.settings.TOS"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
             android:name=".presenter.activities.settings.NodesActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait" />

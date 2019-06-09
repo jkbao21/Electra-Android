@@ -968,7 +968,7 @@ public abstract class BaseBitcoinWalletManager extends BRCoreWalletManager imple
     public void onTxAdded(BRCoreTransaction transaction) {
         super.onTxAdded(transaction);
         final Context ctx = ElectraApp.getBreadContext();
-        final WalletsMaster ElectraApp = WalletsMaster.getInstance(ctx);
+        final WalletsMaster master = WalletsMaster.getInstance(ctx);
 
         TxMetaData metaData = KVStoreManager.createMetadata(ctx, this, new CryptoTransaction(transaction));
         KVStoreManager.putTxMetaData(ctx, metaData, transaction.getHash());

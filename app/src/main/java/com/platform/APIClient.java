@@ -10,22 +10,22 @@ import android.os.NetworkOnMainThreadException;
 import android.support.annotation.NonNull;
 import android.util.Log;
 
-import com.breadwallet.BreadApp;
-import com.breadwallet.BuildConfig;
-import com.breadwallet.core.BRCoreKey;
-import com.breadwallet.tools.animation.UiUtils;
-import com.breadwallet.tools.crypto.Base58;
-import com.breadwallet.tools.manager.BRReportsManager;
-import com.breadwallet.tools.manager.BRSharedPrefs;
-import com.breadwallet.tools.crypto.CryptoHelper;
-import com.breadwallet.tools.security.BRKeyStore;
-import com.breadwallet.tools.threads.executor.BRExecutor;
-import com.breadwallet.tools.util.BRCompressor;
-import com.breadwallet.tools.util.BRConstants;
-import com.breadwallet.tools.util.ServerBundlesHelper;
-import com.breadwallet.tools.util.Utils;
-import com.breadwallet.wallet.WalletsMaster;
-import com.breadwallet.wallet.abstracts.BaseWalletManager;
+import com.electraproject.ElectraApp;
+import com.electraproject.BuildConfig;
+import com.electraproject.core.BRCoreKey;
+import com.electraproject.tools.animation.UiUtils;
+import com.electraproject.tools.crypto.Base58;
+import com.electraproject.tools.manager.BRReportsManager;
+import com.electraproject.tools.manager.BRSharedPrefs;
+import com.electraproject.tools.crypto.CryptoHelper;
+import com.electraproject.tools.security.BRKeyStore;
+import com.electraproject.tools.threads.executor.BRExecutor;
+import com.electraproject.tools.util.BRCompressor;
+import com.electraproject.tools.util.BRConstants;
+import com.electraproject.tools.util.ServerBundlesHelper;
+import com.electraproject.tools.util.Utils;
+import com.electraproject.wallet.WalletsMaster;
+import com.electraproject.wallet.abstracts.BaseWalletManager;
 import com.platform.kvstore.RemoteKVStore;
 import com.platform.kvstore.ReplicatedKVStore;
 import com.platform.tools.TokenHolder;
@@ -70,7 +70,7 @@ import okhttp3.ResponseBody;
 import okio.Buffer;
 import okio.BufferedSink;
 
-import static com.breadwallet.tools.util.BRConstants.*;
+import static com.electraproject.tools.util.BRConstants.*;
 
 
 /**
@@ -115,7 +115,7 @@ public class APIClient {
     private static final String DEVICE_ID = "deviceID";
 
     // convenience getter for the API endpoint
-    private static final String BASE_URL = HTTPS_SCHEME + BreadApp.getHost();
+    private static final String BASE_URL = HTTPS_SCHEME + ElectraApp.getHost();
     //Fee per kb url
     private static final String FEE_PER_KB_URL = "/v1/fee-per-kb";
     //token path
@@ -241,7 +241,7 @@ public class APIClient {
             throw new NetworkOnMainThreadException();
         }
         if (mContext == null) {
-            mContext = BreadApp.getBreadContext();
+            mContext = ElectraApp.getBreadContext();
         }
         if (mContext == null) {
             return null;
@@ -266,7 +266,7 @@ public class APIClient {
             throw new NetworkOnMainThreadException();
         }
         if (mContext == null) {
-            mContext = BreadApp.getBreadContext();
+            mContext = ElectraApp.getBreadContext();
         }
         if (mContext == null) {
             return null;
@@ -350,7 +350,7 @@ public class APIClient {
 
         //Add wallet rewards Id for signed requests
         if (withAuth) {
-            String walletId = BRSharedPrefs.getWalletRewardId(BreadApp.getBreadContext());
+            String walletId = BRSharedPrefs.getWalletRewardId(ElectraApp.getBreadContext());
             if (!Utils.isNullOrEmpty(walletId)) {
                 try {
                     newBuilder.addHeader(HEADER_WALLET_ID, walletId);
@@ -442,7 +442,7 @@ public class APIClient {
                 if (newUri == null) {
                     Log.e(TAG, "sendRequest: redirect uri is null");
                     return createBrResponse(response);
-                } else if (!BuildConfig.DEBUG && (!newUri.getHost().equalsIgnoreCase(BreadApp.getHost())
+                } else if (!BuildConfig.DEBUG && (!newUri.getHost().equalsIgnoreCase(ElectraApp.getHost())
                         || !newUri.getScheme().equalsIgnoreCase(PROTO))) {
                     Log.e(TAG, "sendRequest: WARNING: redirect is NOT safe: " + newLocation);
                     return createBrResponse(new Response.Builder().code(HttpStatus.INTERNAL_SERVER_ERROR_500).request(request)
@@ -728,7 +728,7 @@ public class APIClient {
 
     // TODO: Move to ServerBundlesHelper DROID-1133
     public boolean tryExtractTar(String bundleName) {
-        Context app = BreadApp.getBreadContext();
+        Context app = ElectraApp.getBreadContext();
         if (app == null) {
             Log.e(TAG, "tryExtractTar: failed to extract, app is null");
             return false;
@@ -1087,7 +1087,7 @@ public class APIClient {
     public static String getBaseURL() {
         if (BuildConfig.DEBUG) {
             // In the debug case, the user may have changed the host.
-            return HTTPS_SCHEME + BreadApp.getHost();
+            return HTTPS_SCHEME + ElectraApp.getHost();
         }
         return BASE_URL;
     }

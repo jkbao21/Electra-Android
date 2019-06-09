@@ -25,7 +25,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <com.breadwallet.presenter.customviews.BaseTextView
+        <com.electraproject.presenter.customviews.BaseTextView
             android:id="@+id/prompt_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -36,7 +36,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <com.breadwallet.presenter.customviews.BaseTextView
+        <com.electraproject.presenter.customviews.BaseTextView
             android:id="@+id/prompt_description"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -49,7 +49,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/prompt_title" />
 
-        <com.breadwallet.presenter.customviews.BaseTextView
+        <com.electraproject.presenter.customviews.BaseTextView
             android:id="@+id/prompt_confirmation"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -64,7 +64,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/email_edit" />
 
-        <com.breadwallet.presenter.customviews.BRButton
+        <com.electraproject.presenter.customviews.BRButton
             android:id="@+id/submit_button"
             android:layout_width="wrap_content"
             android:layout_height="60dp"
@@ -85,7 +85,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/prompt_description" />
 
-        <com.breadwallet.presenter.customviews.BREdit
+        <com.electraproject.presenter.customviews.BREdit
             android:id="@+id/email_edit"
             android:layout_width="0dp"
             android:layout_height="0dp"

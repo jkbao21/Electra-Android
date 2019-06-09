@@ -9,7 +9,7 @@
     android:background="@drawable/tx_frame">
 
 
-    <com.breadwallet.presenter.customviews.BaseTextView
+    <com.electraproject.presenter.customviews.BaseTextView
         android:id="@+id/tx_date"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -22,7 +22,7 @@
         app:brdFont="@string/Font.CircularPro_Bold" />
 
 
-    <com.breadwallet.presenter.customviews.BaseTextView
+    <com.electraproject.presenter.customviews.BaseTextView
         android:id="@+id/tx_description"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -36,7 +36,7 @@
         android:textColor="@color/primary_background"
         android:textSize="12sp"/>
 
-    <com.breadwallet.presenter.customviews.BaseTextView
+    <com.electraproject.presenter.customviews.BaseTextView
         android:id="@+id/tx_amount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

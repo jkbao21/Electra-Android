@@ -4,21 +4,21 @@ import android.app.Activity;
 import android.content.Context;
 import android.util.Log;
 
-import com.breadwallet.BreadApp;
-import com.breadwallet.presenter.entities.CryptoRequest;
-import com.breadwallet.presenter.interfaces.BRAuthCompletion;
-import com.breadwallet.tools.animation.BRDialog;
-import com.breadwallet.tools.util.EventUtils;
-import com.breadwallet.tools.manager.BRReportsManager;
-import com.breadwallet.tools.manager.BRSharedPrefs;
-import com.breadwallet.tools.manager.SendManager;
-import com.breadwallet.tools.security.AuthManager;
-import com.breadwallet.tools.threads.executor.BRExecutor;
-import com.breadwallet.tools.util.BRConstants;
-import com.breadwallet.tools.util.Utils;
-import com.breadwallet.wallet.WalletsMaster;
-import com.breadwallet.wallet.abstracts.BaseWalletManager;
-import com.breadwallet.wallet.wallets.bitcoin.WalletBitcoinManager;
+import com.electraproject.ElectraApp;
+import com.electraproject.presenter.entities.CryptoRequest;
+import com.electraproject.presenter.interfaces.BRAuthCompletion;
+import com.electraproject.tools.animation.BRDialog;
+import com.electraproject.tools.util.EventUtils;
+import com.electraproject.tools.manager.BRReportsManager;
+import com.electraproject.tools.manager.BRSharedPrefs;
+import com.electraproject.tools.manager.SendManager;
+import com.electraproject.tools.security.AuthManager;
+import com.electraproject.tools.threads.executor.BRExecutor;
+import com.electraproject.tools.util.BRConstants;
+import com.electraproject.tools.util.Utils;
+import com.electraproject.wallet.WalletsMaster;
+import com.electraproject.wallet.abstracts.BaseWalletManager;
+import com.electraproject.wallet.wallets.bitcoin.WalletBitcoinManager;
 import com.platform.APIClient;
 import com.platform.BRHTTPHelper;
 import com.platform.interfaces.Plugin;
@@ -118,7 +118,7 @@ public class WalletPlugin implements Plugin {
         if (!target.startsWith(PATH_BASE)) {
             return false;
         }
-        Activity context = (Activity) BreadApp.getBreadContext();
+        Activity context = (Activity) ElectraApp.getBreadContext();
 
         if (target.startsWith(PATH_BASE + PATH_INFO) && request.getMethod().equalsIgnoreCase(GET.asString())) {
             Log.i(TAG, "handling: " + target + " " + baseRequest.getMethod());

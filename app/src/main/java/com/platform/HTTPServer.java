@@ -6,11 +6,11 @@ import android.content.Intent;
 import android.net.Uri;
 import android.util.Log;
 
-import com.breadwallet.BreadApp;
-import com.breadwallet.tools.manager.BRSharedPrefs;
-import com.breadwallet.tools.threads.executor.BRExecutor;
-import com.breadwallet.tools.util.BRConstants;
-import com.breadwallet.tools.util.Utils;
+import com.electraproject.ElectraApp;
+import com.electraproject.tools.manager.BRSharedPrefs;
+import com.electraproject.tools.threads.executor.BRExecutor;
+import com.electraproject.tools.util.BRConstants;
+import com.electraproject.tools.util.Utils;
 import com.crashlytics.android.Crashlytics;
 import com.platform.interfaces.Middleware;
 import com.platform.interfaces.Plugin;
@@ -247,7 +247,7 @@ public class HTTPServer extends AbstractLifeCycle {
 
     private static boolean dispatch(String target, Request baseRequest, HttpServletRequest request, HttpServletResponse response) {
         Log.d(TAG, "TRYING TO HANDLE: " + target + " (" + request.getMethod() + ")");
-        final Context app = BreadApp.getBreadContext();
+        final Context app = ElectraApp.getBreadContext();
         boolean result = false;
         if (target.equalsIgnoreCase(BRConstants.CLOSE)) {
             if (app != null) {

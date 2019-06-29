@@ -141,7 +141,7 @@
     <!-- Click this button to sell an asset -->
     <string name="Button.sell">Vendre</string>
     <!-- send button -->
-    <string name="Button.send">envoyer</string>
+    <string name="Button.send">Envoyer</string>
     <!-- Settings button label -->
     <string name="Button.settings">Paramètres</string>
     <!-- Settings button label -->
@@ -737,7 +737,7 @@
     <!-- Retry button label -->
     <string name="SyncingView.retry">Réessayer</string>
     <!-- "eg. Synced through <Jan 12, 2015> -->
-    <string name="SyncingView.syncedThrough">Synchronisé jusqu\'à %1$s</string>
+    <string name="SyncingView.syncedThrough">Synchronisé jusqu\'au %1$s</string>
     <!-- Syncing view syncing state header text -->
     <string name="SyncingView.syncing"> </string>
     <!-- 6 d (6 days) -->
@@ -797,15 +797,15 @@
     <!-- Availability status text -->
     <string name="Transaction.available">Disponible pour dépenser</string>
     <!-- Transaction complete label -->
-    <string name="Transaction.complete">Terminer</string>
+    <string name="Transaction.complete">Terminé</string>
     <!-- Transaction is confirming status text -->
     <string name="Transaction.confirming">En cours</string>
     <!-- eg. Ending balance: $50.00 -->
     <string name="Transaction.ending">Solde final : %1$s</string>
     <!-- Exchange rate on date header -->
-    <string name="Transaction.exchangeOnDayReceived">Taux de change au moment de la réception :</string>
+    <string name="Transaction.exchangeOnDayReceived">Taux de change à la réception :</string>
     <!-- Exchange rate on date header -->
-    <string name="Transaction.exchangeOnDaySent">Taux de change au moment de l\'envoi :</string>
+    <string name="Transaction.exchangeOnDaySent">Taux de change à l\'envoi :</string>
     <!-- Transaction failed status text -->
     <string name="Transaction.failed">Échec</string>
     <!-- (b600 fee) -->
@@ -845,7 +845,7 @@
     <!-- "(it was worth) $100 when sent, (and it is worth) $200 now" -->
     <string name="TransactionDetails.amountWhenSent">%1$s au moment de l\'envoi, %2$s à présent</string>
     <!-- Block height label -->
-    <string name="TransactionDetails.blockHeightLabel">Confirmé en bloc</string>
+    <string name="TransactionDetails.blockHeightLabel">Confirmé au bloc</string>
     <!-- Memo section header -->
     <string name="TransactionDetails.commentsHeader">Mémo</string>
     <!-- Memo field placeholder -->

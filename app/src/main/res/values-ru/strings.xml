@@ -342,6 +342,8 @@
     <string name="MenuButton.settings">Настройки</string>
     <!-- Menu button title -->
     <string name="MenuButton.support">Поддержка</string>
+	<!-- Menu button title -->
+    <string name="MenuButton.useragree">Пользовательское Соглашение</string>
     <!-- button label -->
     <string name="MenuViewController.createButton">Создать новый кошелёк</string>
     <!-- Menu modal title -->

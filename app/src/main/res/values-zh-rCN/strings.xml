@@ -343,7 +343,7 @@
     <!-- Menu button title -->
     <string name="MenuButton.support">支持</string>
 	<!-- Menu button title -->
-    <string name="MenuButton.useragree">User Agreement</string>
+    <string name="MenuButton.useragree">用户协议</string>
     <!-- button label -->
     <string name="MenuViewController.createButton">创建新的钱包</string>
     <!-- Menu modal title -->

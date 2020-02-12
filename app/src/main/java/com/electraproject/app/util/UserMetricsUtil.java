@@ -107,16 +107,16 @@ public final class UserMetricsUtil {
     }
 
     public static void sendUserMetricsRequest() {
-        BRExecutor.getInstance().forLightWeightBackgroundTasks().execute(new Runnable() {
+        /*BRExecutor.getInstance().forLightWeightBackgroundTasks().execute(new Runnable() {
             @Override
             public void run() {
                 UserMetricsUtil.makeUserMetricsRequest(ElectraApp.getBreadContext());
             }
-        });
+        });*/
     }
 
     private static void makeUserMetricsRequest(Context context) {
-        try {
+        /*try {
             JSONObject bundles = new JSONObject();
             for (String bundleName : ServerBundlesHelper.getBundleNames(context)) {
                 bundles.put(bundleName, BRSharedPrefs.getBundleHash(context, bundleName));
@@ -139,17 +139,17 @@ public final class UserMetricsUtil {
             payload.put(FIELD_METRIC, METRIC_LAUNCH);
             payload.put(FIELD_DATA, data);
 
-            sendMetricsRequestWithPayload(context, ME_METRICS_URL, payload);
+            //sendMetricsRequestWithPayload(context, ME_METRICS_URL, payload);
         } catch (IOException | JSONException e) {
             Log.e(TAG, "Error constructing JSON payload for user metrics request.", e);
-        }
+        }*/
     }
 
     public static void logCallRequestResponse(Context context, int status, String identifier, String service, String transactionHash,
                                               String fromCurrency, String fromAmount, String fromAddress,
                                               String toCurrency, String toAmount, String toAddress, long timestamp,
                                               Integer errorCode) {
-        try {
+        /*try {
             JSONObject data = new JSONObject();
 
             data.put(FIELD_STATUS, status);
@@ -204,11 +204,11 @@ public final class UserMetricsUtil {
             sendMetricsRequestWithPayload(context, ME_METRICS_URL, payload);
         } catch (JSONException e) {
             Log.e(TAG, "Error constructing JSON payload for log call/payment request.", e);
-        }
+        }*/
     }
 
     public static void logSegwitEvent(Context context, String eventType) {
-        try {
+        /*try {
             JSONObject data = new JSONObject();
             data.put(FIELD_EVENT_TYPE, eventType);
             data.put(FIELD_TIMESTAMP, System.currentTimeMillis());
@@ -220,11 +220,11 @@ public final class UserMetricsUtil {
             sendMetricsRequestWithPayload(context, ME_METRICS_URL, payload);
         } catch (JSONException e) {
             Log.e(TAG, "Error constructing JSON payload for log SegWit event.", e);
-        }
+        }*/
     }
 
     public static void makeEmailOptInRequest(final Context context, final String email) {
-        BRExecutor.getInstance().forLightWeightBackgroundTasks().execute(new Runnable() {
+        /*BRExecutor.getInstance().forLightWeightBackgroundTasks().execute(new Runnable() {
             @Override
             public void run() {
                 try {
@@ -236,7 +236,7 @@ public final class UserMetricsUtil {
                     Log.e(TAG, "Error constructing JSON payload for email opt in request.", e);
                 }
             }
-        });
+        });*/
     }
 
     /**
@@ -247,12 +247,12 @@ public final class UserMetricsUtil {
      * @param payload The payload to send.
      */
     private static void sendMetricsRequestWithPayload(final Context context, String url, final JSONObject payload) {
-        final MediaType JSON = MediaType.parse(BRConstants.CONTENT_TYPE_JSON_CHARSET_UTF8);
+        /*final MediaType JSON = MediaType.parse(BRConstants.CONTENT_TYPE_JSON_CHARSET_UTF8);
         RequestBody requestBody = RequestBody.create(JSON, payload.toString());
         Request request = new Request.Builder()
                 .url(url)
                 .header(BRConstants.HEADER_CONTENT_TYPE, BRConstants.CONTENT_TYPE_JSON_CHARSET_UTF8)
                 .header(BRConstants.HEADER_ACCEPT, BRConstants.CONTENT_TYPE_JSON).post(requestBody).build();
-        APIClient.getInstance(context).sendRequest(request, true);
+        APIClient.getInstance(context).sendRequest(request, true);*/
     }
 }

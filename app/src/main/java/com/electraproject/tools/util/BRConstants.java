@@ -141,6 +141,7 @@ public final class BRConstants {
     public static final String URL_BRD_HOST = "electraproject.org";
     public static final String WALLET_PAIR_PATH = "wallet-pair";
     public static final String WALLET_LINK_PATH = "link-wallet";
+    public static final String URL_EXPLORER = "https://electraexplorer.info/tx/";
 
 
     /**

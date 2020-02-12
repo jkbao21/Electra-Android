@@ -479,6 +479,7 @@
                         app:layout_constraintHorizontal_bias="1.0"
                         app:layout_constraintStart_toEndOf="@+id/transaction_id_label"
                         app:layout_constraintTop_toTopOf="@+id/transaction_id_label" />
+
                 </android.support.constraint.ConstraintLayout>
 
                 <View
@@ -487,14 +488,30 @@
                     android:layout_height="1px"
                     android:background="@color/light_gray" />
 
-
             </LinearLayout>
+
+            <ImageView
+                android:id="@+id/open_explorer"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:layout_below="@+id/details_container"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/explorer_button_txid"
+                android:layout_centerInParent="true"/>
+
+            <View
+                android:id="@+id/divider9"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@id/open_explorer"
+                android:layout_marginTop="6dp"
+                android:background="@color/light_gray" />
 
             <com.electraproject.presenter.customviews.BaseTextView
                 android:id="@+id/show_hide_details"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/details_container"
+                android:layout_below="@id/open_explorer"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="26dp"
                 android:layout_marginBottom="20dp"

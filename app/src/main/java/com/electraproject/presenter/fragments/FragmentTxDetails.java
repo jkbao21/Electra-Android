@@ -4,6 +4,8 @@ import android.app.Activity;
 import android.app.Dialog;
 import android.app.DialogFragment;
 import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.constraint.ConstraintLayout;
@@ -14,6 +16,7 @@ import android.view.ViewGroup;
 import android.view.inputmethod.EditorInfo;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
@@ -41,7 +44,6 @@ import com.platform.tools.KVStoreManager;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
-
 /**
  * Created by byfieldj on 2/26/18.
  * <p>
@@ -95,6 +97,8 @@ public class FragmentTxDetails extends DialogFragment {
     private ImageButton mCloseButton;
     private LinearLayout mDetailsContainer;
     boolean mDetailsShowing = false;
+
+    private ImageView mOpenExplorer;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -153,6 +157,8 @@ public class FragmentTxDetails extends DialogFragment {
         mGasPriceContainer = rootView.findViewById(R.id.gas_price_container);
         mGasLimitContainer = rootView.findViewById(R.id.gas_limit_container);
         mWhenSentLabel = rootView.findViewById(R.id.label_when_sent);
+
+        mOpenExplorer = rootView.findViewById(R.id.open_explorer);
 
         mCloseButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -387,6 +393,14 @@ public class FragmentTxDetails extends DialogFragment {
             } else {
                 mTxStatus.setText(getText(R.string.Transaction_confirming));
             }
+
+            mOpenExplorer.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(BRConstants.URL_EXPLORER + mTransaction.getHashReversed()));
+                    startActivity(browserIntent);
+                }
+            });
 
         } else {
             Toast.makeText(getContext(), "Error getting transaction data", Toast.LENGTH_SHORT).show();

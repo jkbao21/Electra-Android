@@ -158,6 +158,7 @@ public class FragmentSend extends ModalDialogFragment implements BRKeyboard.OnIn
 
         showFeeSelectionButtons(mIsFeeButtonsShown);
 
+        /*
         mEditFeeIcon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -165,6 +166,7 @@ public class FragmentSend extends ModalDialogFragment implements BRKeyboard.OnIn
                 showFeeSelectionButtons(mIsFeeButtonsShown);
             }
         });
+         */
         mKeyboardIndex = mSignalLayout.indexOfChild(mKeyboardLayout);
 
         showKeyboard(false);

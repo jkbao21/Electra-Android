@@ -687,7 +687,9 @@ public class FragmentSend extends ModalDialogFragment implements BRKeyboard.OnIn
         //formattedBalance
         String formattedBalance = CurrencyUtils.getFormattedAmount(context, mSelectedCurrencyCode,
                 isIsoCrypto ? wm.getSmallestCryptoForCrypto(context, isoBalance) : isoBalance);
-        balanceString = String.format(getString(R.string.Send_balance), formattedBalance);
+        balanceString = String.format(formattedBalance);
+
+        mAmountEdit.setText(balanceString);
         mBalanceText.setText(balanceString);
         mFeeText.setText(String.format(getString(R.string.Send_fee), formattedFee));
         mAmountLayout.requestLayout();

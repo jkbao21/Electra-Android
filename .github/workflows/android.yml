@@ -10,6 +10,13 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
+    
+    env:
+      ANDROID_COMPILE_SDK: "28"
+      ANDROID_BUILD_TOOLS: "28.0.2"
+      ANDROID_SDK_TOOLS:   "4333796"
+      ANDROID_NDK: "r18b"
+      GIT_SUBMODULE_STRATEGY: recursive
 
     steps:
     - uses: actions/checkout@v2

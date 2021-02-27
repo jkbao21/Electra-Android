@@ -16,10 +16,12 @@ jobs:
       ANDROID_BUILD_TOOLS: "28.0.2"
       ANDROID_SDK_TOOLS:   "4333796"
       ANDROID_NDK: "r18b"
-      GIT_SUBMODULE_STRATEGY: recursive
+      
 
     steps:
     - uses: actions/checkout@v2
+      with:
+        submodules: recursive
     - name: set up JDK 1.8
       uses: actions/setup-java@v1
       with:
